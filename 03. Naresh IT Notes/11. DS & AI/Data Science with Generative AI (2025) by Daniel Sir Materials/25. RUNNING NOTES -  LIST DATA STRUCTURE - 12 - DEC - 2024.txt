@@ -1,0 +1,451 @@
+RUNNING NOTES: 12 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	MODULE
+2. CURRENT TOPIC			-	LIST DATA STRUCTURE
+3. UPCOMING TOPIC			-	TUPLE DATA STRUCTURE
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+
+13. PYTHON - MODULE			-	Done
+
+14. PYTHON - PACKAGE			-	HOLD, till oops topic
+
+15. PYTHON - LIST DATA STRUCUTRE	-	Running topic
+
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Upcoming topic
+17. PYTHON - SET DATA STRUCUTRE		-	Upcoming topic
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Upcoming topic
+19. PYTHON - OBJECT ORIENTED 		-	Upcoming topic
+	PROGRAMMING	
+
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. TypeError
+5. IndexError
+
+6. IndentationError
+7. AttributeError
+8. ModuleNotFoundError
+
+
+--------------------------------
+
+15. PYTHON - LIST DATA STRUCUTRE
+--------------------------------
+
+List Data Structure
+
+1. CREATE		->	[], list()
+2. STORE		->	Same, different data
+3. SIZE			->	size increase dynamically
+4. INSERTION ORDER	->	fixed
+5. DUPLICATE		->	list can store duplicate vals
+6. MUTABLE		->	list having mutable nature
+7. INDEX		->	list can use index to store vals
+
+---------------------------------
+
+a = ""
+b = []
+
+print(a)
+print(b)
+print()
+print(type(a))
+print(type(b))
+
+---------------------------------
+
+# list can store duplicates
+# set cannot store duplicates
+
+a = [10, 20, 30, 40, 10, 10, 10]
+b = {10, 20, 30, 40, 10, 10, 10}
+
+print(len(a))
+print(len(b))
+
+---------------------------------
+
+from Masud Siddiqi (privately):    5:45 PM
+Besides [] and list() constructor, Lists can be created using List Comprehensions.  To what extent, in data science comprehensions are used?
+
+
+List Comprehensions	->	My fav topic
+			->	20 mins
+			->	Upcoming topic
+
+
+---------------------------------
+
+from Jayesh Thakare to everyone:    5:49 PM
+sir as list is mutable so can we delete an element in list?
+
+	1. by using del keyword
+	2. by using remove keyword
+	-> Upcoming topics
+
+---------------------------------
+
+# Creating a list by using range() function
+
+r = range(10, 21)
+a = list(r)
+
+print(r)
+print(a)
+
+---------------------------------
+
+# list function accepts only sequence 
+# Otherwise we will get an error
+
+r = 10
+a = list(r)
+
+print(r)
+print(a)
+
+---------------------------------
+
+# list having mutable nature
+
+Once list is created then
+
+	1. adding a value	->	valid
+	2. delete a value	->	valid
+	3. replace a value	->	valid
+
+	....
+
+---------------------------------
+
+# Accessing values from list
+
+	1. Index
+	2. Slicing
+	3. for loop	***
+
+---------------------------------
+
+a = [10, 20, 30, 40]
+
+
+	-4	-3	-2	-1
+
+	10	20	30	40
+
+	0	1	2	3
+
+---------------------------------
+
+Index:
+
+	The position of value where it stores
+
+
+---------------------------------
+
+# Accessing values by using index
+
+a = [10, 20, 30, 40]
+
+print(a)
+print()
+print(a[0])
+print(a[3])
+print(a[-1])
+
+---------------------------------
+
+
+a = [10, 20, 30, 40, 50, 60, 70]
+
+print(a)
+print()
+print(a[0:3])
+
+---------------------------------
+
+values = [10, 20, 30, 40]
+
+for value in values:
+	print(value)
+
+---------------------------------
+
+from Jalal Taqui (privately):    6:11 PM
+Daniel, can we create the list by taking values at runtime(input)?
+
+Ans: Yes its possible
+
+---------------------------------
+
+from Peeyush Sahu to everyone:    6:15 PM
+if we use loop its always indexed output? or there are any possibility of random ordered value like set?
+
+Ans: Possible by usng random function, In Data Analysis
+
+---------------------------------
+
+# Taking multiple values at runtime
+
+a = []
+
+for value in range(3):
+	i = int(input("Enter value:"))
+	a.append(i)
+
+print(a)
+
+---------------------------------
+
+# find the length of the list
+
+values = [10, 20, 30, 40, 50]
+
+print(len(values))
+
+---------------------------------
+
+9. Methods in list data structure
+
+Methods in str class
+
+Methods in list class
+Methods in tuple class
+Methods in set class
+Methods in dict class
+
+Methods in Series class
+Methods in DataFrame class
+
+Methods in LinearRegrsession class
+
+etc...
+
+
+---------------------------------
+
+9. Methods in list data structure
+
+1. list is predefined class
+2. class contains methods
+
+---------------------------------
+
+class
+	methods
+
+
+Human body
+	hear()
+	brain()
+
+---------------------------------
+
+Any program
+
+	1. Procedure oriented
+	2. Function oriented
+	3. Object oriented
+
+
+---------------------------------
+
+1. Procedure oriented
+
+-> Writing a program by using procedure
+
+print("Hello Good evening")
+print("How are you")
+
+---------------------------------
+
+2. Function oriented
+
+-> Writing a program by using function
+
+Function
+	1. How to create a function
+	2. How to call a function
+
+
+def wish():
+	print("Hello Good evening")
+	print("How are you")
+
+wish()
+
+---------------------------------
+
+3. Object oriented
+
+-> Writing a program by using class, objectd, method
+
+	1. How to create a class
+	2. How to create method inside of the class
+	3. How to create an object to a class
+	4. How to call a method
+
+---------------------------------
+
+# Creating class, method, object
+# Calling method
+
+class Daniel:
+	def working(self):
+		print("Lead Data Scientist")
+
+
+d = Daniel()
+d.working()
+
+---------------------------------
+
+class Daniel:
+	def working(self):
+		print("Lead Data Scientist")
+	def walking(self):
+		print("I like morning walk")
+
+d = Daniel()
+
+d.working()
+d.walking()
+
+Notes:
+------
+class, def	->	keywords
+Daniel		->	Name of the class
+working()	->	Name of the method
+walking()	->	Name of the method
+self		->	Predefinded var(we will see later)
+d = Daniel()	->	Creating an object
+d		->	Name of the object
+d.working()	->	Calling method
+d.walking()	->	Calling method
+
+Daniel
+	working()
+	walking()
+
+list
+	append()
+	count()
+	...
+
+
+---------------------------------
+
+IMP point
+
+	a = [10, 20, 30, 40]
+
+	1. Creating list
+	2. Object creation to the list class
+
+
+---------------------------------
+
+class Anjali:
+	def profession(self):
+		print("Data Scientist")
+
+a = Anjali()
+a.profession()
+
+
+---------------------------------
+
+Kind update reg tomorrow session
+
+-> Tomorrow we do have session	:	ONLINE MODE
+-> Second sat			:	holiday
+
+Again offline team		:	Monday
+
+---------------------------------
+
+We done today session
+
+Tomorrow ONLINE SESSION
+
+---------------------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

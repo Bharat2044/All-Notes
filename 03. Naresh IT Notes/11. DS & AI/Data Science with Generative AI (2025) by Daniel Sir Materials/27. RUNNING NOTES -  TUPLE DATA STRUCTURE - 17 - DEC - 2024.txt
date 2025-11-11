@@ -1,0 +1,510 @@
+RUNNING NOTES: 17 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	MODULE
+2. CURRENT TOPIC			-	LIST DATA STRUCTURE
+3. UPCOMING TOPIC			-	TUPLE DATA STRUCTURE
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+
+13. PYTHON - MODULE			-	Done
+
+14. PYTHON - PACKAGE			-	HOLD, till oops topic
+
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Running topic
+
+17. PYTHON - SET DATA STRUCUTRE		-	Upcoming topic
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Upcoming topic
+19. PYTHON - OBJECT ORIENTED 		-	Upcoming topic
+	PROGRAMMING	
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. TypeError
+5. IndexError
+
+6. IndentationError
+7. AttributeError
+8. ModuleNotFoundError
+
+
+--------------------------------
+
+15. PYTHON - LIST DATA STRUCUTRE
+--------------------------------
+
+IMP
+
+-> Methods in list class
+-> List comprehension
+
+--------------------------------
+
+List comprehension
+
+
+comprehension	->	essay writing
+		->	big paragraph
+		->	big syntax in python
+
+Syntax
+------
+
+LHS = RHS
+
+var = [Part1		Part2		Part3]
+
+--------------------------------
+
+Part1 = Variable/expression
+
+Part2 = for loop
+
+Part3 = Condition(Optional)
+
+--------------------------------
+
+var = [Variable/expression	for loop	Condition]
+
+--------------------------------
+
+Here condition is an optional
+
+var = [Variable/expression	for loop]
+
+
+--------------------------------
+
+Explain with example :)
+
+
+values = [100, 200, 300, 400, 500, 600, 700]
+
+	value + 10
+
+result = [110, 210, 310, 410, 510, 610, 710]
+
+# We can get result by using list comp...
+
+
+--------------------------------
+
+# list comp example1
+
+values = [100, 200, 300, 400, 500, 600, 700]
+
+result = [value+10	for value in values]
+
+print(values)
+print(result)
+
+--------------------------------
+
+names = ("daniel", "pavali", "pravallika")
+
+result = ["DANIEL", "PAVALI", "PRAVALLIKA"]
+
+--------------------------------
+
+# list comp example2
+
+names = ("daniel", "pavali", "pravallika")
+
+r = [name.upper()	for name in names]
+
+print(names)
+print(r)
+
+--------------------------------
+
+
+names = ("daniel", "pavali", "pravallika")
+
+r = [name.title()	for name in names]
+
+print(names)
+print(r)
+
+--------------------------------
+
+Req
+----
+
+values = [10, 20, 30, 40, 50, 60, 70, 80, 90, 1]
+
+	filter the data	
+	value < 50
+
+result = [10, 20, 30, 40, 1]
+
+
+--------------------------------
+
+Sol
+---
+
+
+values = [10, 20, 30, 40, 50, 60, 70, 80, 90, 1]
+
+r = [value	for value in values	if value < 50]
+
+print(values)
+print(r)
+
+
+--------------------------------
+
+# list comp example3
+
+values = [10, 20, 30, 40, 50, 60, 70, 80, 90, 1, 3]
+
+r = [
+	value	
+	for value in values	
+	if value < 50
+]
+
+print(values)
+print(r)
+
+--------------------------------
+
+When should we use list comprehension?
+
+Requerement is:
+
+	1. I have sequence object
+	2. Get one by one value
+	3. Apply one logic
+	4. I need list as result
+
+
+->	Then go for list comprehension
+
+--------------------------------
+
+values = [10, 20, 30]
+temp = []
+
+for value in values:
+	temp.append(value+2)
+
+print(values)
+print(temp)
+
+--------------------------------
+
+apply	->	Data Analysis we will see
+
+
+--------------------------------
+
+from Jayesh Thakare (privately):    6:06 PM
+sir what if we have to print the list 3 times within a big list 
+instead of multiply each value  by 3
+
+Ans:
+
+result = [[value]*3	P2]
+
+
+--------------------------------
+
+
+from Hrishi to everyone:    6:07 PM
+sir i cant add any comments in the google classroom but i could do it before to ask doubt
+
+Sir, we are extremely sorry for this
+
+Let me give access to everyone :)
+
+--------------------------------
+
+16. PYTHON - TUPLE DATA STRUCUTRE
+
+Tuple
+-----
+
+1. CREATE	-	(), tuple()
+2. STORE	-	same/diff type of values
+3. SIZE		-	size is not dynamic
+4. ORDER	-	Insertion order is fixed
+5. DUPLICATES	-	tuple can store duplicates
+6. IMMUTABLE	-	tuple having immutable nature	
+7. INDEX	-	tuple can use index to store the values
+
+--------------------------------
+
+# creating the tuple with values
+
+a = (10, 20, 30, 40)
+
+print(a)
+print(type(a))
+
+--------------------------------
+
+# creating the tuple with diff values
+
+a = (10, 20, 30, 40, 1.23, "Daniel")
+
+print(a)
+print(type(a))
+
+--------------------------------
+
+# tuple can store duplicate values
+
+a = (10, 20, 30, 40, 10, 10, 10)
+
+print(a)
+print(type(a))
+
+--------------------------------
+
+# Mutable	->	Can be change
+# Immutable	->	Cannot be change
+
+# tuple having immutable nature
+
+a = (10, 20, 30, 40)
+
+print(a)
+a[0] = 99
+print(a)
+
+--------------------------------
+
+When should we go for either list or tuple
+
+And: That depends on DATA
+
+Emp
+
+Name	->	Daniel		cannot change		tuple
+Emp Id	->	101		cannot change		tuple
+Age	->	16		can be change		list
+Salary	->	10000.36	can be change		list
+Passport->	12345678910	cannot be change	tuple
+
+
+-> If data having changing nature we can use lis to store the data
+
+-> If data is not changing then we can use tuple to store the data
+
+--------------------------------
+
+IMP interview discussion
+
+# A single value tuple is not a tuple
+
+--------------------------------
+
+# tuple with 4 values
+
+a = (10, 20, 30, 40)
+
+print(a)
+print(type(a))
+
+--------------------------------
+
+# tuple with 3 values
+
+a = (10, 20, 30)
+
+print(a)
+print(type(a))
+
+
+--------------------------------
+
+# tuple with 3 values
+
+a = (10, 20)
+
+print(a)
+print(type(a))
+
+
+--------------------------------
+
+Surprise: # tuple with 1 value but its not a tuple
+
+a = (10)
+
+print(a)
+print(type(a))
+
+
+--------------------------------
+
+Conclusion
+----------
+
+A single value tuple should end with comma separator
+
+a = (10, )
+
+print(a)
+print(type(a))
+
+
+--------------------------------
+
+# Single value list is list only
+
+a = [10]
+
+print(a)
+print(type(a))
+
+--------------------------------
+
+# While creating parenthesis is optional
+
+a = 10, 20, 30, 40, 50
+
+print(a)
+print(type(a))
+
+--------------------------------
+
+# While creating parenthesis is optional
+
+a = "Daniel", "Raju", "Ranga"
+
+print(a)
+print(type(a))
+
+--------------------------------
+
+Here is the point:	go back to functions
+			I need to one point
+
+
+--------------------------------
+
+def m1():
+	print("Hi")
+	return 10, 20, 30
+
+a, b, c = m1()
+print(a)
+print(b)
+print(c)
+
+--------------------------------
+
+# function can return multiple values
+# If we assign with single variable then it is tuple
+
+def m1():
+	print("Hi")
+	return 10, 20, 30
+
+a = m1()
+
+print(a)
+
+--------------------------------
+
+# We can convert tuple to list, can change the value then later conver into tuple again
+
+a = (10, 20, 30, 40)
+b = list(a)
+b[0] = 99
+c = tuple(b)
+
+print(a)
+
+--------------------------------
+
+We done for today session
+
+Tomorrow Session
+
+	1. Tuple	->	20 mins
+	2. Set		->	1 hour
+
+
+Daniel, Naresh IT, KPHB
+
+--------------------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

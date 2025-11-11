@@ -1,0 +1,365 @@
+RUNNING NOTES: 22 - NOV - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	DATA TYPES
+2. CURRENT TOPIC			-	OPERATORS
+3. UPCOMING TOPIC			-	INPUT AND OUTPUT
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+
+8. PYTHON - INPUT & OUTPUT		-	Running topic
+
+9. PYTHON - FLOW CONTROL		-	Upcoming topic
+
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. IndexError
+
+
+--------------------------------
+
+7. PYTHON - OPERATORS	
+---------------------
+
+Coming		->	C programing lang, C++, Java
+		->	++, --	->	Increment/decrement operators
+
+++, --		->	In python these are not existing
+
+
+Java
+	int a = 10;
+	++a		valid
+
+Python
+	a = 10
+	++a		invalid
+
+
+---------------------
+
+a = 2
+b = 4
+
+print(a+b)
+print(a-b)
+print(a*b)
+
+---------------------
+
+*	->	Multiplication operator
+**	->	Exponent operator
+
+2**3	->	2 to the power 3
+
+		 3
+		2
+	->	2 * 2 * 2	->	8
+
+2**4	->	2 to the power 3
+	->	2*2*2*2		->	16
+
+---------------------
+
+a = 2
+b = 3
+
+print(2**3)
+
+---------------------
+
+a = 2
+b = 3
+
+print(2**4)
+
+---------------------
+
+SyntaxError
+
+a = 2
+b = 3
+
+print(2***4)
+
+---------------------
+
+a = 13
+b = 5
+
+print(a/b)	#	2.6
+
+a/b
+
+	5	13	2.6
+		10
+		---
+		30
+		30
+		---
+		0
+		
+
+---------------------
+
+a = 13
+b = 5
+
+print(a/b)
+
+---------------------
+
+a = 13
+b = 5
+
+print(a//b)
+
+---------------------
+
+a = 13
+b = 5
+
+print(a%b)
+
+
+	5	13	2
+		10
+		---
+		3
+		---
+
+
+---------------------
+
+Relational operators
+------------------
+
+->	Operators	: >, >=, <, <=, ==, !=
+->	Usage		: We can create a simple condition
+->	Condition	: Can compare the values
+->	Result		: boolean, either True or False
+
+
+a = 1
+b = 2
+
+print(a > b) # 1 > 2 => False
+print(a < b) # 2 > 1 => True
+
+--------------------------------
+
+a = 1
+b = 2
+
+print(a == b)
+
+--------------------------------
+
+Logical operators
+-----------------
+
+->	Operators		: and, or, not
+->	Usage			: We can create COMPOUND CONDITION
+->	COMPOUND Condition	: MORE THAN TWO CONDITIONS
+->	Result			: Boolean: either True or False
+
+
+--------------------------------
+
+a = 1
+b = 2
+c = 3
+
+
+print(	a > b	and	b > c	)
+
+
+	1 > 2	and	2 > 3
+	 False	and	False		False
+
+
+--------------------------------
+
+and table
+----------
+
+LHS	and	RHS		Resul
+-------------------------------------
+True	and	True		True
+	
+True	and	False		False
+False	and	True		False
+False	and	False		False
+
+--------------------------------
+
+LHS	or	RHS		Result
+---------------------------------------
+
+True	or	True		True
+True	or	False		True
+False	or	True		True
+
+False	or	False		False
+
+--------------------------------
+
+a = True
+b = False
+
+print(a		and	a)
+
+--------------------------------
+
+a = True
+b = False
+
+print(a and a)
+
+--------------------------------
+
+6. Membership operators (in, not in)
+
+->	Rule1		: Work: sequence is required
+
+->	Operators	: in, not in
+->	Usage		: Checking purpose
+->	Result		: Boolean, either True or False
+
+
+--------------------------------
+
+
+names = ["Daniel", "Rajesh", "Prasad"]
+
+print(names)
+
+Syntax
+------
+
+print(	LHS	in	RHS )
+
+--------------------------------
+
+names = ["Daniel", "Rajesh", "Prasad"]
+
+print(names)
+
+print(	"Daniel"	in	names )
+
+
+--------------------------------
+
+names = ["Daniel", "Rajesh", "Prasad"]
+
+print(names)
+
+print(	"daniel"	in	names )
+
+--------------------------------
+
+values = [10, 20, 30, 40, 50]
+
+print(	10	in	values	)
+
+
+--------------------------------
+
+values = [10, 20, 30, 40, 50]
+
+print(	101	in	values	)
+
+
+--------------------------------
+
+users = ["Daniel", "Raju", "Rani", "Rajesh"]
+
+prime_users = ["Daniel", "Rajesh"]
+
+
+login to amazon
+
+	backend	checking either prime user or not
+
+	by using in operator
+
+	if user is prime user
+		assign benefits
+	if not 
+		dont assign benefits
+
+--------------------------------
+
+8. PYTHON - INPUT & OUTPUT
+
+Next session :)
+
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

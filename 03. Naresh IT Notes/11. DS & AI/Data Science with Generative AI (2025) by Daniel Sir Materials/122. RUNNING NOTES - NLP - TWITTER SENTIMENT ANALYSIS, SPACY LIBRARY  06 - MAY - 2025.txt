@@ -1,0 +1,652 @@
+RUNNING NOTES: 06 - MAY - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	NLP: TF & IDF
+2. CURRENT TOPIC			-	NLP: USE CASE: TWITTER DATA
+3. UPCOMING TOPIC			-	NLP: SPACY LIBRARY
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Done
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Done
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Done 
+	MULTIPLE CSV FILES
+
+--------------------------------------------------
+
+DATA ANALYSIS PROJECT
+---------------------
+
+1. EDA PROJECT				-	Done
+
+--------------------------------------------------
+
+DATA VISUALIZATION
+------------------
+
+1. DATA VISUALIZATION PART 1		-	Done
+2. DATA VISUALIZATION PART 2		-	Done
+3. DATA VISUALIZATION FUNDAMENTALS	-	Done
+
+4. DATA VISUALIZATION POWER BI		-	Upcoming topic	
+		
+--------------------------------------------------
+
+NUMPY
+-----
+
+1. NUMPY INTRODUCTION			-	Done
+2. NUMPY FUNDAMENTALS			-	Done
+3. NUMPY ATTRIBUTES			-	Done
+4. NUMPY METHODS			-	Done
+
+--------------------------------------------------
+
+MATHS						STATUS
+-----						------
+
+1. MATHS - PART - 1 - POPULATION, 	-	Done
+	SAMPLE, TYPES OF VARIABLES
+
+
+2. MATHS - PART - 2 - MODE, MEDIAN, 	-	Done
+	MEAN, RANGE, 
+	STANDARD DEVIATION, VARIANCE	
+
+
+3. MATHS - PART - 3 - OUTLIERS		-	Done
+
+
+4. MATHS - PART - 4 - THE FIVE NUMBERS	-	Done
+	SUMMARY, BOX PLOT, OUTLIER
+
+
+5. MATHS - PART - 5 - SYMMETRY AND 	-	Done
+	SKEWNESS
+
+
+6. MATHS - PART - 6 - EXPLANATORY AND 	-	Done
+	RESPONSIVE VARIABLES
+
+
+7. MATHS - PART - 7 - REGRESSION 	-	Done
+	AND R SQUARED
+
+
+8. MATHS - PART - 8 - RESIDUALS		-	Done
+
+
+9. MATHS - PART - 9 - THE NORMAL 	-	Hold
+	DISTRIBUTION AND 
+	68-95-99.7 RULE
+
+10. MATHS - PART - 10 - MATRIX		-	Done
+
+--------------------------------------------------
+
+FEATURE ENGINEERING
+-------------------
+
+1. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 1	-	Done
+
+
+2. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 2	-	Done
+
+--------------------------------------------------
+
+MACHINE LEARNING
+----------------
+
+1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	INTRODUCTION
+
+2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TERMINOLOGY
+
+3. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DATA AND ML ALGORITHMS
+
+4. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LEARNING FUNCTION
+
+5. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TYPES OF MODELS
+
+6. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LIFE CYCLE
+
+7. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TRAIN & TEST DATASETS
+
+
+8. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	R VALUE
+
+
+9. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION
+
+9.1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION 
+	EXAMPLE
+
+9.2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION 
+	EXAMPLE
+
+10. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	MULTIPLE LINEAR REGRESSION
+
+
+11. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	PICKLING AND UNPICKLING
+
+
+12. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SAVE MODEL USING JOBLIB AND 
+	PICKLING
+
+
+13. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	POLYNOMIAL FEATURES
+
+14. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DUMMY VARIABLE, ONEHOTENCODING
+
+
+15. DATA SCIENCE - MACHINE LEARNING 	-	Done
+	- R VALUE
+
+
+16. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	COST FUNCTION
+
+
+17. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	REGRESSION COST FUNCTION
+
+
+18. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	LOGISTIC REGRESSION
+	BINARY CLASSIFICATION
+
+19. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LOGISTIC REGRESSION
+	MULTI CLASS CLASSIFICATION
+
+
+20. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DECISION TREE
+
+
+21. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	RANDOM FOREST ALGORITHM
+
+
+
+22. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	K-FOLD CROSS VALIDATION
+
+
+23. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SVM
+
+24. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	GRADIENT DESCENT ALGORITHM
+
+
+25. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	UNDERFITTING & OVERFITTING
+
+
+26. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	BIAS - VARIANCE TRADE OFF
+
+
+27. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	K - MEANS CLUSTERING
+
+
+28. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	HYPER PARAMETER TUNING 
+	GRIDSEARCH CV
+
+
+29. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	K NEAREST NEIGHBOR
+
+
+30. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	XGBOOST
+
+31. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	NAIVE BAYES CLASSIFIER
+
+
+32. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	CONFUSION MATRIX
+
+
+33. DATA SCIENCE - MACHINE LEARNING 	- 	Upcoming topic
+	LASSO & RIDGE REGRESSION	
+
+
+34. MODEL DEPLOYMENT			-	Upcoming topic
+
+--------------------------------------------------
+
+DEEP LEARNING
+-------------
+
+1. DEEP LEARNING - INTRODUCTION		-	Done
+2. DEEP LEARNING - LIBRARIES		-	Done
+
+3. DEEP LEARNING - IMPORTANT 		-	Done
+	TERMINOLOGY
+
+4. DEEP LEARNING - MULTILAYER 		-	Done
+	PERCEPTRONS
+
+5. DEEP LEARNING - MULTILAYER 		-	Done
+	PERCEPTRONS EXAMPLE	
+
+6. DEEP LEARNING - EVALUATE MODEL 	-	Done
+	PERFORMANCE	
+
+7. DEEP LEARNING - EVALUATE MODEL 	-	Done
+	SAVE MODEL
+
+-  DATA SCIENCE - ENV - PYCHARM		-	Done
+
+
+8. DEEP LEARNING - BEST MODEL CHECK 	-	Done
+	POINT
+
+9. DEEP LEARNING - VISUALIZE MODEL 	-	Done
+	ACCURACY & SCORE
+
+
+--------------------------------------------------
+
+NATURAL LANGUAGE PROCESSING(NLP)
+---------------------------
+
+1. NLP - INTRODUCTION			-	Done
+2. NLP - TEXT WRANGLING AND CLEANING	-	Done
+3. NLP - REPLACING AND CORRECTING WORDS	-	Done
+4. NLP - COMPONENTS IN NLP - USE CASE	-	Done
+
+5. NLP - BAG OF WORDS, TF AND IDF	-	Done
+
+6. NLP - TWITTER SENTIMENT ANALYSIS 	-	Done
+	USING TEXTBLOB	
+
+7. NLP - SPACY LIBRARRY			-	Running topic
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+6. float(p)		->	To convert to float
+7. int(p)		->	To convert to int
+8. list(p)		->	Convert from seq to list
+9. tuple(p)		->	Convert from seq to tuple
+10. set(p)		->	Convert from seq to set
+
+11. dict(p)		->	Convert from list of tups to dict
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+11. InvalidParameterError
+
+------------------------------------
+
+6. NLP - TWITTER SENTIMENT ANALYSIS 
+	USING TEXTBLOB
+------------------------------------
+
+# Accessing positive and negative tweets
+
+from nltk.corpus import twitter_samples
+
+pos_tweets = twitter_samples.strings('positive_tweets.json')
+neg_tweets = twitter_samples.strings('negative_tweets.json')
+
+print(pos_tweets)
+print()
+print(neg_tweets)
+
+
+------------------------------------
+
+Req:
+----
+
+emps = ["Daniel", "Raju", "Rani"]
+
+output:
+	[
+		("Daniel", "Data Scientist"), 
+		("Raju", "Data Scientist"), 
+		("Rani", "Data Scientist")
+]
+
+
+------------------------------------
+
+emps = ["Daniel", "Raju", "Rani"]
+result = []
+for emp in emps:
+	result.append((emp, "Data Scientist"))
+  
+print(result)
+
+------------------------------------
+
+# Data preparation
+------------------
+
+from nltk.corpus import twitter_samples
+
+pos_tweets = twitter_samples.strings('positive_tweets.json')
+neg_tweets = twitter_samples.strings('negative_tweets.json')
+
+pos_tweets_set = []
+neg_tweets_set = []
+
+for tweet1 in pos_tweets:
+	pos_tweets_set.append((tweet1, 'pos'))
+
+for tweet2 in neg_tweets:
+	neg_tweets_set.append((tweet2, 'neg'))
+
+
+print(pos_tweets_set)
+print()
+print(neg_tweets_set)
+
+------------------------------------
+
+Let me stop for two mins
+
+	Nov	11
+	Dec	11	1
+	Jan	11	2
+	Feb	11	3
+	Mar	11	4
+	Apr	11	5
+			6 months
+
+Per day: if you done practice of min 1 hour
+
+------------------------------------
+
+One of the learner :)
+
+Sir should we start applying for jobs?has the course come to an end? can we start with Data analyst jobs first? u can asnwer at the end of the class sir
+
+Ans: It would be good to start now
+	ML project
+	DB
+	Power BI
+	Can I share resume templates :)
+
+------------------------------------
+
+# Model is predicting either positive or negative reviews
+
+from random import shuffle
+from nltk.corpus import twitter_samples
+from textblob.classifiers import NaiveBayesClassifier
+
+
+pos_tweets = twitter_samples.strings('positive_tweets.json')
+neg_tweets = twitter_samples.strings('negative_tweets.json')
+
+
+pos_tweets_set = []
+neg_tweets_set = []
+
+
+for tweet1 in pos_tweets:
+	pos_tweets_set.append((tweet1, 'pos'))
+
+
+for tweet2 in neg_tweets:
+	neg_tweets_set.append((tweet2, 'neg'))
+
+
+shuffle(pos_tweets_set)
+shuffle(neg_tweets_set)
+
+
+test_set = pos_tweets_set[:300] + neg_tweets_set[:300]
+train_set = pos_tweets_set[300:600] + neg_tweets_set[300:600]
+
+model = NaiveBayesClassifier(train_set)
+
+
+text = "It was a wonderful movie. I liked it very much."
+
+print(model.classify(text))
+
+
+------------------------------------
+
+One of the learner
+
+I need more practice on ML. In the meantime, I want to start as Data analyst incorporating  a few basic  ML models like Regression. Once ML practice is done, I will go for ML role.  Is that fine sir?
+
+Do you want job?
+
+	Everyone
+
+		you will get a job within these many interviews
+
+	1........................................15 interviews
+			7
+
+------------------------------------
+
+ML -> Deployment
+
+------------------------------------
+
+7. NLP - SPACY LIBRARRY	
+-----------------------
+
+-> Pre-requisite	->	nltk
+
+
+-----------------------
+
+NLP applications
+	1. they will use nltk, spacy, hugging-face libraries
+
+
+-----------------------
+
+spacy
+-----
+
+FLOW
+
+Text/String
+	
+	Spacy Doc object
+
+
+Milk
+	Curd
+
+
+Data
+	DataFrame
+
+------------------------------------
+
+# Converting string to spacy Doc object
+
+import spacy
+
+a = spacy.load('en_core_web_sm')
+b = "Hello Daniel Good Evening"
+c = a(b)
+
+print(type(b))
+print()
+print(type(c))
+
+
+------------------------------------
+
+String
+	Doc
+		Token
+
+------------------------------------
+
+# Word tokenization
+
+import spacy
+
+a = spacy.load('en_core_web_sm')
+b = "hello good evening how are you doing"
+c = a(b)
+
+for t in c:
+	print(t, type(t))
+    
+------------------------------------
+
+# Sting -> Document -> Tokens  
+
+import spacy
+
+a = spacy.load('en_core_web_sm')
+b = "today climate is very hot"
+c = a(b)
+
+for t in c:
+	print(t.text, type(t.text))
+
+------------------------------------
+
+-> We done today session	
+	  	 - Daniel
+
+------------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

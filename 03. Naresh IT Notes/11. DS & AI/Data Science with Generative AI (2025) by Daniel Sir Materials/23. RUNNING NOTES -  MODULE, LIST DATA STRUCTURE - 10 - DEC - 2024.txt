@@ -1,0 +1,386 @@
+RUNNING NOTES: 10 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	FUNCTIONS
+2. CURRENT TOPIC			-	MODULE
+3. UPCOMING TOPIC			-	LIST DATA STRUCTURE
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+
+13. PYTHON - MODULE			-	Done
+
+14. PYTHON - PACKAGE			-	HOLD, till oops topic
+
+15. PYTHON - LIST DATA STRUCUTRE	-	Running topic
+
+
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Upcoming topic
+17. PYTHON - SET DATA STRUCUTRE		-	Upcoming topic
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Upcoming topic
+19. PYTHON - OBJECT ORIENTED 		-	Upcoming topic
+	PROGRAMMING	
+
+
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. TypeError
+5. IndexError
+
+6. IndentationError
+7. AttributeError
+8. ModuleNotFoundError
+
+
+--------------------------------
+
+13. PYTHON - MODULE
+-------------------
+
+Keywords
+
+	1. import
+	2. from
+	3. as
+
+-------------------
+
+1. import
+
+	-> Keyword in python
+	-> We can import other modules
+	-> Adv: We can access all data members
+	-> Data members
+		Variables
+		Functions
+		Class
+			methods
+
+
+-------------------
+
+2. as
+-----
+
+	-> Keyword in python
+	-> Adv 1: We can rename the module
+	-> Adv 2: We can rename members of module
+
+
+-------------------
+
+3. from
+-------
+
+	-> Keyword in python
+	-> from + import is a valid combination
+	-> Adv 1: We can import specific data members
+	-> Adv 2: We can access directly.
+
+-------------------
+
+Q1:
+---
+
+from additionmultiplication import x, addition	Valid
+
+import additionmultiplication from x, addition	Error
+
+-------------------
+
+from additionmultiplication import addition as add
+
+add(10, 20)
+
+---------------------------------
+
+Good question
+
+from Masud Siddiqi (privately):    5:55 PM
+
+Any .py file is a Module. 
+Is a .ipynb file a Module?
+
+demo1.py	->	Python program/module
+demo2.ipynb	->	Jupyter file(Upcoming topic)
+		->	This is not a module
+
+---------------------------------
+
+from Shivek Sharma (privately):    5:51 PM
+sir how to know the end of a function.
+if i want to write some lines of code after the function end.
+and then make a function call . 
+so how can we do this?
+
+
+Ans:
+
+def m1():
+	print("First function")
+
+def m2():
+	print("Second function")
+
+# function calling
+
+m1()
+m2()
+
+
+
+---------------------------------
+
+15. PYTHON - LIST DATA STRUCUTRE
+---------------------------------
+
+Why we learn about Data Structures?
+
+Companies are generating the 	->	DATA
+
+
+---------------------------------
+
+			Data Structures
+			---------------
+
+Coin	=	H		+	T
+
+Data	=	Store the Data	+	Process the Data
+
+	=	[10, 20, 30]	+	min value 10
+					max value 30
+					sum       60
+					length	  3
+					etc ...
+
+
+---------------------------------
+
+Python Data Structures
+
+	1. List Data Structure
+	2. Tuple Data Structure
+	3. Set Data Structure
+	4. Dictionary Data Structure
+
+---------------------------------
+
+1. List Data Structure
+	
+	Realtime operations
+
+
+Data Structure
+
+		DATA operations
+		---------------
+
+C		U		R		D
+
+create		update		retrieve	delete
+
+
+---------------------------------
+
+Python Data Structure
+
+		Technical Def
+		-------------
+	If you wanted to store,
+	a group of individual values,
+	in a single entity/object, 
+	then you should go for data structures.
+
+
+Normal Def
+
+-> 5 yrs old 
+-> Mother, Getting ready to go Veg market
+-> Getting ready...
+-> Carry BAG(BIG), folding, folding......small
+-> 
+
+Shop 1
+------
+
+-> Potato	->	1kg
+-> Tomato	->	1 Kg
+-> onions	->	1 kg
+
+---------------------------------
+
+List Data Strucutre
+-------------------
+
+1. CREATE		->	[], list()
+2. STORE		->	Same, different data
+3. SIZE			->	size increase dynamically
+4. INSERTION ORDER	->	fixed
+
+5. 
+6. 
+7. 
+
+
+---------------------------------
+
+# Creating list
+
+a = [10, 20, 30, 40]
+
+print(a)
+print(type(a))
+
+---------------------------------
+
+# List can store different of the data too
+
+a = [1, 1.2, "Daniel"]
+
+print(a)
+print(type(a))
+
+---------------------------------
+
+# Checking each value data type
+
+a = [10, 1.2, "Daniel"]
+
+for value in a:
+	print(type(value))
+
+
+---------------------------------
+
+# size increase dynamically
+
+from sys import getsizeof
+
+a = [10, 20]
+
+print(a)
+print(getsizeof(a))
+
+---------------------------------
+
+# size increase dynamically
+
+from sys import getsizeof
+
+a = [10, 20, 30, 40]
+
+print(a)
+print(getsizeof(a))
+
+
+---------------------------------
+
+# size increase dynamically
+
+from sys import getsizeof
+
+a = [10, 20, 30, 40, 50, 70]
+
+print(a)
+print(getsizeof(a))
+
+
+---------------------------------
+
+a = [10, 20, 30, 40]
+
+print(a)
+
+---------------------------------
+
+# insertion order is fixed in list but not in set
+
+a = [10, 20, 30, 40]
+b = {10, 20, 30, 40}
+
+print(a)
+print(b)
+
+
+---------------------------------
+
+We Done for today session
+We will meet again tomorrow
+
+Daniel from Naresh IT, KPHB location 
+
+---------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

@@ -1,0 +1,574 @@
+RUNNING NOTES: 23 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	SET DATA STRUCTURE
+2. CURRENT TOPIC			-	DICT DATA STRUCTURE
+3. UPCOMING TOPIC			-	OBJECT ORIENTED PROGRAMMING
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+
+14. PYTHON - PACKAGE			-	HOLD
+
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+
+
+19. PYTHON - OBJECT ORIENTED 		-	Running topic
+	PROGRAMMING	
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+
+--------------------------------
+
+18. PYTHON - DICTIONARY DATA STRUCUTRE
+--------------------------------------
+
+
+# Access values by using keys
+
+d = {10: "Ramesh", 20: "Arjun", 30: "Daniel"}
+
+print(d[10])
+print(d[20])
+print(d[30])
+
+--------------------------------
+
+# Accessing key and value from dictionary
+# by using for loop
+
+
+d = {10: "Ramesh", 20: "Arjun", 30: "Daniel"}
+
+for i in d:
+	print(i, d[i])
+
+--------------------------------
+
+Update dictionary
+-----------------
+
+Case 1:	Can we add key and value to the dictionary?
+-------
+
+-> while adding key and value, if no key is existing in dictionary then only new key+value pair will be added
+
+
+d = {
+	101: "Ramesh",
+	102: "Arjun",
+	103: "Daniel"
+}
+
+print(d)
+d[104] = "Prasad"
+print(d)
+
+--------------------------------
+
+Case 2: Can we add key and value to the dictionary?
+-------
+
+
+-> while adding key and value, if key is existing in dictionary then only value will be replaced with new value
+
+# Duplicate keys are not allowed in dictionary
+
+d = {
+	101: "Ramesh",
+	102: "Arjun",
+	103: "Daniel"
+}
+
+print(d)
+d[101] = "Prasad"
+print(d)
+
+--------------------------------
+
+8. Removing or deleting elements from dictionary
+
+-> In python we do have del keyword
+-> By using this keyword we can deleted values/object
+
+--------------------------------
+
+# del keyword
+
+a = 10
+
+print(a)
+del a
+print(a)
+
+--------------------------------
+
+# During session please be silent
+# 1 or 2 times
+# Keep on talking :(
+
+--------------------------------
+
+# Deleting specific value
+
+a = [10, 20, 30, 40]
+
+print(a)
+del a[0]
+print(a)
+
+--------------------------------
+
+# del keyword
+
+a = [10, 20, 30, 40]
+
+print(a)
+del a
+print(a)
+
+--------------------------------
+
+# deleting item from dictionary
+
+d = {
+
+	101: "Ramesh",
+	102: "Arjun",
+	103: "Daniel"
+}
+
+print(d)
+del d[101]
+print(d)
+
+--------------------------------
+
+# deleting whole dictionary object
+
+d = {
+
+	101: "Ramesh",
+	102: "Arjun",
+	103: "Daniel"
+}
+
+print(d)
+del d
+print(d)
+
+--------------------------------
+
+# clear() method
+
+d = {
+
+	101: "Ramesh",
+	102: "Arjun",
+	103: "Daniel"
+}
+
+print(d)
+d.clear()
+print(d)
+
+--------------------------------
+
+# len() function over dictionary
+
+a = [10, 20, 30, 40]
+b = (10, 20, 30)
+d = {
+	101: "Ramesh",
+	102: "Arjun"
+}
+
+print(len(a))
+print(len(b))
+print(len(d))
+
+--------------------------------
+
+# len() function
+
+a = [10, 20, 30, 40]
+d = {
+	101: "Ramesh",
+	102: "Arjun"
+}
+
+print(len(a))
+print(len(d))
+
+--------------------------------
+
+10. Methods in dict class data structure
+
+-> dict is predefined class
+-> class contains methods
+
+	Methods will perform task
+
+class
+	method1()
+	method2()
+	method3()
+
+body
+	heart()
+	brain()
+	
+--------------------------------
+
+IMP info
+
+
+	class		methods
+	-----------------------
+
+	str
+			upper()
+			lower()
+			strip()
+			replace()
+			count()
+			split()
+			
+	list
+			append()
+			count()
+			insert()
+			remove()
+			reverse()
+
+	tuple
+			count()
+			index()
+
+
+	set
+			add()
+			remove()
+			clear()
+
+	dict
+			keys()
+			values()
+			items()
+
+--------------------------------
+
+from Masud Siddiqi (privately):    6:21 PM
+doesn't list have add()?
+
+Good question
+
+	list	->	append()
+	set	->	add()
+
+--------------------------------
+
+# SyntaxError
+
+d = {
+	101: ,
+	102: "Arjun"
+}
+
+print(d)
+
+--------------------------------
+
+# values assigning with None data type
+
+d = {
+	101: None,
+	102: "Arjun"
+}
+
+print(d)
+
+--------------------------------
+
+# clear() method
+
+d = {
+	101: "Ramesh",
+	102: "Arjun"
+}
+
+print(d)
+
+--------------------------------
+
+# Accessing keys from the dictionary
+
+d = {
+	101: "Ramesh",
+	102: "Arjun",
+	103: "Daniel"
+}
+
+print(d)
+print()
+print(list(d.keys()))
+
+--------------------------------
+
+# Accessing values from the dictionary
+
+d = {
+	101: "Ramesh",
+	102: "Arjun",
+	103: "Daniel"
+}
+
+print(d)
+print()
+print(list(d.values()))
+
+--------------------------------
+
+# items() method: Interesting
+
+d = {
+	101: "Ramesh",
+	102: "Arjun",
+	103: "Daniel"
+}
+
+print(list(d.items()))
+
+--------------------------------
+
+# d.items() method and for loop
+
+d = {
+	101: "Ramesh",
+	102: "Arjun",
+	103: "Daniel"
+}
+
+for	k, v	in	d.items()	:
+	print(k, v)
+
+--------------------------------
+
+from Jyothi Biradar to everyone:    6:32 PM
+sir tomorrow pakka session is there na?
+
+100% Guarantee, we do have a session tomorrow
+
+--------------------------------
+
+11. Dictionary Comprehension:
+
+
+list	comprehenstion	result		list
+set	comprehenstion	result		set
+dict	comprehenstion	result		dict
+
+tuple	comprehenstion	result		not a tuple
+					generator :)
+
+
+Dictionary Comprehension:
+-------------------------
+
+LHS = RHS
+
+var = {P1		P2		P3}
+
+P1 = variable/expression with dict syntax
+P2 = for loop
+P3 = condition
+
+		or
+
+var = {
+	P1		
+	P2		
+	P3
+}
+
+var = {
+	variable/expression with dict syntax	
+	for loop		
+	condition
+}
+
+-------------------------
+
+Req:
+----
+
+a = [1, 2, 3, 4]
+
+result = {1: 1, 2: 4, 3: 9, 4: 16}
+
+-------------------------
+
+Solution
+
+a = [1, 2, 3, 4]
+
+result = {
+	i: i**2
+	for i in a
+}
+
+print(a)
+print(result)
+
+
+-------------------------
+
+Req2:
+------
+
+names = ["daniel", "raju", "rani"]
+
+result = {
+	"daniel": "DANIEL",
+	"raju": "RAJU",
+	"rani": "RANI"
+}
+
+-------------------------
+
+# dictionary comprehension
+
+names = ["daniel", "raju", "rani"]
+
+result = {
+	name: name.upper()
+	for name in names
+}
+
+print(names)
+print(result)
+
+-------------------------
+
+# dictionary comprehension
+
+names = ["daniel", "raju", "rani"]
+
+result = {
+	name: len(name)
+	for name in names
+}
+
+print(names)
+print(result)
+
+-------------------------
+
+Use case:
+---------
+
+	1. Run program and observ output
+		
+		demo_options.py
+		demo_menu.py
+
+-------------------------
+
+We done for today session :)
+
+Tomorrow topic
+
+	1. OOPS
+
+Daniel
+Naresh IT
+KPHB location
+
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

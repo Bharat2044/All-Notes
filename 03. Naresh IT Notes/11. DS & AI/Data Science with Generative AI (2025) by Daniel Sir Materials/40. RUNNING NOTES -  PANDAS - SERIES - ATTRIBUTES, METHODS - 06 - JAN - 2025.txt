@@ -1,0 +1,604 @@
+RUNNING NOTES: 06 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - NaN VALUES
+2. CURRENT TOPIC			-	PANDAS - SERIES ATTIBUTES
+3. UPCOMING TOPIC			-	PANDAS - SERIES METHODS
+
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+
+5. PANDAS - SERIES - METHODS		-	Running topic
+
+6. PANDAS - DATAFRAME INTRODUCTION	-	Upcoming topic
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+
+--------------------------------
+
+4. PANDAS - SERIES - ATTRIBUTES
+-------------------------------
+
+Python 
+
+	class			methods
+
+	list			methods
+	tuple			methods
+	set			methods
+	dict			methods
+
+-------------------------------
+
+pandas
+
+	class		
+			attributes		methods
+
+	Series
+			attributes		methods
+
+
+	DataFrame
+			attrubutes		methods
+
+
+-------------------------------
+
+
+Series
+	1. Attributes
+
+		-> Returns/Giving information about Series object
+		-> Access: by using object name, without parenthesis
+
+			-> s.attribute1
+			-> s.attribute2
+
+				-> s.values
+				-> s.index
+
+
+-------------------------------
+
+# values and index attributes
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+s = pd.Series(a)
+
+print(s)
+print()
+print(s.values)
+print(s.index)
+
+-------------------------------
+
+# dtypes attribute
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+s = pd.Series(a)
+
+print("Created Series object: s")
+print("Get datatype of data")
+print()
+print(s.dtypes)
+
+-------------------------------
+
+-> I wanted to see, .values, .index., .dtypes attributes in s object
+
+	1. by using dir() function
+	2. by using documentation
+
+-------------------------------
+
+1. by using dir() function
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+s = pd.Series(a)
+
+print(s)
+print()
+print(dir(s))
+
+[......, 'values', 'index', 'dtypes'....]
+
+-------------------------------
+
+2. by using documentation
+
+https://pandas.pydata.org/docs/reference/api/pandas.Series.html
+
+
+-------------------------------
+
+# dtypes attribute
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+s = pd.Series(a)
+
+print(s)
+print()
+print(s.dtypes)
+
+-------------------------------
+
+IMP question:
+
+What is the difference between size and count()?
+
+
+
+size	: Total number of values including missing values
+
+count()	: Total number of values excluding missing values
+
+Fun example
+-----------
+		NIT: Annouced Data Sci Demo
+		We arranged	100 chairs
+		attendees	95 members
+
+size	:	100 chairs
+
+count	:	95
+
+
+-------------------------------
+
+size
+----
+
+import pandas as pd
+
+a = [10, 20, None, 40]
+s = pd.Series(a)
+
+print(s.size)
+
+-------------------------------
+
+Info:
+-----
+
+size	->	attribute
+count()	->	method
+
+-------------------------------
+
+import pandas as pd
+
+a = [10, 20, None, 40]
+s = pd.Series(a)
+
+print(s)
+print()
+print(s.size)
+print()
+print(s.count())
+
+-------------------------------
+
+Attributes
+
+	1. s.values
+	2. s.index
+	3. s.dtypes
+	4. s.size
+
+-------------------------------
+
+5. PANDAS - SERIES - METHODS
+
+
+Series
+	class
+		1. Attributes	->	Returns information
+		2. Methods	->	Perform an operations
+
+
+-------------------------------
+
+Methods in str class
+
+Methods in list class
+Methods in tuple class
+Methods in set class
+Methods in dict class
+
+Methods in Series class		-------->	:)
+Methods in DataFrame class
+
+-------------------------------
+
+Methods in Series class
+
+-> Series class contains methods
+-> These methods perform an operations
+
+-------------------------------
+
+# head() method
+
+import pandas as pd
+
+a = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+s = pd.Series(a)
+
+print(s.head())
+
+
+-------------------------------
+
+# head(7) method
+
+import pandas as pd
+
+a = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+s = pd.Series(a)
+
+print(s.head(7))
+
+
+-------------------------------
+
+Difference between attribute and method
+
+Attribute
+
+-> Attrubute returns information
+-> We should access attribute by using object name
+-> While accessing no need to use parenthesis
+
+Methods
+
+-> Method can perform operation
+-> We should access method by using object name
+-> While accessing we need to use parenthesis
+
+-------------------------------
+
+s.values	->	attribute
+s.head()	->	method
+
+-------------------------------
+
+# AttributeError
+
+import pandas as pd
+
+a = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+s = pd.Series(a)
+
+print(s.header())
+
+-------------------------------
+
+# tail() method
+
+import pandas as pd
+
+a = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+s = pd.Series(a)
+
+print(s.tail())
+
+-------------------------------
+
+# Accessing values from Series by using slicing
+
+import pandas as pd
+
+a = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+s = pd.Series(a)
+
+print(s[3:7])
+
+-------------------------------
+
+sum()	->	function in python
+sum()	->	methods in Series class(pandas)
+
+-------------------------------
+
+# sum()  method
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+s = pd.Series(a)
+
+print(s.sum())
+
+-------------------------------
+
+# sum() method
+
+import pandas as pd
+
+a = [10, None, 30, 40]
+s = pd.Series(a)
+
+print(s.sum())
+
+-------------------------------
+
+count()
+
+-> It count total number of values excluding missing values(ignoring missing values)
+
+
+-------------------------------
+
+Python		->	sum() function
+
+Series		->	sum() method
+
+
+Prasad		->	laptop
+
+Daniel		->	laptop
+
+
+-------------------------------
+
+# count() method
+
+import pandas as pd
+
+a = [10, None, 30, None]
+s = pd.Series(a)
+
+print(s.size)
+print()
+print(s.count())
+
+-------------------------------
+
+methods
+	s.head()
+	s.head(7)
+	s.tail()
+	s.tail(7)
+	s.sum()
+	s.count()
+
+-------------------------------
+
+# mean() method
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+s = pd.Series(a)
+
+print(s)
+print()
+print(s.mean())
+
+-------------------------------
+
+
+describe()	->	perform statistics about the data
+
+s.head()	->	Giving one output
+s.tail()	->	Giving one output
+s.sum()		->	Giving one output
+
+d.describe()	->	Giving eight outpus :)
+
+-------------------------------
+
+# d.describe() method
+
+
+import pandas as pd
+
+a = [10, None, 30, 40]
+s = pd.Series(a)
+
+print(s)
+print()
+print(s.describe())
+
+-------------------------------
+
+# d.describe() & round() method
+
+import pandas as pd
+
+a = [10, None, 30, 40]
+s = pd.Series(a)
+
+print(s)
+print()
+print(s.describe().round(2))
+
+-------------------------------
+
+# min() & max() methods
+
+import pandas as pd
+
+a = [10, None, 30, 40]
+s = pd.Series(a)
+
+print(s)
+print()
+print(s.min())
+print()
+print(s.max())
+
+-------------------------------
+
+Difference between count() from python and pandas
+
+			
+count()		->	method	->	str	python
+					list
+					tuple
+
+count()		->	method		Series	pandas
+
+
+-------------------------------		
+
+# count() method in list class
+
+a = [10, 20, 30, 40, 10, 10]
+
+print(a.count(10))
+
+-------------------------------		
+
+# 1.7. unique() method
+
+import pandas as pd
+
+a = [10, 20, 30, 40, 10, 10, 10]
+s = pd.Series(a)
+
+print(s.unique())
+
+-------------------------------		
+
+# Number of unique values
+
+import pandas as pd
+
+a = [10, 20, 30, 40, 10, 10, 10]
+s = pd.Series(a)
+
+print(s.nunique())
+
+-------------------------------		
+
+# unique() method
+
+import pandas as pd
+
+a = [10, 20, 30, 40, 10, 10, 10, None, None]
+s = pd.Series(a)
+
+print(s.unique())
+
+-------------------------------		
+
+We done for today session
+
+- Daniel
+
+-------------------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

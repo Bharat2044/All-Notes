@@ -1,0 +1,414 @@
+RUNNING NOTES: 03 - FEB - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - DATAFRAME ADD, DROP COLS, ROWS
+2. CURRENT TOPIC			-	PANDAS - DATAFRAME DATE & TIME OPES
+3. UPCOMING TOPIC			-	PANDAS - CONCATENATE MUL CSV FILES
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Done
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Done
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Running topic 
+	MULTIPLE CSV FILES
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+20. PANDAS - DATAFRAME - DATE AND
+	TIME OPERATIONS
+
+---------------------------------
+
+# Filtering the datetime values
+
+import pandas as pd
+
+df = pd.read_csv(
+	'sales7_dates.csv', 
+	parse_dates=['Pur_Date']
+)
+
+start = df['Pur_Date'] > '2019-1-1 01:00:00'
+end = df['Pur_Date'] < '2019-1-1 05:00:00'
+
+print(df[start & end])
+
+---------------------------------
+
+# Access last 10 days records
+
+import pandas as pd
+
+df = pd.read_csv(
+	'sales7_dates.csv', 
+	parse_dates=['Pur_Date']
+)
+
+new_df = df.set_index("Pur_Date")
+days_10 = new_df.last("10D")
+print()
+print(days_10)
+
+---------------------------------
+
+# Access last 1 month records
+
+import pandas as pd
+
+df = pd.read_csv(
+	'sales7_dates.csv', 
+	parse_dates=['Pur_Date']
+)
+
+new_df = df.set_index("Pur_Date")
+month_1 = new_df.last("1M")
+
+print(month_1)
+
+---------------------------------
+
+# Adding year & month columns to DataFrame
+
+import pandas as pd
+
+df = pd.read_csv(
+	'sales7_dates.csv', 
+	parse_dates=['Pur_Date']
+)
+
+print(df)
+print()
+
+df["year"] = df["Pur_Date"].dt.year
+df["month"] = df["Pur_Date"].dt.month
+
+print(df)
+
+---------------------------------
+
+# day_name() method
+
+import pandas as pd
+
+data = {
+	'Product': ['Samsung', 'iPhone', 'Motorola'],
+	'Status': ['Success', 'Success', 'Failed'],
+	'Cost': [10000, 50000, 15000],
+	'PurDate': ['2018-01-01','2018-01-02','2018-01-03'],
+}
+
+df = pd.DataFrame(data)
+df['PurDate'] = pd.to_datetime(df['PurDate'])
+
+print(df['PurDate'].dt.day_name())
+
+---------------------------------
+
+from Iddipilli Karthik to everyone:    6:08 PM
+if i want df where it must have data of jan and mar ignoring feb instead of creating 2 df can we do with single df
+
+Ans: Next topic: Concacatenating mul csv files :)
+
+---------------------------------
+
+
+	General			pandas
+				   +1
+	Monday		1	0
+	Tue		2	1
+	Wen		3	2
+	Thurs		4	3
+	Friday		5	4
+	Sat		6	5
+	Sun		7	6
+
+---------------------------------
+
+# weekday attribute
+
+import pandas as pd
+
+data = {
+	'Product': ['Samsung', 'iPhone', 'Motorola'],
+	'Status': ['Success', 'Success', 'Failed'],
+	'Cost': [10000, 50000, 15000],
+	'PurDate': ['2018-01-01','2018-01-02','2018-01-03'],
+}
+
+df = pd.DataFrame(data)
+df['PurDate'] = pd.to_datetime(df['PurDate'])
+
+print(df['PurDate'].dt.day_name())
+print()
+print(df['PurDate'].dt.weekday+1)
+
+---------------------------------
+
+21. PANDAS - DATAFRAME - CONCATENATING
+	MULTIPLE CSV FILES
+
+---------------------------------
+
+
+		amazon 2024 yr Data
+
+jan.csv		1 month
+feb.csv		2 month
+mar.csv		3 month
+....
+dec.csv		12 month
+
+12 files	->	total business on 2024?
+
+
+---------------------------------
+
+Case 1
+-------
+
+jan.csv		1 month		price	sum()
+feb.csv		2 month		price	sum()
+mar.csv		3 month		price	sum()
+....
+dec.csv		12 month	price	sum()
+
+total					sum()
+
+
+---------------------------------
+
+Case 2
+-------
+
+		amazon 2024 yr Data
+
+jan.csv		1 month
+feb.csv		2 month
+mar.csv		3 month
+....
+dec.csv		12 month
+
+12 files	->	total business on 2024?
+
+
+
+12 files	12 DataFrames
+		
+concate 12	1 DataFrame(from jan to Dec)
+
+now we can	sum()	Best way
+
+---------------------------------
+
+Steps
+-----
+
+1. Prasad
+	jan.csv
+	feb.csv
+	aug.csv
+	fun.jpg
+	input.txt
+	apr.csv
+	mar.csv
+	hello.excel
+
+15 files	
+
+2. Filter all csv files:	12
+
+3. Create 12 DataFrames
+
+4. Concatenate			single DataFrame
+
+5. Proceed
+
+
+---------------------------------
+
+# Access all files names
+
+import os
+
+p = "./prasad"
+
+all_files = os.listdir(p)
+
+print(all_files)
+
+---------------------------------
+
+# Access one by one file name
+
+import os
+
+p = "./prasad"
+
+all_files = os.listdir(p)
+
+for file in all_files:
+	print(file)
+
+---------------------------------
+
+# Get all files names
+
+import os
+
+p = "./prasad"
+
+all_files = os.listdir(p)
+
+print(all_files)
+
+
+output
+------
+
+['apr_sales.csv', 'aug_sales.csv', 'dec_sales.csv', 'feb_sales.csv', 'fun.jpg', 'jan_sales.csv', 'jul_sales.csv', 'jun_sales.csv', 'mar_sales.csv', 'may_sales.csv', 'nov_sales.csv', 'oct_sales.csv', 'progress.txt', 'sep_sales.csv', 'status.xlsx']
+
+---------------------------------
+
+# Filter all csv files from all_files
+
+
+import os
+
+p = "./prasad"
+
+all_files = os.listdir(p)
+
+
+result = filter(lambda file: file.endswith(".csv"),	all_files)
+
+
+print(all_files)
+print()
+print(list(result))
+
+---------------------------------
+
+- We done today session 
+
+---------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

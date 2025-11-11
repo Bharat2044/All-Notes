@@ -1,0 +1,528 @@
+RUNNING NOTES: 26 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	DICT DATA STRUCTURE
+2. CURRENT TOPIC			-	OBJECT ORIENTED PROGRAMMING
+3. UPCOMING TOPIC			-	PACKAGE
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+
+14. PYTHON - PACKAGE			-	HOLD
+
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+
+19. PYTHON - OBJECT ORIENTED 		-	Running topic
+	PROGRAMMING	
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+
+--------------------------------
+
+19. PYTHON - OBJECT ORIENTED
+	PROGRAMMING	
+-----------------------------
+
+Python
+	1. Functional programming lang
+	2. Object Oriented programming lang
+
+-> By using FP & OOP We can create software/application
+
+Features
+
+	1. Functional programming lang
+		Create a function
+		call a function
+		parameter
+		return	
+		....
+
+
+	2. Object Oriented programming lang
+		class
+		object
+		method
+		constructor
+		....
+
+-----------------------------
+						Purpose
+class
+	1. Constructor		Initialization or
+				Create instance variable
+		1. Zero para
+		2. Para
+
+	2. Variables		To represent the data
+		1. Instance 
+
+	3. Method		To perform an action
+		1. Instance 
+
+-----------------------------
+
+class
+-----
+
+	-> Idea			Implemented
+
+	fan creation		Usha fan
+	labtop creation		dell laptop
+
+	properties/vars		right implemented
+	actions/methods		right implemented
+
+
+-----------------------------
+
+# valid but not using in realtime
+
+class Student:
+	print("Hello")
+
+-----------------------------
+
+# Function + return combination
+
+def naresh():
+	print("Hello")
+	return 100
+
+n = naresh()
+
+print(n)
+
+
+-----------------------------
+
+n = naresh()
+
+-----------------------------
+
+# :(
+
+class daniel:
+	def working(self):
+		print("Hello")
+
+d = daniel()
+
+d.working()
+
+
+-----------------------------
+
+Discussion
+
+n = naresh()	#	function call
+
+d = daniel()	#	object creation
+		#	lower case is not recommended
+
+d = Daniel()	#	Good practice
+
+-----------------------------
+
+# Creating class with standards
+
+class Daniel:
+	def working(self):
+		print("Hello")
+
+d = Daniel()
+
+d.working()
+
+
+-----------------------------
+
+# Creating an object
+
+class Daniel:
+	def working(self):
+		print("Hello")
+
+d = Daniel()	#	object creation
+		#	why obj creation?
+		#	what is an object?
+
+
+-----------------------------
+
+Why object creation required?
+
+-> IMP for your learning :)
+-> cool discussion
+
+-----------------------------
+
+	member of the class
+
+class
+
+	variables
+	methods
+
+	a = 10
+
+
+-----------------------------
+
+
+class				object
+
+idea		implemented	we will get object
+
+Fan creation	implemented	Usha fan
+
+Laptop creation	implemented	Dell laptop
+
+Water bottle	Created		ABC water bottle
+
+
+-----------------------------
+
+IMP
+
+class	doesnot exist physically
+object 		exist physically
+
+-----------------------------
+
+# Object creation
+
+class Daniel:
+	def working(self):
+		print("Lead Data Scientist")
+
+d = Daniel()
+
+-----------------------------
+
+# Dont forget the parenthesis
+
+class Daniel:
+	def working(self):
+		print("Lead Data Scientist")
+
+d = Daniel()
+
+-----------------------------
+
+# While creating an object class name should be match otherwise we will get NameError
+
+class Daniel:
+	def working(self):
+		print("Lead Data Scientist")
+
+d = Prasad()
+
+-----------------------------
+
+# Case sensitive
+
+class Daniel:
+	def working(self):
+		print("Lead Data Scientist")
+
+d = daniel()
+
+-----------------------------
+
+Object creation
+
+Java
+
+	Daniel d = new Daniel();
+	
+
+Python
+
+	d = Daniel()
+
+
+-----------------------------
+
+Assignment
+----------
+
+Create a variable
+
+	1. Procedure oriented
+	2. Function oriented
+	3. Object oriented
+
+-----------------------------
+
+1. Procedure oriented
+
+a = 10
+print(a)
+
+-----------------------------
+
+2. Function oriented
+
+def naresh():
+	a = 10
+	print(a)
+
+naresh()
+
+
+-----------------------------
+
+3. Object oriented
+
+class Student:
+	def display(self):
+		a = 10
+		print(a)
+
+s = Student()
+s.display()
+
+-----------------------------
+
+Req1: Create a string and convert into upper case
+	use 3 approaches
+
+-----------------------------
+
+1. Procedure oriented
+
+name = "daniel"
+print(name.upper())
+
+-----------------------------
+
+2. Function oriented
+
+def naresh():
+	name = "daniel"
+	print(name.upper())
+
+
+-----------------------------
+
+3. Object oriented
+
+class Student:
+	def display(self):
+		name = "daniel"
+		print(name.upper())
+
+s = Student()
+s.display()
+
+-----------------------------
+
+Req3: Create list and get one by one value
+	Use 3 approaches
+
+-----------------------------
+
+1. Procedure
+
+values = [10, 20, 30, 40]
+for value in values:
+	print(value)
+
+-----------------------------
+
+2. Function
+
+def naresh():
+	values = [10, 20, 30, 40]
+	for value in values:
+		print(value)
+
+
+naresh()
+
+-----------------------------
+
+3. Object oriented
+
+class Student:
+	def display(self):
+		values = [10, 20, 30, 40]
+		for value in values:
+			print(value)
+s = Student()
+s.display()
+
+-----------------------------
+
+Project
+
+	Security not matter	->	function orien
+	Security matters	->	Object oriented
+
+
+-----------------------------
+
+Recap
+-----
+
+	1. class
+	2. object
+		1. instance of class
+		2. grouped item
+		3. realworld entity
+
+-----------------------------
+
+# function & method
+
+def naresh():
+	print("Hello")
+
+class Daniel:
+	def teaching(self):
+		print("Good evening")
+
+print(naresh)
+
+d = Daniel()
+
+print(d.teaching)
+
+-----------------------------
+
+# function
+
+def naresh():
+	print("Hello")
+
+naresh()
+
+-> We can create function by using def keyword
+-> Function is independent
+-> We can call function directly
+
+-----------------------------
+
+# method
+
+class Daniel:
+	def teaching(self):
+		print("Good evening")
+d = Daniel()
+d.teaching()
+
+-> We can create method a by using def keyword
+-> method is depend on class/object
+-> We cannot call method directly
+-> We can call method by using object name
+
+-----------------------------
+
+7. Constructor
+
+-> Constructor is special kind of method
+-> We can create a constructor by using def keyword
+
+-> def is keyword
+
+	1. We can create a function
+	2. We can create a method
+	3. We can create a constructor
+
+-----------------------------
+
+-> We will continue tomorrow :)
+
+	1. Tomorrow topic is 
+		OOPS & Package
+
+	Dont miss tomorrow session
+
+
+-----------------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

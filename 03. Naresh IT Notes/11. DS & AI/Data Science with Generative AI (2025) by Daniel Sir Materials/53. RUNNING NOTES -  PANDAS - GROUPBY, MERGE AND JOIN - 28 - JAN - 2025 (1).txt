@@ -1,0 +1,439 @@
+RUNNING NOTES: 28 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - DATAFRAME SORTING
+2. CURRENT TOPIC			-	PANDAS - DATAFRAME GROUPBY
+3. UPCOMING TOPIC			-	PANDAS - DATAFRAME MERGE & JOIN
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Running topic
+	OR JOINING
+
+
+18. PANDAS - DATAFRAME - CONCAT		-	Upcoming topic
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Upcoming topic
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Upcoming topic
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Upcoming topic 
+	MULTIPLE CSV FILES
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+16. PANDAS - DATAFRAME - GROUPBY
+--------------------------------
+
+Yesterday example
+-----------------
+
+# Need DataFrame result instead of Series
+
+import pandas as pd
+
+df1 = pd.read_csv("sales5.csv")
+
+cols = ['Mail_Id', 'Product_Name']
+
+result = df1.groupby(cols, as_index = False)['Product_Cost']
+
+final = result.sum()
+
+print(final)
+
+--------------------------------
+
+# Customer wise money spent
+
+import pandas as pd
+
+df1 = pd.read_csv("sales5.csv")
+
+cols = ['Mail_Id']
+
+result = df1.groupby(cols)['Product_Cost']
+
+final = result.sum()
+
+print(final)
+
+--------------------------------
+
+ChatGPT		->	US
+		->	Gen AI model
+		->	Created by Open AI company
+		->	chatGPT4.0 is free version
+		->	Adv: chatGPT4.0, it is not free
+		->	We have to pay the money
+
+--------------------------------
+
+DeepSeek	->	China 
+		->	GenAI model
+		->	free everything
+
+
+--------------------------------
+
+# describe() method
+# We will learn more during math topic
+# topic name: Five number summary
+
+import pandas as pd
+
+df1 = pd.read_csv("sales5.csv")
+
+s = df1["Product_Cost"].describe()
+
+print(s)
+
+--------------------------------
+
+# Creating dictionary
+
+d = {
+	101: "Ramesh",	
+	102: "Arjun"
+}
+
+print(d)
+
+--------------------------------
+
+# We can take value can be function name in dictionary
+
+d = {
+	101: "Ramesh",	
+	102: sum
+}
+
+print(d)
+
+--------------------------------
+
+# df.agg() method
+
+import pandas as pd
+
+df1 = pd.read_csv("sales5.csv")
+
+d = {
+	'Product_Cost' : sum
+}
+
+cols = ['Date', 'Product_Name']
+
+grouped = df1.groupby(cols)
+
+result = grouped.agg(d)
+
+print(result)
+
+# We got output + Warning
+# Warning we can ignore
+
+--------------------------------
+
+# I dont want to see warnings in output
+# We can fix by adding two lines of code
+
+import pandas as pd
+
+import warnings
+warnings.filterwarnings('ignore')
+
+df1 = pd.read_csv("sales5.csv")
+
+d = {
+	'Product_Cost' : sum
+}
+
+cols = ['Date', 'Product_Name']
+
+grouped = df1.groupby(cols)
+
+result = grouped.agg(d)
+
+print(result)
+
+--------------------------------
+
+# agg() method
+
+import pandas as pd
+
+import warnings
+warnings.filterwarnings('ignore')
+
+df1 = pd.read_csv("sales5.csv")
+
+d = {
+	'Product_Cost': sum,
+	'Product_Name': "count",
+}
+cols = ['Date', 'Product_Name']
+
+grouped = df1.groupby(cols)
+
+result = grouped.agg(d)
+
+print(result)
+
+--------------------------------
+
+from Masud Siddiqi to everyone:    6:20 PM
+Is there any befenit of pandas count over python count?
+
+Reality
+
+summation
+
+Python			->	sum() function
+Pandas			->	sum() method
+
+
+df.pandas method	->	speed
+
+df python function	->	it take little time
+
+--------------------------------
+
+# agg() method
+
+import pandas as pd
+
+import warnings
+warnings.filterwarnings('ignore')
+
+df1 = pd.read_csv("sales5.csv")
+
+d = {
+	'Product_Cost': [min, max, sum]
+}
+
+
+cols = ['Date', 'Product_Name']
+
+grouped = df1.groupby(cols)
+
+result = grouped.agg(d)
+
+print(result)
+
+--------------------------------
+
+IMP info
+--------
+
+agg() method examples are very very imp
+
+---------------------------------------
+
+General discussion
+
+
+chatGPT
+-------
+
+-> Gen AI model(Algorithm)
+-> This model will generate/create a data
+
+Why chatGPT came to this world?
+
+
+Before chatGPT	->	questions will be asked to Google
+
+Q: What is python?
+
+Expected ans:	2 lines info
+
+Google is giving	10 urls
+
+			limitation
+
+OpenAI company		list out kind of some limitation in google
+
+OpenAI company		Let me create one algorithm(Model)
+
+User asking		Question
+			Straightforward answers
+
+			
+Planning to create	 A algorithm
+
+Create an algorithm	We need more and more DATA
+			Collect the Data and store data
+			process the data
+			they need hardware systems
+			they dont have money
+
+Microsoft		invested money,
+			aws I can get rented for systems
+			go and start your work
+
+OpenAI			team...........
+			chatGPT
+			model is ready
+
+
+What is a model?
+
+-> It is an algorithm
+-> It is a program
+
+Chessgame
+---------
+
+P1	->	10 steps
+P2	->	20 steps
+P3	->	30 steps
+
+AIModel	->	If we train with all these steps, 10, 20, 30
+	->	60 steps
+
+Here onwards model is the master than the players P1, P2 and P3
+
+
+--------------------------------
+
+17. PANDAS - DATAFRAME - MERGING
+	OR JOINING
+
+--------------------------------
+
+from Masud Siddiqi to everyone:    6:43 PM
+To be an analyst, what level of  SQL do we need to know?
+
+Excellent question
+
+Ans: 
+
+-> In Database we do have a table
+-> being a data science we no need to master in database
+-> We should know how to  get the table by using pandas
+-> pandas	->	Table in database
+		->	DataFrame
+
+Being a Data Science	=>	30/100
+
+
+We done today session
+
+- Daniel
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

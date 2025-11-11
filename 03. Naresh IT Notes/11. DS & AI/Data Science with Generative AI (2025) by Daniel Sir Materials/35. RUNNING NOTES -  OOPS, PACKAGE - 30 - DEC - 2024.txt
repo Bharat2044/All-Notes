@@ -1,0 +1,390 @@
+RUNNING NOTES: 30 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	DICT DATA STRUCTURE
+2. CURRENT TOPIC			-	OBJECT ORIENTED PROGRAMMING
+3. UPCOMING TOPIC			-	PACKAGE
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Running topic
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+
+--------------------------------
+
+19. PYTHON - OBJECT ORIENTED
+	PROGRAMMING	
+-----------------------------
+
+class Student:
+	def __init__(self, sno, sname, sloc):
+		self.sno = sno
+		self.sname = sname
+		self.sloc = sloc
+
+	def display(self):
+		print("Student id is:", self.sno)
+		print("Student name is:", self.sname)
+		print("Student location is:", self.sloc)
+		print()
+
+s1 = Student(101, "Daniel", "KPHB")
+s2 = Student(102, "Sruti", "Bengaluru")
+s3 = Student(103, "Sanjay", "Hyd")
+
+s1.display()
+s2.display()
+s3.display()
+
+-----------------------------
+
+OOP
+
+class						Purpose
+	1. Constructor			Initialization/
+					Creating instance vars
+
+			1. Zero para
+			2. Para
+
+	2. Variables			To represent the data
+			1. Instance 
+
+	3. Methods			To perform an operation
+			1. Instance
+
+-----------------------------
+
+IMP topics
+
+	1. class
+	2. object
+	3. Constructor
+		1. Zero para
+		2. Para
+
+-----------------------------
+
+Parameterized constructor
+
+# class, constructor, object
+
+class Student:
+	def __init__(self, sno, sname, sloc):
+		self.sno = sno
+		self.sname = sname
+		self.sloc = sloc
+
+		print("Student number:", self.sno)
+		print("Student name:", self.sname)
+		print("Student location:", self.sloc)
+
+s1 = Student(101, "Daniel", "Hyd")
+
+-----------------------------
+
+# class, constructor, instance var creation, method creation, 
+# object creation, method calling
+
+class Student:
+	def __init__(self, sno, sname, sloc):
+		self.sno = sno
+		self.sname = sname
+		self.sloc = sloc
+
+	def display(self):
+		print("Student number:", self.sno)
+		print("Student name:", self.sname)
+		print("Student location:", self.sloc)
+
+s1 = Student(101, "Daniel", "Hyd")
+s1.display()
+
+-----------------------------
+
+Instance variables
+------------------
+
+What is a instance variables
+
+-> If the value of the variable is changing from object to object such type of variables are called as instance variable
+
+How to create?
+How to access?
+
+-----------------------------
+
+class Student:
+	def __init__(self, sno, sname, sadd):
+		self.sno = sno
+		self.sname = sname
+		self.sadd = sadd
+
+		print(self.sno)
+		print(self.sname)
+		print(self.sadd)
+		print()
+
+s1 = Student(101, "Daniel", "Hyd")
+s2 = Student(102, "Prasad", "Bza")
+s3 = Student(103, "Arju", "Bengaluru")
+
+-----------------------------
+
+1. How to create instance
+
+	-> Inside constructor
+	-> self is required
+
+2. How to ACCESS
+
+	1. Within the class we can access by using self
+	2. How to access outside of the class
+
+		-> By using object name
+
+
+
+
+-----------------------------
+
+# We can access instance variable by using object name
+
+class Student:
+	def __init__(self, sno, sname, sadd):
+		self.sno = sno
+		self.sname = sname
+		self.sadd = sadd
+
+s1 = Student(101, "Daniel", "Hyd")
+s2 = Student(102, "Prasad", "Bza")
+s3 = Student(103, "Arju", "Bengaluru")
+
+print(s1.sno)
+print(s1.sname)
+print(s1.sadd)
+print()
+print(s2.sno)
+print(s2.sname)
+print(s2.sadd)
+
+-----------------------------
+
+Instance methods
+
+-> We can create instance variables inside constructor
+-> We need to use those variables inside instance method
+
+-> instance variables and methods having relation each other
+
+-> We can access instance method by using object name
+
+-----------------------------
+
+# Create and access instance method
+
+class Student:
+	def __init__(self, sno, sname, sloc):
+		self.sno = sno
+		self.sname = sname
+		self.sloc = sloc
+
+	def display(self):
+		print("Student number:", self.sno)
+		print("Student name:", self.sname)
+		print("Student location:", self.sloc)
+
+s1 = Student(101, "Daniel", "Hyd")
+s1.display()
+
+-----------------------------
+
+self
+----
+
+-> self is not a keyword in python
+-> self is predefined variable within the class
+-> self is also called as, current class object
+
+-> By using self,
+
+	1. We can create constructor
+	2. We can create instance variables
+	3. We can create instance method
+
+-----------------------------
+
+from Shivek Sharma to everyone:    6:15 PM
+Sir,what about Inheritance, Polymorphism,Encapsulation & Abstraction ?
+
+Good question
+-------------
+
+Roles
+	Full stack python dev
+		
+		Inheritance, Polymorphism,Encapsulation	
+
+	Data Scientist/ML engineer
+
+		here not at all required
+
+		Inheritance, Polymorphism,Encapsulation
+
+
+I will cover during interview discussion
+
+-----------------------------
+
+Instance method
+---------------
+
+-> How to call/access instance method?
+	-> By using object name
+
+				Instance methods
+				----------------
+
+s = "daniel"		->	s.upper()
+a = [10, 20, 30]	->	a.append(40)
+
+-----------------------------
+
+14. PYTHON - PACKAGE
+--------------------
+
+-> To understand this topic, you should aware about module topic
+
+-> Module
+	-> Python program
+	-> Keywords(3)
+		import keyword
+		from keyword
+		as keyword
+
+-----------------------------
+
+Package
+
+	-> It is a folder
+	-> folder contains
+		-> Group of modules
+		-> There should be on SPECIAL MODULE
+			__init__.py
+
+-----------------------------
+
+__init__
+
+1. package	->	module		->	__init__.py
+
+2. OOPS		->	constructor	->	__init__	
+
+-----------------------------
+
+
+coding			->	It is called as a package
+	demo1.py
+	demo2.py
+	demo3.py
+	__init__.py
+
+-----------------------------
+
+Writing examples
+
+-> Just try to understand the......
+
+Tomorrow we do have a session :)
+
+Daniel
+
+-----------------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

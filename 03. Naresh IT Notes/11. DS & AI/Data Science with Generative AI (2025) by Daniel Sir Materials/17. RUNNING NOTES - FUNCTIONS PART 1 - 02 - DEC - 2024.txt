@@ -1,0 +1,573 @@
+RUNNING NOTES: 02 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	STRING
+2. CURRENT TOPIC			-	FUNCTIONS PART 1
+3. UPCOMING TOPIC			-	FUNCTIONS PART 2
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+
+11. PYTHON - FUNCTIONS - PART - 1	-	Running topic
+
+12. PYTHON - FUNCTIONS - PART - 2	-	Upcoming topic
+
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. IndexError
+5. IndentationError
+
+6. AttributeError
+
+
+--------------------------------
+
+11. PYTHON - FUNCTIONS - PART - 1	
+----------------------------------
+
+Recap
+-----
+
+1. Functions
+2. Functional programming language
+3. Function oriented approach
+
+----------------------------------
+
+Function	->	Single topic only
+
+Functions	->	Part 1		+	Part 2
+
+----------------------------------
+
+Function
+
+	-> Having group of statement
+	-> Usage: We can perform action/task/operation
+	
+----------------------------------
+
+Types
+-----
+	1. Built-in/Predefined function
+	2. User defined function
+
+
+----------------------------------
+
+1. Built-in/Predefined function
+
+	-> Python installation Done
+	-> Default functions
+		print(p)
+		type(p)
+		len(p)
+
+
+----------------------------------
+
+
+2. User defined function
+
+-> Based on requirement, we need to create our own function
+
+
+----------------------------------
+
+
+Terminology
+-----------
+
+	-> def keyword	
+	-> Name of the function
+	-> Parenthesis
+	-> Parameters(Optional)
+	-> Colon symbol
+	-> Indentation
+	-> Body of the function
+	-> return keyword(Optional)
+
+----------------------------------
+
+Function
+
+	1. How to create a function
+	2. How to call a function
+
+
+----------------------------------
+
+Creating
+---------
+
+-> We can create a function by usind def keyword
+
+----------------------------------
+
+def daniel():
+	print("Hello Good evening")
+	print("How are you")
+
+daniel()
+
+----------------------------------
+
+def daniel():
+	print("Hello Good evening")
+	print("How are you")
+
+prasad()
+
+----------------------------------
+
+def daniel():
+	print("Hello Good evening")
+	print("How are you")
+
+prasad()
+
+
+Rule 1:
+-------
+
+-> While calling the function, function name SHOULD be match, otherwise we will get error: NameError
+
+----------------------------------
+
+def daniel():
+	print("Hello")
+
+daniel()
+
+----------------------------------
+
+predefined function	->	print()
+			->	type()
+
+
+----------------------------------
+
+Normal example
+--------------
+
+Prob 1: Take two variables and perform operation
+
+a = 10
+b = 20
+
+print(a + b)
+
+
+
+
+
+
+Lets convert above code into function approach
+
+def addition():
+	a = 10
+	b = 20
+	print(a + b)
+
+addition()
+
+----------------------------------
+
+Prob 2: Take a list of values and display one by one
+
+values = [10, 20, 30, 40]
+
+for value in values:
+	print(value)
+
+
+
+
+
+Lets convert above code into function approach
+
+def daniel():
+	values = [10, 20, 30, 40]
+	for value in values:
+		print(value)
+
+daniel()
+
+----------------------------------
+
+Prob 3: Create a string and convert into upper case
+
+name = "naresh"
+print(name.upper())
+
+
+
+Lets convert above code into function approach
+
+def transform():
+	name = "naresh"
+	print(name.upper())
+
+transform()
+
+
+----------------------------------
+
+def transform():
+	name = "naresh"
+	print(name.upper())
+
+transform()
+
+
+def		->	Keyword
+transform()	->	User defined function
+print()		->	Predefined function
+upper()		->	Method in str class
+
+----------------------------------
+
+Common mistakes:
+----------------
+
+def daniel():
+	print("Hello")
+
+daaaaniel()
+
+----------------------------------
+
+def daniel():
+	print("Hello")
+
+daniel()
+
+----------------------------------
+
+-> Based on requirement we can call function in any number of times
+
+def daniel():
+	print("Hello")
+
+daniel()
+daniel()
+
+----------------------------------
+
+def add():
+	a = 10
+	b = 20
+	print(a + b)
+
+def sub():
+	c = 100
+	d = 50
+	print(c - d)
+
+add()
+sub()
+
+----------------------------------
+
+def daniel():
+	print("Hello")
+
+def naresh():
+	print("Hi")
+
+daniel()
+naresh()
+
+----------------------------------
+
+def daniel():
+	print("Hello")
+
+def naresh():
+	print("Hi")
+
+naresh()
+daniel()
+
+----------------------------------
+
+A function can call another function
+
+def daniel():
+	print("This is Daniel")
+
+def naresh():
+	print("This is Naresh")
+
+
+daniel()
+naresh()
+
+
+----------------------------------
+
+def daniel():
+	print("This is Daniel")
+	naresh()
+
+def naresh():
+	print("This is Naresh")
+
+daniel()
+
+
+----------------------------------
+
+daniel()
+
+def daniel():
+	print("Hi")
+
+
+----------------------------------
+
+def m1():
+	print("first function")
+
+def m2():
+	print("second function")
+
+def m3():
+	print("third function")
+
+m1()
+m2()
+m3()
+
+----------------------------------
+
+def m1():
+	print("first function")
+	m2()
+
+def m2():
+	print("second function")
+	m3()
+
+def m3():
+	print("third function")
+
+m1()
+
+----------------------------------
+
+def m1():
+	print("first function")
+	m2()
+	m3()
+
+def m2():
+	print("second function")
+
+def m3():
+	print("third function")
+
+m1()
+
+----------------------------------
+
+Small Recap
+
+	-> What is function
+		Block of the code having statements
+
+	-> What we can do
+		We can perform an operations
+
+	-> Types of function
+		Predefined
+		User defined
+
+	-> Predefined
+		print()
+		type()
+		len()
+
+	-> Terminology
+		def keyword
+		name of the function
+		parenthesis
+		parameters
+		colon symbol
+		indentation
+		body of the function
+		return keyword
+
+	-> Function
+		How to create
+		How to call
+
+	-> Create group of functions in single program
+
+	-> A function can call another function
+
+----------------------------------
+
+Parameterized function
+
+1. Based on definition, function are two types
+
+	1. Predefined function
+	2. User defined function
+
+2. Based on parameters, function are two types
+
+	1. Function without parameters
+		-> Zero parameterized function
+
+	2. Function with parameters
+		-> Parameterized function
+
+----------------------------------
+
+1. Function without parameters
+
+-> If a function having no parameters then that is called as Zero para.....
+
+
+def m1():
+	print("Hello")
+
+m1()
+
+----------------------------------
+
+Function with parameters
+
+-> Parameterized function
+
+-> If a function having parameters then that function is called as Parameterized function
+
+Lets understand practically :)
+
+----------------------------------
+
+# One parameterized function
+
+def m1(a):
+	print("Hello", a)
+
+m1(10)
+
+-> If a function having parameter then,
+   While calling the function,
+   We should pass the value
+
+
+----------------------------------
+
+def m1(a):
+	print("Hello", a)
+	print(type(a))
+
+m1(10)
+
+----------------------------------
+
+def m1(a):
+	print("Hello", a)
+	print(type(a))
+
+m1(1.23)
+
+----------------------------------
+
+def m1(a):
+	print("Hello", a)
+	print(type(a))
+
+m1("Daniel")
+
+----------------------------------
+
+# Two parameters
+
+def add(a, b):
+	print("The addition is", a+b)
+
+add(10, 20)
+
+----------------------------------
+
+Next session :)
+	
+	-> Parameterized function 
+	-> return keyword
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

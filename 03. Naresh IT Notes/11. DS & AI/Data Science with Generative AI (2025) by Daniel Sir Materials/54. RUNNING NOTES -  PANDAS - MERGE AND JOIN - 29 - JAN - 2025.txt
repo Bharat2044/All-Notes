@@ -1,0 +1,424 @@
+RUNNING NOTES: 29 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - DATAFRAME GROUPBY
+2. CURRENT TOPIC			-	PANDAS - DATAFRAME MERGE & JOIN
+3. UPCOMING TOPIC			-	PANDAS - DATAFRAME CONCATE
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Running topic
+	DROPPING ROWS AND COLUMNS
+
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Upcoming topic
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Upcoming topic 
+	MULTIPLE CSV FILES
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+17. PANDAS - DATAFRAME - MERGING 
+	OR JOINING
+--------------------------------
+
+Database	->	Software
+		->	We can store the data
+		->	Store: by using tables
+	
+Join operation	->	by using two tables
+
+Join operation	->	by using two DataFrames
+
+
+--------------------------------
+
+# Inner join
+
+import pandas as pd
+
+d1 = {
+	"Id": [1, 2, 3, 4, 5, 6],
+	"Name": ["Pradhan", "Venu", "Madhurima", "Nireekshan", "Shafi", "Veeru"],
+	"Subject": ["English", "Java", "Html", "Python", "C", "dot net"]
+}
+
+
+d2 = {
+	"Id": [11, 12, 13, 14, 15, 16],
+	"Name": ["Srinu", "Sumanth", "Neelima", "Daniel", "Arjun", "Veeru"],
+	"Subject": ["Java", "Html", "Cpp", "Python", "C", "dot net"]
+}
+
+df1 = pd.DataFrame(d1)
+df2 = pd.DataFrame(d2)
+
+inn_join = pd.merge(df1, df2, on = "Subject", how = "inner")
+
+print(df1)
+print()
+print(df2)
+print()
+print(inn_join)
+
+--------------------------------
+
+from bsrinath2004 (privately):    5:58 PM
+that is why we ask for hard copy
+
+We are sorry for this, we are providing only soft copies from NIT
+
+--------------------------------
+
+left join
+---------
+
+import pandas as pd
+
+d1 = {
+	"Id": [1, 2, 3, 4, 5, 6],
+	"Name": ["Pradhan", "Venu", "Madhurima", "Nireekshan", "Shafi", "Veeru"],
+	"Subject": ["English", "Java", "Html", "Python", "C", "dot net"]
+}
+
+
+d2 = {
+	"Id": [11, 12, 13, 14, 15, 16],
+	"Name": ["Srinu", "Sumanth", "Neelima", "Daniel", "Arjun", "Veeru"],
+	"Subject": ["Java", "Html", "Cpp", "Python", "C", "dot net"]
+}
+
+df1 = pd.DataFrame(d1)
+df2 = pd.DataFrame(d2)
+
+left_join = pd.merge(df1, df2, on = "Subject", how = "left")
+
+print(df1)
+print()
+print(df2)
+print()
+print(left_join)
+
+
+--------------------------------
+
+from Jayesh Thakare (privately):    6:08 PM
+sir how to get id_x as int
+
+Simple sir: We can apply astype() method, which we discussed in Chapter number 12: handling missing values
+
+--------------------------------
+
+# Full outer join
+
+import pandas as pd
+
+d1 = {
+	"Id": [1, 2, 3, 4, 5, 6],
+	"Name": ["Pradhan", "Venu", "Madhurima", "Nireekshan", "Shafi", "Veeru"],
+	"Subject": ["English", "Java", "Html", "Python", "C", "dot net"]
+}
+
+
+d2 = {
+	"Id": [11, 12, 13, 14, 15, 16],
+	"Name": ["Srinu", "Sumanth", "Neelima", "Daniel", "Arjun", "Veeru"],
+	"Subject": ["Java", "Html", "Cpp", "Python", "C", "dot net"]
+}
+
+df1 = pd.DataFrame(d1)
+df2 = pd.DataFrame(d2)
+
+outer_join = pd.merge(df1, df2, on = "Subject", how = "outer")
+
+print(df1)
+print()
+print(df2)
+print()
+print(outer_join)
+
+--------------------------------
+
+18. PANDAS - DATAFRAME - CONCAT
+
+# Creating Two DataFrames with same column names
+
+import pandas as pd
+
+d1 = [[11, 22], [33, 44]]
+d2 = [[55, 66], [77, 88]]
+
+c1 = ["A", "B"]
+
+df1 = pd.DataFrame(d1, columns = c1)
+df2 = pd.DataFrame(d2, columns = c1)
+
+print(df1)
+print()
+print(df2)
+
+--------------------------------
+
+# Concatenations
+
+import pandas as pd
+
+d1 = [[11, 22], [33, 44]]
+d2 = [[55, 66], [77, 88]]
+
+c1 = ["A", "B"]
+
+df1 = pd.DataFrame(d1, columns = c1)
+df2 = pd.DataFrame(d2, columns = c1)
+
+result = [df1, df2]
+
+final = pd.concat(result)
+
+print(final)
+
+--------------------------------
+
+# Concate and formate the index
+
+import pandas as pd
+
+d1 = [[11, 22], [33, 44]]
+d2 = [[55, 66], [77, 88]]
+
+c1 = ["A", "B"]
+
+df1 = pd.DataFrame(d1, columns = c1)
+df2 = pd.DataFrame(d2, columns = c1)
+
+result = [df1, df2]
+
+final = pd.concat(result, ignore_index = True)
+
+print(final)
+
+--------------------------------
+
+# Concatenation
+
+import pandas as pd
+
+d1 = [[11, 22], [33, 44]]
+d2 = [[55, 66], [77, 88], [67, 99]]
+
+c1 = ["A", "B"]
+
+df1 = pd.DataFrame(d1, columns = c1)
+df2 = pd.DataFrame(d2, columns = c1)
+
+result = [df1, df2]
+
+final = pd.concat(result, ignore_index = True)
+
+print(final)
+
+--------------------------------
+
+axis = 1
+
+-> Apply concatenation based on column wise
+
+
+axis = 0
+
+-> Apply concatenation based on row wise(this is default)
+
+--------------------------------
+
+# Concatenation, axis = 1
+
+import pandas as pd
+
+d1 = [[11, 22], [33, 44]]
+d2 = [[55, 66], [77, 88]]
+
+c1 = ["A", "B"]
+c2 = ["X", "Y"]
+
+df1 = pd.DataFrame(d1, columns = c1)
+df2 = pd.DataFrame(d2, columns = c2)
+
+result = [df1, df2]
+
+df3 = pd.concat(result, axis = 1)
+
+print(df1)
+print()
+print(df2)
+print()
+print(df3)
+
+--------------------------------
+
+# Concatenation, axis = 1
+
+import pandas as pd
+
+d1 = [[11, 22], [33, 44]]
+d2 = [[55, 66], [77, 88], [65, 99]]
+
+c1 = ["A", "B"]
+c2 = ["X", "Y"]
+
+df1 = pd.DataFrame(d1, columns = c1)
+df2 = pd.DataFrame(d2, columns = c2)
+
+result = [df1, df2]
+
+df3 = pd.concat(result, axis = 1)
+
+print(df1)
+print()
+print(df2)
+print()
+print(df3)
+
+--------------------------------
+
+IMP topics in python
+---------------------
+
+	1. Flow control
+	2. String
+	3. Module
+	4. Function Part - 1
+	5. Function Part - 2
+	6. Data Structures(List, Tuple, Set, Dict)
+	7. OOPS
+
+--------------------------------
+
+19. PANDAS - DATAFRAME - ADDING, 	
+	DROPPING ROWS AND COLUMNS
+
+--------------------------------
+
+We will continue tomorrow :)
+
+- Daniel
+
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

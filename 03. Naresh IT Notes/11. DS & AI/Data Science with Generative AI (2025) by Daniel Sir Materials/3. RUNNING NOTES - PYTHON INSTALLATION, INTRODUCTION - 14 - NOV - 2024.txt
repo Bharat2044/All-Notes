@@ -1,0 +1,313 @@
+RUNNING NOTES: 14 - NOV - 2024
+--------------------------------
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+
+3. PYTHON - HELLO WORLD PROGRAM		-	Running topic
+
+4. PYTHON - NAMING CONVENTIONS		-	Upcoming topic
+
+
+----------------------------------------------------------------
+
+1. PYTHON - INTRODUCTION
+------------------------
+
+Recap
+-----
+
+Installation		->	command prompt
+			->	py
+			->	Download the python
+			->	Click and install
+					1. Add previ...
+					2. Add classpath
+
+
+
+
+What is a python?
+----------------
+
+1. General purpose programming lang
+2. High level programming lang
+
+
+1. General purpose programming lang
+
+Python	->	Using
+
+	1. Dev
+	2. Testing
+	3. Deploy
+	   etc
+
+------------------------
+
+2. High level programming lang
+
+Programming langs
+
+1. High level 	->	Human understandable format
+
+2. Low level	->	Machine understandable format
+			Machine language
+			Bits(0's 1's) lang
+
+
+
+12 + 10		->	22
+
+
+2	12
+	6	0
+	3	0
+	1	1
+
+
+		12	==	1100
+
+		High	==	Low 
+
+
+------------------------
+
+By using what type of applications?
+
+	1.	
+	2.	
+	3. 
+
+By using milk,
+	Tea
+	Coffee
+	Curd....
+
+------------------------
+
+1. Desktop/standalone application
+2. Web application
+3. Database application
+4. BigData application
+5. Machine leanring
+etc
+
+------------------------
+
+1. Standalone application	->	Python
+
+------------------------
+
+Web application
+
+1. client	->	Program
+		->	We can send req to server
+		->	Ex: Google chrome, firefox
+
+2. Server	->	Program 
+		->	1. Cap req
+			2. Process the req
+			3. Send resp
+
+------------------------
+
+Database application
+--------------------
+
+1. Daniel	->	Getting money from NIT
+		->	Saving into bank
+
+2. Company	->	Having Data
+		->	Store the data in database
+		->	Database sw
+
+	4 operations
+	------------
+
+	C		U		R		D
+
+	Create		Update		Retrieve	Delete
+
+
+------------------------
+
+python
+
+Why python?
+Python usage is growing?
+
+Can you please prove?
+
+www.stackoverflow.com	->	Realtime questions
+				Answers
+
+https://stackoverflow.com/tags
+
+------------------------
+
+TV show:	Monty Python’s Flying Circus
+
+
+
+Python programming lang
+Circus programming lang		x
+
+------------------------
+
+Current python version
+
+Python 3.13 version
+
+------------------------
+
+Coin	=	H	+	T
+
+------------------------
+
+Req:
+----
+
+C program	->	Function programming lang
+
+Java program	->	Object oriented prog.. lang
+
+
+------------------------
+
+Python	=	Functions	+	Object oriented
+
+
+		modular
+		procedure
+
+------------------------
+
+2. PYTHON - KEYWORDS
+
+KEYWORDS == RESERVED WORDS
+
+KEYWORDS
+--------
+
+-> The word which is reserved to do specific functionality
+
+Fun story
+---------
+
+4 yrs old
+
+Sunday	->	
+
+Dear son	->	Do you like toys
+		->	Frinds
+
+Daniel		->	Monday, admission ins choold
+
+Monday		->	Family, school
+		->	Full crying
+Tue		->	Same
+
+Wen		
+
+Fri		->	Teacher
+		->	Slate
+
+
+A	B	C	->	Keywords in english
+
+
+Python		->	35 keywords
+
+
+When I was new to python?
+
+Java....
+6 months
+
+Client		->	KT for python
+
+client		->	35 keywords
+
+------------------------
+
+Reg
+----
+
+	1. To attend the sessions
+	2. Materials
+
+
+
+from kusuma nikhil (privately):    6:27 PM
+sir do strings are also called as keywords
+
+Strings are called datatypes/class
+
+------------------------
+
+Course	-	Resume
+	-	Trained Data SCientist
+	->	4 months
+	->	Naresh IT
+
+------------------------
+	
+3. PYTHON - HELLO WORLD PROGRAM	
+
+1. Python installation		->	Done
+
+First program			->	Hello World
+
+
+Program
+-------
+
+In how many ways we can write
+
+	1. Notepad	best practice intially
+
+
+	2. notepad++
+	3. editplus
+	4. pycharm IDE
+	5. jupyter
+	6. anconda
+	....etc
+
+------------------------
+
+Python program
+
+1. Write	->	notepad			Done
+2. Save		->	demo1.py		Done
+3. Run		->	py demo1.py		Done
+4. output	->	Hello World		Done
+
+------------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	

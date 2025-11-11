@@ -1,0 +1,364 @@
+RUNNING NOTES: 18 - NOV - 2024
+--------------------------------
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+
+5. PYTHON - VARIABLES			-	Done
+
+6. PYTHON - DATA TYPES			-	Running topic
+
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+
+--------------------------------
+
+Errors
+-----
+
+1. SyntaxError
+2. NameError
+3. ValueError
+
+--------------------------------
+
+5. PYTHON - VARIABLES
+---------------------
+
+LHS		=	RHS
+
+variable	=	Value
+
+a = 10
+print(a)
+
+
+--------------------------------
+
+A group of variables
+
+Person Data
+
+LHS	=	RHS
+
+var	=	value
+
+name	=	"Daniel"
+age	=	16
+salary	=	10000.36
+
+print(name)
+print(age)
+print(salary)
+
+
+
+--------------------------------
+
+from Amit Joe to all panelists:    5:48 PM
+why we don't we put double quotes in integer value
+
+Ans: We will learn more in data types topics
+
+
+--------------------------------
+
+name	=	"Daniel"
+age	=	16
+salary	=	10000.36
+
+print(name)
+print(age)
+print(salary)
+
+
+--------------------------------
+
+from anyone..... (privately):    5:50 PM
+
+sir when i'm running programme its showing can't open file...what should i do sir ?
+
+
+--------------------------------
+
+from Anoop to all panelists:    5:52 PM
+Sir My Suggestion To download Pycharm Is Better TO DO Code 
+
+Anoop:	This is upcoming
+	Best practice is, using notepad + cmd
+
+--------------------------------
+
+a = 10
+print(a)
+
+
+a	->	Name of the variable
+10	->	Value of the variable
+10	->	It is integer data type
+
+--------------------------------
+
+a = 10
+print(a)
+print(type(a))
+
+--------------------------------
+
+type(p)
+
+-> type(p) is a predefined function
+-> By using this we can check the data type
+
+--------------------------------
+
+from sai (privately):    5:59 PM
+sir function means predefined method?
+
+Good question :)
+
+print()		->	Predefined function
+upper()		->	Method in str class
+		->	This is upcoming session
+
+--------------------------------
+
+student_id = 101
+print(student_id)
+
+--------------------------------
+
+10 = a
+
+print(a)
+
+--------------------------------
+
+a = 10		->	valid
+b1 = 20		->	valid
+
+--------------------------------
+
+from Muzahid Syed to all panelists:    6:06 PM
+sir if we write a = "34.5" is it string ?
+
+a = 34.5	->	float data type
+b = "34.5"	->	string dat type
+
+--------------------------------
+
+name = "Daniel"
+age = 16
+
+print(name)
+print(age)
+
+--------------------------------
+
+name = "Daniel"
+age = 16
+
+print(name, age)
+
+--------------------------------
+
+IMP point
+---------
+
+demo1.py
+--------
+
+age = 16
+print(age)
+
+
+
+demo2.py
+-------
+
+age = 16
+print("My age is sweet:", age)
+
+--------------------------------
+
+a = 10
+
+print(a)
+print(10)
+
+-> Variable is re-usable component
+-> Once we create then we can reuse anywhere
+
+--------------------------------
+
+from Jyothi Biradar (privately):    6:23 PM
+i tried that same procedure sir....but in command prompt its showing can't open file....i tried 4-5 times......
+
+Do one thing:)
+
+Google	->	AnyDesk
+	->	Download
+	->	Install
+	->	Share a number
+	->	We can fix :)
+
+
+--------------------------------
+
+Important note
+
+-> Python having dynamic data type nature 
+
+Variable
+--------
+
+Java
+
+	int age = 16;
+	
+Python
+	age = 16
+
+--------------------------------
+
+a = 10
+b = 1.23
+
+print(a)
+print(b)
+print(type(a))
+print(type(b))
+
+
+--------------------------------
+
+a = 10
+b = 20
+c = 30
+
+print(a)
+print(b)
+print(c)
+
+
+--------------------------------
+
+a, b, c = 10, 20, 33
+
+print(a)
+print(b)
+print(c)
+
+
+--------------------------------
+
+a = 10
+b = 10
+c = 10
+
+print(a)
+print(b)
+print(c)
+
+--------------------------------
+
+a = b = c = 10
+
+print(a)
+print(b)
+print(c)
+
+--------------------------------
+
+8. Variable re-initialization
+
+salary = 10000
+print(salary)
+
+
+salary = 10000	->	Variable creation
+		->	Variable Initialization
+
+
+--------------------------------
+
+salary = 10000
+salary = 20000
+
+print(salary)
+
+
+--------------------------------
+
+salary = 10000
+salary = 20000
+salary = 30000
+
+print(salary)
+
+--------------------------------
+
+Data types
+
+Next session :)
+
+--------------------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Sending
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+
+
+
+
+
+
+
+
+
+
+
+----------------------------------------------------------------	

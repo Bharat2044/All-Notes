@@ -1,0 +1,362 @@
+RUNNING NOTES: 12 - FEB - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	EDA PROJECT
+2. CURRENT TOPIC			-	DATA VIZ PART 1
+3. UPCOMING TOPIC			-	DATA VIZ PART 2
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Done
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Done
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Done 
+	MULTIPLE CSV FILES
+
+--------------------------------------------------
+
+DATA ANALYSIS PROJECT
+---------------------
+
+1. EDA PROJECT				-	Done
+
+--------------------------------------------------
+
+DATA VISUALIZATION
+------------------
+
+1. DATA VISUALIZATION PART 1		-	Running topic
+
+2. DATA VISUALIZATION PART 2		-	Upcoming topic
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+6. float(p)		->	To convert to float
+7. int(p)		->	To convert to int
+8. list(p)		->	Convert from seq to list
+9. tuple(p)		->	Convert from seq to tuple
+10. set(p)		->	Convert from seq to set
+
+11. dict(p)		->	Convert from list of tups to dict
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+1. DATA VISUALIZATION PART 1
+----------------------------
+
+
+Categorical Data	->	String data
+
+Quantitative data	->	Numerical data
+
+
+--------------------------------
+
+values = [10, 10, 5, 10, 10, 5, 50, 50, 50, 50, 50, 50]
+
+count of each value: Create diagram, By using histogram
+
+10	->	4
+5	->	2
+50	->	6
+
+--------------------------------
+
+Data Visualization
+
+Using single column to create a diagram: Uni variant analysis
+Using two columns to create a diagram: Binary 
+Using more columns: Multi variant analysis
+
+--------------------------------
+
+Daniel
+	1. JNTU hods
+	2. Anurag University hods
+	3. Gokaraju & Rangaraju college
+		(Data Visualization)
+
+--------------------------------
+
+Netflix data
+------------
+https://www.demandsage.com/netflix-subscribers/
+
+--------------------------------
+
+9. Pie Chart
+------------
+
+import matplotlib.pyplot as plt
+
+products = ["samsung", "iphone", "redmi"]
+sales = [90, 40, 20]
+
+plt.pie(sales, labels = products)
+plt.axis('equal')
+plt.show()
+
+--------------------------------
+
+# Creating pie chart and customizing
+
+
+import matplotlib.pyplot as plt
+
+products = ["samsung", "iphone", "redmi"]
+sales = [90, 40, 20]
+
+c = ['y', 'r', 'b']
+
+plt.pie(
+	sales, 
+	labels = products,
+	colors = c,
+	shadow = True,
+	explode = (0.05, 0.05, 0.05),
+	autopct = '%1.1f%%'
+)
+
+plt.axis('equal')
+plt.legend()
+plt.show()
+
+--------------------------------
+
+10. Scatter Plot
+-----------------
+
+-> Its very important topic
+-> By using scatter plot we can find the RELATIONSHIP between the variables
+
+-> What do you mean by relationship
+
+Data1
+----
+pd	column1		column2
+
+ML
+Maths
+
+	Area		Rice Packs
+	--------------------------
+
+	1		10
+	2		20
+	3		30
+	4		40
+
+-> If Area is increasing then Rice packs also increasing
+-> If Area is decreasing then Rice packs also decreasing
+-> This is called as Relationship
+
+
+.---------------------------------
+
+Daniel		Prasad	Bro	Relationship	Strong 100
+
+Daniel		Raju	Frnd	...		Ok relation 50
+
+Daniel		Unknow	:(	...		no relation 5
+
+---------------------------------
+
+Data2
+----
+
+	Area	Name		Rice Packs
+	--------------------------------
+
+	1	A		10
+	2	B		20
+	3	C		30
+	4	D		40	
+
+
+-> Here Area and Rice packs columns having relationship
+-> Name and Rice packs columns having NO relationship
+
+---------------------------------
+
+Data3
+-----
+
+	Exp		Salary(dollars)
+	-------------------------------
+
+	1		10K
+	2		20K
+	3		30K
+
+---------------------------------
+
+# Creating a Scatter plot
+
+import matplotlib.pyplot as plt
+
+area = [1, 2, 3, 4, 5]
+rice_packs = [10, 20, 30, 40, 50]
+
+plt.xlabel('area')
+plt.ylabel('rice packs')
+
+plt.scatter(area, rice_packs)
+
+plt.show()
+
+
+---------------------------------
+
+from Masud Siddiqi (privately):    6:39 PM
+What is difference between relation vs correlation?
+
+Great question:
+
+Ans: we will discuss during maths :)
+
+
+---------------------------------
+
+11. Box Plots
+	1. Five number summary
+	2. Outliers
+	   etc
+
+12. Heatmap
+
+-> during maths I will conver
+
+---------------------------------
+
+2. DATA VISUALIZATION – PART - 2
+
+1. Titanic Introduction
+
+-> Public datasets
+
+-> What is public datasets, why these came in Data Science
+-> Where we are using, 
+
+-> I will continue tomorrow :)
+
+-> Daniel
+
+---------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

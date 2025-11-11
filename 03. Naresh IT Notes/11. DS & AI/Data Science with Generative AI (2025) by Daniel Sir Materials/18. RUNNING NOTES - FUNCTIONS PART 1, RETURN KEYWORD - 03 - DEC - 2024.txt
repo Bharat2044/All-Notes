@@ -1,0 +1,520 @@
+RUNNING NOTES: 03 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	STRING
+2. CURRENT TOPIC			-	FUNCTIONS PART 1
+3. UPCOMING TOPIC			-	FUNCTIONS PART 2
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+
+11. PYTHON - FUNCTIONS - PART - 1	-	Running topic
+
+12. PYTHON - FUNCTIONS - PART - 2	-	Upcoming topic
+
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. IndexError
+5. IndentationError
+
+6. AttributeError
+
+
+--------------------------------
+
+11. PYTHON - FUNCTIONS - PART - 1	
+----------------------------------
+
+Recap
+
+Function
+
+	-> Group of statements
+	-> Usage: To perform an operation
+
+	Types
+		1. Predefined 
+		2. User defined
+
+	Predefined
+		In built: print, type(), len() etc
+
+	User defined function
+		Based on requirement, we can create our own
+
+
+	Terminolgy
+
+		def keyword
+		Name of the function
+		parenthesis
+		parameters
+		colon symbol
+		indentation
+		body of the function
+		return statement
+
+	User defined function
+
+		1. How to a create a function
+		2. How to call function
+
+	Function: Naming convention	
+
+	A function can call another function
+
+	Parameterized function :)
+
+----------------------------------
+
+IMP point
+---------
+
+
+
+def daniel():		#	Valid and highly recommended
+	print("Hello")
+
+daniel()
+
+----------------------------------
+
+def DANIEL():		#	Valid, but not recommended
+	print("Hello")
+
+DANIEL()
+
+----------------------------------
+
+1. Based on definition, function are two types
+
+	1. Predefined function
+	2. User defined function
+
+2. Based on parameter, function are two types
+
+	1. Function without parameter
+	2. Function with parameter
+
+
+----------------------------------
+
+1. Function without parameter
+
+def m1():
+	print("no parameter")
+
+m1()
+
+----------------------------------
+
+Function with parameter
+
+# A function with one parameter
+
+def m1(a):
+	print("Hello", a)
+
+m1(10)
+
+
+----------------------------------
+
+# Function two parameters
+
+def add(a, b):
+	print(a + b)
+
+add(10, 20)
+
+
+----------------------------------
+
+# Function with three parameters
+
+def addition(a, b, c):
+	d = a + b + c
+	print(d)
+
+addition(10, 20, 30)
+
+----------------------------------
+
+# Case 1: Invalid scenario
+
+def m1(a):
+	print(a)
+
+m1()
+
+TypeError: m1() missing 1 required positional argument: 'a'
+
+----------------------------------
+
+# Case 2: Invalid scenario
+
+def m1(a, b):
+	print(a + b)
+
+m1()
+
+TypeError: m1() missing 2 required positional arguments: 'a' and 'b'
+
+----------------------------------
+
+# Function with two parameters: taking string and int values
+
+def m1(a, b):
+	print(a, type(a))
+	print(b, type(b))
+
+m1("Daniel", 10)
+
+----------------------------------
+
+# gmail function
+
+def gmail(u, p):
+	print("Welcome to Gmail", u)
+
+
+gmail("Daniel", "abc123")
+
+
+----------------------------------
+
+# Function with two parameters
+
+def gmail(u, p):
+	# Validation logic
+	print("Welcome to Gmail", u)
+
+
+user = input("Enter user name: ")
+pwd = input("Enter password: ")
+
+gmail(user, pwd)
+
+--------------------------------
+
+def gmail(u, p):
+	if u == "daniel":
+		print("Welcome to Gmail: ", u)
+	else:
+		print("Invalid user name, try after someone")
+
+user = input("Enter user name: ")
+pwd = input("Enter password: ")
+
+gmail(user, pwd)
+
+--------------------------------
+
+def m1():
+	a = input("Enter value:")
+	print(a)
+
+m1()
+
+--------------------------------
+
+def m1(a):
+	b = int(input("Enter value: "))
+	print(a + b)
+
+m1(10)
+
+--------------------------------
+
+Very Very IMP topic
+
+7. return keyword in python
+---------------------------
+
+return
+------
+
+	-> Keyword in python
+	-> Program by using retur keyword: 
+		RULE: YOU SHOULD USE FUNCTION TOPIC
+
+---------------------------
+
+Valid combinations
+
+	for	+	in		->	Valid
+	return	+	function	->	Valid
+	returu				->	Invalid
+
+
+---------------------------
+
+# return without function is invalid combination
+
+print("Hello")
+
+return 100
+
+---------------------------
+
+1. Based on definition, function two types
+	1. Predefined
+	2. User defined
+
+2. Based on parameter, function two types
+	1. Function without parameter
+	2. Function with parameter
+
+3. Based on return, function two types
+	1. Function without return
+	2. Function with return
+
+---------------------------
+	
+from Peeyush Sahu to everyone:    6:18 PM
+but every function return , no function exist wtihout return
+
+Ans: Sorry for saying :(, Wrong statement
+
+We will see practically
+
+Function	->	no return
+Functions	->	having return
+
+---------------------------
+
+# Function without return
+
+def balance():
+	print("My balance is: ")
+
+balance()
+
+---------------------------
+
+# Function with return keyword
+
+Syntax
+
+def balance():
+	print("My balance is: ")
+	return 100000
+
+lhs = rhs
+var = function()
+b = balance()
+
+---------------------------
+
+def balance():
+	print("My balance is: ")
+	return 100000
+
+b = balance()
+print(b)
+
+IMP point
+---------
+If a function having return statement then
+that function calling
+we need to assing in to variable
+
+---------------------------
+
+# Function is returning int value
+
+def m1():
+	print("Hello")
+	return 10
+
+a = m1()
+print(a)
+
+---------------------------
+
+# Function is returning float value
+
+def m2():
+	print("Hello")
+	return 1.23
+
+a = m2()
+print(a)
+
+---------------------------
+
+# Function is returning string value
+
+def name():
+	print("Hello")
+	return "Rajesh"
+
+n = name()
+print(n)
+
+---------------------------
+
+Daniel, why function call we need to assign into a variable?
+
+Ans1 : By using that WE CAN CREATE BUSINESS LOGIC
+Ans2 : For re-using purpose
+
+Counter question: What is BUSINESS LOGIC?
+
+---------------------------
+
+# Function with return: One logic
+
+def balance():
+	return 0
+
+b = balance()
+
+if b == 0:
+	print("Your balance is", b)
+
+
+---------------------------
+
+# Function with return: Two logics
+
+def balance():
+	return -100
+
+b = balance()
+
+if b == 0:
+	print("Your balance is", b)
+
+elif b < 0:
+	print("Boss you balance is negative", b)
+
+---------------------------
+
+# Function with return: Three logics
+
+def balance():
+	return 100000
+
+b = balance()
+
+if b == 0:
+	print("Your balance is", b)
+
+elif b < 0:
+	print("Boss you balance is negative", b)
+
+else:
+	print("Your balance is", b)
+
+---------------------------
+
+# m1 function having no return
+# m2 function having return
+
+def m1():
+	print("Hello")
+
+def m2():
+	print("Hi")
+	return 10
+
+m1()
+
+a = m2()
+print(a)
+
+---------------------------
+
+m1()		->	Function no return
+
+a = m2()	->	Function having return
+
+---------------------------
+
+from bsrinath2004 to everyone:    6:44 PM
+sir,can we get hard copy material
+
+Valid, We are sorry :(
+
+---------------------------
+
+Regarding return	->	60% Done
+			->	40% we will see tomorrow
+
+---------------------------
+
+Next session :)
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

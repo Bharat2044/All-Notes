@@ -1,0 +1,409 @@
+RUNNING NOTES: 08 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - DATAFRAME INTRO
+2. CURRENT TOPIC			-	PANDAS - LOADING DIFF FILES
+3. UPCOMING TOPIC			-	PANDAS - DATAFRAME ATTRIBUTES
+						         DATAFRAME METHODS
+
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+
+
+7. PANDAS - DATAFRAME - LOADING 	-	Running topic
+	DIFFERENT FILES
+
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Upcoming topic
+
+9. PANDAS - DATAFRAME - METHODS		-	Upcoming topic
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+7. PANDAS - DATAFRAME - LOADING 
+	DIFFERENT FILES
+
+-------------------------------
+
+We can create a DataFrame
+
+	1. empty DataFrame
+	2. single list
+	3. nested list
+	4. dictionary
+	5. By loading the file
+
+
+-------------------------------
+
+Company		->	Data Scientist
+
+1. Company will give the file(contains data)
+2. Load the file by using pandas
+3. We will get DataFrame
+4. Perform an operations
+
+-------------------------------
+
+Different files
+
+1. csv file
+------------
+
+sales1.csv	->	Name of the file
+
+-------------------------------
+
+# Loading csv file
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df)
+
+
+-> read_csv() is predefined function in pandas
+-> We can call by using pandas
+-> this function having return statement, so we are assigning into variable
+
+-------------------------------
+
+
+from Nithyanand (privately):    5:54 PM
+sir is there any data limitation for file uplode like in 10 or 20 Gb in CSV.
+
+Ans: No limitation
+
+10 gb file
+
+year sales
+	jan.csv
+	feb.csv
+	mar.csv
+	...
+	dec.csv
+
+	total 10 gb
+
+
+
+-------------------------------
+
+# If file not exists in current directory then
+# FileNotFoundError
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df)
+
+-------------------------------
+
+# If file name wrong then we will get FileNotFoundError
+
+import pandas as pd
+
+df = pd.read_csv("sales1asdfasdf.csv")
+
+print(df)
+
+-------------------------------
+
+from Shivek Sharma (privately):    5:57 PM
+Sir you are using cmd till now, how can i save the output in variable or store in database
+
+Good question:
+
+By using mysql	->	Upcoming topic
+
+-------------------------------
+
+# Loading the sales1.csv file form files folders
+# We may get warning, ignore warning as of now
+# What is warning? Upcoming topic
+
+import pandas as pd
+
+df = pd.read_csv("files\sales1.csv")
+
+print(df)
+
+
+-------------------------------
+
+# Loading the sales1.csv file form files folders
+# We may get warning, skip warning by using r letter
+
+
+import pandas as pd
+
+df = pd.read_csv(r"files\sales1.csv")
+
+print(df)
+
+-------------------------------
+
+sales.csv file
+
+	1. Current directory
+	2. folder
+	3. Let me save in drive: C, D drive
+
+
+-------------------------------
+
+# Loading sales1.csv file from D Drive
+
+import pandas as pd
+
+df = pd.read_csv(r'D:\sales1.csv')
+
+print(df)
+
+-------------------------------
+
+IMP point
+---------
+
+100/100		->	data	->	csv format
+
+-------------------------------
+
+json file
+---------
+
+-> We can load json file by using read_json() function
+
+
+
+import pandas as pd
+
+df = pd.read_json("sales1.json")
+
+print(df)
+
+-------------------------------
+
+from Jalal Taqui (privately):    6:17 PM
+Sir, can we load data from cloud as well? if upcoming topic plz ignore my questn
+
+Let me ans now itself only
+
+AWS	->	s3 bucket
+			sales1.csv
+
+	->	Install one library
+		boto3
+
+	->	We can proceed to load
+
+-------------------------------
+
+Diff files
+----------
+
+csv file	->	df = pd.read_csv("sales1.csv")
+
+json file	->	df = pd.read_json("sales1.json")
+
+
+excel file	->	Interesting :)
+
+
+-------------------------------
+
+-> To load excel file we need to install externaly libraries
+
+
+-> pip install xlrd
+-> pip install openpyxl
+
+-------------------------------
+
+Files and extensions
+--------------------
+
+csv file	extension	.csv
+json fiel	extension	.json
+excel file	extension	.xlsx
+
+
+-------------------------------
+
+# Loding the excel file
+
+import pandas as pd
+
+df = pd.read_excel("sales1.xlsx")
+
+print(df)
+
+-------------------------------
+
+# Loading tsv file
+
+import pandas as pd
+
+df = pd.read_table("sales1.tsv")
+
+print(df)
+
+-------------------------------
+
+# Let us load all files :)
+
+import pandas as pd
+
+df1 = pd.read_csv("sales1.csv")
+df2 = pd.read_json("sales1.json")
+df3 = pd.read_excel("sales1.xlsx")
+df4 = pd.read_table("sales1.tsv")
+
+print(df1)
+print()
+print(df2)
+print()
+print(df3)
+print()
+print(df4)
+
+-------------------------------
+
+# Loading the table from webpage
+
+import pandas as pd
+
+s = "https://en.wikipedia.org/wiki/The_World%27s_Billionaires"
+
+dfs = pd.read_html(s)
+
+print(dfs[2])
+
+-------------------------------
+
+# Saving the data in folder
+
+import pandas as pd
+
+s = "https://en.wikipedia.org/wiki/The_World%27s_Billionaires"
+
+dfs = pd.read_html(s)
+
+print(dfs[2])
+
+dfs[2].to_csv("output.csv")
+
+-------------------------------
+
+We done today Session
+
+- Daniel
+
+-------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

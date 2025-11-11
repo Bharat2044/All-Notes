@@ -1,0 +1,592 @@
+RUNNING NOTES: 18 - FEB - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	NUMPY FUNDAMENTALS
+2. CURRENT TOPIC			-	ARRAY ATTRIBUTES
+3. UPCOMING TOPIC			-	ARRAY METHODS
+						MATHS(IT'S EASY)
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Done
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Done
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Done 
+	MULTIPLE CSV FILES
+
+--------------------------------------------------
+
+DATA ANALYSIS PROJECT
+---------------------
+
+1. EDA PROJECT				-	Done
+
+--------------------------------------------------
+
+DATA VISUALIZATION
+------------------
+
+1. DATA VISUALIZATION PART 1		-	Done
+
+2. DATA VISUALIZATION PART 2		-	Done
+
+3. DATA VISUALIZATION FUNDAMENTALS	-	Assignment
+
+4. DATA VISUALIZATION POWER BI		-	Upcoming topic			
+--------------------------------------------------
+
+NUMPY
+-----
+
+1. NUMPY INTRODUCTION			-	Done
+2. NUMPY FUNDAMENTALS			-	Done
+3. NUMPY ATTRIBUTES			-	Done
+4. NUMPY METHODS			-	Done
+
+--------------------------------------------------
+
+MATHS
+-----
+
+1. UPCOMING...
+
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+6. float(p)		->	To convert to float
+7. int(p)		->	To convert to int
+8. list(p)		->	Convert from seq to list
+9. tuple(p)		->	Convert from seq to tuple
+10. set(p)		->	Convert from seq to set
+
+11. dict(p)		->	Convert from list of tups to dict
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+3. NUMPY ATTRIBUTES
+-------------------
+
+Pandas
+	
+	Series
+		Attributes	->	returns info
+		Methods		->	perform an operation
+
+	DataFrame
+		Attributes	->	returns info
+		Methods		->	perform an operation
+		
+-------------------
+
+numpy
+	
+	array
+		Attributes	->	returns info
+		Methods		->	perform an operation
+
+-------------------
+
+# shape attribute
+
+import numpy as np
+
+details = [10, 20, 30], [40, 50, 60]
+
+sales = np.array(details)
+
+print(sales)
+print()
+print(sales.shape)
+
+-------------------
+
+# T attribute: Transpose
+
+import numpy as np
+
+details = [[10, 20, 30], [40, 50, 60]]
+
+sales = np.array(details)
+
+print(sales)
+print()
+print(sales.T)
+
+-------------------
+
+# min() method
+
+import numpy as np
+
+details = [[10, 20, 30], [40, 50, 60]]
+
+sales = np.array(details)
+
+print(sales.min())
+
+-------------------
+
+# max() method
+
+import numpy as np
+
+details = [[10, 20, 30], [40, 50, 60]]
+
+sales = np.array(details)
+
+print(sales.max())
+
+-------------------
+
+Data
+
+	DataFrame
+	
+		Feature Engg
+
+				Array
+		
+					ML
+
+-------------------
+
+# sum() method
+
+import numpy as np
+
+details = [[10, 20, 30], [40, 50, 60]]
+
+sales = np.array(details)
+
+print(sales.sum())
+
+-------------------
+
+array
+-----
+
+shape	->	(2, 3)	2 rows and 3 columns	6
+
+reshape	->	(3, 2)	3 rows and 2 columns	6
+reshape	->	(1, 6)	1 row and 6 columns	6
+reshape	->	(6, 1)	6 rows and 1 column	6
+
+reshape	->	(3, 4)	..............		12 x
+
+-------------------
+
+data = [10, 20, 30]
+
+python	->	sum() function
+pandas	->	sum() method from Series
+numpy	->	sum() function
+
+					Task
+Daniel	->	Jr.Daniel		myson
+
+Prasad	->	Akshay
+
+-------------------
+
+# reshape(3, 2)
+
+import numpy as np
+
+details = [[10, 20, 30], [40, 50, 60]]
+
+sales = np.array(details)
+
+print(sales)
+print()
+print(sales.shape)
+print("----------------")
+print(sales.reshape(3, 2))
+
+-------------------
+
+# reshape(1, 6)
+
+import numpy as np
+
+details = [[10, 20, 30], [40, 50, 60]]
+
+sales = np.array(details)
+
+print(sales)
+print()
+print(sales.shape)
+print("----------------")
+print(sales.reshape(1, 6))
+
+-------------------
+
+# reshape(1, 6)
+
+import numpy as np
+
+details = [[10, 20, 30], [40, 50, 60]]
+
+sales = np.array(details)
+
+print(sales)
+print()
+print(sales.shape)
+print("----------------")
+print(sales.reshape(6, 1))
+
+-------------------
+
+# ValueError
+
+import numpy as np
+
+details = [[10, 20, 30], [40, 50, 60]]
+
+sales = np.array(details)
+
+print(sales)
+print()
+print(sales.shape)
+print("----------------")
+print(sales.reshape(4, 3))
+
+-------------------
+
+Daniel: NetFlix Account
+and Prasad
+
+
+	Bahubali 1	RRR	KGF 1	Kantara
+
+Daniel	10		0	5	25
+
+Prasad	0		2	7	0
+
+-------------------
+
+# count_nonzero() function
+
+import numpy as np
+
+details = [[10, 0, 30], [40, 50, 0]]
+
+sales = np.array(details)
+
+print(sales)
+print()
+print(np.count_nonzero(sales))
+
+-------------------
+
+# sort() method
+
+import numpy as np
+
+details = [[55, 13, 12], [99, 2, 1]]
+
+sales = np.array(details)
+
+print(sales)
+sales.sort()
+
+print()
+print(sales)
+
+-------------------
+
+Python topic: 
+
+	method + return
+	method, no return
+
+-------------------
+
+method, without return
+---------------
+
+class Student:
+	def m1(self):
+		print("Hi")
+		
+
+s = Student()
+s.m1()
+
+-> If method having no return then we can call directly
+
+-------------------
+
+# method, with return
+
+class Student:
+	def m2(self):
+		print("Hello")
+		return 100
+
+s = Student()
+
+a = s.m2()
+print(a)
+
+-> If a method having return that method calling we need to assign into variable
+
+-------------------
+
+
+s.m3()		->	no return
+
+b = s.m4()	->	yes having return
+
+
+-------------------
+
+Admin only can add: yesterday shared the number: plz connect with admin
+
+Thank you for understanding :)
+
+-------------------
+
+from divya to everyone:    6:12 PM
+sir add me in google classroom divyaamurutham@gmail.com
+
+from Hrishi to everyone:    6:12 PM
+sir can you add me my email is hrishikeshrnair06@gmail.com
+
+-------------------
+
+class Student:
+	def m2(self):
+		print("Hello")
+		return 100
+
+s = Student()
+
+print(s.m2())		#	having return
+
+# print(df.head())	#	having return
+# print(df.tail())	#	having return
+
+-------------------
+
+# flatten() method
+
+import numpy as np
+
+details = [[10, 20, 30], [40, 50, 60]]
+
+sales = np.array(details)
+
+print(sales)
+print()
+print(sales.flatten())
+
+-------------------
+
+# adding single value to array
+
+import numpy as np
+
+details = [[10, 20, 30], [40, 50, 60]]
+
+sales = np.array(details)
+
+print(sales+2)
+
+-------------------
+
+Daniel, Can I add single value?
+
+Yes we can do that, by using apply() method
+
+First we need to filter(we will get single)
+
+by calling apply method we can add value
+
+-------------------
+
+# diagonal() method
+
+import numpy as np
+
+details = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+matrix = np.array(details)
+
+print(matrix.diagonal())
+
+-------------------
+
+# trace() method
+
+import numpy as np
+
+details = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
+matrix = np.array(details)
+
+print(matrix.trace())
+
+-------------------
+
+# Adding two arrays
+
+import numpy as np
+
+a1 = np.array([[1, 1, 1], [1, 1, 1], [1, 1, 2]])
+a2 = np.array([[1, 3, 1], [1, 3, 1], [1, 3, 8]])
+
+print(a1 + a2)
+print()
+print(np.add(a1, a2))
+
+-------------------
+
+# Substracting two arrays
+
+
+import numpy as np
+
+a1 = np.array([[1, 1, 1], [1, 1, 1], [1, 1, 2]])
+a2 = np.array([[1, 3, 1], [1, 3, 1], [1, 3, 8]])
+
+print(a1 - a2)
+print()
+print(np.subtract(a1, a2))
+
+-------------------
+
+# how to prove a function is a function
+# how to prove a method is a method
+
+s = "hello"
+
+print(print)
+print(s.upper)
+
+-------------------
+
+-> We done today session
+-> Dont miss tomorrow session
+
+-> Daniel
+
+-------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

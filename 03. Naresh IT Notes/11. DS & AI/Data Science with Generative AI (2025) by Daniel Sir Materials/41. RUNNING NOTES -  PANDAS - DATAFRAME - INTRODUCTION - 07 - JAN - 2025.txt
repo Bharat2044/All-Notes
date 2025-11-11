@@ -1,0 +1,452 @@
+RUNNING NOTES: 07 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - SERIES METHODS
+2. CURRENT TOPIC			-	PANDAS - DATAFRAME INTRO
+3. UPCOMING TOPIC			-	PANDAS - LOADING DIFF FILES
+
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+
+7. PANDAS - DATAFRAME - LOADING 	-	Running topic
+	DIFFERENT FILES
+
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Upcoming topic
+
+9. PANDAS - DATAFRAME - METHODS		-	Upcoming topic
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+
+--------------------------------
+
+6. PANDAS - DATAFRAME INTRODUCTION
+----------------------------------
+
+2.1. Create an Empty DataFrame
+
+
+# Creating empy Series/DataFrame
+
+import pandas as pd
+
+s = pd.Series()
+df = pd.DataFrame()
+
+print(s)
+print()
+print(df)
+
+----------------------------------
+
+# Checking the datatype
+
+import pandas as pd
+
+df = pd.DataFrame()
+
+print(df)
+print()
+print(type(df))
+
+----------------------------------
+
+Creating DataFrame
+
+	1. Single list	
+			Single Column DataFrame
+
+	2. Nested list
+			DataFrame, rows and columns
+
+
+----------------------------------
+
+1. Single list	
+
+# Creating single column DataFrame
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+
+df = pd.DataFrame(a)
+
+print(df)
+
+----------------------------------
+
+# Creating single column DataFrame
+
+import pandas as pd
+
+a = ["Daniel", "Raju", "Raja", "Rajeev"]
+
+df = pd.DataFrame(a)
+
+print(df)
+
+----------------------------------
+
+# Creating DataFrame with nested list
+
+Nested list
+------------
+
+-> A list inside list is called, nested list
+
+----------------------------------
+
+# nested list
+
+a = [
+	["Daniel", 17],
+	["Raju", 32],
+	["Kusuma", 21]
+]
+
+print(a)
+
+----------------------------------
+
+# Creating DataFrame with nested list
+
+import pandas as pd
+
+a = [
+	["Daniel", 17],
+	["Raju", 32],
+	["Kusuma", 21]
+]
+
+df = pd.DataFrame(a)
+print(df)
+
+----------------------------------
+
+# Creating DataFrame
+
+import pandas as pd
+
+names = ["Ranjan", "Sagar", "Daniel", "Prasad", "Kumari", "Pravallika", "Arjun", "Akshay"]
+
+df = pd.DataFrame(names)
+
+print(df)
+print()
+print("The length is:", len(df))
+
+----------------------------------
+
+# Creating DataFrame and giving name of the columns
+
+import pandas as pd
+
+details = [
+	["Sagar", 20, 10000],
+	["Daniel", 16, 20000],
+	["Veeru", 24, 30000],
+	["Raju", 25, 40000],
+	["Kiran", 26, 50000],
+	["Kedar", 27, 60000],
+	["Reena", 28, 70000],
+	["Karthik", 29, 80000],
+	["Satish", 30, 90000]
+]
+
+cols = ["Name", "Age", "Salary"]
+
+df = pd.DataFrame(details, columns = cols)
+print(df)
+
+----------------------------------
+
+from Masud Siddiqi (privately):    6:09 PM
+How is Pandas recognizing the position of the arguments?
+
+During loc & iloc topic we will learn :)
+
+----------------------------------
+
+# Creating DataFrame
+
+import pandas as pd
+
+a = 10
+
+b = 1.23
+
+details = [
+	["Sagar", 20, 10000],
+	["Daniel", 16, 20000],
+	["Veeru", 24, 30000],
+	["Raju", 25, 40000],
+	["Kiran", 26, 50000],
+	["Kedar", 27, 60000],
+	["Reena", 28, 70000],
+	["Karthik", 29, 80000],
+	["Satish", 30, 90000]
+]
+
+cols = ["Name", "Age", "Salary"]
+
+df = pd.DataFrame(details, columns = cols)
+
+
+print(a)
+print()
+print(b)
+print()
+print(df)
+
+----------------------------------
+
+Creating Dictionary
+
+d = {
+
+	"Name": ["Daniel", "Raju", "Rajeev"],
+	"Age": [16, 17, 18],
+
+}
+
+print(d)
+
+----------------------------------
+
+# Creating DataFrame by using dictionary
+# Keys will be display as name of the columns to df
+
+import pandas as pd
+
+d = {
+
+	"Name": ["Daniel", "Raju", "Rajeev"],
+	"Age": [16, 17, 18],
+}
+
+df = pd.DataFrame(d)
+print(df)
+
+----------------------------------
+			Python
+			-------
+			class relation dicsussion
+
+In pandas
+
+Frankly
+
+	1. Classes
+		Series
+				Attributes
+				Methods
+		DataFrame
+				Attributes
+				Methods
+
+
+----------------------------------
+
+# Creating DataFrame, with columns, index
+
+import pandas as pd
+
+details = [
+	["Sagar", 20, 10000],
+	["Daniel", 16, 20000],
+	["Veeru", 24, 30000],
+	["Raju", 25, 40000],
+	["Kiran", 26, 50000],
+	["Kedar", 27, 60000],
+	["Reena", 28, 70000],
+	["Karthik", 29, 80000],
+	["Satish", 30, 90000]
+]
+
+c = ["Name", "Age", "Salary"]
+i = [11, 22, 33, 44, 55, 66, 77, 88, 99]
+
+df = pd.DataFrame(
+	details, 
+	columns = c, 
+	index = i
+)
+
+print(df)
+
+----------------------------------
+
+# Keyword arg name should be same otherwise we will get error
+
+import pandas as pd
+
+details = [
+	["Sagar", 20, 10000],
+	["Daniel", 16, 20000],
+	["Veeru", 24, 30000],
+	["Raju", 25, 40000],
+	["Kiran", 26, 50000],
+	["Kedar", 27, 60000],
+	["Reena", 28, 70000],
+	["Karthik", 29, 80000],
+	["Satish", 30, 90000]
+]
+
+c = ["Name", "Age", "Salary"]
+i = [11, 22, 33, 44, 55, 66, 77, 88, 99]
+
+df = pd.DataFrame(
+	details, 
+	columnsskldfjhkj = c, 
+	index = i
+)
+
+print(df)
+
+----------------------------------
+
+from Syed Muzahid (privately):    6:27 PM
+how to create a Series from data frame
+
+# Upcoming topic
+
+----------------------------------
+
+7. PANDAS - DATAFRAME - LOADING 
+	DIFFERENT FILES
+
+----------------------------------
+
+
+single list		->	DataFrame
+nested list		->	DataFrame
+dictionary		->	DataFrame
+
+Realtime example
+
+file(having data)	->	DataFrame
+
+csv file		->	DataFrame
+json file			....
+excel file
+tsv file
+website(table)			....
+
+----------------------------------
+
+1. csv file 
+------------
+
+-> Comma Separated Values
+-> sales1.csv
+
+
+----------------------------------
+
+sales1.csv	->	pandas	->	DataFrame
+
+----------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

@@ -1,0 +1,379 @@
+RUNNING NOTES: 21 - NOV - 2024
+--------------------------------
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+
+6. PYTHON - DATA TYPES			-	Done
+
+7. PYTHON - OPERATORS			-	Running topic
+
+8. PYTHON - INPUT & OUTPUT		-	Upcoming topic
+
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. IndexError
+
+
+--------------------------------
+
+6. PYTHON - DATA TYPES
+----------------------
+
+Sequence
+	string
+
+	list
+	tuple
+	set
+	dictionary
+
+	range
+
+Range data type
+---------------
+
+-> range is data type
+-> It is sequence means it can store group of values
+-> range data type having start and end values
+-> Example: 
+	1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+--------------------------------
+
+What is range?
+How to create a range?
+
+
+--------------------------------
+
+What is range?
+
+a = 10			->	single values
+b = [20, 30, 40]	->	10, 20, 30
+
+range of values
+
+start value			end value
+
+1				10
+	2, 3, 4, 5, ......
+
+100				200
+
+--------------------------------
+
+How to create?
+
+a = 10			->	integer
+b = 1.23		->	floating
+c = [10, 20, 30]	->	list
+
+d = range of values?
+
+-> we can create range data type by using range() function
+
+--------------------------------
+
+To create range data type
+-------------------------
+
+	1. range(p)
+	2. range(start, end)
+	3. range(start, end, step value)	:(
+
+--------------------------------
+
+a = 10
+
+print(a)
+
+
+--------------------------------
+
+a = [10, 20, 30, 40]
+
+print(a)
+
+--------------------------------
+
+a = range(10)
+
+print(a)
+
+range(10)
+
+	start			end
+	0			10 - 1 = 9
+
+		0,1,2,3,4,5,6,7,8,9
+
+--------------------------------
+	
+my son
+	1, 2, 3, 
+
+Python
+	0
+--------------------------------
+
+range(11)
+
+	start			end
+	0			11 - 1 = 10
+
+		0,1,2,3,4,5,6,7,8,9,10
+
+--------------------------------
+
+a = range(10)
+
+r = range(10, 15)
+
+	start			end
+
+	10			15-1 = 14
+
+	10, 11, 12, 13, 14
+
+--------------------------------
+
+r = range(100, 200)
+
+--------------------------------
+
+int	->	create	->	printing int
+				getting output
+
+list	->	create	->	printing list
+				getting output
+
+range	->	create	->	printing range
+				:( we cannot see
+				output
+
+
+--------------------------------
+
+a = 10
+b = [20, 30, 40]
+c = range(10, 15)
+
+print(a)
+print(b)
+print(c)
+print()
+print(type(a))
+print(type(b))
+print(type(c))
+
+--------------------------------
+
+range data type
+---------------
+
+	1. How to CREATE range of values
+	2. How to ACCESS range of values
+		1. By using INDEX		not using 
+		2. by using FOR loop		using :)
+
+
+--------------------------------
+
+r = range(10, 15)
+
+
+	10	11	12	13	14
+
+index	0	1	2	3	4	
+
+index	The position of value, where it store
+
+--------------------------------
+
+r = range(10, 15)
+
+print(r)
+print(r[0])
+print(r[1])
+print(r[2])
+print(r[3])
+print(r[4])
+
+--------------------------------
+
+r = range(10, 15)
+
+print(r)
+print(r[5])
+
+IndexError: range object index out of range
+
+--------------------------------
+
+Accessing the range of values by using for loop
+
+--------------------------------
+
+for loop
+--------
+
+-> This topic we will discuss more in flow control
+-> by using for loop we can access ONE BY ONE value from seq..
+
+
+--------------------------------
+
+r = range(10, 15)
+
+# Syntax
+
+for	LHS	in	RHS	:
+	print(LHS)
+
+
+--------------------------------
+
+r = range(10, 15)
+
+for	b	in	r	:
+	print(b)
+
+--------------------------------
+
+r = range(10, 15)
+
+			
+for	i	in	r	:
+	print(i)
+
+--------------------------------
+
+values = range(10, 15)
+
+for	value	in	values	:
+	print(value)
+
+
+--------------------------------
+
+values = range(10, 15)
+
+for value in values:
+	print(value)
+
+values		->	Name of the variable
+range()		->	predefined function
+for		->	Keyword
+value		->	variable(counter, temp)
+in		->	keyword
+print()		->	predefined function
+	
+
+--------------------------------
+
+from Amit Joe to all panelists:    6:22 PM
+
+keyword difference function??
+
+Python	->	Keywords	->	35 keywords
+
+	->	alphabets	
+		no symbols
+
+
+Function	print()
+		type()
+		range()
+
+
+--------------------------------
+
+print()		->	This is a function
+		->	This is not a keyword
+
+for		->	This is keyword
+		->	This is not a function
+
+
+--------------------------------
+
+from One of the student (privately):    6:26 PM
+can you go little bit slow....
+
+Definitely
+
+--------------------------------
+
+Conclusion of the story: Do more practice to get job
+
+--------------------------------
+
+7. PYTHON - OPERATORS
+
+Next session :)
+
+--------------------------------
+
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

@@ -1,0 +1,546 @@
+RUNNING NOTES: 04 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - SERIES INTRO
+2. CURRENT TOPIC			-	PANDAS - NaN VALUES
+3. UPCOMING TOPIC			-	PANDAS - SERIES ATTIBUTES
+
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+
+4. PANDAS - SERIES - ATTRIBUTES		-	Running topic
+
+5. PANDAS - SERIES - METHODS		-	Upcoming topic
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+
+--------------------------------
+
+2. PANDAS - SERIES - INTRODUCTION
+---------------------------------
+
+1. Series intro
+2. Creating
+	1. emtpy Series
+	2. by using list
+	3. by using array(later)
+	4. by using range() function
+	5. Accessing single column from the DataFrame(later)
+
+3. Keyword args
+	name
+	index
+
+4. index
+	0, 1, 2, 3, 4
+	We can modify the index
+	How to access series values: Ans: by using index
+
+
+---------------------------------
+
+# Creating Series: index
+
+import pandas as pd
+
+prices = [1000, 2000, 3000, 4000]
+
+products = ["Nokia", "Samsung", "Oppo", "iPhone 6"]
+
+s = pd.Series(
+	prices, 
+	name = 'mobiles', 
+	index = products
+)
+
+print(s)
+
+
+---------------------------------
+
+from Syed Muzahid (privately):    5:47 PM
+sir keyword argument is used while calling the function, to give value inside function we called it default argument.
+
+Ans:
+
+Keyword args
+
+def m1(a):
+	print("Value is:", a)
+
+m1(a = 10)
+
+
+default argument
+
+def m2(a = 10):
+	print("Value is:", a)
+
+m2()
+
+---------------------------------
+
+Acessing values from Series
+	
+	1. By using index
+	2. for loop
+
+	3. Based on condition(Filtering the data)
+	4. By using loc & iloc
+
+
+---------------------------------
+
+# Accessing values using index
+
+import pandas as pd
+
+v = [56, 45, 35, 41, 44, 60]
+s = pd.Series(v, name = "marks")
+
+print(s)
+print()
+print(s[0])
+print(s[1])
+
+---------------------------------
+
+import pandas as pd
+
+v = [56, 45, 35, 41, 44, 60]
+s = pd.Series(v, name = "marks")
+
+for i in s:
+	print(i)
+
+
+---------------------------------
+
+import pandas as pd
+
+prices = [1000, 2000, 3000, 4000]
+products = ["Nokia", "Samsung", "Oppo", "iPhone 6"]
+
+s = pd.Series(
+	prices, 
+	name = 'mobiles', 
+	index = products 
+)
+
+print(s)
+print()
+print(s["Nokia"])
+print(s["Samsung"])
+
+---------------------------------
+
+3. PANDAS - NAN VALUE
+
+					Data type
+					---------
+
+Python	->	None	empty object	NoneType
+
+Pandas	->	NaN	missing value	float
+
+
+Full form NaN is:	Not a Number
+
+---------------------------------
+
+NaN value
+---------
+
+Students came for Demo
+
+Mobile no:	Normal terminology	pandas
+-----------------------------------------------
+1237621535
+2387648376
+		no value		NaN==missing value
+7635473475
+		no value		NaN==missing value
+2374837246
+
+---------------------------------
+
+IMP examples
+-------------
+
+# Creating Series
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+
+s = pd.Series(a)
+
+print(s)
+
+dtype: int
+
+---------------------------------
+
+# Creating Series with NaN value
+
+import pandas as pd
+
+a = [10, None, 30, 40]
+
+s = pd.Series(a)
+
+print(s)
+
+dtype: float
+
+---------------------------------
+
+LHS	+	RHS	=	Resuls
+
+
+
+int	+	int	=	int
+10	+	10	=	20
+
+
+int	+	float	=	float
+10	+	1.23	=	11.23
+
+
+---------------------------------
+
+# Creating Series with Strings
+
+import pandas as pd
+
+names = ["Daniel", "Naresh", "Suresh"]
+
+s = pd.Series(names)
+
+print(s)
+
+dtype: object
+
+---------------------------------
+
+# Creating Series with NaN data type
+
+import pandas as pd
+import numpy as np
+
+names = ["Daniel", np.nan, "Suresh"]
+
+s = pd.Series(names)
+
+print(s)
+
+---------------------------------
+
+from Masud Siddiqi (privately):    6:12 PM
+Can we say Series() is a constructor?
+
+s = pd.Series()
+
+
+---------------------------------
+
+4. PANDAS - SERIES - ATTRIBUTES	
+---------------------------------
+
+Python	class
+
+	1. str		methods
+
+	2. list		methods
+	3. tuple	methods
+	4. set		methods
+	5. dict		methods
+
+
+---------------------------------
+
+pandas	class		
+
+	1. Series
+			1. Attributes(Instance variable)
+			2. Methods
+
+	2. DataFrame
+			1. Attributes
+			2. Methods
+
+
+
+---------------------------------
+
+Series
+
+	It is predefined class
+	Having 
+		1. Attributes
+		2. Methods
+
+---------------------------------
+
+Series Attributes
+
+-> Attributes returns/giving information
+
+Example
+-------
+
+class Student:
+	def __init__(self, name):
+		self.name = name
+
+s = Student("Daniel")
+
+print(s.name)	# Accessing attribute
+		# objectname.attribute	
+
+---------------------------------
+
+Attribute
+---------
+
+-> We can access attribute by using object name, without parenthesis
+
+-> objectname.attributename
+
+---------------------------------
+
+Series		->	class
+s		->	Name of the object Series
+
+Attributes	->	Giving information about object
+
+		->	s.attribute1
+		->	s.attribute2
+		->	s.attribute3
+
+Methods		->	Perforn operation
+
+		->	s.method1()
+		->	s.method2()
+		->	s.method3()
+
+---------------------------------
+
+# values attribute
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+
+s = pd.Series(a)
+
+print("Created Series object: s")
+print("Get the data from s object?")
+print()
+print(s.values)
+
+---------------------------------
+
+How to prove values is existing inside s object?
+
+1. by using dir()
+2. By using pandas Documentation 
+
+---------------------------------
+
+# values attribute
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+
+s = pd.Series(a)
+
+print("Created Series object: s")
+print("Get the data from s object")
+print()
+print(s.values)
+
+---------------------------------
+
+# values attribute
+
+import pandas as pd
+
+a = ["Rahul", "Daniel", "Samuel"]
+
+s = pd.Series(a)
+
+print("Created Series object: s")
+print("Get the data from s object")
+print()
+print(s.values)
+
+---------------------------------
+
+# Accessing index attribute
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+
+s = pd.Series(a)
+
+print("Created Series object: s")
+print("Get index from s object")
+print()
+print(s.index)
+
+output
+
+RangeIndex(start=0, stop=4, step=1)
+
+---------------------------------
+
+# AttributeError
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+
+s = pd.Series(a)
+
+print(s.VALUES)
+
+---------------------------------
+
+# Accessing index attribute
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+i = ["a", "b", "c", "d"]
+
+s = pd.Series(a, index = i)
+
+print("Created Series object: s")
+print("I customized index too")
+print("Daniel, get the index")
+print()
+print(s.index)
+
+---------------------------------
+
+Name: Sanjay
+
+yesterday we convered, we can change index
+
+4 values	->	4 index
+100 values	->	100 index(lot of time)
+		->	set_index() method
+
+---------------------------------
+
+We done today Session
+
+Tomorrow(Sunday) no session
+
+We will connect again Monday
+
+- Daniel
+
+--------------------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

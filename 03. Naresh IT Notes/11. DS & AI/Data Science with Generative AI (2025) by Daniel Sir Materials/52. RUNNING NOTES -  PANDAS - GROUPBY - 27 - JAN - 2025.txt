@@ -1,0 +1,267 @@
+RUNNING NOTES: 27 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - DATAFRAME SORTING
+2. CURRENT TOPIC			-	PANDAS - DATAFRAME GROUPBY
+3. UPCOMING TOPIC			-	PANDAS - DATAFRAME MERGE & JOIN
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Running topic
+
+
+
+17. PANDAS - DATAFRAME - MERGING 	-	Upcoming topic
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Upcoming topic
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Upcoming topic
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Upcoming topic
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Upcoming topic 
+	MULTIPLE CSV FILES
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+16. PANDAS - DATAFRAME - GROUPBY
+--------------------------------
+
+Recap
+-----
+
+-> Groupby is very common operation
+-> Based on gender, location, education(Gard, PG) etc
+
+
+Groupby
+-------
+
+-> Operation1: Splitting the data
+-> Operation2: Applying an operation
+-> Operation3: Combine the result
+
+IMP poing
+---------
+
+-> df.groupby() method return GroupBy object
+
+--------------------------------
+
+# Groupby based on product column
+
+import pandas as pd
+
+d = {
+	"Product": ["Samsung", "Nokia", "Samsung", "Motorola", "Nokia", "Samsung", "Samsung"],
+	"Orders": [2, 4, 3, 4, 6, 7, 3]
+}
+
+df1 = pd.DataFrame(d)
+result = df1.groupby(["Product"])
+final = result.sum()
+
+print(df1)
+print()
+print(final)
+
+--------------------------------
+
+# Creating a DataFrame
+
+import pandas as pd
+
+df = pd.read_csv("sales5.csv")
+
+print(df)
+
+--------------------------------
+
+1. Customer wise transactions
+
+import pandas as pd
+
+df1 = pd.read_csv("sales5.csv")
+result = df1.groupby(["Mail_Id"])
+final = result.size()
+
+print(df1)
+print()
+print(final)
+
+--------------------------------
+
+# Date Wise Product Txns
+
+import pandas as pd
+
+df1 = pd.read_csv("sales5.csv")
+
+cols = ["Date", "Product_Name"]
+
+result = df1.groupby(cols)["Date"]
+
+final = result.count()
+
+print(final)
+
+--------------------------------
+
+from Rajesh (privately):    6:24 PM
+sir ,output has multiple column ,then why it is series 
+
+Good question from Rajesh sir
+
+--------------------------------
+
+# Customer Wise product, money
+
+import pandas as pd
+
+df1 = pd.read_csv("sales5.csv")
+
+cols = ['Mail_Id', 'Product_Name']
+
+result = df1.groupby(cols)['Product_Cost']
+
+final = result.sum()
+
+print(final)
+
+--------------------------------
+
+# Need DataFrame result instead of Series
+
+import pandas as pd
+
+df1 = pd.read_csv("sales5.csv")
+
+cols = ['Mail_Id', 'Product_Name']
+
+result = df1.groupby(cols, as_index = False)['Product_Cost']
+
+final = result.sum()
+
+print(final)
+
+--------------------------------
+
+We done today Session
+
+- Daniel
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

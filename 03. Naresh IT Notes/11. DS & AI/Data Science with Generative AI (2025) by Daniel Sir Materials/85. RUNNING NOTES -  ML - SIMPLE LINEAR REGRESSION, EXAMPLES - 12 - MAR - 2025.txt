@@ -1,0 +1,930 @@
+RUNNING NOTES: 12 - MAR - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	TRAIN TEST SPLIT
+2. CURRENT TOPIC			-	ML: SIMPLE LINEAR REGRESSION
+3. UPCOMING TOPIC			-	ML: MULTIPLE LINEAR REGRESSION
+									         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Done
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Done
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Done 
+	MULTIPLE CSV FILES
+
+--------------------------------------------------
+
+DATA ANALYSIS PROJECT
+---------------------
+
+1. EDA PROJECT				-	Done
+
+--------------------------------------------------
+
+DATA VISUALIZATION
+------------------
+
+1. DATA VISUALIZATION PART 1		-	Done
+2. DATA VISUALIZATION PART 2		-	Done
+3. DATA VISUALIZATION FUNDAMENTALS	-	Done
+
+4. DATA VISUALIZATION POWER BI		-	Upcoming topic	
+		
+--------------------------------------------------
+
+NUMPY
+-----
+
+1. NUMPY INTRODUCTION			-	Done
+2. NUMPY FUNDAMENTALS			-	Done
+3. NUMPY ATTRIBUTES			-	Done
+4. NUMPY METHODS			-	Done
+
+--------------------------------------------------
+
+MATHS						STATUS
+-----						------
+
+1. MATHS - PART - 1 - POPULATION, 	-	Done
+	SAMPLE, TYPES OF VARIABLES
+
+
+2. MATHS - PART - 2 - MODE, MEDIAN, 	-	Done
+	MEAN, RANGE, 
+	STANDARD DEVIATION, VARIANCE	
+
+
+3. MATHS - PART - 3 - OUTLIERS		-	Done
+
+
+4. MATHS - PART - 4 - THE FIVE NUMBERS	-	Done
+	SUMMARY, BOX PLOT, OUTLIER
+
+
+5. MATHS - PART - 5 - SYMMETRY AND 	-	Done
+	SKEWNESS
+
+
+6. MATHS - PART - 6 - EXPLANATORY AND 	-	Done
+	RESPONSIVE VARIABLES
+
+
+7. MATHS - PART - 7 - REGRESSION 	-	Done
+	AND R SQUARED
+
+
+8. MATHS - PART - 8 - RESIDUALS		-	Done
+
+
+9. MATHS - PART - 9 - THE NORMAL 	-	Hold
+	DISTRIBUTION AND 
+	68-95-99.7 RULE
+
+10. MATHS - PART - 10 - MATRIX		-	Done
+
+--------------------------------------------------
+
+FEATURE ENGINEERING
+-------------------
+
+1. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 1	-	Done
+
+
+2. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 2	-	Done
+
+--------------------------------------------------
+
+MACHINE LEARNING
+----------------
+
+1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	INTRODUCTION
+
+2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TERMINOLOGY
+
+3. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DATA AND ML ALGORITHMS
+
+4. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LEARNING FUNCTION
+
+5. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TYPES OF MODELS
+
+6. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LIFE CYCLE
+
+7. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TRAIN & TEST DATASETS
+
+
+8. DATA SCIENCE - MACHINE LEARNING 	- 	Upcoming topic	
+	R VALUE
+
+
+9. DATA SCIENCE - MACHINE LEARNING 	- 	Running topic	
+	SIMPLE LINEAR REGRESSION
+
+
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+6. float(p)		->	To convert to float
+7. int(p)		->	To convert to int
+8. list(p)		->	Convert from seq to list
+9. tuple(p)		->	Convert from seq to tuple
+10. set(p)		->	Convert from seq to set
+
+11. dict(p)		->	Convert from list of tups to dict
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+11. InvalidParameterError
+
+--------------------------------
+
+9. DATA SCIENCE - MACHINE LEARNING 	
+	SIMPLE LINEAR REGRESSION
+
+--------------------------------
+
+ML flow
+-------
+
+Data
+	DataFrame
+		Feature Engg
+				Array
+					Machine Learning Algorithm
+					Cost function
+					Gradient Descent Algorithm
+						Increase accuracy
+						Reduce Error
+							Bias
+							Variance
+
+
+ML steps
+--------
+
+	1. Importing the libraries
+	2. Loading the dataset
+	3. Data preparation
+	4. Splitting the dataset
+	5. Model creation
+	6. Model training
+	7. Prediction
+
+--------------------------------
+
+Recap
+-----
+
+# Calling predict Method
+# Using manual calculations too
+
+print("Topic: Simple Linear Regression")
+print()
+
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+df = pd.read_csv("homeprices.csv")
+
+
+
+
+
+print("Step 3: Data preparation: X, y")
+
+new_df = df.drop("price", axis = "columns")
+
+X = new_df.values
+y = df["price"].values
+
+
+
+
+
+
+print("Step 4: Splitting the dataset: Optional")
+
+print("Step 5: Model creation")
+
+model = LinearRegression()
+
+
+
+print("Step 6: Model training")
+
+model.fit(X, y)
+
+
+
+
+print("Step 7: Prediction")
+
+print()
+print(model.predict([[3400]]))
+
+
+--------------------------------
+
+# Created plot: Regression line
+
+import pandas as pd
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LinearRegression
+
+
+df = pd.read_csv("homeprices.csv")
+
+
+new_df = df.drop('price', axis = 'columns')
+
+X = new_df.values
+y = df["price"].values
+
+
+model = LinearRegression()
+
+
+model.fit(X, y)
+
+
+
+plt.xlabel('area')
+plt.ylabel('price')
+
+plt.scatter(
+    X, 
+    y, 
+    color = 'red', 
+    marker = '*'
+)
+
+plt.plot(
+    X,
+    model.predict(df[['area']].values),
+    color = 'blue'
+)
+
+plt.show()
+
+--------------------------------
+
+# Doing prediction for group of area values
+
+print("Topic: Simple Linear Regression")
+print()
+
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+df = pd.read_csv("homeprices.csv")
+
+
+
+
+
+print("Step 3: Data preparation: X, y")
+
+new_df = df.drop("price", axis = "columns")
+
+X = new_df.values
+y = df["price"].values
+
+
+
+
+
+
+print("Step 4: Splitting the dataset: Optional")
+
+print("Step 5: Model creation")
+
+model = LinearRegression()
+
+
+
+print("Step 6: Model training")
+
+model.fit(X, y)
+
+
+
+
+print("Step 7: Prediction")
+
+print()
+# print(model.predict([[3400]]))
+
+area_df = pd.read_csv("areas.csv")
+
+prices = model.predict(area_df.values)
+
+area_df["Pred Price"] = prices
+
+
+area_df.to_csv("output.csv")
+
+print()
+print("Please check the current directoty for output.csv file")
+
+--------------------------------
+
+For sure we can do but in a jupyter: While you guys are doing practice
+
+
+notepad		->	notepad++
+
+--------------------------------
+
+Simple Linear Regression example:
+
+More and more examples, based on domain
+
+	Simple Linear Regression on banking domain 10 examples
+
+--------------------------------
+
+# Steps from 1 to 2
+
+print("Topic: Simple Linear Regression")
+print()
+
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+
+
+
+
+print("Step 2: Loading the dataset")
+
+df = pd.read_csv("student_scores.csv")
+
+print()
+print(df)
+
+--------------------------------
+
+# Creating plot
+
+print("Topic: Simple Linear Regression")
+print()
+
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+import matplotlib.pyplot as plt
+
+
+
+
+print("Step 2: Loading the dataset")
+
+df = pd.read_csv("student_scores.csv")
+
+
+
+
+
+print("Step Spl: Data Viz")
+
+df.plot(x='Hours', y='Scores', style='o')
+
+plt.title('Hours vs Percentage')
+plt.xlabel('Hours Studied')
+
+plt.ylabel('Percentage Score')
+
+plt.show()
+
+--------------------------------
+
+# Steps from 1 to 4
+
+Topic: Simple Linear Regression
+
+Step 1: Importing the libraries
+Step 2: Loading the dataset
+Step 3: Data preparation
+Step 4: Splitting the dataset
+
+
+
+
+print("Topic: Simple Linear Regression")
+print()
+
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.model_selection import train_test_split
+
+
+
+
+print("Step 2: Loading the dataset")
+
+df = pd.read_csv("student_scores.csv")
+
+
+
+
+
+print("Step 3: Data preparation")
+
+X = df.iloc[:, :-1].values
+y = df.iloc[:, 1].values
+
+
+
+
+
+print("Step 4: Splitting the dataset")
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, 
+    y, 
+    test_size = 0.2, 
+    random_state = 0
+)
+
+--------------------------------
+
+# Steps from 1 to 5
+
+print("Topic: Simple Linear Regression")
+print()
+
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+
+
+
+
+print("Step 2: Loading the dataset")
+
+df = pd.read_csv("student_scores.csv")
+
+
+
+
+
+print("Step 3: Data preparation")
+
+X = df.iloc[:, :-1].values
+y = df.iloc[:, 1].values
+
+
+
+
+
+print("Step 4: Splitting the dataset")
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, 
+    y, 
+    test_size = 0.2, 
+    random_state = 0
+)
+
+
+
+
+
+print("Step 5: Model creation")
+
+model = LinearRegression()
+
+--------------------------------
+
+# Step 6: Model training
+
+If small data:	splitting is optional then
+
+	model.fil(X, y)
+
+
+If big data: Splitting is mandatory then
+
+	model.fit(X_train, y_train)	valid
+
+
+	model.fit(X_train, X_test)	Error
+	model.fit(X_train, y_test)	Error
+
+
+--------------------------------
+
+# Steps from 1 to 6
+
+print("Topic: Simple Linear Regression")
+print()
+
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+
+
+
+
+print("Step 2: Loading the dataset")
+
+df = pd.read_csv("student_scores.csv")
+
+
+
+
+
+print("Step 3: Data preparation")
+
+X = df.iloc[:, :-1].values
+y = df.iloc[:, 1].values
+
+
+
+
+
+print("Step 4: Splitting the dataset")
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, 
+    y, 
+    test_size = 0.2, 
+    random_state = 0
+)
+
+
+
+
+
+print("Step 5: Model creation")
+
+model = LinearRegression()
+
+
+
+
+print("Step 6: Model training")
+
+model.fit(X_train, y_train)
+
+--------------------------------
+
+1	10 score
+2	10+9.9	20
+
+--------------------------------
+
+
+model.fit(X_train, y_train)
+
+model
+
+
+Let me hold the session for couple of mins
+
+
+Great Update!!!
+--------------
+
+Naresh IT	->	Training center
+
+pay the fee	->	learn the courese
+		->	Close
+
+new paths	->	course
+		->	Exam(Screening Test)
+		->	Java, Full stack python, Data Sci
+		->	Offline mode
+		->	date: 19th march
+		->	2 PM
+
+		->	tomorrow you will get an update
+		->	Google classroom
+
+		->	1 month free preparation
+		->	Placement prep
+
+--------------------------------
+
+# Steps from 1 to 7: Doing prediction for single value only
+
+print("Topic: Simple Linear Regression")
+print()
+
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+
+
+
+
+print("Step 2: Loading the dataset")
+
+df = pd.read_csv("student_scores.csv")
+
+
+
+
+
+print("Step 3: Data preparation")
+
+X = df.iloc[:, :-1].values
+y = df.iloc[:, 1].values
+
+
+
+
+
+print("Step 4: Splitting the dataset")
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, 
+    y, 
+    test_size = 0.2, 
+    random_state = 0
+)
+
+
+
+
+
+print("Step 5: Model creation")
+
+model = LinearRegression()
+
+
+
+
+print("Step 6: Model training")
+
+model.fit(X_train, y_train)
+
+
+
+
+
+print("Step 7: Prediction")
+print()
+
+print(model.predict([[4]]))
+
+--------------------------------
+
+# Prediction with X_test dataset
+
+print("Topic: Simple Linear Regression")
+print()
+
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+
+
+
+
+print("Step 2: Loading the dataset")
+
+df = pd.read_csv("student_scores.csv")
+
+
+
+
+
+print("Step 3: Data preparation")
+
+X = df.iloc[:, :-1].values
+y = df.iloc[:, 1].values
+
+
+
+
+
+print("Step 4: Splitting the dataset")
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, 
+    y, 
+    test_size = 0.2, 
+    random_state = 0
+)
+
+
+
+
+
+print("Step 5: Model creation")
+
+model = LinearRegression()
+
+
+
+
+print("Step 6: Model training")
+
+model.fit(X_train, y_train)
+
+
+
+
+
+print("Step 7: Prediction")
+print()
+
+print(X_test)
+
+print()
+
+y_pred = model.predict(X_test)
+
+print(y_pred)
+
+--------------------------------
+
+-> We done today session
+-> Continue in next session
+-> Daniel
+
+--------------------------------
+
+Coming Saturday:
+
+No exam:	
+
+Pandas:		dataset1, dataset2
+
+use dataset1	implement examples
+
+takes sales5.csv	implement all groupby scenarios
+
+
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

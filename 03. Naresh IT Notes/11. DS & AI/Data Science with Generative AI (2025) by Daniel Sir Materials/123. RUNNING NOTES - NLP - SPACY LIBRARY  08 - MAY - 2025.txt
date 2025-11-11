@@ -1,0 +1,867 @@
+RUNNING NOTES: 08 - MAY - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	NLP: TF & IDF
+2. CURRENT TOPIC			-	NLP: SPACY LIBRARY
+3. UPCOMING TOPIC			-	FEW: ML, DL TOPICS
+						MODEL DEPLOYMENT
+						PROJECTS
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Done
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Done
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Done 
+	MULTIPLE CSV FILES
+
+--------------------------------------------------
+
+DATA ANALYSIS PROJECT
+---------------------
+
+1. EDA PROJECT				-	Done
+
+--------------------------------------------------
+
+DATA VISUALIZATION
+------------------
+
+1. DATA VISUALIZATION PART 1		-	Done
+2. DATA VISUALIZATION PART 2		-	Done
+3. DATA VISUALIZATION FUNDAMENTALS	-	Done
+
+4. DATA VISUALIZATION POWER BI		-	Upcoming topic	
+		
+--------------------------------------------------
+
+NUMPY
+-----
+
+1. NUMPY INTRODUCTION			-	Done
+2. NUMPY FUNDAMENTALS			-	Done
+3. NUMPY ATTRIBUTES			-	Done
+4. NUMPY METHODS			-	Done
+
+--------------------------------------------------
+
+MATHS						STATUS
+-----						------
+
+1. MATHS - PART - 1 - POPULATION, 	-	Done
+	SAMPLE, TYPES OF VARIABLES
+
+
+2. MATHS - PART - 2 - MODE, MEDIAN, 	-	Done
+	MEAN, RANGE, 
+	STANDARD DEVIATION, VARIANCE	
+
+
+3. MATHS - PART - 3 - OUTLIERS		-	Done
+
+
+4. MATHS - PART - 4 - THE FIVE NUMBERS	-	Done
+	SUMMARY, BOX PLOT, OUTLIER
+
+
+5. MATHS - PART - 5 - SYMMETRY AND 	-	Done
+	SKEWNESS
+
+
+6. MATHS - PART - 6 - EXPLANATORY AND 	-	Done
+	RESPONSIVE VARIABLES
+
+
+7. MATHS - PART - 7 - REGRESSION 	-	Done
+	AND R SQUARED
+
+
+8. MATHS - PART - 8 - RESIDUALS		-	Done
+
+
+9. MATHS - PART - 9 - THE NORMAL 	-	Hold
+	DISTRIBUTION AND 
+	68-95-99.7 RULE
+
+10. MATHS - PART - 10 - MATRIX		-	Done
+
+--------------------------------------------------
+
+FEATURE ENGINEERING
+-------------------
+
+1. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 1	-	Done
+
+
+2. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 2	-	Done
+
+--------------------------------------------------
+
+MACHINE LEARNING
+----------------
+
+1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	INTRODUCTION
+
+2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TERMINOLOGY
+
+3. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DATA AND ML ALGORITHMS
+
+4. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LEARNING FUNCTION
+
+5. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TYPES OF MODELS
+
+6. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LIFE CYCLE
+
+7. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TRAIN & TEST DATASETS
+
+
+8. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	R VALUE
+
+
+9. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION
+
+9.1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION 
+	EXAMPLE
+
+9.2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION 
+	EXAMPLE
+
+10. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	MULTIPLE LINEAR REGRESSION
+
+
+11. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	PICKLING AND UNPICKLING
+
+
+12. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SAVE MODEL USING JOBLIB AND 
+	PICKLING
+
+
+13. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	POLYNOMIAL FEATURES
+
+14. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DUMMY VARIABLE, ONEHOTENCODING
+
+
+15. DATA SCIENCE - MACHINE LEARNING 	-	Done
+	- R VALUE
+
+
+16. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	COST FUNCTION
+
+
+17. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	REGRESSION COST FUNCTION
+
+
+18. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	LOGISTIC REGRESSION
+	BINARY CLASSIFICATION
+
+19. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LOGISTIC REGRESSION
+	MULTI CLASS CLASSIFICATION
+
+
+20. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DECISION TREE
+
+
+21. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	RANDOM FOREST ALGORITHM
+
+
+
+22. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	K-FOLD CROSS VALIDATION
+
+
+23. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SVM
+
+24. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	GRADIENT DESCENT ALGORITHM
+
+
+25. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	UNDERFITTING & OVERFITTING
+
+
+26. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	BIAS - VARIANCE TRADE OFF
+
+
+27. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	K - MEANS CLUSTERING
+
+
+28. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	HYPER PARAMETER TUNING 
+	GRIDSEARCH CV
+
+
+29. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	K NEAREST NEIGHBOR
+
+
+30. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	XGBOOST
+
+31. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	NAIVE BAYES CLASSIFIER
+
+
+32. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	CONFUSION MATRIX
+
+
+33. DATA SCIENCE - MACHINE LEARNING 	- 	Upcoming topic
+	LASSO & RIDGE REGRESSION	
+
+
+34. MODEL DEPLOYMENT			-	Upcoming topic
+
+--------------------------------------------------
+
+DEEP LEARNING
+-------------
+
+1. DEEP LEARNING - INTRODUCTION		-	Done
+2. DEEP LEARNING - LIBRARIES		-	Done
+
+3. DEEP LEARNING - IMPORTANT 		-	Done
+	TERMINOLOGY
+
+4. DEEP LEARNING - MULTILAYER 		-	Done
+	PERCEPTRONS
+
+5. DEEP LEARNING - MULTILAYER 		-	Done
+	PERCEPTRONS EXAMPLE	
+
+6. DEEP LEARNING - EVALUATE MODEL 	-	Done
+	PERFORMANCE	
+
+7. DEEP LEARNING - EVALUATE MODEL 	-	Done
+	SAVE MODEL
+
+-  DATA SCIENCE - ENV - PYCHARM		-	Done
+
+
+8. DEEP LEARNING - BEST MODEL CHECK 	-	Done
+	POINT
+
+9. DEEP LEARNING - VISUALIZE MODEL 	-	Done
+	ACCURACY & SCORE
+
+
+--------------------------------------------------
+
+NATURAL LANGUAGE PROCESSING(NLP)
+---------------------------
+
+1. NLP - INTRODUCTION			-	Done
+2. NLP - TEXT WRANGLING AND CLEANING	-	Done
+3. NLP - REPLACING AND CORRECTING WORDS	-	Done
+4. NLP - COMPONENTS IN NLP - USE CASE	-	Done
+
+5. NLP - BAG OF WORDS, TF AND IDF	-	Done
+
+6. NLP - TWITTER SENTIMENT ANALYSIS 	-	Done
+	USING TEXTBLOB	
+
+7. NLP - SPACY LIBRARRY			-	Running topic
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+6. float(p)		->	To convert to float
+7. int(p)		->	To convert to int
+8. list(p)		->	Convert from seq to list
+9. tuple(p)		->	Convert from seq to tuple
+10. set(p)		->	Convert from seq to set
+
+11. dict(p)		->	Convert from list of tups to dict
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+11. InvalidParameterError
+
+------------------------------------
+
+7. NLP - SPACY LIBRARRY
+-----------------------
+
+Text analytics
+	1. by using nltk	->	Done
+	2. by using spacy	->	Running topic
+
+-----------------------
+
+Spacy library flow
+
+
+String
+	Doc
+		Tokens
+
+
+# Example
+
+import spacy
+
+a = spacy.load('en_core_web_sm')
+b = "hello good evening everyone"
+c = a(b)
+
+for t in c:
+	print(t, type(t))
+    
+-----------------------
+
+# Checking alphabet or not
+
+import spacy
+
+a = spacy.load('en_core_web_sm')
+b = "my salary is $1000 dollars"
+c = a(b)
+
+for t in c:
+    print(t,'--------', t.is_alpha)
+    
+-----------------------
+
+# Formating the string
+
+import spacy
+
+a = spacy.load('en_core_web_sm')
+b = "my salary is $1000 dollars"
+c = a(b)
+
+for t in c:
+    print(t.text.ljust(10), t.is_alpha)
+    
+-----------------------
+
+# Filtering alphabets
+
+import spacy
+
+a = spacy.load('en_core_web_sm')
+b = "my salary is $1000 dollars"
+c = a(b)
+
+for t in c:
+	if t.is_alpha:
+		print(t)
+
+-----------------------
+
+# Filtering numbers and special symbols
+
+import spacy
+
+a = spacy.load('en_core_web_sm')
+b = "my salary is $1000 dollars"
+c = a(b)
+
+for t in c:
+	if t.is_alpha:
+		print(t)
+
+
+-----------------------
+
+Now a days: Common interview question
+
+1. Create list with: ints, floats, strings
+
+result1: 	filter only ints
+result2:	filter only float
+result3:	filter only string
+
+result4:	filter combination int + str
+
+
+-----------------------
+
+# result1: 	filter only ints
+
+values = [10, 20, "Daniel", "Naresh", 1.23, 4.56]
+
+for value in values:
+	if isinstance(value, int):
+		print(value)
+
+
+-----------------------
+
+# result2: 	filter only floats
+
+values = [10, 20, "Daniel", "Naresh", 1.23, 4.56]
+
+for value in values:
+	if isinstance(value, float):
+		print(value)
+
+-----------------------
+
+# result3: 	filter only strings
+
+values = [10, 20, "Daniel", "Naresh", 1.23, 4.56]
+
+for value in values:
+	if isinstance(value, str):
+		print(value)
+
+
+-----------------------
+
+# result4: 	filter only int + string
+
+values = [10, 20, "Daniel", "Naresh", 1.23, 4.56]
+
+for value in values:
+	if not isinstance(value, float):
+		print(value)
+			
+
+			OR
+
+
+values = [10, 20, "Daniel", "Naresh", 1.23, 4.56]
+
+for value in values:
+	if isinstance(value, (int, str)):
+		print(value)
+        
+------------------------------------
+Spacy flow
+
+String
+	Doc
+		Token
+			Attributes
+			t.is_alpha
+			
+------------------------------------
+
+# Checking alphabets, stop words, punctuations
+
+import spacy
+
+a = spacy.load('en_core_web_sm')
+b = "my salary is $1000 dollars."
+c = a(b)
+
+print("Text",'\t\t',"Alpha", "Stop", "Punct")
+
+for t in c:
+	print(t.text.ljust(15), t.is_alpha, t.is_stop, t.is_punct)
+    
+------------------------------------
+
+# Filtering only stop words
+
+import spacy
+
+a = spacy.load('en_core_web_sm')
+b = "my salary is $1000 dollars."
+c = a(b)
+
+for t in c:
+	if t.is_stop:
+		print(t)
+    
+------------------------------------
+
+# without using len() function checking the length of values in list
+
+values = [10, 20, 30, 40]
+
+c = 0
+
+for value in values:
+	c = c + 1
+    
+print(c)
+
+------------------------------------
+
+# Checking number of tokens
+
+import spacy
+
+a = spacy.load('en_core_web_sm')
+b = 'Amazon Alexa, also known simply as Alexa, is a virtual assistant AI technology developed by Amazon, first used in the Amazon Echo smart speakers developed by Amazon Lab126. It is capable of voice interaction, music playback, making to-do lists, setting alarms, streaming podcasts, playing audio books, and providing weather, traffic, sports, and other real-time information, such as news. Alexa can also control several smart devices using itself as a home automation system. Users are able to extend the Alexa capabilities by installing "skills" additional functionality developed by third-party vendors, in other settings more commonly called apps such as weather programs and audio features. Most devices with Alexa allow users to activate the device using a wake-word (such as Alexa or Amazon); other devices (such as the Amazon mobile app on iOS or Android and Amazon Dash Wand) require the user to push a button to activate Alexa listening mode, although, some phones also allow a user to say a command, such as "Alexa" or "Alexa wake". Currently, interaction and communication with Alexa are available only in English, German, French, Italian, Spanish, Portuguese, Japanese, and Hindi. '
+
+c = a(b)
+
+# print(len(c))
+
+counter = 0
+
+for t in c:
+	counter = counter + 1
+    
+print(counter)
+
+------------------------------------
+
+Spacy flow
+
+String
+	Doc
+		Token
+			Attributes
+
+			t.text
+			t.is_alpha
+			t.is_stop
+			t.is_punct
+
+
+------------------------------------
+    
+Spacy
+	Filter stop words
+
+		1. by using is_stop attribute
+		2. by using constant: STOP_WORDS
+
+
+------------------------------------
+
+# Get stop words by using spacy library
+
+import spacy
+
+a = spacy.load('en_core_web_sm')
+
+s_words = spacy.lang.en.stop_words.STOP_WORDS
+
+list_stopwords = list(s_words)
+
+print(list_stopwords)
+
+
+------------------------------------
+
+# Filtering stop & punctuations words from string
+
+import spacy
+
+a = spacy.load('en_core_web_sm')
+
+b = "Hello good!!! morning how are you, today climate is very cool".lower()
+
+c = a(b)
+
+result = [
+    t
+    for t in c
+    if not t.is_stop and not t.is_punct
+]
+
+print(b)
+print()
+print(result)
+
+# List of tokens
+
+
+------------------------------------
+
+# Filtering stop & punctuations words from string
+
+import spacy
+
+a = spacy.load('en_core_web_sm')
+
+b = "Hello good!!! morning how are you, today climate is very cool".lower()
+
+c = a(b)
+
+result = [
+    t.text
+    for t in c
+    if not t.is_stop and not t.is_punct
+]
+
+print(b)
+print()
+print(result)
+
+
+# list of strings
+
+------------------------------------
+
+from masud (privately):    6:17 PM
+why do we need to convert  the set to a list?
+
+Ans: If we wanted to add customized stop words(abusing words) then combine with predefined stop words, get total stop words
+
+
+import spacy
+
+a = spacy.load('en_core_web_sm')
+
+s_words = spacy.lang.en.stop_words.STOP_WORDS
+
+list_stopwords = list(s_words)
+cust_s_words = ['stupid', 'idiot']
+
+t_s_words = list_stopwords + cust_s_words
+
+print(t_s_words)
+
+
+
+------------------------------------
+
+from Supriya Rao (privately):    6:25 PM
+only few methods in str so we need to convert for more functionality
+
+Yes boss :) you are right
+
+
+------------------------------------
+
+from Iddipilli Karthik (privately):    6:30 PM
+sir what if we want to remove some predefined stop words
+
+Ans: We can but not recommended
+
+------------------------------------
+
+# Stemming
+
+from nltk.stem import PorterStemmer
+
+ps = PorterStemmer()
+
+words = ['dance ','dances', 'dancing ','danced']
+
+for word in words:
+	print(word,'------->', ps.stem(word))
+
+------------------------------------
+
+# Lematization in spacy
+
+import spacy
+
+a = spacy.load('en_core_web_sm')
+b = 'dance dances dancing danced'
+c = a(b)
+
+for t in c:
+	print(t, "-------", t.lemma_)
+
+------------------------------------
+
+Spacy flow
+
+String
+	Doc
+		Token
+			Attributes
+
+			t.text
+			t.is_alpha
+			t.is_stop
+			t.is_punct
+			t.lemma_
+
+------------------------------------
+
+# String, filter: stop words, punctuations. Get the count of words
+
+
+import spacy
+from collections import Counter
+
+a = spacy.load('en_core_web_sm')
+b = 'It is my birthday today. I could not have a birthday party. I felt sad'.lower()
+c = a(b)
+
+result1 = [
+    t.text
+    for t in c
+    if not t.is_stop and not t.is_punct
+]
+
+print(b)
+print()
+print(result1)
+print()
+
+token_frequency = Counter(result1)
+
+print(token_frequency)
+
+
+------------------------------------
+
+# Same thing like above: Lets try with LARGE TEXT DATA
+
+import spacy
+
+from collections import Counter
+
+a = spacy.load('en_core_web_sm')
+b = 'Gangtok is a city, municipality, the capital and the largest town of the Indian state of Sikkim. It is also the headquarters of the East Sikkim district. Gangtok is in the eastern Himalayan range, at an elevation of 1,650. The towns population of 100000 are from different ethnicities such as Bhutia, Lepchas and Indian Gorkhas. Within the higher peaks of the Himalaya and with a year-round mild temperate climate, Gangtok is at the centre of Sikkims tourism industry. Gangtok rose to prominence as a popular Buddhist pilgrimage site after the construction of the Enchey Monastery in 1840. In 1894, the ruling Sikkimese Chogyal, Thutob Namgyal, transferred the capital to Gangtok. In the early 20th century, Gangtok became a major stopover on the trade route between Lhasa in Tibet and cities such as Kolkata (then Calcutta) in British India. After India won its independence from Britain in 1947, Sikkim chose to remain an independent monarchy, with Gangtok as its capital. In 1975, after the integration with the union of India, Gangtok was made Indias 22nd state capital. Like the rest of Sikkim, not much is known about the early history of Gangtok. The earliest records date from the construction of the hermitic Gangtok monastery in 1716.[7] Gangtok remained a small hamlet until the construction of the Enchey Monastery in 1840 made it a pilgrimage center. It became the capital of what was left of Sikkim after an English conquest in the mid-19th century in response to a hostage crisis. After the defeat of the Tibetans by the British, Gangtok became a major stopover in the trade between Tibet and British India at the end of the 19th century. Most of the roads and the telegraph in the area were built during this time. In 1894, Thutob Namgyal, the Sikkimese monarch under British rule, shifted the capital from Tumlong to Gangtok, increasing the citys importance. A new grand palace along with other state buildings was built in the new capital. Following India independence in 1947, Sikkim became a nation-state with Gangtok as its capital. Sikkim came under the suzerainty of India, with the condition that it would retain its independence, by the treaty signed between the Chogyal and the then Indian Prime Minister Jawaharlal Nehru.[9] This pact gave the Indians control of external affairs on behalf of Sikkimese. Trade between India and Tibet continued to flourish through the Nathula and Jelepla passes, offshoots of the ancient Silk Road near Gangtok. These border passes were sealed after the Sino-Indian War in 1962, which deprived Gangtok of its trading business.[10] The Nathula pass was finally opened for limited trade in 2006, fuelling hopes of economic boomIn 1975, after years of political uncertainty and struggle, including riots, the monarchy was abrogated and Sikkim became India twenty-second state, with Gangtok as its capital after a referendum. Gangtok has witnessed annual landslides, resulting in loss of life and damage to property. The largest disaster occurred in June 1997, when 38 were killed and hundreds of buildings were destroyed'.lower()
+
+c = a(b)
+
+list_of_tokens = [
+    t.text 
+    for t in c 
+    if not t.is_stop and not t.is_punct
+]
+
+token_frequency = Counter(list_of_tokens)
+
+# print(token_frequency)
+
+most_frequent_tokens = token_frequency.most_common(6)
+
+print(most_frequent_tokens)
+
+------------------------------------
+
+-> We done today session
+		 - Daniel
+
+------------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

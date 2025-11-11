@@ -1,0 +1,340 @@
+RUNNING NOTES: 09 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	FUNCTIONS
+2. CURRENT TOPIC			-	MODULE
+3. UPCOMING TOPIC			-	LIST DATA STRUCTURE
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+
+13. PYTHON - MODULE			-	Running topic
+
+14. PYTHON - PACKAGE			-	HOLD, till oops topic
+
+15. PYTHON - LIST DATA STRUCUTRE	-	Upcoming topic
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. TypeError
+5. IndexError
+
+6. IndentationError
+7. AttributeError
+8. ModuleNotFoundError
+
+
+--------------------------------
+
+13. PYTHON - MODULE
+-------------------
+
+Keywords
+
+	1. import keyword
+	2. from keyword
+	3. as keyword
+
+
+MODULE
+
+Program		->	demo1.py
+		->	demo2.py
+		->	demo3.py
+		
+
+-> module means its a python program(demo1.py....)
+
+-------------------
+
+# NameError from module(demo1.py)
+
+demo1.py
+
+print(a)
+
+-------------------
+
+Program		->	demo1.py
+Module		->	demo1.py
+		->	demo2.py
+		->	test.py
+
+Module		->	A python program
+
+
+-------------------
+
+Module
+	Keywords
+
+		1. import
+		2. from
+		3. as keyword
+	
+
+-------------------
+
+Module	->	Python program
+
+	->	Contains Module members(Members of the module)
+
+	->	Members
+			1. Variables
+			2. Functions
+			3. Class	
+				methods
+
+
+-------------------
+
+Practically :)
+
+Next 15 mins, Nice discussion 
+
+-------------------
+
+# Programs without using import keyword
+
+prasad.py
+---------
+
+a = 10
+
+nireekshan.py
+-------------
+
+print(a)	#	NameError
+
+
+-------------------
+
+# programs by using import keyword
+
+prasad.py
+--------
+a = 10
+b = 20
+
+
+nireekshan.py
+-------------
+import prasad
+
+print(prasad.a)	#	modulename.variablename
+print(prasad.b)	#	modulename.variablename
+
+
+-------------------
+
+from Masud Siddiqi (privately):    6:08 PM
+In java, Project>Package>classes>variables and methods. Please provide a comparative view of file structure between java and python.
+
+Good question:)
+
+In Python
+	Project > prackage > module
+				variables
+				functions
+				classes
+					method
+
+
+-------------------
+
+import 
+
+-> Keyword in python
+-> Usage: We can import the module
+-> After importing module, we can access members of the module
+
+-------------------
+
+# programs by using import keyword
+
+additionmultiplication.py
+
+x = 10
+
+def addition(a, b):
+	print("Sum is:", a+b)
+
+def multiplication(c, d):
+	print("Multiplication is:", c*d)
+
+-------------------
+
+nireekshan.py
+
+import additionmultiplication
+
+print(additionmultiplication.x)
+
+additionmultiplication.addition(10, 20)
+additionmultiplication.multiplication(2, 3)
+
+-------------------
+
+# How to access variables/functions from module
+
+How to access variable from module?
+
+Ans:	modulename.variablename
+
+How access function from module?
+
+Ans: 	modulename.functionname()
+
+-------------------
+
+as keyword
+-----------
+
+-> It is keyword in python
+-> Usage 1: We can rename/alias the module
+-> Usage 2: We will in next 10 mins
+
+
+import additionmultiplication as amul
+
+print(amul.x)
+
+amul.addition(10, 20)
+amul.multiplication(2, 3)
+
+-------------------
+
+Original name	:	Kasagani Nireekshan Daniel Rao
+
+Alias name	:	Daniel
+
+-------------------
+
+from
+----
+
+	Below combinations are valid
+	----------------------------
+
+	for	+	in		->	Valid
+	return	+	function	->	Valid
+	from	+	import		->	Valid
+
+
+-------------------
+
+from
+----
+
+-> Keyword in python
+-> Usage 1: We can import only specific data members
+-> Usage 2: We can access directly, without module name
+
+
+-------------------
+
+
+from additionmultiplication import x
+from additionmultiplication import addition
+
+
+print(x)
+addition(10, 20)
+
+-------------------
+
+from Jyothi Biradar (privately):    6:39 PM
+sir but why we have to do programmes in two notepad ?
+one notepad is enough na sir......?
+
+Project
+	Group of modules
+	customer	->	cust.py
+	products	->	prod.py
+	transaction	->	txns.py
+
+-------------------
+
+Recap is tomorrow :)
+
+We done for today session
+We will connect again Tomorrow
+
+Thank you :)
+
+Daniel from NIT
+
+-------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

@@ -1,0 +1,638 @@
+RUNNING NOTES: 04 - APRIL - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	ML: GRADIENT DESCENT ALGORITHM
+2. CURRENT TOPIC			-	ML: UNDERFITTING & OVERFITTING
+3. UPCOMING TOPIC			-	ML: BIAS & VARIANCE TRADE OFF
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Done
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Done
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Done 
+	MULTIPLE CSV FILES
+
+--------------------------------------------------
+
+DATA ANALYSIS PROJECT
+---------------------
+
+1. EDA PROJECT				-	Done
+
+--------------------------------------------------
+
+DATA VISUALIZATION
+------------------
+
+1. DATA VISUALIZATION PART 1		-	Done
+2. DATA VISUALIZATION PART 2		-	Done
+3. DATA VISUALIZATION FUNDAMENTALS	-	Done
+
+4. DATA VISUALIZATION POWER BI		-	Upcoming topic	
+		
+--------------------------------------------------
+
+NUMPY
+-----
+
+1. NUMPY INTRODUCTION			-	Done
+2. NUMPY FUNDAMENTALS			-	Done
+3. NUMPY ATTRIBUTES			-	Done
+4. NUMPY METHODS			-	Done
+
+--------------------------------------------------
+
+MATHS						STATUS
+-----						------
+
+1. MATHS - PART - 1 - POPULATION, 	-	Done
+	SAMPLE, TYPES OF VARIABLES
+
+
+2. MATHS - PART - 2 - MODE, MEDIAN, 	-	Done
+	MEAN, RANGE, 
+	STANDARD DEVIATION, VARIANCE	
+
+
+3. MATHS - PART - 3 - OUTLIERS		-	Done
+
+
+4. MATHS - PART - 4 - THE FIVE NUMBERS	-	Done
+	SUMMARY, BOX PLOT, OUTLIER
+
+
+5. MATHS - PART - 5 - SYMMETRY AND 	-	Done
+	SKEWNESS
+
+
+6. MATHS - PART - 6 - EXPLANATORY AND 	-	Done
+	RESPONSIVE VARIABLES
+
+
+7. MATHS - PART - 7 - REGRESSION 	-	Done
+	AND R SQUARED
+
+
+8. MATHS - PART - 8 - RESIDUALS		-	Done
+
+
+9. MATHS - PART - 9 - THE NORMAL 	-	Hold
+	DISTRIBUTION AND 
+	68-95-99.7 RULE
+
+10. MATHS - PART - 10 - MATRIX		-	Done
+
+--------------------------------------------------
+
+FEATURE ENGINEERING
+-------------------
+
+1. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 1	-	Done
+
+
+2. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 2	-	Done
+
+--------------------------------------------------
+
+MACHINE LEARNING
+----------------
+
+1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	INTRODUCTION
+
+2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TERMINOLOGY
+
+3. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DATA AND ML ALGORITHMS
+
+4. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LEARNING FUNCTION
+
+5. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TYPES OF MODELS
+
+6. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LIFE CYCLE
+
+7. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TRAIN & TEST DATASETS
+
+
+8. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	R VALUE
+
+
+9. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION
+
+9.1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION 
+	EXAMPLE
+
+9.2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION 
+	EXAMPLE
+
+10. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	MULTIPLE LINEAR REGRESSION
+
+
+12. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	PICKLING AND UNPICKLING
+
+
+13. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SAVE MODEL USING JOBLIB AND 
+	PICKLING
+
+
+10. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	POLYNOMIAL FEATURES
+
+11. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DUMMY VARIABLE, ONEHOTENCODING
+
+
+12. DATA SCIENCE - MACHINE LEARNING 	-	Done
+	- R VALUE
+
+
+13. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	COST FUNCTION
+
+
+14. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	REGRESSION COST FUNCTION
+
+
+15. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	LOGISTIC REGRESSION
+	BINARY CLASSIFICATION
+
+16. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LOGISTIC REGRESSION
+	MULTI CLASS CLASSIFICATION
+
+
+17. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DECISION TREE
+
+
+18. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	RANDOM FOREST ALGORITHM
+
+
+
+24. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	K-FOLD CROSS VALIDATION
+
+
+25. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SVM
+
+26. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	GRADIENT DESCENT ALGORITHM
+
+
+27. DATA SCIENCE - MACHINE LEARNING 	- 	Running topic
+	UNDERFITTING & OVERFITTING
+
+
+28. DATA SCIENCE - MACHINE LEARNING 	- 	Upcoming topic
+	BIAS - VARIANCE TRADE OFF
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+6. float(p)		->	To convert to float
+7. int(p)		->	To convert to int
+8. list(p)		->	Convert from seq to list
+9. tuple(p)		->	Convert from seq to tuple
+10. set(p)		->	Convert from seq to set
+
+11. dict(p)		->	Convert from list of tups to dict
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+11. InvalidParameterError
+
+------------------------------------
+
+27. DATA SCIENCE - MACHINE LEARNING 	
+	UNDERFITTING & OVERFITTING
+
+------------------------------------
+
+Imp ponits!!!
+-------------
+
+	1. ML Flow
+	2. ML Steps
+
+------------------------------------
+
+ML flow
+-------
+
+Data
+	DataFrame
+		Feature Engg
+				Array
+					Machine Learning Algorithm
+					Cost function
+					Gradient Descent Algorithm
+						Increase accuracy
+						Reduce Error
+							Bias
+							Variance
+
+
+ML steps
+--------
+
+	1. Importing the libraries
+	2. Loading the dataset
+	3. Data preparation
+	4. Splitting the dataset
+	5. Model creation
+	6. Model training
+	7. Prediction
+
+--------------------------------
+
+*** Overfitting & Underfitting ***
+
+ML steps
+--------
+
+	1. Importing the libraries
+	2. Loading the dataset
+	3. Data preparation
+	4. Splitting the dataset
+
+	5. Model creation
+	6. Model training
+
+			Prob 1: Overfitting
+			Prob 2: Underfitting
+
+	7. Prediction
+
+
+--------------------------------
+
+Overfitting & Underfitting
+
+	Overfitting
+		Training	->	Good score
+		Testing		->	Less score
+
+	Underfitting		
+		Training	->	Less score
+		Testing		->	Less score
+
+
+--------------------------------
+
+ML models(With resp... training)
+
+
+	1. Good fit model
+	-----------------
+
+		Training	->	Good score
+		Testing		->	Good score
+
+		Tech		->	Low Bias + Low Variance
+
+	2. Overfit model
+	----------------
+
+		Training	->	Good score
+		Testing		->	Less score
+
+		Tech		->	Low Bias + High Variance	
+
+
+	3. Underfit model
+	-----------------
+
+		Training	->	Less score
+		Testing		->	Less score
+
+		Tech		->	High bias + Low Variance
+
+
+
+--------------------------------
+
+22. DATA SCIENCE - MACHINE LEARNING
+	BIAS - VARIANCE TRADE OFF
+
+--------------------------------
+
+Kaggle
+------
+		->	AI Architect
+Daniel		->	AI Startup company
+		->	I got one project from client
+		->	Cost: 1 million dollars
+		->	50 members,  2 yrs 
+		->	100 scenarios: project close
+
+Project		->	Team is required(6 to 10)
+		->	4 to 5 teams
+
+Phase 1		->	Scenario 1, 2, 3
+		->	Create a small competition
+		->	Kaggle
+		->	Invite
+
+Prasad team	->	10 members
+		->	3 months
+		->	Done!!!
+		->	Prize money: 65 Lakhs
+
+--------------------------------
+
+Bias Error
+----------
+	-> Assumptions
+		small 
+		large
+
+Good example
+-------------
+
+-> Ameerpet: Huge traffic
+-> Small accident: Bike and Car: 9 AM
+
+-> 10 AM, Cops came to the place
+
+-> 2 Cops
+	1st person:	Having 10 yrs exp
+	2nd person:	Having 6 months exp
+
+-> 1st person:
+	1. 9 am
+	2. car speed can be like this
+	3. bike speed can be like this
+	4. during that time huge traffic
+	...
+	20. assumptions
+
+-> 2nd person
+	2 assumptions
+
+
+
+--------------------------------
+
+Variance
+--------
+	-> Changes in Training dataset
+		small 
+		large
+
+--------------------------------
+
+-> All Machine learning Algorithms are coming from scikit-learn package
+
+-> BUT
+
+-> In scikit-learn, there is no predefined function to calculate Bia and Variance.
+
+-> Daniel why? Bcoz that is not our work
+
+--------------------------------
+
+Can I tell you preparation tips?
+
+1. Regulare practice helps you
+2. Per day min: 4 hours practice
+3. 
+	Morning	2 hours	
+	
+		10 to 12		
+
+	Evening 2 hours
+
+		8pm to 10 pm
+
+--------------------------------
+
+Daniel, how you done practice?
+
+-> In my career, I done practice untill get a job
+-> once you get a job, whatever you practice it will be use in project
+-> 
+
+--------------------------------
+
+Install 3rd party library
+-------------------------
+
+pip install mlxtend
+
+
+# Calclulating Bias and Variance
+
+print("Topic: Calclulating Bias and Variance")
+print()
+
+
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+
+from mlxtend.evaluate import bias_variance_decomp
+
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+df = pd.read_csv('student_scores.csv')
+
+
+
+
+print("Step 3: Data preparation")
+
+X = df.iloc[:, :-1].values
+y = df.iloc[:, 1].values
+
+
+
+
+
+print("Step 4: Splitting the dataset")
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, 
+    y, 
+    test_size = 0.2, 
+    random_state = 0
+)
+
+
+
+
+print("Step 5: Model creation")
+
+model = LinearRegression()
+
+
+mse, bias, var = bias_variance_decomp(
+    model, 
+    X_train, 
+    y_train, 
+    X_test, 
+    y_test, 
+    loss = 'mse', 
+    num_rounds = 200, 
+    random_seed = 1
+)
+
+print()
+print('MSE:', mse)
+print('Bias:', bias)
+print('Variance:', var)
+
+--------------------------------
+
+from Masud Siddiqi (privately):    6:49 PM
+As we can't see bias and variance, why do we need to learn them?
+
+-> Information for us, understanding the internal things
+
+--------------------------------
+
+-> I will continue in next session
+			  - Daniel
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

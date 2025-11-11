@@ -1,0 +1,905 @@
+RUNNING NOTES: 29 - MAY - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	MODEL DEPLOYMENT
+2. CURRENT TOPIC			-	COMPUTER VISION
+3. UPCOMING TOPIC			-	RESUME PREPARATION
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Done
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Done
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Done 
+	MULTIPLE CSV FILES
+
+--------------------------------------------------
+
+DATA ANALYSIS PROJECT
+---------------------
+
+1. EDA PROJECT				-	Done
+
+--------------------------------------------------
+
+DATA VISUALIZATION
+------------------
+
+1. DATA VISUALIZATION PART 1		-	Done
+2. DATA VISUALIZATION PART 2		-	Done
+3. DATA VISUALIZATION FUNDAMENTALS	-	Done
+
+4. DATA VISUALIZATION POWER BI		-	Upcoming topic	
+		
+--------------------------------------------------
+
+NUMPY
+-----
+
+1. NUMPY INTRODUCTION			-	Done
+2. NUMPY FUNDAMENTALS			-	Done
+3. NUMPY ATTRIBUTES			-	Done
+4. NUMPY METHODS			-	Done
+
+--------------------------------------------------
+
+MATHS						STATUS
+-----						------
+
+1. MATHS - PART - 1 - POPULATION, 	-	Done
+	SAMPLE, TYPES OF VARIABLES
+
+
+2. MATHS - PART - 2 - MODE, MEDIAN, 	-	Done
+	MEAN, RANGE, 
+	STANDARD DEVIATION, VARIANCE	
+
+
+3. MATHS - PART - 3 - OUTLIERS		-	Done
+
+
+4. MATHS - PART - 4 - THE FIVE NUMBERS	-	Done
+	SUMMARY, BOX PLOT, OUTLIER
+
+
+5. MATHS - PART - 5 - SYMMETRY AND 	-	Done
+	SKEWNESS
+
+
+6. MATHS - PART - 6 - EXPLANATORY AND 	-	Done
+	RESPONSIVE VARIABLES
+
+
+7. MATHS - PART - 7 - REGRESSION 	-	Done
+	AND R SQUARED
+
+
+8. MATHS - PART - 8 - RESIDUALS		-	Done
+
+
+9. MATHS - PART - 9 - THE NORMAL 	-	Hold
+	DISTRIBUTION AND 
+	68-95-99.7 RULE
+
+10. MATHS - PART - 10 - MATRIX		-	Done
+
+--------------------------------------------------
+
+FEATURE ENGINEERING
+-------------------
+
+1. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 1	-	Done
+
+
+2. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 2	-	Done
+
+--------------------------------------------------
+
+MACHINE LEARNING
+----------------
+
+1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	INTRODUCTION
+
+2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TERMINOLOGY
+
+3. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DATA AND ML ALGORITHMS
+
+4. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LEARNING FUNCTION
+
+5. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TYPES OF MODELS
+
+6. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LIFE CYCLE
+
+7. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TRAIN & TEST DATASETS
+
+
+8. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	R VALUE
+
+
+9. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION
+
+9.1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION 
+	EXAMPLE
+
+9.2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION 
+	EXAMPLE
+
+10. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	MULTIPLE LINEAR REGRESSION
+
+
+11. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	PICKLING AND UNPICKLING
+
+
+12. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SAVE MODEL USING JOBLIB AND 
+	PICKLING
+
+
+13. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	POLYNOMIAL FEATURES
+
+14. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DUMMY VARIABLE, ONEHOTENCODING
+
+
+15. DATA SCIENCE - MACHINE LEARNING 	-	Done
+	- R VALUE
+
+
+16. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	COST FUNCTION
+
+
+17. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	REGRESSION COST FUNCTION
+
+
+18. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	LOGISTIC REGRESSION
+	BINARY CLASSIFICATION
+
+19. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LOGISTIC REGRESSION
+	MULTI CLASS CLASSIFICATION
+
+
+20. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DECISION TREE
+
+
+21. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	RANDOM FOREST ALGORITHM
+
+
+
+22. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	K-FOLD CROSS VALIDATION
+
+
+23. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SVM
+
+24. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	GRADIENT DESCENT ALGORITHM
+
+
+25. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	UNDERFITTING & OVERFITTING
+
+
+26. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	BIAS - VARIANCE TRADE OFF
+
+
+27. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	K - MEANS CLUSTERING
+
+
+28. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	HYPER PARAMETER TUNING 
+	GRIDSEARCH CV
+
+
+29. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	K NEAREST NEIGHBOR
+
+
+30. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	XGBOOST
+
+31. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	NAIVE BAYES CLASSIFIER
+
+
+32. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	CONFUSION MATRIX
+
+
+33. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LASSO & RIDGE REGRESSION	
+
+
+34. MODEL DEPLOYMENT			-	Done
+
+--------------------------------------------------
+
+DEEP LEARNING
+-------------
+
+1. DEEP LEARNING - INTRODUCTION		-	Done
+2. DEEP LEARNING - LIBRARIES		-	Done
+
+3. DEEP LEARNING - IMPORTANT 		-	Done
+	TERMINOLOGY
+
+4. DEEP LEARNING - MULTILAYER 		-	Done
+	PERCEPTRONS
+
+5. DEEP LEARNING - MULTILAYER 		-	Done
+	PERCEPTRONS EXAMPLE	
+
+6. DEEP LEARNING - EVALUATE MODEL 	-	Done
+	PERFORMANCE	
+
+7. DEEP LEARNING - EVALUATE MODEL 	-	Done
+	SAVE MODEL
+
+-  DATA SCIENCE - ENV - PYCHARM		-	Done
+
+
+8. DEEP LEARNING - BEST MODEL CHECK 	-	Done
+	POINT
+
+9. DEEP LEARNING - VISUALIZE MODEL 	-	Done
+	ACCURACY & SCORE
+
+10. DEEP LEARNING - COMPUTER VISION	
+
+	1.  CV - ILSVRC 		-	Done
+	DATASET, RESNET
+
+	2. CV - FEATURES		-	Done
+
+	3. DEEP LEARNING - COMPUTER 	-	Running topic
+	VISION - LOAD AND WORK WITH 	
+	IMAGES
+
+
+--------------------------------------------------
+
+NATURAL LANGUAGE PROCESSING(NLP)
+---------------------------
+
+1. NLP - INTRODUCTION			-	Done
+2. NLP - TEXT WRANGLING AND CLEANING	-	Done
+3. NLP - REPLACING AND CORRECTING WORDS	-	Done
+4. NLP - COMPONENTS IN NLP - USE CASE	-	Done
+
+5. NLP - BAG OF WORDS, TF AND IDF	-	Done
+
+6. NLP - TWITTER SENTIMENT ANALYSIS 	-	Done
+	USING TEXTBLOB	
+
+7. NLP - SPACY LIBRARRY			-	Done
+
+--------------------------------------------------
+
+PROJECTS
+--------
+
+1. ECOMVISION				-	Done
+
+2. E-COMMERCE PURCHASE 			-	Done
+	INTENTION MODEL			
+
+--------------------------------------------------
+
+MYSQL
+-----
+
+0. DATA SCIENCE - MYSQL - INSTALLATION	-	Done
+
+1. DATA SCIENCE - MYSQL - INTRODUCTION	-	Done
+
+2. DATA SCIENCE - MYSQL - CREATE, 	-	Done
+	SELECT, DROP - DATABASE
+
+4. DATA SCIENCE - MYSQL - DDL AND DML	-	Done
+
+5. DATA SCIENCE - MYSQL - CREATE. 	-	Done
+	INSERT, SELECT DATA, 
+	DISTINCT, ALTER - TABLE
+
+6. DATA SCIENCE - MYSQL - WHERE CLUSE, 	-	Done
+	OPERATORS
+
+7. DATA SCIENCE - MYSQL - CONSTRAINTS	-	Done
+
+8. DATA SCIENCE - MYSQL - IMP FUNCTIONS	-	Done
+
+9. DATA SCIENCE - MYSQL - PANDAS 	-	Done
+	DATAFRAME
+
+--------------------------------------------------
+
+POWER BI
+--------
+
+1. INSTALLATION				-	Done
+2. INTRODUCTION				-	Done
+3. CREATING FEW CHARTS USING TOOL	-	Done
+
+--------------------------------------------------
+
+MODEL DEPLOYMENT
+----------------
+
+1. ML MODEL DEPLOYMENT			-	Done
+
+
+--------------------------------------------------
+
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+6. float(p)		->	To convert to float
+7. int(p)		->	To convert to int
+8. list(p)		->	Convert from seq to list
+9. tuple(p)		->	Convert from seq to tuple
+10. set(p)		->	Convert from seq to set
+
+11. dict(p)		->	Convert from list of tups to dict
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+11. InvalidParameterError
+
+--------------------------------------
+
+4. DEEP LEARNING - COMPUTER VISION - 
+	LOAD AND WORK WITH KERAS
+-------------------------------------
+
+Load Image	->	1. Pillow
+			2. matplotlib
+			3. tensorflow
+
+-------------------------------------
+
+# Loading images by using tensorflow lib
+
+from tensorflow.keras.utils import load_img
+
+img = load_img("opera_house.jpg")
+
+img.show()
+
+-------------------------------------
+
+# Loading image and processing
+
+from tensorflow.keras.utils import load_img
+from tensorflow.keras.utils import save_img
+from tensorflow.keras.utils import img_to_array
+
+img = load_img(
+    "opera_house.jpg", 
+    color_mode = "grayscale"
+)
+
+img_array = img_to_array(img)
+
+save_img("daniel.jpg", img_array)
+img = load_img("daniel.jpg")
+
+img.show()
+
+-------------------------------------
+
+5. DEEP LEARNING - COMPUTER VISION - 
+	IMAGE DATA AUGMENTATION
+
+-------------------------------------
+
+IMAGE DATA AUGMENTATION
+
+-> One of the topic computer vision
+-> 
+	Problem		->	Data is required
+	client		->	10 images
+	Required?	->	100 images
+	We can create	->	new images from existing images
+			->	Image Data Augmentation
+
+
+-------------------------------------
+
+# Updated example to load image & apply Image Data Augmentation
+
+from matplotlib import pyplot
+from numpy import expand_dims
+
+from tensorflow.keras.utils import load_img
+from tensorflow.keras.utils import img_to_array
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+
+img = load_img("bird.jpg")
+data = img_to_array(img)
+samples = expand_dims(data, 0)
+
+datagen = ImageDataGenerator(width_shift_range = [-80, 80])
+
+it = datagen.flow(samples, batch_size = 1)
+
+for i in range(9):
+    pyplot.subplot(330 + 1 + i)
+    batch = next(it)
+    image = batch[0].astype("uint8")
+    pyplot.imshow(image)
+    
+pyplot.show()
+
+-------------------------------------
+
+IMP points
+---------
+...
+it = datagen.flow(samples, batch_size = 1)
+
+-> here 'it' is generator
+-> What is generator?
+-> Its a Data Structures, Store & process the data
+-> It can store huge data in more efficient
+-> We can iterate generator by using next() function
+
+-------------------------------------
+
+# width_shift_range
+
+from matplotlib import pyplot
+from numpy import expand_dims
+
+from tensorflow.keras.utils import load_img
+from tensorflow.keras.utils import img_to_array
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+
+img = load_img("bird.jpg")
+data = img_to_array(img)
+samples = expand_dims(data, 0)
+
+datagen = ImageDataGenerator(width_shift_range = [-80, 80])
+
+it = datagen.flow(samples, batch_size = 1)
+
+for i in range(9):
+    pyplot.subplot(330 + 1 + i)
+    batch = next(it)
+    image = batch[0].astype("uint8")
+    pyplot.imshow(image)
+    
+pyplot.show()
+
+-------------------------------------
+
+# height_shift_range
+
+from matplotlib import pyplot
+from numpy import expand_dims
+
+from tensorflow.keras.utils import load_img
+from tensorflow.keras.utils import img_to_array
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+
+img = load_img("bird.jpg")
+data = img_to_array(img)
+samples = expand_dims(data, 0)
+
+# datagen = ImageDataGenerator(width_shift_range = [-80, 80])
+
+datagen = ImageDataGenerator(height_shift_range = 0.6)
+
+it = datagen.flow(samples, batch_size = 1)
+
+for i in range(9):
+    pyplot.subplot(330 + 1 + i)
+    batch = next(it)
+    image = batch[0].astype("uint8")
+    pyplot.imshow(image)
+    
+pyplot.show()
+
+-------------------------------------
+
+# horizontal_flip
+
+from matplotlib import pyplot
+from numpy import expand_dims
+
+from tensorflow.keras.utils import load_img
+from tensorflow.keras.utils import img_to_array
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+
+img = load_img("bird.jpg")
+data = img_to_array(img)
+samples = expand_dims(data, 0)
+
+# datagen = ImageDataGenerator(width_shift_range = [-80, 80])
+# datagen = ImageDataGenerator(height_shift_range = 0.6)
+
+datagen = ImageDataGenerator(horizontal_flip = True)
+
+it = datagen.flow(samples, batch_size = 1)
+
+for i in range(9):
+    pyplot.subplot(330 + 1 + i)
+    batch = next(it)
+    image = batch[0].astype("uint8")
+    pyplot.imshow(image)
+    
+pyplot.show()
+
+-------------------------------------
+
+# rotation_range = 90
+
+from matplotlib import pyplot
+from numpy import expand_dims
+
+from tensorflow.keras.utils import load_img
+from tensorflow.keras.utils import img_to_array
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+
+img = load_img("bird.jpg")
+data = img_to_array(img)
+samples = expand_dims(data, 0)
+
+# datagen = ImageDataGenerator(width_shift_range = [-80, 80])
+# datagen = ImageDataGenerator(height_shift_range = 0.6)
+# datagen = ImageDataGenerator(horizontal_flip = True)
+
+datagen = ImageDataGenerator(rotation_range = 90)
+
+it = datagen.flow(samples, batch_size = 1)
+
+for i in range(9):
+    pyplot.subplot(330 + 1 + i)
+    batch = next(it)
+    image = batch[0].astype("uint8")
+    pyplot.imshow(image)
+    
+pyplot.show()
+
+-------------------------------------
+
+# brightness_range
+
+from matplotlib import pyplot
+from numpy import expand_dims
+
+from tensorflow.keras.utils import load_img
+from tensorflow.keras.utils import img_to_array
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+
+img = load_img("bird.jpg")
+data = img_to_array(img)
+samples = expand_dims(data, 0)
+
+# datagen = ImageDataGenerator(width_shift_range = [-80, 80])
+# datagen = ImageDataGenerator(height_shift_range = 0.6)
+# datagen = ImageDataGenerator(horizontal_flip = True)
+# datagen = ImageDataGenerator(rotation_range = 90)
+
+datagen = ImageDataGenerator(brightness_range = [0.7, 1.0])
+
+
+it = datagen.flow(samples, batch_size = 1)
+
+for i in range(9):
+    pyplot.subplot(330 + 1 + i)
+    batch = next(it)
+    image = batch[0].astype("uint8")
+    pyplot.imshow(image)
+    
+pyplot.show()
+
+-------------------------------------
+
+from peeyush sahu (privately):    6:15 PM
+How this transformer is working at backend?
+
+Its easy sir
+
+-> Let me tell you guys how it is
+
+-> Image	
+	-> Array
+	-> Group of pixels
+	-> Randomly those numbers and position will be change
+
+-------------------------------------
+
+# zoom_range
+
+from matplotlib import pyplot
+from numpy import expand_dims
+
+from tensorflow.keras.utils import load_img
+from tensorflow.keras.utils import img_to_array
+from tensorflow.keras.preprocessing.image import ImageDataGenerator
+
+
+img = load_img("bird.jpg")
+data = img_to_array(img)
+samples = expand_dims(data, 0)
+
+# datagen = ImageDataGenerator(width_shift_range = [-80, 80])
+# datagen = ImageDataGenerator(height_shift_range = 0.6)
+# datagen = ImageDataGenerator(horizontal_flip = True)
+# datagen = ImageDataGenerator(rotation_range = 90)
+# datagen = ImageDataGenerator(brightness_range = [0.7, 1.0])
+
+datagen = ImageDataGenerator(zoom_range = [0.5,1.0])
+
+it = datagen.flow(samples, batch_size = 1)
+
+for i in range(9):
+    pyplot.subplot(330 + 1 + i)
+    batch = next(it)
+    image = batch[0].astype("uint8")
+    pyplot.imshow(image)
+    
+pyplot.show()
+
+-------------------------------------
+
+6. DEEP LEARNING - COMPUTER VISION 
+	- USE CASES
+
+-------------------------------------
+
+How to install computer vision library
+
+pip install opencv	->	import cv2
+
+-------------------------------------
+
+# Edge detection
+
+import cv2
+import matplotlib.pyplot as plt
+
+img = cv2.imread('Daniel.jpg')
+edges = cv2.Canny(
+    img, 
+    100, 
+    200, 
+    3, 
+    L2gradient = True
+)
+
+plt.figure()
+
+plt.title('Its Daniel')
+
+plt.imsave(
+    'dancing-spider-canny.png', 
+    edges, 
+    cmap = 'gray', 
+    format = 'png'
+)
+
+plt.imshow(edges, cmap = 'gray')
+plt.show()
+
+
+-------------------------------------
+
+csv file:
+	missing values
+
+images:
+	blur areas/noise->	error
+
+
+	cost function
+	Gradient Descent
+		increase acc
+		reduce error
+
+-------------------------------------
+
+Gen AI
+	LLM
+	Vector Database
+	RAG
+
+	During weekend I will share recordings
+
+-------------------------------------
+
+# Edge detection
+
+import cv2
+import numpy as np
+
+image = cv2.imread('1.jpg')
+cv2.waitKey(0)
+
+gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+edged = cv2.Canny(gray, 30, 200)
+cv2.waitKey(0)
+
+contours, hierarchy = cv2.findContours(
+    edged, 
+    cv2.RETR_EXTERNAL, 
+    cv2.CHAIN_APPROX_NONE
+)
+
+cv2.imshow('Canny Edges After Contouring', edged)
+cv2.waitKey(0)
+
+cv2.drawContours(image, contours, -1, (0, 255, 0), 3)
+cv2.imshow('Contours', image)
+
+cv2.waitKey(0)
+
+cv2.destroyAllWindows()
+
+-------------------------------------
+
+Computer vision projects
+-------------------------
+
+-> Load Video/mp4	
+-> mp4 we need to create audio/mp3
+-> Load audio/mp3
+-> Extract text from mp3
+
+
+-------------------------
+
+# extract_text_from_video_single_file
+
+-> I will continue in tomorrow session
+-> We done today session
+		- Daniel
+
+-------------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------
+
+D@1234niel#
+
+--------------------------------

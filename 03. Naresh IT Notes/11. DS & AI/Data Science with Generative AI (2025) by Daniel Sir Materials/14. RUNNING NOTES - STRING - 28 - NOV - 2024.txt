@@ -1,0 +1,428 @@
+RUNNING NOTES: 28 - NOV - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	FLOW CONTROL
+2. CURRENT TOPIC			-	STRING
+3. UPCOMING TOPIC			-	FUNCTIONS PART 1
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+
+10. PYTHON - STRING			-	Running topic
+
+11. PYTHON - FUNCTIONS - PART - 1	-	Upcoming topic
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. IndexError
+5. IndentationError
+
+
+--------------------------------
+
+10. PYTHON - STRING	
+-------------------
+
+Mutable
+
+Normal Def	:	Can be change
+Tech Defi	:	The state of existing object
+
+-------------------
+
+Math operators	:	+, *
+
++, *		:	integers, strings
+
+string + string	:	Concatenation/joining the string
+
+-------------------
+
++		->	String	->	Joining
+*		->	String	->	Repeating
+
+-------------------
+
+a = "Kasagani"
+b = "Daniel"
+
+print(a + b)
+
+-------------------
+
+a = "Kasagani"
+b = " Daniel"
+
+print(a + b)
+
+-------------------
+
+print("Naresh "*300)
+
+-------------------
+
+len() 
+
+-> Predefined function
+-> Usage: we can find number of characters from string
+-> 
+
+-------------------
+
+a = "Daniel"
+
+print(a)
+print(len(a))
+
+-------------------
+
+a = "K Daniel"
+
+print(a)
+print(len(a))
+
+-------------------
+
+a = "K Daniel"
+
+print(a)
+print(length(a))
+
+-------------------
+
+s = "Hello Good evening"
+
+print(s)
+
+print(	"Good"	in	s)
+
+-------------------
+
+s = "Hello Good evening"
+
+print(s)
+
+if "Good"	in	s:
+	print("Word is existing")
+
+else:
+	print("Word is not existing")
+
+-------------------
+
+s = "Hello Good evening"
+
+print(s)
+
+if "asdhkjfh"	in	s:
+	print("Word is existing")
+
+else:
+	print("Word is not existing")
+
+-------------------
+
+10. Methods in str class	->	3 interview questions :)
+------------------------
+
+Only introduction is almost 45 minutes
+
+
+Methods in str class
+---------------------
+
+1. str is predefined class
+2. class contains methods
+
+---------------------
+
+1. str is predefined class
+
+a = "Daniel"
+print(type(a))	#	<class 'str'>
+
+
+
+---------------------
+
+class
+	methods
+
+---------------------
+
+Any python program
+
+	1. Procedure oriented approach
+	2. Function oriented approach
+	3. Object Oriented approach
+
+---------------------
+
+1. Procedure oriented approach
+
+-> Writing a program by using Procedure 
+
+print("Hello")
+print("Good evening")
+
+---------------------
+
+2. Function oriented approach
+
+-> Writing a program by using function
+
+Function
+--------
+	1. How to create a function
+	2. How to call a function
+
+
+
+
+-> We can create a function by using def keyword
+-> After function created then we need to call the function for output
+
+---------------------
+
+def naresh():
+	print("Hello")
+	print("Good evening")
+
+naresh()
+
+---------------------
+
+def rajesh():
+	print("This is Rajesh")
+	print("Working in Infosys")
+
+def jahnavi():
+	print("This is Jahnavi")
+	print("Working in Google")
+
+rajesh()
+jahnavi()
+
+---------------------
+
+3. Object Oriented approach
+	
+	1. How to create a class
+	2. How to create a methods inside of the class
+	3. How to create an object to a class
+	4. How to call a method
+
+---------------------
+
+class
+	method1()	->	To perform an operation
+	method2()	->	...
+	method3()	->	...
+
+
+---------------------
+
+Humany Body
+	heart()	
+	brain()
+
+---------------------
+
+Very Very IMP example	->	Please do practice 10 times
+
+class Daniel:
+	def teaching(self):
+		print("I like teaching very well")
+
+d = Daniel()
+d.teaching()
+
+
+class		->	Keyword in python
+Daniel		->	Name of the class
+def		->	Keyword in python
+teaching()	->	Name of the method
+d = Daniel()	->	Object creation
+d		->	Name of the object
+d.teaching()	->	Calling the method
+
+
+-> We can call method by using name of the object
+
+
+---------------------
+
+class Daniel:
+	def teaching(self):
+		print("Hello")
+		print("Please dont sleep during session")
+		print("Arey Daniel: We like sleeping")
+
+
+a = Daniel()
+a.teaching()
+
+---------------------
+
+Methods in str class
+---------------------
+
+1. str is predefined class
+2. class contains methods
+
+
+class
+	methods
+
+Daniel
+	teaching()
+
+str
+	methods...
+
+---------------------
+
+class Daniel:
+	def teaching(self):
+		print("At Naresh IT")
+	def preaching(self):
+		print("At my father church")
+	def working(self):
+		print("At GE company")
+
+d = Daniel()
+
+d.teaching()
+d.preaching()
+d.working()
+
+---------------------	
+
+dir() function
+
+-> Predefined function
+-> By using this we can find number of methods in class
+-> 
+	1. with underscore symbol methods	not IMP
+	2. without underscore symbol methods	IMP
+
+
+---------------------	
+
+class Daniel:
+	def teaching(self):
+		print("At Naresh IT")
+	def preaching(self):
+		print("At my father church")
+	def working(self):
+		print("At GE company")
+
+print(dir(Daniel))
+
+[....., 'preaching', 'teaching', 'working']
+
+---------------------	
+
+Daniel
+	method1
+	method2
+	method3
+
+Inside Daniel, how many method?		by usind dir()
+
+
+str
+	m1
+	m2
+
+Inside str, how many methods?		by using dir()
+
+---------------------
+
+Methods in str class
+
+Next session :)
+
+First 15 minutes:	Recap
+
+---------------------
+
+from Mahesh Varma (privately):    6:49 PM
+sir, can u suggest websites for real time scenearios
+
+Ans: Check www.kaggle.com
+
+We are teaching the same :)
+
+Please be pat.....	During Data Analysis
+
+---------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

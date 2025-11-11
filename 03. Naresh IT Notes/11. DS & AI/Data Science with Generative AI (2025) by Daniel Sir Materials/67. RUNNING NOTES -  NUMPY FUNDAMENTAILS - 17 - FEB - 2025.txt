@@ -1,0 +1,612 @@
+RUNNING NOTES: 17 - FEB - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	NUMPY INTRO
+2. CURRENT TOPIC			-	NUMPY FUNDAMENTALS
+3. UPCOMING TOPIC			-	NUMPY ATTRIBUTES
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Done
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Done
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Done 
+	MULTIPLE CSV FILES
+
+--------------------------------------------------
+
+DATA ANALYSIS PROJECT
+---------------------
+
+1. EDA PROJECT				-	Done
+
+--------------------------------------------------
+
+DATA VISUALIZATION
+------------------
+
+1. DATA VISUALIZATION PART 1		-	Done
+
+2. DATA VISUALIZATION PART 2		-	Done
+
+3. DATA VISUALIZATION FUNDAMENTALS	-	Assignment
+
+4. DATA VISUALIZATION POWER BI		-	Upcoming topic			
+--------------------------------------------------
+
+NUMPY
+-----
+
+1. NUMPY INTRODUCTION			-	Done
+
+2. NUMPY FUNDAMENTALS			-	Running topic
+
+3. NUMPY ATTRIBUTES			-	Upcoming topic
+
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+6. float(p)		->	To convert to float
+7. int(p)		->	To convert to int
+8. list(p)		->	Convert from seq to list
+9. tuple(p)		->	Convert from seq to tuple
+10. set(p)		->	Convert from seq to set
+
+11. dict(p)		->	Convert from list of tups to dict
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+2. NUMPY FUNDAMENTALS
+---------------------
+
+
+Data
+	
+	DataFrame
+
+			Feature Engg
+
+					Array
+
+
+						ML
+
+
+
+---------------------
+
+-> ML alg receives input as array data
+-> We can create an array by using numpy
+-> We need to learn numpy
+
+---------------------
+
+array() function
+----------------
+
+-> I wanted to create an array
+-> Call array() function
+
+-> array() function returns array object
+
+-> map() function returns map object
+-> filter() function retuns filter object
+
+-> groupby() method returns GroupBy object
+
+---------------------
+
+# Creating an array with single value
+
+import numpy as np
+
+a = 40
+
+b = np.array(a)
+
+print(b)
+print(type(b))
+
+---------------------
+
+# Creating an array by using list
+
+import numpy as np
+
+a = [10, 20, 30, 40]
+b = np.array(a)
+
+print(b)
+print(type(b))
+
+---------------------
+
+Creating an array
+
+	1. by using python module:	array	less fun
+	2. by using numpy module:	numpy	more fun
+
+---------------------
+
+# Creating nested array
+
+import numpy as np
+
+a = [[10, 20, 30], [40, 50, 60]]
+
+b = np.array(a)
+
+print(b)
+
+---------------------
+
+Good Question:
+--------------
+
+Hey Daniel, I wanted to capture the, how long time taken by my program
+
+-> We can do: by using time module from python
+
+---------------------
+
+# Display the time to print 100 values
+
+import time
+
+start_time = time.time()
+
+r = range(1, 101)
+
+for value in list(r):
+	print(value)
+
+end_time = time.time()
+
+total_time = format(round((end_time - start_time)/60, 2))
+
+print()
+print(total_time)
+
+---------------------
+
+# Display the time to print 1000 values
+
+import time
+
+start_time = time.time()
+
+r = range(1, 1001)
+
+for value in list(r):
+	print(value)
+
+end_time = time.time()
+
+total_time = format(round((end_time - start_time)/60, 2))
+
+print()
+print(total_time)
+
+
+---------------------
+
+# Display the time to print 10000 values
+
+import time
+
+start_time = time.time()
+
+r = range(1, 10001)
+
+for value in list(r):
+	print(value)
+
+end_time = time.time()
+
+total_time = format(round((end_time - start_time)/60, 2))
+
+print()
+print(total_time)
+
+---------------------
+
+# Creating an array
+
+import numpy as np
+
+details = [[10, 20], [30, 40], [50, 60]]
+
+a = np.array(details)
+
+print(a)
+
+---------------------
+
+By this time: 17/Feb/2025
+
+You already done Min Two times Revision
+
+	1. Python
+	2. Pandas
+
+Target			10 times revsion
+
+Start today to do revision:
+	One week time:		1 time revision
+	I will continue 	session
+	your personal		preparation
+
+---------------------
+
+# Creating an array and applying indexing topic
+
+import numpy as np
+
+details = [10, 20, 30, 40, 50]
+sales = np.array(details)
+
+print(details)
+print()
+print(sales)
+print(sales[0])
+print(sales[1])
+print(sales[2])
+
+---------------------
+
+# Creating an array and applying slicing
+
+import numpy as np
+
+details = [10, 20, 30, 40, 50]
+sales = np.array(details)
+
+print(details)
+print()
+print(sales)
+print(sales[2:])
+
+---------------------
+
+Data/Array
+
+	C0	C1	C2
+
+R0	10	20	30
+
+R1	40	50	60
+	
+R2	70	80	90
+
+---------------------
+
+10th	->	R0, C0
+20th	->	R0, C1
+
+
+R1, C2	->	60
+
+---------------------
+
+# Creating an array and Accessing every value by using position
+
+import numpy as np
+
+a = [[10, 20, 30], [40, 50, 60], [70, 80, 90]]
+
+matrix = np.array(a)
+
+print(matrix)
+print()
+print(matrix[0,0])
+print(matrix[0,1])
+print(matrix[0,2])
+print(matrix[1,0])
+print(matrix[1,1])
+print(matrix[1,2])
+print(matrix[2,0])
+print(matrix[2,1])
+print(matrix[2,2])
+
+---------------------
+
+Why I am telling practice, practice you know....
+
+GE company
+
+Daniel	->	Lead Data Scientist
+
+Raju	->	Junior Data Scientist(0 knowledge)
+
+	->	Being a lead, I need to train
+	->	I can involve
+			Raju
+			Manager
+			7 team members
+
+
+Monday	->	Daniel
+		Raju
+		Manager
+
+Python	->	10 topics
+	->	Do practice
+
+Raju	->	Start explaining project
+	->	My Ans: Please be good in topics
+	->	Later I will explain about the project
+
+Raju	->	Daniel, let me the project Date?
+	->	My Ans: raising my TONE
+		If you dont know the topics
+		how you will understand the project
+
+Conclusion	I can sense you are lag in practice
+		If you continue the same
+		you many miss the beauty of project expla
+		So, be good in practice/revision
+
+What to practice
+
+		Intelligent Ans
+		All our materials
+
+---------------------
+
+from Hrishi (privately):    6:32 PM
+sir can i talk to your through email about my google classroom issue
+
+Sir, you have to call to online admin
+Do you have number:
+Let me share: 
+
+9063042468	->	NagaBabu
+
+---------------------
+
+# IndexError
+
+import numpy as np
+
+details = [10, 20, 30, 40, 50]
+
+sales = np.array(details)
+print(sales)
+print(sales[22])
+
+---------------------
+
+# Creating all zeros
+
+import numpy as np
+
+z = np.zeros(10)
+
+print(z)
+
+---------------------
+
+# Creating an array with all ones
+
+import numpy as np
+
+o = np.ones(10)
+
+print(o)
+
+---------------------
+
+Python
+	class
+	-----
+	str		Methods
+	list		Methods
+	tuple		Methods
+	set		Methods
+	dict		Methods
+
+---------------------
+
+pandas
+
+	class
+	-----
+	Series		Attributes, Methods
+	DataFrame	Attributes, Methods
+
+
+---------------------
+	
+
+numpy
+	class
+	-----
+	array		Attributes, Methods
+
+---------------------
+
+Attribute
+---------
+
+-> Attribute returns info about on object
+-> We can access attribute by using object name without parenthesis
+
+
+---------------------
+
+Method
+------
+
+-> Method will perform an operation
+-> We can access method by using object name with parenthesis
+
+---------------------
+
+# shape attribute
+
+import numpy as np
+
+a = [[10, 20, 30], [40, 50, 60]]
+b = np.array(a)
+
+print(b.shape)
+
+---------------------
+
+# AttributeError
+
+import numpy as np
+
+a = [[10, 20, 30], [40, 50, 60]]
+b = np.array(a)
+
+print(b.SHAPE)
+
+---------------------
+
+# Finding number of dimention
+
+import numpy as np
+
+a = [10, 20, 30, 40]
+b = np.array(a)
+
+print(b.ndim)
+
+---------------------
+
+# ndim attribute
+
+import numpy as np
+
+a = [[10, 29, 30], [40, 50, 60]]
+b = np.array(a)
+
+print(b)
+print()
+print(b.ndim)
+
+---------------------
+
+-> We done today session
+-> Daniel
+
+---------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

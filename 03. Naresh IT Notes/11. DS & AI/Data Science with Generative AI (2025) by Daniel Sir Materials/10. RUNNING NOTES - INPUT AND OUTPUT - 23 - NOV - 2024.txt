@@ -1,0 +1,320 @@
+RUNNING NOTES: 23 - NOV - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	OPERATORS
+2. CURRENT TOPIC			-	INPUT AND OUTPUT
+3. UPCOMING TOPIC			-	FLOW CONTROL
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+
+8. PYTHON - INPUT & OUTPUT		-	Done
+
+9. PYTHON - FLOW CONTROL		-	Running topic
+
+10. PYTHON - STRING			-	Upcoming topic
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. IndexError
+
+
+--------------------------------
+
+8. PYTHON - INPUT & OUTPUT	
+--------------------------
+
+Create a variable
+
+LHS = RHS
+
+variable = value
+
+a = 10
+
+This value we can create in two ways
+
+variable = 1. static value(hard coding/fixing)
+	   2. dynamic value(Taking value at runtime)
+
+
+--------------------------------
+
+1. static value	->	Hard coding
+---------------
+
+a = 10
+print(a)
+
+py demo1.py
+10
+
+
+2. dynamic value
+----------------
+
+py demo1.py
+
+Please enter value: 10
+10
+
+-> We can take value at runtime by using input() function
+
+--------------------------------
+
+a = input("Please enter value: ")
+print(a)
+
+--------------------------------
+
+a = 10
+b = input("Please enter value: ")
+
+print(a)
+print(b)
+
+--------------------------------
+
+a = input("Please enter value: ")
+print("Entered value is:", a)
+
+
+--------------------------------
+
+3. input(p) function
+
+-> input(p) is a predefined function
+-> This function accpepts input from keyboard
+-> This function ALWAYS returns string data type value
+-> Lets proove.....
+
+--------------------------------
+
+		Original 	Getting
+		Data type
+		------------------------
+
+Daniel		str		str
+10		int		str !!!		reason?
+1.23		float		str !!!		reason?
+
+--------------------------------
+
+
+10		str	convert into	int	apply math
+
++2		sorry we will get error
+
+		but I want
+
+		Then do one thing, convert string to int
+		then apply
+
+
+--------------------------------
+
+a = "10"
+b = "20"
+
+print(a + b)
+
+-> + operator joins two string values
+-> # 1020 instead of 30
+-> Really problem
+
+--------------------------------
+
+prod1 = input("Enter price: ")
+prod2 = input("Enter price: ")
+
+total = prod1 + prod2
+
+print("Your bill is: ", total)
+
+
+output
+
+C:\Users\Daniel\Desktop\CODING>py demo1.py
+Enter price: 111
+Enter price: 222
+Your bill is:  111222
+
+
+
+--------------------------------
+
+a = input("Enter value: ")
+b = int(a)
+
+print(a)
+print(type(a))
+print()
+print(b)
+print(type(b))
+
+
+--------------------------------
+
+
+a = input("Enter value: ")
+b = float(a)
+
+print(a)
+print(type(a))
+print()
+print(b)
+print(type(b))
+
+--------------------------------
+
+prod1 = input("Enter price: ")
+prod2 = input("Enter price: ")
+
+a = int(prod1)
+b = int(prod2)
+
+total = a + b
+
+print("Your bill is: ", total)
+
+--------------------------------
+
+b = int(input("Enter value: "))
+
+print(b)
+print(type(b))
+
+--------------------------------
+
+
+	String		->	int
+	String		->	float
+	float		->	int
+
+	20.13		->	20
+
+--------------------------------
+
+a = 20.13
+b = int(a)
+
+print(a)
+print(type(a))
+print()
+print(b)
+print(type(b))
+
+--------------------------------
+
+Data types	function
+
+int		int()
+float		float()
+str		str()
+list		list()
+....
+
+--------------------------------
+
+# Valid but not recommended
+
+a = input()
+print(a)
+
+--------------------------------
+
+from shivek to all panelists:    6:34 PM
+
+int(input("Enter a number"))
+can we enter the alphabet?
+
+Ans: No sir, we will get an error
+
+--------------------------------
+
+a = int(input("Enter value:"))
+
+print(a)
+
+--------------------------------
+
+Flow control
+------------
+
+-> The order of statements execution :)
+
+
+Program			3 orders
+	Statements
+			1. Sequential execution
+			2. Conditional execution
+			3. Looping execution
+
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

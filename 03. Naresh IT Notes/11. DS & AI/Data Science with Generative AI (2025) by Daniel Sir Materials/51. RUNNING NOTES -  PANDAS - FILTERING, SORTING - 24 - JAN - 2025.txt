@@ -1,0 +1,447 @@
+RUNNING NOTES: 24 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - DATAFRAME SELECTION LOC & ILOC
+2. CURRENT TOPIC			-	PANDAS - DATAFRAME FILTERING
+3. UPCOMING TOPIC			-	PANDAS - DATAFRAME SORTING
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Running topic
+
+
+
+
+17. PANDAS - DATAFRAME - MERGING 	-	Upcoming topic
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Upcoming topic
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Upcoming topic
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Upcoming topic
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Upcoming topic 
+	MULTIPLE CSV FILES
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+14. PANDAS - DATAFRAME - FILTERING
+--------------------------------
+
+# Finding unique products
+
+import pandas as pd
+
+df = pd.read_csv("sales4.csv")
+
+print(df)
+
+a = pd.unique(df.Product_Name)
+
+print()
+print(a)
+print()
+print(len(a))
+
+--------------------------------
+
+# Unique customers
+
+import pandas as pd
+
+df = pd.read_csv("sales4.csv")
+
+print(df)
+
+a = pd.unique(df.Customer_Name)
+
+print()
+print(a)
+print()
+print(len(a))
+
+--------------------------------
+
+# notnull() method
+
+import pandas as pd
+import numpy as np
+
+data = [
+	['Shahid', 21, 40000],
+	['Nireekshan', 22, 20000],
+	['Veeru', 45, 90000],
+	['Sumanth', 20, 95000],
+	[np.nan, 2, 99000],
+	['Prasad', 1, 41000]
+]
+
+c = ['Name', 'Age', 'Salary']
+
+df1 = pd.DataFrame(data, columns = c)
+
+d = df1.Name.notnull()
+
+df2 = df1[d]
+
+print(df1)
+print()
+print(df2)
+
+--------------------------------
+
+from Iddipilli Karthik to everyone:    5:53 PM
+how to delete by not effecting index
+
+Ans: We will cover in concat() method
+
+--------------------------------
+
+15. PANDAS - DATAFRAME - SORTING
+--------------------------------
+
+a = [40, 10, 20, 30]
+
+print(a)	#	[40, 10, 20, 30]
+a.sort()
+print(a)	#	[10, 20, 30, 40]
+
+--------------------------------
+
+Info
+----
+
+-> After pandas I will explain jupyter(20 mins)
+-> After jupyter, I will explain about the project
+-> We are executing project by using jupyter
+
+--------------------------------
+
+# sort_values()
+
+import pandas as pd
+
+df1 = pd.read_csv("sales4.csv")
+df2 = df1.sort_values(by = "Product_Cost")
+
+print(df1)
+print()
+print(df2)
+
+--------------------------------
+
+# sort_values() method
+
+import pandas as pd
+
+df1 = pd.read_csv("sales4.csv")
+df2 = df1.sort_values(by = "Customer_Id")
+
+print(df1)
+print()
+print(df2)
+
+--------------------------------
+
+# sort_values(ascending = False) method, 
+
+import pandas as pd
+
+df1 = pd.read_csv("sales4.csv")
+df2 = df1.sort_values(
+	by = "Customer_Id", 
+	ascending = False
+)
+
+print(df1)
+print()
+print(df2)
+
+--------------------------------
+
+# TypeError: DataFrame.sort_values() got an unexpected keyword argument 'ascendingsjfhdkjsh'
+
+import pandas as pd
+
+df1 = pd.read_csv("sales4.csv")
+df2 = df1.sort_values(
+	by = "Customer_Id", 
+	ascendingsjfhdkjsh = 0
+)
+
+print(df1)
+print()
+print(df2)
+
+--------------------------------
+
+Question: How to know how many parameters for the menthods/constuctor
+
+Ans: By using documentation
+
+Let us check
+
+df1.sort_values(....)
+
+Google
+Seach: DataFrame soft_values method documentation
+
+https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html
+
+--------------------------------
+
+# sorting Customer_Name column
+
+import pandas as pd
+
+df1 = pd.read_csv("sales4.csv")
+df2 = df1.sort_values(
+	by = "Customer_Name"
+)
+
+print(df1)
+print()
+print(df2)
+
+--------------------------------
+
+# sort_index() method
+
+import pandas as pd
+
+d = {
+	'Order id': [11, 21, 31],
+	'Customer name': ['Kedar', 'Nireekshan', 'Daniel'],
+	'Product': ['iPhone 11','hTC', 'macbook']
+}
+
+i = [555, 444, 333]
+
+df1 = pd.DataFrame(d, index = i)
+df2 = df1.sort_index()
+
+print(df1)
+print()
+print(df2)
+
+--------------------------------
+
+16. PANDAS - DATAFRAME - GROUPBY
+--------------------------------
+
+Data
+----
+
+	Customer	Product
+	-----------------------
+	Daniel		iPhone 14 plus
+	Kusuma		Samsung 
+	Daniel		Samsung
+	Prasad		iPhone 14 plus
+	Kusuma		iPhone 14 plus
+
+--------------------------------
+
+GroupBy based on customer
+
+	Customer	Product
+	-----------------------
+	Daniel		iPhone 14 plus	
+	Daniel		Samsung
+
+
+
+
+	Customer	Product
+	-----------------------
+	Kusuma		Samsung 
+	Kusuma		iPhone 14 plus
+
+
+
+	Customer	Product
+	-----------------------
+	Prasad		iPhone 14 plus
+
+
+--------------------------------
+
+GroupBy based on Product
+
+	Customer	Product
+	-----------------------
+
+	Daniel		iPhone 14 plus
+	Prasad		iPhone 14 plus
+	Kusuma		iPhone 14 plus
+
+
+	Customer	Product
+	-----------------------
+	Kusuma		Samsung 
+	Daniel		Samsung
+
+--------------------------------
+
+Steps in groupby() method
+
+	1. Splitting the data
+	2. Applying an operation
+	3. Combining the result
+
+--------------------------------
+
+Very very imp point
+-------------------
+
+-> df.head() method returns DataFrame
+-> df.tail() method returns DataFrame
+
+
+-> map() function returns(giving result as) map object
+-> filter() function returns(giving result as) filter object
+
+-> groupby() method returns(giving result as) GroupBy object
+
+--------------------------------
+
+import pandas as pd
+
+d = {
+	"Product": ["Samsung", "Nokia", "Samsung", "Motorola", "Nokia", "Samsung", "Samsung"],
+	"Orders": [2, 4, 3, 4, 6, 7, 3]
+}
+
+df1 = pd.DataFrame(d)
+
+result = df1.groupby(["Product"])
+final = result.sum()
+
+print(df1)
+print()
+print(final)
+
+--------------------------------
+
+-> We done today Session
+
+- Daniel
+
+--------------------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

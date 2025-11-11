@@ -1,0 +1,516 @@
+RUNNING NOTES: 27 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	DICT DATA STRUCTURE
+2. CURRENT TOPIC			-	OBJECT ORIENTED PROGRAMMING
+3. UPCOMING TOPIC			-	PACKAGE
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+
+14. PYTHON - PACKAGE			-	Upcoming topic
+
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+
+19. PYTHON - OBJECT ORIENTED 		-	Running topic
+	PROGRAMMING	
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+
+--------------------------------
+
+19. PYTHON - OBJECT ORIENTED
+	PROGRAMMING	
+-----------------------------
+
+Recap
+	1. class
+	2. object
+	3. Constructor
+
+-----------------------------
+
+# create class, object and method, method calling
+
+class Student:
+	def display(self):
+		print("This is Daniel")
+
+s = Student()
+s.display()
+
+-> We can call method by using object name
+-> Method we need to call explicitely
+
+-----------------------------
+
+Constructor
+------------
+
+-> Constructor is special kind of method
+-> We can create a constructor by using def keyword
+
+-> def
+	1. Function
+	2. Method
+	3. Constructor
+
+-> Method name can be any name
+	m1(), m2(), m3() ......
+
+-> Constructor name SHOULD BE,
+	__init__(self)
+
+-> Purpose: To create instance variables
+		or
+	    Initialization purpose
+
+
+-----------------------------
+
+# We no need to call constructor
+# During object object creation constructor will execute automatically
+
+
+class Student:
+	def __init__(self):
+		print("Hello")
+
+s = Student()
+
+-----------------------------
+
+# Method we need to call explicitely
+# Constructor will execute automatilly during object creation
+
+
+class Student:
+	def __init__(self):
+		print("Constructor")
+
+	def display(self):
+		print("Method")
+
+s = Student()
+s.display()
+
+-----------------------------
+
+Online_Comments
+
+-----------------------------
+
+from Peeyush Sahu to everyone:    5:50 PM
+we can call constructor as well.
+
+Ans: Sir we can do, but not recommended
+
+-----------------------------
+
+from Masud Siddiqi (privately):    5:48 PM
+It's not like java where constructor has the same name as class.
+
+Ans:
+
+Java
+	Student
+		Student
+
+Python
+	Student
+		__init__(self)
+
+
+-----------------------------
+
+
+from Syed Muzahid to everyone:    5:45 PM
+sir can you print def add(a,b) using opps iam facing error
+
+Ans: Let me explain one example
+
+class Calculation:
+	def add(self, a, b):
+		print(a + b)
+
+c = Calculation()
+c.add(10, 20)
+
+-----------------------------
+
+# This is not a constructor
+
+class Student:
+	def _init_(self):
+		print("This is not constructor")
+
+s = Student()
+
+-----------------------------
+
+# This is not a constructor
+
+class Student:
+	def __nit__(self):
+		print("This is not a constructor")
+
+s = Student()
+
+-----------------------------
+
+class Student:
+	def __init__(self):
+		print("Constructor")
+
+
+s1 = Student()
+s2 = Student()
+s3 = Student()
+
+-----------------------------
+
+from Syed Muzahid to everyone:    5:56 PM
+sir why we need a constructor yet we can use method
+
+Amazing question :)
+
+
+OOPS
+	object	->	During object creation
+			perform some operation
+			Use constructor
+
+		->	After object creation
+			perform some operation
+			Use method
+
+Shruti mam
+-----------
+Got job Infosys
+
+		-> Joining formalities
+			ID
+			Constructor
+
+
+		-> Project mapping
+			method
+
+-----------------------------
+
+Types of constructors
+---------------------
+
+-> Based on parameters, Constructors are two types
+
+	1. Zero parameterized constructor
+	2. parameterized constructor
+
+-----------------------------
+
+Two types
+
+	1. Constructor without parameters
+	2. Constructor with parameters
+
+
+-----------------------------
+
+Use of constructor
+------------------
+
+-> To create instance variables
+
+-----------------------------
+
+1. Zero para
+
+class Student:
+	def __init__(self):
+		print("Zero para")
+
+s = Student()
+
+-> self is by default parameter in class
+
+-----------------------------
+
+# One parameterized constructor
+
+class Student:
+	def __init__(self, sno):
+		self.sno = sno
+
+		print("Student number is:", self.sno)
+
+
+s = Student(101)
+ 
+-> If constructor having one parameter then while creating an object we need to pass one value
+
+-----------------------------
+
+# Two parameterized constructor
+
+class Student:
+	def __init__(self, sno, sname):
+		self.sno = sno
+		self.sname = sname
+
+		print("Student number is:", self.sno)
+		print("Student name is:", self.sname)
+
+
+s = Student(101, "Daniel")
+
+-> If constructor having two parameters then while creating an object we need to pass two values
+
+-----------------------------
+
+# Three parameterised constructor
+
+class Student:
+	def __init__(self, sno, sname, sloc):
+		self.sno = sno
+		self.sname = sname
+		self.sloc = sloc
+
+		print("Student number is:", self.sno)
+		print("Student name is:", self.sname)
+		print("Student location is:", self.sloc)
+
+
+s = Student(101, "Daniel", "KPHB")
+
+-> If constructor having three parameters then while creating an object we need to pass three values
+
+-----------------------------
+
+Let me take questions from comments
+
+from Hrishi to everyone:    6:23 PM
+sir when i create two of the contructors why does the latest one onyl execute
+
+Ans: The reason is, python give high priority for latest constructor(Always executes bottom/last constructor)
+
+-----------------------------
+
+class Student:
+	def __init__(self):
+		print("Zero para")
+
+	def __init__(self, a):
+		print("Para con")
+
+s = Student(10)
+
+-----------------------------
+
+# class, constructor(3 params), method, object, method call
+
+# Do 10 times practice this below example
+
+class Student:
+	def __init__(self, sno, sname, sloc):
+		self.sno = sno
+		self.sname = sname
+		self.sloc = sloc
+
+	def display(self):
+		print("Student id is:", self.sno)
+		print("Student name is:", self.sname)
+		print("Student location is:", self.sloc)
+
+
+s = Student(101, "Daniel", "KPHB")
+s.display()
+
+-----------------------------
+
+# Two objects
+
+class Student:
+	def __init__(self, sno, sname, sloc):
+		self.sno = sno
+		self.sname = sname
+		self.sloc = sloc
+
+	def display(self):
+		print("Student id is:", self.sno)
+		print("Student name is:", self.sname)
+		print("Student location is:", self.sloc)
+		print()
+
+
+s1 = Student(101, "Daniel", "KPHB")
+s1.display()
+
+s2 = Student(102, "Sruti", "Bengaluru")
+s2.display()
+
+-----------------------------
+
+# 3 objects
+
+class Student:
+	def __init__(self, sno, sname, sloc):
+		self.sno = sno
+		self.sname = sname
+		self.sloc = sloc
+
+	def display(self):
+		print("Student id is:", self.sno)
+		print("Student name is:", self.sname)
+		print("Student location is:", self.sloc)
+		print()
+
+
+s1 = Student(101, "Daniel", "KPHB")
+s1.display()
+
+s2 = Student(102, "Sruti", "Bengaluru")
+s2.display()
+
+s3 = Student(103, "Sanjay", "Hyd")
+s3.display()
+
+-----------------------------
+
+class Student:
+	def __init__(self, sno, sname, sloc):
+		self.sno = sno
+		self.sname = sname
+		self.sloc = sloc
+
+	def display(self):
+		print("Student id is:", self.sno)
+		print("Student name is:", self.sname)
+		print("Student location is:", self.sloc)
+		print()
+
+s1 = Student(101, "Daniel", "KPHB")
+s2 = Student(102, "Sruti", "Bengaluru")
+s3 = Student(103, "Sanjay", "Hyd")
+
+s1.display()
+s2.display()
+s3.display()
+
+-----------------------------
+
+
+Small discussion
+
+s1 = Student(101, "Daniel", "KPHB")
+
+
+Machine learning class
+
+model = LinearRegression(102, "Hello")
+
+-----------------------------
+
+Small suggestion
+
+-> Today examples please do practice otherwise its too difficult to understand
+
+-----------------------------
+
+Kind update
+
+	-> Tomorrow no session
+	-> We will meet again on Monday
+
+		1. Instance method
+		2. Instance variables
+		3. self variable
+		4. method + return
+
+		5. Package
+
+-----------------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

@@ -1,0 +1,493 @@
+RUNNING NOTES: 06 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	FUNCTIONS PART 1
+2. CURRENT TOPIC			-	FUNCTIONS PART 2
+3. UPCOMING TOPIC			-	MODULE
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+
+12. PYTHON - FUNCTIONS - PART - 2	-	Running topic
+
+13. PYTHON - MODULE			-	Upcoming topic
+
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. TypeError
+5. IndexError
+
+6. IndentationError
+7. AttributeError
+
+
+--------------------------------
+
+12. PYTHON - FUNCTIONS - PART - 2	
+---------------------------------
+
+Recap
+-----
+
+Types of Arguments
+
+	1. Positional args
+	2. Keyword args
+	3. Default args
+	4. Variable length args
+
+
+def m1(a):
+	print("Value is:", a)
+
+m1(We need to provide the value: we can use above topics)
+
+These are all WAYS TO PASS THE VALUES to function parameter
+
+---------------------------------
+
+3. Anonymous functions or Lambdas
+
+Python
+	Functions	Creating 
+
+			1. By using def keyword
+			2. By using lambda keyword
+
+---------------------------------
+
+Function	def	->	Normal function		100%
+Function	lambda	->	Lambda function		5%
+
+---------------------------------
+
+Project
+		20 functions
+
+		18 def
+		 2 lambda
+
+---------------------------------
+
+				Usage
+				-----
+
+Function	def		Reusable component
+				We can call any number of times
+
+Function	lambda		One time purpose
+
+
+---------------------------------
+
+
+Done Session						Home
+				Reusable		Steel gla
+				One time purpose	Paper cup
+
+---------------------------------
+
+Function
+	1. def
+	2. lambda
+
+---------------------------------
+
+Such a nice example
+------------------
+
+def subham():
+	print("Hi")
+
+print(subham)
+
+---------------------------------
+
+def subham():
+	print("Hi")
+
+def daniel():
+	print("Hello")
+
+print(subham)
+print(daniel)
+
+---------------------------------
+
+Syntax
+
+LHS = RHS
+
+var = lambda	LHS	:	RHS
+
+---------------------------------
+
+# We have created 4 function
+# 2 functions with def keyword
+# 2 functions with lamdba keyword
+
+
+def subham():
+	print("Hi")
+
+def daniel():
+	print("Hello")
+
+result1 = lambda		x	:	x+1
+result2 = lambda		y	:	y+1
+
+print(subham)
+print(daniel)
+print(result1)
+print(result2)
+
+
+---------------------------------
+
+Lambda function
+---------------
+
+Syntax
+------
+
+LHS = RHS
+
+var = lambda	LHS		:	RHS
+
+var = lambda	variables	:	expression with variables
+
+
+---------------------------------
+
+# lambda function with one value
+
+add = lambda	x	:	x + 1	
+
+result = add(10)
+
+print(result)
+
+---------------------------------
+
+# lambda function with two value
+
+add = lambda	x, y : x + y
+
+result = add(10, 20)
+
+print(result)
+
+---------------------------------
+
+# lambda function with three value
+
+add = lambda	x, y, z : x + y +z
+
+result = add(10, 20, 30)
+
+print(result)
+
+---------------------------------
+
+a = lambda	x : x.upper()
+
+result = a("daniel")
+
+print(result)
+
+---------------------------------
+
+# We can apply only specific operation
+# Not for regular operation
+
+a = lambda x : x.upper()
+
+result = a("daniel")
+
+print(result)
+
+---------------------------------
+
+Pro - TIP	To become programmer/Coder/Dev.....
+
+	1. Practice & Revision	(Regular)
+	2. Concept: Write without seeing
+	3. Explain the topics to someone
+	
+	You can apply job:	Trainer job
+
+---------------------------------
+
+Kind update:	Tomorrow no session
+		We will meet again on Monday
+
+---------------------------------
+
+Predefined function
+
+	1. map(p1, p2)
+	2. filter(p1, p2)
+	3. reduce(p1, p2)
+
+---------------------------------
+
+map(p1, p2)
+-----------
+
+prices = [100, 200, 300, 400]
+
+	midnight 12 am
+	Modi ji
+	GST, +2
+
+result = [102, 202, 302, 402]
+
+We can achieve this by using map function
+
+---------------------------------
+
+# map function return map object
+
+prices = [100, 200, 300, 400]
+
+m = map(lambda	price	: price+2	,	prices)
+
+print(prices)
+print(m)
+
+---------------------------------
+
+# map object we are converting into list data structure
+
+prices = [100, 200, 300, 400]
+
+m = map(lambda	price	: price+2	,	prices)
+
+print(prices)
+print(list(m))
+
+---------------------------------
+
+Python:	
+	def,	lambda
+	---------------
+
+	def	we can create		normal function
+	lambda	we can create		lambda function
+
+---------------------------------
+
+Req:
+
+names = ["daniel", "rajesh", "rani", "raju"]
+
+		convert all names into upper case
+
+result = ["DANIEL", "RAJESH", "RANI", "RAJU"]
+
+---------------------------------
+
+names = ["daniel", "rajesh", "rani", "raju"]
+
+m = map(lambda	name	: name.upper()	,	names)
+
+print(names)
+print(list(m))
+
+---------------------------------
+
+
+from Masud Siddiqi (privately):    6:25 PM
+I don't get how lambda is updating the map in the backend.
+
+	map	->	
+			for loop
+				getting one by one value
+				apply operation
+				return result
+
+This link may helps to understand clearly
+
+https://pythontutor.com/render.html#mode=display
+
+
+from Masud Siddiqi (privately):    6:29 PM
+what would happen if we directly apply upper() to the list
+
+names = ["daniel", "raju", "raju"]
+
+print(names.upper())	#	AttributeError
+
+
+---------------------------------
+
+filter() function
+-----------------
+
+data = [1, 2, 3, 4, 5, 6, 7, 8, 10, 0]
+
+		filter the data
+		To filter the data we need condition
+
+		value < 5
+
+result = [1, 2, 3, 4, 0]
+ 
+---------------------------------
+
+# filter function
+
+data = [1, 2, 3, 4, 5, 6, 7, 8, 10, 0]
+
+f = filter(lambda value	: value < 5	, 	data)
+
+print(data)
+print(list(f))
+
+---------------------------------
+
+# function function
+
+data = (1, 2, 3, 4, 5, 6, 7, 8, 10, 0, -2)
+
+f = filter(lambda value	: value < 5	, 	data)
+
+print(data)
+print(list(f))
+
+---------------------------------
+
+data = (1, 2, 3, 4, 5, 6, 7, 8, 10, 0, -2)
+
+f = filter(lambda value	: value > 5	, 	data)
+
+print(data)
+print(list(f))
+
+---------------------------------
+
+Recap
+
+	1. map()
+	2. filter()
+	3. reduce()	alterative	sum()
+
+
+---------------------------------
+
+# sum() function
+
+monday = [100, 200, 300, 400, 500]
+
+print(monday)
+print(sum(monday))
+
+---------------------------------
+
+
+Let me tell you one more suggestion
+
+Coin			=	H	+	T
+
+Programming lang	=	Syntax	+	Logical think
+
+				90	+	10
+
+---------------------------------
+
+# reduce function
+
+from functools import reduce
+
+monday = [100, 200, 300, 400]
+
+r = reduce(lambda	x, y	:	x+y	,	monday)
+
+print(monday)
+print()
+print(r)
+
+---------------------------------
+
+Python	
+	Different modules
+		We will see on monday
+
+---------------------------------
+
+Kind update:	Tomorrow no session
+		We will meet again on Monday
+
+---------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

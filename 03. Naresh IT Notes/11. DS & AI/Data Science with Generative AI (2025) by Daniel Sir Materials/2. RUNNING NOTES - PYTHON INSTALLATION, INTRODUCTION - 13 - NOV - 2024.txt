@@ -1,0 +1,328 @@
+RUNNING NOTES: 13 - NOV - 2024
+--------------------------------
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+
+3. PYTHON - HELLO WORLD PROGRAM		-	Running topic
+
+4. PYTHON - NAMING CONVENTIONS		-	Upcoming topic
+
+
+----------------------------------------------------------------
+
+0. PYTHON - INSTALLATION
+------------------------
+
+Data Science & AI with PYTHON
+
+Why Python?
+
+
+C program		->	learn C programming lang
+
+Java program		->	learn Java programming lang
+
+Data Science program	->	Learn Python		100/100
+
+				R programming
+				Java programming
+				Scala programming
+
+
+
+------------------------
+
+Python		->	Programming lang
+
+Data Science 	->	Not a programming lang
+
+------------------------
+
+Python Installation
+
+1. Check either python is intalled
+	Open command prompt	windows + r
+	type			cmd
+	
+C:\Users\Daniel>py
+'py' is not recognized as an internal or external command,
+operable program or batch file.
+
+
+Confirm:	Python is not installed :)
+		Proceed for installation
+
+
+
+2. Download the python
+
+	Done
+	python-3.13.0-amd64
+	this is .exe file(executable file)
+	double click
+	proceed for installation
+
+
+
+3. Install the python
+
+	Done
+	Check by using py command
+
+C:\Users\Daniel>py
+Python 3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+
+Confirm: Python installation is Done
+
+------------------------
+
+C:\Users\Daniel>python --version
+Python 3.13.0
+
+C:\Users\Daniel>
+
+------------------------
+
+1. PYTHON - INTRODUCTION
+
+Why python, why not other programming lang?
+
+There are much support and more open source libraries from python
+
+
+	Python			Java
+
+	any Data Sci
+	Data Analysis		We can do
+
+	Image analysis
+	CV			not possible
+
+
+------------------------
+
+1. PYTHON - INTRODUCTION
+
+
+What is a python?
+
+1. General purpose programming language		?
+2. High level programming langugage		?
+
+------------------------
+
+1. General purpose programming language	
+
+Any software company
+					General purpose
+	1. Dev purpose			using python
+	2. Testing purpose		using python
+	3. Deploy/Maintenance		using python
+
+------------------------
+
+2. High level programming langugage
+
+Two types of programming lang
+
+	1. High level	->	Human understandable fomate
+	2. Low level	->	Machine understandable fomate
+				Machine language
+				binary laungugage(1's & 0's)
+
+
+Best example
+------------
+
+	12 + 10 = 22
+
+
+
+2	12
+	6	->	0
+	3	->	0
+	1	->	1
+
+	bottom to top
+
+		12	==	1100
+
+	High level	==	Low level
+
+------------------------
+
+By using python, what are all types of apps we can implement
+
+Python
+	1. Desktop/Stand alone application
+	2. Web application
+	3. Database application
+	4. BigData application
+	5. Machine learning application
+	   etc....
+
+
+Milk
+	Tea
+	coffee
+	curd
+
+------------------------
+
+Client	->	Program
+	->	Send request to server
+	->	Google crome
+
+Server	->	Program
+	->		1. 
+			2. 
+			3. 
+
+------------------------
+
+Online team :)	Thank you for res...
+
+------------------------
+
+Daniel		->	Earning money
+		->	Saving in bank
+
+Comanies	->	Generating the Data
+		->	Storing the data
+		->	They have to use one software
+		->	Database
+		->	Store the data in table format
+
+Databse		->	C	U	R	D
+			create	update	retriev	delete
+
+			we can implement by using python
+
+
+------------------------
+
+Why the name was python?
+
+Daniel	->	11.30 login
+		12.30 internal call
+
+		login		to		lotout
+
+			6 hours(I can do coding...)
+			1 hour done
+			small break
+			restart coding
+
+Guido Van Rossum	Coder
+			1 hour
+			break
+			TV show
+			Monty Python’s Flying Circus
+			Python programming	:)
+			Circus programming lang	x
+
+
+------------------------
+
+Requirement 
+------------
+
+C 	->	Functional programming approach
+
+Java	->	Object Oriented approach
+
+Coin	->	H	+	T
+
+Python	->	Functional programming approach
+			+
+		Object Oriented approach
+
+	->	FP	+	OOP
+
+
+------------------------
+
+2. PYTHON - KEYWORDS
+
+Keyword		->	Reserved word
+		->	The word which is reserved to do specific
+			purpose
+
+		->	Water bottle	->	Container
+		->	
+
+Python		->	Total keywords?
+
+Fun story	->	
+
+
+3 yrs		->	One day ...
+		->	Do you like frnds?	yes
+		->	Do you like toys?	yes
+		->	....
+
+Sat		->	coming monday
+		->	Schoooool		yes yes
+
+Monday		->	Game started
+		->	9 am, left me at school
+		->	Full day crying...
+		->	4 pm came to home
+		->	I dont 
+
+Teu		->	50%
+
+Thur		->	Teacher
+		->	slate
+		->	A	B	C	keywords
+			26
+
+
+Python		->	keywords
+		->	35	
+
+
+------------------------
+
+2015 I need to work on python	->	Java
+Client is giving KT		->	....
+
+client				->		
+
+------------------------
+
+3. PYTHON - HELLO WORLD PROGRAM	
+
+Next session :)
+
+
+----------------------------------------------------------------	
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	

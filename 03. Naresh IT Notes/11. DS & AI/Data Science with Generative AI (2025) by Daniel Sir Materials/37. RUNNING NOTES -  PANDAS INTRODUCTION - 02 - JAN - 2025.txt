@@ -1,0 +1,338 @@
+RUNNING NOTES: 02 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PYTHON
+2. CURRENT TOPIC			-	PANDAS INTRODUCTION
+3. UPCOMING TOPIC			-	PANDAS - SERIES INTRO
+
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				-	21 topics
+-------------
+
+1. PANDAS - INTRODUCTION		-	Running topic
+
+2. PANDAS - SERIES - INTRODUCTION	-	Upcoming topic
+3. PANDAS - NAN VALUE			-	Upcoming topic
+
+
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+
+--------------------------------
+
+1. PANDAS - INTRODUCTION
+------------------------
+
+Pandas		->	Python library
+		->	Use: Data Analysis
+		
+Having		->	Data Structures
+				1. Series
+				2. DataFrame
+				3. Panel
+
+Install		->	pip install pandas
+
+--------------------------------
+
+Make  a note
+
+-> By using pandas, we can do Data Analysis
+-> Pandas
+	
+		Data Structures
+		
+	
+	python				pandas
+
+	list				Series
+	tuple				DataFrame
+	set				Panel
+	dict
+
+
+--------------------------------
+
+Series 
+------
+
+-> It is a data structure in pandas
+-> We can store the and process the data
+-> store == Single column
+
+Grocessaries
+
+sugar
+tpowder
+santoor soap
+
+--------------------------------
+
+
+Demo session
+--------------
+
+White paper, Write only your mail id
+
+Series
+
+raju@gmail.com
+rani@gmail.com
+daniel@gmail.com
+...
+
+--------------------------------
+
+
+Demo session
+--------------
+
+White paper, Write only your mail id & mobile number
+
+DataFrame:	Group of Rows & Columns
+
+	mail id		mobile number
+
+0	abc@gmail.com	347365476
+1	def@gmail.com	2384682348
+2	ghi@gmail.com	238764823674
+
+--------------------------------
+
+		Hello World
+
+
+Python		print("Hello World")
+
+pandas		import the pandas
+
+
+--------------------------------
+
+Be Alert!!!
+
+-> Python is programming language	->	demo1.py
+-> Pandas is not a programming lang
+-> Pandas is python package		->	demo2.py
+
+		:(			->	demo3.pandas x
+
+
+--------------------------------
+
+# importing pandas
+
+import pandas
+
+print("Done")
+
+--------------------------------
+
+# Importing pandas and alsasing
+
+import pandas as pd
+
+print("Imorted pandas")
+print("Renamed to pd")
+
+--------------------------------
+
+from Syed Muzahid (privately):    6:26 PM
+student who are facing error while installing pandas we don't need to install python again we just need to run the python.exe file and update the settings without internet
+
+Acc stds
+	1. Two ways to fix this issue
+		a). Reinstall python(check checkboxes)
+		b). setting the classpath
+
+--------------------------------
+
+Methods in str class
+Methods in list class
+Methods in tuple class
+Methods in dict class
+
+Methods in Student class
+
+Methods in Series class
+
+--------------------------------
+
+IMP points
+
+1. import the class from package
+2. Create an object to the class
+3. Call a method by using object
+
+--------------------------------
+
+Creating Series
+
+	1. Empty Series
+	2. By using list
+	3. By using array
+	4. Accessing single column from DataFrame
+
+--------------------------------
+
+# How to create empty list
+
+a = []
+print(a)
+
+--------------------------------
+		      pandas
+			|
+# How to create empty Series
+
+
+-> Inside pandas Series is avaiable :)
+-> How to check, by using dir() function
+
+--------------------------------
+
+# Checking pandas package
+
+import pandas as pd
+
+print(dir(pd))
+
+--------------------------------
+
+# Creating empty Series
+
+import pandas as pd
+
+s = pd.Series()
+
+print(s)
+
+--------------------------------
+
+# Creating empty Series
+
+import pandas
+
+s = pandas.Series()
+
+print(s)
+
+--------------------------------
+
+# During interview this is my question
+
+Explain below line
+
+s = pd.Series()
+
+s		->	Name of the object
+Series		->	Name of the class in pandas
+pd		->	Alias name
+s = pd.Series()	->	Object creation
+this line	->	Create empty Series
+Constructor	->	During object creation constructor executed
+
+--------------------------------
+
+We done for today session :)
+
+Dont miss tomorrow session
+
+Daniel
+
+--------------------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

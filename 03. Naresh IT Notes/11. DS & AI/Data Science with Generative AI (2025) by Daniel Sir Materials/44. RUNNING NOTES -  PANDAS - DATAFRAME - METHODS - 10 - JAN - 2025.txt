@@ -1,0 +1,432 @@
+RUNNING NOTES: 10 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - DATAFRAME ATTRIBUTES
+2. CURRENT TOPIC			-	PANDAS - DATAFRAME METHODS
+3. UPCOMING TOPIC			-	PANDAS - DATAFRAME RENAME COL/INDEX
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+
+9. PANDAS - DATAFRAME - METHODS		-	Running topic
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Upcoming topic
+	COLUMN, INDEX
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+9. PANDAS - DATAFRAME - METHODS	
+--------------------------------
+
+DataFrame
+
+-> class
+	1. Attributes	returns information about object
+	2. Methods	perform operation
+
+--------------------------------
+
+# head() method
+
+import pandas as pd
+
+df1 = pd.read_csv("sales1.csv")
+df2 = df1.head()
+
+print(df1)
+print()
+print(df2)
+
+
+--------------------------------
+
+# head(7)
+
+import pandas as pd
+
+df1 = pd.read_csv("sales1.csv")
+df2 = df1.head(7)
+
+print(df2)
+
+--------------------------------
+
+# head(100) & to_string() methods
+
+
+import pandas as pd
+
+df1 = pd.read_csv("sales1.csv")
+df2 = df1.head(100)
+
+print(df2.to_string())
+
+--------------------------------
+
+from Jayesh Thakare (privately):    5:48 PM
+sir what if we want to print some middle rows like from  200 to 207 or else.....
+
+Ans: Sir very siple
+
+	df[start:end]
+	df[200:208]
+
+import pandas as pd
+
+df1 = pd.read_csv("sales1.csv")
+df2 = df1.head(100)
+
+print(df1[200:208])
+
+--------------------------------
+
+# tail() method
+
+import pandas as pd
+
+df1 = pd.read_csv("sales1.csv")
+df2 = df1.tail()
+
+print(df2)
+
+--------------------------------
+
+# tale() AttributeError
+
+import pandas as pd
+
+df1 = pd.read_csv("sales1.csv")
+df2 = df1.tale()
+
+print(df2)
+
+--------------------------------
+
+# info() method
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+df.info()
+
+output
+------
+
+<class 'pandas.core.frame.DataFrame'>
+
+RangeIndex: 600 entries, 0 to 599
+
+Data columns (total 4 columns):
+
+ #   Column         Non-Null Count  Dtype
+---  ------         --------------  -----
+ 0   Order ID       600 non-null    int64
+ 1   Customer Name  600 non-null    object
+ 2   Product        600 non-null    object
+ 3   Quantity       600 non-null    int64
+
+dtypes: int64(2), object(2)
+
+memory usage: 18.9+ KB
+
+--------------------------------
+
+1.5. describe()
+
+-> This method givig statistical information about the DataFrame
+
+-> This method works with numeric data but not with string data
+
+--------------------------------
+
+# describe() method
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.describe())
+
+--------------------------------
+
+Methods 
+
+	df.head()
+	df.tail()
+	df.info()
+	df.count()
+	df.describe()
+
+--------------------------------
+
+# nunique() method
+
+import pandas as pd
+
+df1 = pd.read_csv("sales1.csv")
+
+nu = df1.nunique()
+
+print(nu)
+
+--------------------------------
+
+Very Very imp
+
+
+DataFrame
+	1. Access single column
+	2. Access multiple columns
+
+--------------------------------
+
+1. Access single column
+
+-> We can access single column from DataFrame
+-> There are two ways to access single columns
+
+1. By using dot notation(dot symbol)	->	:(
+2. By using index syntax		->	:)
+
+--------------------------------
+
+1. By using dot notation(dot symbol)
+
+-> Get ready we are accessing single columb by using dot notation
+
+
+
+# Accessing single column
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.Product)
+
+--------------------------------
+
+dot notation
+-------------
+
+-> dot notation works very well if columns name is single word
+
+-> dot noation will not work if columna name having space
+
+
+
+--------------------------------
+
+# column name having space
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.Customer Name)
+
+--------------------------------
+
+2. By using index syntax
+
+-> We can access single column from DataFram by using index syntax
+
+-> this is good practice :)
+
+--------------------------------
+
+# Accessing single column by using index
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df["Product"])
+
+--------------------------------
+
+# Accessing single column by using index
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df["Customer Name"])
+
+--------------------------------
+
+from Jyothi biradar (privately):    6:25 PM
+sir what if it is customername instead of customer name 
+
+Excellent question :)
+
+-> While accessing column then column name should be match otherwise we will get KeyError
+
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df["customer nameeeee"])
+
+
+--------------------------------
+
+DataFrame
+
+	1. Access single column
+		1. dot notation
+		2. index syntax
+
+	2. Access multiple columns
+		1. index syntax with list
+
+
+--------------------------------
+
+2. Access multiple columns
+
+-> We can access multiple columns from the DataFrame
+-> Here we need use list to prepare column names
+
+--------------------------------
+
+# Accessing two columns
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+c = ["Customer Name", "Product"]
+
+print(df[c])
+
+--------------------------------
+
+# Accessing multiple columns
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+c = ["Product", "Customer Name", "Order ID"]
+
+print(df[c])
+
+--------------------------------
+
+# Accessing sum() method
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.Quantity.sum())
+
+
+df.Quantity	->	returns Series
+
+sum()		->	Method in Series
+
+--------------------------------
+
+We done today Session
+
+Tomorrow Session will be online mode only
+
+- Daniel
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

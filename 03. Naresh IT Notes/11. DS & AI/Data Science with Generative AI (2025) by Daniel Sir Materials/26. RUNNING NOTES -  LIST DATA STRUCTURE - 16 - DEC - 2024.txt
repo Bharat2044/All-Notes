@@ -1,0 +1,500 @@
+RUNNING NOTES: 16 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	MODULE
+2. CURRENT TOPIC			-	LIST DATA STRUCTURE
+3. UPCOMING TOPIC			-	TUPLE DATA STRUCTURE
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+
+13. PYTHON - MODULE			-	Done
+
+14. PYTHON - PACKAGE			-	HOLD, till oops topic
+
+
+15. PYTHON - LIST DATA STRUCUTRE	-	Running topic
+
+
+
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Upcoming topic
+17. PYTHON - SET DATA STRUCUTRE		-	Upcoming topic
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Upcoming topic
+19. PYTHON - OBJECT ORIENTED 		-	Upcoming topic
+	PROGRAMMING	
+
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. TypeError
+5. IndexError
+
+6. IndentationError
+7. AttributeError
+8. ModuleNotFoundError
+
+
+--------------------------------
+
+15. PYTHON - LIST DATA STRUCUTRE
+--------------------------------
+
+list -> Predefined class
+     -> class contains methods
+     -> Actual logic/task will be done by methods
+
+
+--------------------------------
+
+# count() method in list
+
+a = [10, 20, 30, 10, 10, 10]
+
+print(a)
+print()
+print(a.count(10))
+
+--------------------------------
+
+# count() method in list class
+
+a = [10, 20, 30, 10, 10, 10]
+
+print(a)
+print()
+print(a.count(99))
+
+--------------------------------
+
+a.count(10)
+
+a	->	Name of the object list class
+count()	->	Name of the method in list class
+
+WE SHOULD ACCESS METHOD BY USING OBJECT NAME
+
+# objectname.methodname()
+
+--------------------------------
+
+# append() method
+
+a = [10, 20, 30, 40]
+
+print(a)
+a.append(50)
+print(a)
+
+--------------------------------
+
+Methods in list
+
+	1. count(p) method
+	2. append(p) method
+
+--------------------------------
+
+# append() method
+
+a = [10, 20, 30, 40]
+
+print(a)
+a.append("Daniel")
+print(a)
+
+--------------------------------
+
+# insert() method
+# We can insert a value at specific posision
+
+a = [10, 20, 30, 40]
+
+print(a)
+a.insert(0, 99)
+print(a)
+
+--------------------------------
+
+# insert() method
+
+a = [10, 20, 30, 40]
+
+print(a)
+a.insert(0, 99)
+print(a)
+
+--------------------------------
+
+# insert(unknown index, value)
+
+a = [10, 20, 30, 40]
+
+print(a)
+a.insert(45, 99)
+print(a)
+
+--------------------------------
+
+a.count()
+a.append()
+a.insert()
+a.remove()
+
+--------------------------------
+
+Data Structure = Storing the values + Processing the values
+
+		  [10, 20, 30]		a.count(10)
+					a.append(99)
+					...
+
+--------------------------------
+
+# remove() method
+
+a = [10, 20, 30, 40]
+
+print(a)
+a.remove(20)
+print(a)
+
+--------------------------------
+
+from Masud Siddiqi (privately):    6:03 PM
+append() / insert() also store values?
+
+Sir the point is simple
+
+	-> append() is a method
+	-> It never store the value instead perform an operation
+	-> The return type is None
+	-> Method + return, we will see later
+
+--------------------------------
+
+# reverse() method in list class
+
+a = [10, 20, 30, 40]
+
+print(a)
+a.reverse()
+print(a)
+
+--------------------------------
+
+# sort() method over numbers
+
+a = [40, 10, 20, 30]
+
+print(a)
+a.sort()
+print(a)
+
+--------------------------------
+
+# sort() method over strings
+
+a = ["banana", "apple", "orange"]
+
+print(a)
+a.sort()
+print(a)
+
+--------------------------------
+
+# sort() method, we shouldnot provide diff type of values
+
+a = [40, 10, "apple"]
+
+print(a)
+a.sort()
+print(a)
+
+--------------------------------
+
+list methods
+------------
+
+	a.count(p)
+	a.append(p)
+	a.insert(p1, p2)
+	a.remove(p)
+	a.reverse()	
+	a.sort()
+
+-> You are learning python
+-> You are learning methods how to use in program
+
+--------------------------------
+
+Numerical Data
+
+Order
+	1. Ascending order(min to max)
+	2. Descending order(max to min)
+
+--------------------------------
+
+# Descending order
+# reverse = True -> Keyword argument
+
+a = [40, 10, 20, 30]
+
+print(a)
+a.sort(reverse = True)
+print(a)
+
+--------------------------------
+
+Math operators
+
++	->	addition over numbers
+*	->	multipication over numbers
+
++	->	concatenating/joining two lists
+*	->	Repeating the values in list
+
+--------------------------------
+
+# + operator over list
+
+mon = [10, 20, 30]
+tue = [40, 50, 60]
+
+total = mon + tue
+
+print(total)
+print(sum(total))
+
+--------------------------------
+
+# * operator over list
+
+a = [10, 20, 30]
+
+print(a*3)
+
+--------------------------------
+
+# in operator
+
+values = [10, 20, 30, 40]
+
+print(	20	in	values)
+
+--------------------------------
+
+# membership operator
+
+values = [10, 20, 30, 40]
+value = 22
+
+if value	in	values:
+	print("Value is existing", value)
+
+else:
+	print("Value is not existing", value)
+
+--------------------------------
+
+# membership operators
+
+users = ["daniel", "suresh", "naresh"]
+
+prime_users = ["daniel", "naresh"]
+
+user = "daniel"
+
+if user in prime_users:
+	print("Assign benefits", user)
+else:
+	print("Normal user", user)
+
+
+--------------------------------
+
+# membership operators
+
+users = ["daniel", "suresh", "naresh"]
+
+prime_users = ["daniel", "naresh"]
+
+user = "suresh"
+
+if user in prime_users:
+	print("Assign benefits", user)
+else:
+	print("Normal user", user)
+
+
+--------------------------------
+
+During interview
+
+list
+	1. Explain about list(7 points)
+	2. Explain about methods(3 to 4 methods)
+	3. Explain about list comprehension
+
+--------------------------------
+
+12. list comprehension
+
+
+
+comprehension	->	big paragraph/essay
+		->	Syntax is very big syntax
+
+--------------------------------
+
+List comprehension syntax
+
+LHS = RHS
+
+variable = [Part1	Part2		Part3]
+
+Part1	 = variable/expression
+Part2	 = for loop
+Part3	 = condition(optional)
+
+
+--------------------------------
+
+variable = [variable/expression	   for loop	condition]
+
+			OR
+
+variable = [
+		variable/expression	   
+		for loop	
+		condition
+]
+
+
+--------------------------------
+
+Scenario
+--------
+
+values = [100, 200, 300, 400]
+
+	+10
+
+result = [110, 210, 310, 410]
+
+
+--------------------------------
+
+# list comp example
+
+values = [100, 200, 300, 400]
+
+result = [value+10		for value in values]
+
+
+print(values)
+print(result)
+
+--------------------------------
+
+# list comp example
+
+values = [100, 200, 300, 400]
+
+result = [
+		value + 10
+		for value in values
+]
+
+print(values)
+print(result)
+
+--------------------------------
+
+names = ["daniel", "suresh", "naresh"]
+
+result = ["DANIEL", "SURESH", "NARESH"]
+
+--------------------------------
+
+List comprehension syntax
+
+Let me explain tomorrow also
+
+We done for today session
+dont miss tomorrow session
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

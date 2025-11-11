@@ -1,0 +1,279 @@
+RUNNING NOTES: 11 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	MODULE
+2. CURRENT TOPIC			-	LIST DATA STRUCTURE
+3. UPCOMING TOPIC			-	TUPLE DATA STRUCTURE
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+
+13. PYTHON - MODULE			-	Done
+
+14. PYTHON - PACKAGE			-	HOLD, till oops topic
+
+15. PYTHON - LIST DATA STRUCUTRE	-	Running topic
+
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Upcoming topic
+17. PYTHON - SET DATA STRUCUTRE		-	Upcoming topic
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Upcoming topic
+19. PYTHON - OBJECT ORIENTED 		-	Upcoming topic
+	PROGRAMMING	
+
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. TypeError
+5. IndexError
+
+6. IndentationError
+7. AttributeError
+8. ModuleNotFoundError
+
+
+--------------------------------
+
+15. PYTHON - LIST DATA STRUCUTRE
+--------------------------------
+
+
+Python	IMP topics
+
+	1. Flow control 
+	2. Functions
+	3. Data Structures(4)
+	4. OOPS
+
+--------------------------------
+
+List Data Strucutre
+
+1. CREATE		->	[], list()
+2. STORE		->	Same, different data
+3. SIZE			->	size increase dynamically
+4. INSERTION ORDER	->	fixed
+5. DUPLICATE		->	list can store duplicate vals
+6. MUTABLE		->	list having mutable nature
+7. INDEX		->	list can use index to store vals
+
+
+
+
+
+---------------------------------
+
+# Creating list
+
+a = [10, 20, 30, 40]
+
+print(a)
+print(type(a))
+
+---------------------------------
+
+# List can store different of the data too
+
+a = [1, 1.2, "Daniel"]
+
+print(a)
+print(type(a))
+
+---------------------------------
+
+# Checking each value data type
+
+a = [10, 1.2, "Daniel"]
+
+for value in a:
+	print(type(value))
+
+
+---------------------------------
+
+# size increase dynamically
+
+from sys import getsizeof
+
+a = [10, 20]
+
+print(a)
+print(getsizeof(a))
+
+---------------------------------
+
+# size increase dynamically
+
+from sys import getsizeof
+
+a = [10, 20, 30, 40]
+
+print(a)
+print(getsizeof(a))
+
+
+---------------------------------
+
+# size increase dynamically
+
+from sys import getsizeof
+
+a = [10, 20, 30, 40, 50, 70]
+
+print(a)
+print(getsizeof(a))
+
+
+---------------------------------
+
+a = [10, 20, 30, 40]
+
+print(a)
+
+---------------------------------
+
+# insertion order is fixed in list but not in set
+
+a = [10, 20, 30, 40]
+b = {10, 20, 30, 40}
+
+print(a)
+print(b)
+
+---------------------------------
+
+# list can store duplicates
+# set cannot store duplicates
+
+a = [10, 20, 30, 40, 10, 10, 10]
+b = {10, 20, 30, 40, 10, 10, 10}
+
+print(a)
+print(b)
+print()
+print(type(a))
+print(type(b))
+
+---------------------------------
+
+# list having mutable nature
+
+a = [10, 20, 30, 40]
+
+print(a)
+a[0] = 99
+print(a)
+
+---------------------------------
+
+# list can use index to store the values
+
+a = [10, 20, 30, 40]
+
+print(a)
+print()
+print(a[0])
+
+---------------------------------
+
+a = []
+
+print(a)
+print(type(a))
+
+---------------------------------
+
+Hold the tech session for few mins
+
+Let me take you into special session :)
+
+---------------------------------
+
+from Karim (privately):    6:18 PM
+
+Dear sir, Your  teaching is excellent, You are explaining concepts in a very simple approach. I am working at a University  and 45 years old. I am a  PdD holder. I joined this course to update myself in dataScience. Thank you
+
+From my bottom of the HEART, thank you soo much for your kind words :)
+
+
+---------------------------------
+
+Mentors	
+	Offline
+	Online also
+
+
+
+---------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

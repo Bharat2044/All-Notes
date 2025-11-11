@@ -1,0 +1,637 @@
+RUNNING NOTES: 22 - MAR - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	ML: COST FUNCTION
+2. CURRENT TOPIC			-	ML: REGRESSION COST FUNCTIONS
+3. UPCOMING TOPIC			-	ML: COST FUNCTION
+									         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Done
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Done
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Done 
+	MULTIPLE CSV FILES
+
+--------------------------------------------------
+
+DATA ANALYSIS PROJECT
+---------------------
+
+1. EDA PROJECT				-	Done
+
+--------------------------------------------------
+
+DATA VISUALIZATION
+------------------
+
+1. DATA VISUALIZATION PART 1		-	Done
+2. DATA VISUALIZATION PART 2		-	Done
+3. DATA VISUALIZATION FUNDAMENTALS	-	Done
+
+4. DATA VISUALIZATION POWER BI		-	Upcoming topic	
+		
+--------------------------------------------------
+
+NUMPY
+-----
+
+1. NUMPY INTRODUCTION			-	Done
+2. NUMPY FUNDAMENTALS			-	Done
+3. NUMPY ATTRIBUTES			-	Done
+4. NUMPY METHODS			-	Done
+
+--------------------------------------------------
+
+MATHS						STATUS
+-----						------
+
+1. MATHS - PART - 1 - POPULATION, 	-	Done
+	SAMPLE, TYPES OF VARIABLES
+
+
+2. MATHS - PART - 2 - MODE, MEDIAN, 	-	Done
+	MEAN, RANGE, 
+	STANDARD DEVIATION, VARIANCE	
+
+
+3. MATHS - PART - 3 - OUTLIERS		-	Done
+
+
+4. MATHS - PART - 4 - THE FIVE NUMBERS	-	Done
+	SUMMARY, BOX PLOT, OUTLIER
+
+
+5. MATHS - PART - 5 - SYMMETRY AND 	-	Done
+	SKEWNESS
+
+
+6. MATHS - PART - 6 - EXPLANATORY AND 	-	Done
+	RESPONSIVE VARIABLES
+
+
+7. MATHS - PART - 7 - REGRESSION 	-	Done
+	AND R SQUARED
+
+
+8. MATHS - PART - 8 - RESIDUALS		-	Done
+
+
+9. MATHS - PART - 9 - THE NORMAL 	-	Hold
+	DISTRIBUTION AND 
+	68-95-99.7 RULE
+
+10. MATHS - PART - 10 - MATRIX		-	Done
+
+--------------------------------------------------
+
+FEATURE ENGINEERING
+-------------------
+
+1. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 1	-	Done
+
+
+2. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 2	-	Done
+
+--------------------------------------------------
+
+MACHINE LEARNING
+----------------
+
+1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	INTRODUCTION
+
+2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TERMINOLOGY
+
+3. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DATA AND ML ALGORITHMS
+
+4. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LEARNING FUNCTION
+
+5. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TYPES OF MODELS
+
+6. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LIFE CYCLE
+
+7. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TRAIN & TEST DATASETS
+
+
+8. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	R VALUE
+
+
+9. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION
+
+9.1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION 
+	EXAMPLE
+
+9.2. DATA SCIENCE - MACHINE LEARNING 	- 	Share
+	SIMPLE LINEAR REGRESSION 
+	EXAMPLE
+
+10. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	MULTIPLE LINEAR REGRESSION
+
+
+12. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	PICKLING AND UNPICKLING
+
+
+13. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SAVE MODEL USING JOBLIB AND 
+	PICKLING
+
+
+10. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	POLYNOMIAL FEATURES
+
+11. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DUMMY VARIABLE, ONEHOTENCODING
+
+
+12. DATA SCIENCE - MACHINE LEARNING 	-	Done
+	- R VALUE
+
+
+13. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	COST FUNCTION
+
+
+14. DATA SCIENCE - MACHINE LEARNING 	- 	Running topic	
+	REGRESSION COST FUNCTION
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+6. float(p)		->	To convert to float
+7. int(p)		->	To convert to int
+8. list(p)		->	Convert from seq to list
+9. tuple(p)		->	Convert from seq to tuple
+10. set(p)		->	Convert from seq to set
+
+11. dict(p)		->	Convert from list of tups to dict
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+11. InvalidParameterError
+
+------------------------------------
+
+14. DATA SCIENCE - MACHINE LEARNING
+	REGRESSION COST FUNCTION
+
+------------------------------------
+
+ML flow
+-------
+
+Data
+	DataFrame
+		Feature Engg
+				Array
+					Machine Learning Algorithm
+					Cost function
+					Gradient Descent Algorithm
+						Increase accuracy
+						Reduce Error
+							Bias
+							Variance
+
+
+ML steps
+--------
+
+	1. Importing the libraries
+	2. Loading the dataset
+	3. Data preparation
+	4. Splitting the dataset
+	5. Model creation
+	6. Model training
+	7. Prediction
+
+--------------------------------
+
+Cost function
+
+-> Optimization techniques
+
+
+Supervised learning
+
+	1. Regression
+		Having separate cost funtions
+			MSE, RMSE,MAE
+
+	2. Classification
+		Having separate cost funtions
+			Upcoming topic
+
+
+--------------------------------
+
+Regression cost function
+------------------------
+
+1. MSE(Mean Squared Error)
+-------------------------
+
+Data1
+	Area		Rice packs	Prediction
+	--------------------------	-----------
+	1		10		50		40
+	2		20		40		20
+	3		30		45		15
+	4		40		42		2
+
+ml(data1)
+
+
+-------------------------
+
+from Masud Siddiqi (privately):    5:46 PM
+
+Question: Do we need to apply the cost function and any cost optimizer e.g., Gradient Descent Algorithm (GDA) explicitly?
+
+I will cover in upcoming: In ML we no need apply cost function explicitly but In DL we can apply
+
+-------------------------
+
+# Calculating MSE value
+
+from sklearn.metrics import mean_squared_error
+
+actual = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+
+predicted = [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1, 0.0]
+
+
+mse_value = mean_squared_error(actual, predicted)
+
+print(mse_value)
+
+-------------------------
+
+# Calculating RMSE value
+
+import numpy as np
+from sklearn.metrics import mean_squared_error
+
+actual = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+
+predicted = [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1, 0.0]
+
+
+mse_value = mean_squared_error(actual, predicted)
+
+print(np.sqrt(mse_value))
+
+-------------------------
+
+# Calculating MAE value
+
+from sklearn.metrics import mean_absolute_error
+
+expected = [1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0, 1.0]
+
+predicted = [1.0, 0.9, 0.8, 0.7, 0.6, 0.5, 0.4, 0.3, 0.2, 0.1, 0.0]
+
+mae_value = mean_absolute_error(expected, predicted)
+
+print(mae_value)
+
+-------------------------
+
+Titanic: Problem statement, 
+
+Either person survived or not
+
+P1	->	Survived	->	1
+P2	->	No		->	0
+P3	->	sur		->	1
+
+
+survived	->	Target
+
+Which class	->	Feature
+
+-------------------------
+
+			Getting job:
+			IT job(target variable)
+
+Daniel(features)
+
+MCA, AI, Practice
+
+
+-------------------------
+
+Let me take one realtime dataset:
+---------------------------------
+
+2010	->	MCA
+2012	->	no job
+2013	->	started, tension started
+	->	2.8 no job
+Java	->	Very nicely, such a nice practice
+
+Hyd	->	ABC, Lab co-ordinator
+	
+Java std	Lab:	50 
+	->	4 months
+
+	->	Really got good subj
+	->	Added exp and started job trails
+
+	->	7th interview	got a job
+	->	6LPA
+
+
+IND	->	Before	8LPA	no need to pay Tax
+
+2 yrs	->	9 LPA		you have to pay Tax
+				10%	7K/month
+
+I dont want to pay the tax: less tax
+
+->	Apply	LIC/Home loan
+	18C/	show the tax
+->	less deductable
+
+
+20LPa	20%
+
+LIC(Companies, prediction who will take lic or not)
+
+---------------------------------
+
+from Masud Siddiqi (privately):    6:33 PM
+Pardon me to ask an out of topic question. 
+Do we need to understand how the human brain works to understand Neural Network?
+
+Neural Network	->	Before DL
+
+Its required
+
+---------------------------------
+
+# Steps from 1 to 2
+
+print("Topic: Logistic Regression")
+print()
+
+
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+df = pd.read_csv("insurance_data.csv")
+
+print()
+print(df[df["bought_insurance"] == 0])
+print()
+print(df[df["bought_insurance"] == 1])
+
+--------------------------------
+
+# Data Visualization
+
+print("Topic: Logistic Regression")
+print()
+
+
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from matplotlib import pyplot as plt
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+df = pd.read_csv("insurance_data.csv")
+
+
+
+print("Step Spl: Data Viz")
+
+plt.scatter(
+    df.age, 
+    df.bought_insurance, 
+    marker = '*', 
+    color = 'red'
+)
+
+plt.xlabel('age')
+plt.ylabel('Have insurance?')
+plt.show()
+
+--------------------------------
+
+# Steps from 1 to 9
+
+print("Topic: Logistic Regression")
+print()
+
+
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+df = pd.read_csv("insurance_data.csv")
+
+
+
+
+
+print("Step 3: Data preparation")
+
+X = df[['age']].values
+y = df.bought_insurance.values
+
+
+
+print("Step 4: Splitting the dataset")
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, 
+    y, 
+    test_size = 0.1, 
+    random_state = 52
+)
+
+
+
+
+print("Step 5: Model creation")
+
+model = LogisticRegression()
+
+
+
+
+
+print("Step 6: Model training")
+
+model.fit(X_train, y_train)
+
+
+
+
+print("Step 7: Prediction")
+
+print()
+print(model.predict([[49]]))
+
+
+--------------------------------
+
+-> We done today session
+-> We will meet again on Monday
+-> Daniel
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

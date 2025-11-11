@@ -1,0 +1,352 @@
+RUNNING NOTES: 09 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - LOADING DIFF FILES
+2. CURRENT TOPIC			-	PANDAS - DATAFRAME ATTRIBUTES
+3. UPCOMING TOPIC			-	PANDAS - DATAFRAME METHODS
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+
+9. PANDAS - DATAFRAME - METHODS		-	Running topic
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+8. PANDAS - DATAFRAME - ATTRIBUTES
+----------------------------------
+
+-> DataFrame is a predefined class
+-> DataFrame 
+	1. Attributes	->	Giving information about object
+	2. Methods	->	Perform an operation
+
+
+----------------------------------
+
+# len() function
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(len(df))
+
+----------------------------------
+
+# columns Attribute
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.columns)
+	
+	or
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+for column in df.columns:
+	print(column)
+
+
+----------------------------------
+
+# shape attribute
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.shape)
+
+----------------------------------
+
+# shape[0]
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.shape[0])
+
+
+----------------------------------
+
+# shape[1]
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.shape[1])
+
+----------------------------------
+
+# shape[2]
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.shape[2])
+
+----------------------------------
+
+# size attribute
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df)
+print()
+print(df.size)
+
+----------------------------------
+
+Attributes
+
+	df.columns
+	df.shape
+	df.shape[0]
+	df.shape[1]
+	df.size
+	df.dtypes
+	df.empty
+
+----------------------------------
+
+# emtpy attribute
+
+import pandas as pd
+
+df1 = pd.DataFrame()
+df2 = pd.read_csv("sales1.csv")
+
+print(df1.empty)
+print(df2.empty)
+
+----------------------------------
+
+Please be clear below points
+
+df1 = pd.DataFrame()
+
+	-> Object creation
+	-> no return statement
+
+df2 = pd.read_csv("sales1.csv")
+	-> Functionc calling
+	-> having return
+
+
+
+----------------------------------
+
+from Syed Muzahid to everyone:    6:16 PM
+can we call empty a conditional attribute
+
+-> Excellent point
+
+...
+if df.empty:
+	print("having data")
+else:
+	print("No data")
+
+----------------------------------
+
+# below example not much imp
+
+class Daniel:
+	def teaching(self):
+		print("Hello")
+
+
+def naresh():
+	d = Daniel()
+	return d
+
+n = naresh()
+n.teaching()
+
+
+----------------------------------
+
+# index attribute
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.index)
+
+----------------------------------
+
+# values attribute
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.values)
+
+----------------------------------
+
+from Mahesh Varma to everyone:    6:30 PM
+sir, for both columns and values  can we use df.columns.values
+
+Valid point
+
+
+from Syed Muzahid to everyone:    6:30 PM
+what if we want only order id data
+
+Yes sir we can do that
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df["Order ID"])
+
+
+
+----------------------------------
+
+from Mahesh Varma to everyone:    6:35 PM
+sir, for function calling we need to create a object but for print() it is not required does print() have no return statement
+
+Ans: print() function returns None
+
+a = print()
+print(a)
+
+----------------------------------
+
+# T attribute
+
+import pandas as pd
+
+details = [
+	["Sagar", 20, 10000], 
+	["Daniel", 16, 20000], 
+	["Veeru", 24, 30000], 
+	["Raju", 25, 40000], 
+	["Kiran", 26, 50000], 
+	["Kedar", 27, 60000], 
+	["Reena", 28, 70000]
+]
+
+df = pd.DataFrame(
+	details, 
+	columns = ["Name", "Age", "Salary"]
+)
+
+print(df)
+print()
+print(df.T)
+
+----------------------------------
+
+9. PANDAS - DATAFRAME - METHODS
+
+
+We done for today Session
+
+- Daniel
+
+----------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

@@ -1,0 +1,90 @@
+RUNNING NOTES: 12 - NOV - 2024
+--------------------------------
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Running topic
+
+1. PYTHON - INTRODUCTION		-	Upcoming topic
+
+2. PYTHON - KEYWORDS			-	Upcoming topic
+
+
+----------------------------------------------------------------
+
+1. DATA SCIENCE FUNDAMENTALS
+-----------------------------
+
+Data		->	Collection of Facts
+
+Facts		->	Numbers, Alphabets, AlphaNumerric...
+
+
+
+Data Science	->	Python
+			Data Analysis(by using pandas)
+			Maths
+			etc
+
+
+
+AI		->	Group of algorithms/Models
+			Machine Learning
+			Deep Learning
+			Computer Vision(cv)
+			NLP tech
+
+			Prediction
+
+Gen AI		->	
+
+-----------------------------
+
+6.5 Process behind the scientist
+
+
+from Kompella Ganesh (privately):    9:46 AM
+sir i need to talk with you please respond my text
+
+End of the session we can give an access 
+
+
+-----------------------------
+
+0. PYTHON - INSTALLATION
+
+Next session
+
+
+Java	->	Hadoop(MapReduce-Java required)
+	->	PySpark(Big Data processing software)
+	->	PySpark(MLlib)......Data Scientist
+
+-----------------------------
+
+Admins
+	Offline		->	9154861180	(Venkatesh sir)
+	Online		->	9063042468	(Naga Babu sir)
+
+----------------------------------------------------------------	
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	

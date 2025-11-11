@@ -1,0 +1,348 @@
+RUNNING NOTES: 31 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	OBJECT ORIENTED PROGRAMMING
+2. CURRENT TOPIC			-	PACKAGE
+3. UPCOMING TOPIC			-	DATA ANALYSIS
+						USING PANDAS
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				-	21 topics
+-------------
+
+1. PANDAS - INTRODUCTION		-	Running topic
+
+
+2. PANDAS - SERIES - INTRODUCTION	-	Upcoming topic
+3. PANDAS - NAN VALUE			-	Upcoming topic
+
+
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+
+--------------------------------
+
+14. PYTHON - PACKAGE
+-------------------
+
+Package		->	It is a folder/directory
+		->	This folder contains group of modules
+		->	Special module
+				__init__.py
+
+--------------------------------
+
+Example1
+--------
+
+# Package importing by using import keyword
+
+
+import maindir.test2
+import maindir.subdir.test3
+
+
+maindir.test2.naresh()
+maindir.subdir.test3.daniel()
+
+
+--------------------------------
+
+# Package importing by using from & import keyword
+
+from maindir.test2 import naresh
+from maindir.subdir.test3 import daniel
+
+
+naresh()
+daniel()
+
+--------------------------------
+
+Module		->	A program
+		->	Group of members
+			1. Variables
+			2. Functions
+			3. Classe
+				methods
+
+Package		->	A group of module
+Library		->	A group of pakcage
+
+
+--------------------------------
+
+DATA ANALYSIS
+
+Data 		->	Collection of Facts
+
+Data		->	1, 2, 3, 4, 5, 6, 7, 8, 9, 10
+
+
+			Data Analysis operations
+			------------------------
+
+Analysis	->	min value 	- 1
+			max value 	- 10
+			even 	  	- 2, 4, 6, 8, 10
+			odd	  	- 1, 3, 5, 7, 9
+			total vals	- 10
+			sum	  	- 55
+
+
+list		->	We can do Data Analysis
+		->	Its small scale data
+
+Data analysis	->	Big Scale data
+
+--------------------------------
+
+IMP point
+---------
+
+-> We can do data analysis by using pandas
+-> pandas is python package
+
+--------------------------------
+
+IMP point
+---------
+
+Coin			=	H	+	T
+
+Data Science Project	= Data Analysis	+ Model creation
+
+			       70%	+      30%
+
+			  using pandas  + using ML
+
+	
+--------------------------------
+
+from Supriya Rao (privately):    6:06 PM
+Sir, small query- In naresh IT there’s a upcoming course fullstack python, it’s for 5 months.. we finished  python in 1.5 months.. what we studied here is it enough ?
+
+Ans: more than enough
+
+Full stack python: a.........m.......t.........z
+
+Data Scientist: a to z python is not required
+
+		a daily
+		b daily
+		z didnt use 6 months
+
+--------------------------------
+
+	Data Structures
+
+Python
+	list
+	tuple
+	set
+	dictionary
+
+pandas
+	Series
+	DataFrame
+	Panel
+
+
+--------------------------------
+
+	Data Science
+
+Software we need to install :)
+
+Python		->	Open souce	free
+pandas		->	Open souce	free
+
+--------------------------------
+
+Installation
+------------
+
+Python		->	0. .exe file(By click we can install)
+			1. Downloaded
+			2. Installed
+
+Pandas		->	0. not a .exe file
+			2. how to install?
+
+--------------------------------
+
+Pandas
+		1. Install
+		2. Start work
+
+Install
+-------
+
+		1. Open command prompt
+		2. Run below command
+			pip install pandas
+
+
+--------------------------------
+
+Command to install
+
+-> pip install pandas
+
+	.......
+	Successfully installed pandas-2.2.3
+
+
+--------------------------------
+
+Be Alert!!!
+
+-> pip install pandas will work for 99/100
+-> Might be one/two students may face issue/error
+
+-> pip is not recognized an internal or external command
+
+-> Reason:
+	Did you remember, while installing python
+	we have to check two boxes
+
+--------------------------------
+
+pip install pandas
+
+-> It hits this website
+-> https://pypi.org/project/pandas/
+
+--------------------------------
+
+No problem at all
+
+from Iddipilli Karthik to everyone:    6:29 PM
+[notice] A new release of pip available: 22.3.1 -> 24.3.1
+[notice] To update, run: python.exe -m pip install --upgrade pip
+
+--------------------------------
+
+		Data Structures
+		----------------
+
+	Python		pandas		numpy
+	-------------------------------------
+
+	list		Series		array
+	tuple		DataFrame
+	set		Panel
+	dict
+
+
+	small data	big data	big data
+	little slow	very fast	super fast
+
+
+--------------------------------
+
+pandas	->	Can handle Structured Data
+
+--------------------------------
+
+10.1. Series
+
+Next session
+
+Regarding Tomorrow session	:	No session
+Again we will meet on		:	Thursday :)
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

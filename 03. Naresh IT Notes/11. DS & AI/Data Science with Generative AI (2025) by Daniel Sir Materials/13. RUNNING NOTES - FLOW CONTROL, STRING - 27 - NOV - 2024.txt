@@ -1,0 +1,460 @@
+RUNNING NOTES: 27 - NOV - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	INPUT AND OUTPUT
+2. CURRENT TOPIC			-	FLOW CONTROL
+3. UPCOMING TOPIC			-	STRING
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+
+10. PYTHON - STRING			-	Running topic
+
+11. PYTHON - FUNCTIONS - PART - 1	-	Upcoming topic
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. IndexError
+5. IndentationError
+
+
+--------------------------------
+
+9. PYTHON - FLOW CONTROL	
+------------------------
+
+Keywords
+	if
+	else
+	elif
+
+	for
+	while
+
+	break
+	continue
+	pass
+
+------------------------
+
+continue
+
+	-> Keyword in python
+	-> We can skip the value(s) from loop
+	-> continue keyword we should use with loops only
+
+------------------------
+
+a = [10, 20, 30, 40]
+
+for loop...
+
+10
+20
+30	I wanted to skip 30, then we need to use continue key
+40
+
+10
+20
+40
+
+------------------------
+
+values = [10, 20, 30, 40, 50, 60]
+
+for value in values:
+	print(value)
+
+
+------------------------
+
+values = [10, 20, 30, 40, 50, 60]
+
+for value in values:
+	if value == 30:
+		continue
+
+	print(value)
+
+------------------------
+
+values = [10, 20, 30, 50, 1, 60]
+
+for value in values:
+	if value == 1:
+		continue
+	print(value)
+
+
+------------------------
+
+values = [10, 20, 30, 50, 1, 60]
+
+a = [30, 50]
+
+for value in values:
+	if value in a:
+		continue
+
+	print(value)
+
+------------------------
+
+pass keyword
+
+-> This we will discuss in upcoming session
+-> Function, Class
+
+------------------------
+
+Keywords
+	if
+	else
+	elif
+
+	for
+	while
+	
+	break
+	continue
+	pass(upcoming topic)
+
+------------------------
+
+10. PYTHON - STRING
+-------------------
+
+Data types
+----------
+	....
+	Seqence
+		1. string	->	Separate chapter
+
+
+-------------------
+
+STRING
+-------
+
+Python 		->	print("Hello World")
+
+"Hello World"	->	This is string
+		->	A group of characters enclosed within 
+			quotes(single/double/triple)
+
+-------------------
+
+a = 'Daniel'
+b = "Daniel"
+c = '''Daniel'''
+d = """Daniel"""
+
+print(a)
+print(b)
+print(c)
+print(d)
+print()
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+
+-------------------
+
+gender = 'm'
+
+name = "Daniel"
+
+address = """S/O Jeswanth Rao
+Kaikaluru, Krishna Dt
+Mudinepalli mandal,
+Andhra pradesh"""
+
+print(gender)
+print(name)
+print(address)
+
+-------------------
+
+gender = 'm'
+
+name = "Daniel"
+
+address = """S/O Jeswanth Rao
+Kaikaluru, 'Krishna Dt'
+Mudinepalli mandal,
+Andhra pradesh"""
+
+print(gender)
+print(name)
+print(address)
+
+-------------------
+
+2007	->	I went to college to join
+
+Application
+
+First name	:	string	
+Last name	:	string
+Father name	:	string
+mobile no	:	integer
+Address		:	string
+mail id		:	string
+
+-------------------
+
+a = ''''Hello''''
+
+print(a)
+print(type(a))
+
+-------------------
+
+a = ''''Hello' how are you'''
+
+print(a)
+print(type(a))
+
+-------------------
+
+a = "Hello World"
+
+print(a)
+
+
+								-3	-2	-1
+
+H	e	l	l	o		W	o	r	l	d
+
+0	1	2	3	4	5	6	7	8	9	10
+
+index:	The position of character where it stores
+
+
+-------------------
+
+index:	The position of character where it stores
+Usage:	By using index we can access characters
+
+a = "Hello World"
+
+print(a)
+print(a[0])
+print(a[1])
+print(a[10])
+print(a[-1])
+
+-------------------
+
+a = "Hello World"
+
+print(a)
+print(a[99])
+
+-------------------
+
+a = "Hello World"
+
+for char in a:
+	print(char)
+
+
+-------------------
+
+a = "Hello World"
+
+print(a)
+
+
+								-3	-2	-1
+
+H	e	l	l	o		W	o	r	l	d
+
+0	1	2	3	4	5	6	7	8	9	10
+
+
+index	->	By using this we can access single character
+slicing	->	By using this we can access group of characters
+
+print(a[start:end])
+
+print(a[0:4])
+
+-------------------
+
+a = "Hello World"
+
+print(a)
+print(a[0:4])
+print(a[0:5])
+
+-------------------
+
+Recap
+-----
+
+1. What is a string
+2. How many ways to create a string
+3. How to access string
+	index
+	slicing
+	for loop
+
+-------------------
+
+slicing
+	s[start	:	end	:	step]
+
+
+-------------------
+
+Mutable and Immutable
+---------------------
+
+Data
+	1. Mutable data
+	2. Immutable data
+
+
+Mutable		->	Can be change/modify/update
+Immutable	->	Cannot be change/modify/update
+
+
+-> String having immutable nature
+
+
+---------------------
+
+Mutable & Immutable
+
+
+		Immutable		Mutable
+		-------------------------------
+
+			Boy Name		Girl Name
+
+Before marriage	Kasagani Daniel		Rajulapati Subbamma
+
+After marriage	Kasagani Daniel		Kasagani Subbamma
+
+---------------------
+
+Emp details
+------------
+
+Name	:	Daniel			cannot be change
+Age	:	16			can be change
+Salary	:	10000.36		can be change
+mail id	:	daniel@gmail.com	cannot be change
+Passport:	38746283467		cannot be change
+
+
+---------------------
+
+Mutable & Immutable
+
+-> Mutable	->	Can be change
+-> Immutable	->	Cannot be change
+
+Ex:
+
+-> list having mutable nature
+-> String having immutable nature
+
+
+---------------------
+
+list having mutable nature
+
+a = [10, 20, 30, 40]
+
+print(a)
+a[0] = 99
+print(a)
+
+---------------------
+
+String having immutable nature
+
+a = "Daniel"
+
+print(a)
+a[0] = "P"
+print(a)
+
+---------------------
+
+Tomorrow:	We can discuss more and more 
+
+---------------------
+
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

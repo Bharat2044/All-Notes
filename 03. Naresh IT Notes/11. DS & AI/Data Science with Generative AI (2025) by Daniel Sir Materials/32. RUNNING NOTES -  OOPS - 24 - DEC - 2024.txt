@@ -1,0 +1,400 @@
+RUNNING NOTES: 24 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	DICT DATA STRUCTURE
+2. CURRENT TOPIC			-	OBJECT ORIENTED PROGRAMMING
+3. UPCOMING TOPIC			-	PACKAGE
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+
+14. PYTHON - PACKAGE			-	HOLD
+
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+
+19. PYTHON - OBJECT ORIENTED 		-	Running topic
+	PROGRAMMING	
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+
+--------------------------------
+
+19. PYTHON - OBJECT ORIENTED
+	PROGRAMMING	
+-----------------------------
+
+Daniel	
+	2006
+	B.sc	20+	->	Tag: Graduated
+
+	2007	
+	MCA	30+	->	Tag: Post Graduation
+
+
+-----------------------------
+
+
+1. Function oriented programming	->	10 Rules
+		create a function
+		calling a function
+		return keyword
+
+
+
+2. Object Oriented programming		->	10 rules
+
+		creating class
+		creating method
+		created object
+		callig method
+
+
+
+3. Python programming	->	also called
+			->	Function oriented programming
+			->	Object oriented programming
+
+Python	=	FP	+	OOP
+
+-----------------------------
+
+Initially
+
+1. Function programming lang
+2. Object Oriented programming lang
+
+Software companies	are using to create software
+
+	1. Function programming lang....
+	   .....
+
+	2. Object oriented approach
+	   All companies started using this......
+
+
+-----------------------------
+
+
+
+IT industry
+
+	Before OOPS	->	Function oriented
+
+
+	After OOPs	->	set Trend
+
+
+Cine Industry
+
+	Before bahubali	->	movie
+
+
+
+	After bahubali	->	All aud expectation
+
+-----------------------------
+
+Python
+	
+Functions
+---------
+	1. Create a function
+	2. Call a function
+	3. A function can call another function
+	4. We can create any number of functions
+	5. Parameterised function
+	6. A function + return keyword
+	7. A function can return multiple values
+	8. Arguments
+		1. Postional args
+		2. Keyword args
+		3. Default args
+		4. Variables length args
+	9. lambda function
+		1. map() function
+		2. filter() function
+		3. reduce() function
+
+
+Object oriented
+---------------
+
+	1. class
+	2. object
+	3. method
+	4. calling a method
+	5. constructor etc
+
+--------------------------------
+
+1. class
+--------
+
+-> Importance of the class
+
+--------------------------------
+
+# Everywhere python uses class topic for implementation
+
+a = 10
+b = 1.23
+c = True
+d = "Hello"
+e = [10, 20, 30, 40]
+f = (10, 20, 30, 40)
+g = {10, 20, 30, 40}
+h = {101: "Daniel", 102: "Raju"}
+
+def rajesh():
+	print("Hello")
+
+print(type(a))		#	<class 'int'>
+print(type(b))
+print(type(c))
+print(type(d))
+print(type(e))
+print(type(f))
+print(type(g))
+print(type(h))
+print(type(rajesh))
+
+--------------------------------
+
+
+class	->	idea	implemented	->	object
+
+1990's	->	
+		let me 	2 yrs		->	Usha Fan
+		create 
+		a Fan
+
+		3 wings
+		lengh,
+		width
+		shape
+
+--------------------------------
+
+class
+-----
+
+-> Class is a specification(idea/plan/theory) of properties and actions of objects.
+
+-> class is a model to create an object
+
+	-> Class doesnot exist physically
+	-> Object exist physically
+
+--------------------------------
+
+Just denifition
+
+class
+	1. Constructor
+	2. Variables
+	3. Methods
+
+--------------------------------
+
+		Template
+		--------
+
+class					Purpose
+
+	1. Constructor			Initialization or
+					Create instance variable
+		1. Zero para
+		2. Para
+	
+	2. Variables			To represent the data
+		1. Instance 
+		2. Static 
+		3. Local
+
+	3. Methods			To perform an action
+		1. Instance 
+		2. Static
+		3. Class
+
+
+--------------------------------
+
+	Full stack python devlopper
+	all below topics imp
+
+
+class					Purpose
+
+	1. Constructor			Initialization or
+					Create instance variable
+		1. Zero para
+		2. Para
+	
+	2. Variables			To represent the data
+		1. Instance 
+		2. Static 
+		3. Local
+
+	3. Methods			To perform an action
+		1. Instance 
+		2. Static
+		3. Class
+
+--------------------------------
+
+	Data Scientist/ML Engineer
+
+class					Purpose
+
+	1. Constructor			Initialization or
+					Create instance variable
+		1. Zero para
+		2. Para
+	
+	2. Variables			To represent the data
+		1. Instance 
+
+
+	3. Methods			To perform an action
+		1. Instance 
+
+
+--------------------------------
+
+# Below program is valid but not IMP
+
+class Student:
+	print("Hello")
+
+
+--------------------------------
+
+# class + method combination
+
+--------------------------------
+
+Function
+	1. by using def keyword
+	2. by using lambda keyword
+
+class
+	1. by using class keyword
+
+--------------------------------
+
+student_id = 10			#	Variable creation
+
+def naresh():			#	Function creation
+	print("Hello")
+
+class DanielDetails:		#	Creating a class
+	....
+
+--------------------------------
+
+Naming convention
+
+-> Class name should start with upper case, remaining letters are in lower case
+
+	Ex: Student
+
+-> If class name contains more words, every nested word also start with upper case only
+
+	Ex: StudentInfo
+
+--------------------------------
+
+We done for today session :)
+
+--------------------------------
+
+Kind update regarding tomorrow session
+
+	-> Tomorrow is holiday
+	-> Again we will meet on 26th(Thursday)
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

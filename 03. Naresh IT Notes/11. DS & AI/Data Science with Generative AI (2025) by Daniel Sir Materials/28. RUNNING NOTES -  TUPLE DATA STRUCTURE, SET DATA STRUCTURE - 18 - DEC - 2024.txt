@@ -1,0 +1,492 @@
+RUNNING NOTES: 18 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	LIST DATA STRUCTURE
+2. CURRENT TOPIC			-	TUPLE DATA STRUCTURE
+3. UPCOMING TOPIC			-	SET DATA STRUCTURE
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+
+13. PYTHON - MODULE			-	Done
+
+14. PYTHON - PACKAGE			-	HOLD, till oops topic
+
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+
+17. PYTHON - SET DATA STRUCUTRE		-	Running topic
+
+
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Upcoming topic
+19. PYTHON - OBJECT ORIENTED 		-	Upcoming topic
+	PROGRAMMING	
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. TypeError
+5. IndexError
+
+6. IndentationError
+7. AttributeError
+8. ModuleNotFoundError
+
+--------------------------------
+
+16. PYTHON - TUPLE DATA STRUCUTRE
+---------------------------------
+
+Tuple
+-----
+
+1. CREATE	-	(), tuple()
+2. STORE	-	same/diff type of values
+3. SIZE		-	size is not dynamic
+4. ORDER	-	Insertion order is fixed
+5. DUPLICATES	-	tuple can store duplicates
+6. IMMUTABLE	-	tuple having immutable nature	
+7. INDEX	-	tuple can use index to store the values
+
+---------------------------------
+
+# Creating two tuples
+
+a = (10, 20, 30, 40)
+b = 60, 70, 80, 90
+
+print(a)
+print(b)
+print()
+print(type(a))
+print(type(b))
+
+---------------------------------
+
+# Converting from list to tuple
+
+a = [10, 20, 30, 40]
+b = tuple(a)
+
+print(a)
+print(b)
+
+---------------------------------
+
+IMP discussion
+
+b = tuple(a)
+
+-> tuple() predefined function
+-> This function having return so we assigned with variable
+
+---------------------------------
+
+tuple
+------
+
+	1. How to create
+	2. How to access the values
+		1. index
+		2. slice
+		3. for loop
+
+---------------------------------
+
+# Accessing value by using index
+
+a = (10, 20, 30, 40, 50, 60, 70)
+
+print(a[0])
+
+---------------------------------
+
+# Accessing value by using slicing
+
+a = (10, 20, 30, 40, 50, 60, 70)
+
+print(a[0:3])
+
+---------------------------------
+
+# Accessing values by using for loop
+
+a = (10, 20, 30, 40, 50, 60, 70)
+
+for value in a:
+	print(value)
+
+---------------------------------
+
+# tuple having immutable nature
+
+a = (10, 20, 30, 40)
+
+print(a)
+a[0] = 99
+print(a)
+
+
+---------------------------------
+
+a = (10, 20, 30, 40)
+
+Syntax
+------
+
+	a[0]	->	index
+	a[:]	->	slicing
+	a[::]	->	slicing(not using in realtime)
+
+---------------------------------
+
+# Checking the length of the tuple
+
+a = (10, 20, 30, 10, 10)
+b = len(a)
+
+print(a)
+print(b)
+
+---------------------------------
+
+Methods in str class
+Methods in list class
+Methods in tuple class
+Methods in set class
+Methods in dict class
+
+Methods in Series class
+Methods in DataFrame class
+
+Methods in LinearRegression class
+
+---------------------------------
+
+Methods in tuple class
+
+	1. tuple is predefined class
+	2. class contains methods
+
+class
+	methods
+
+str
+	upper()
+	lower()
+	strip()
+	count()
+	split()
+
+list
+	append()
+	count()
+	remove()
+	insert()
+	reverse()
+
+tuple
+	count()
+	index()
+
+---------------------------------
+
+from Masud Siddiqi (privately):    6:03 PM
+
+Is tuple() a function or constructor?
+
+Ans1:	It is function
+Ans2:	Reg constructor we will learn during oops
+
+---------------------------------
+
+Program
+-------
+
+1. Procedure oriented approach
+2. Function oriented approach
+3. Object oriented approach
+
+---------------------------------
+
+1. Procedure oriented approach
+
+-> Writing a program by using Procedure 
+
+
+---------------------------------
+
+2. Function oriented approach
+
+-> Writing a program by using function
+
+Function
+
+	1. How to create a function
+	2. How to call a function
+
+def rajesh():
+	print("Hello Good evening")
+
+rajesh()
+
+---------------------------------
+
+3. Object oriented approach
+
+	1. How to create a class
+	2. How to create method inside of the class
+	3. How to create an object to a class
+	4. How to call method
+
+---------------------------------
+
+# class, method, object, method calling
+
+class Daniel:
+	def eating(self):
+		print("I like chicken biryani")
+
+d = Daniel()
+d.eating()
+
+---------------------------------
+
+from Sunkar Rani to everyone:    6:14 PM
+sir , I just want to ask you one thing ..in data science will teach us how to create an app ....
+
+In Data Science
+---------------
+	1. Loading the dataset
+	2. Data Analysis
+	3. Data Visualization
+	4. Model creation(ML/DL/etc Algorithm)
+	5. Model training
+	6. Prediction
+	7. Deployment
+
+---------------------------------
+
+	str		list		tuple
+
+	count()		count()		count()
+
+	upper()		append()	index()
+
+---------------------------------
+
+	Prasad		Daniel
+
+	Akshay		Akshay
+
+---------------------------------
+
+# count() method
+
+a = (10, 20, 30, 10, 10, 10)
+
+print(a)
+print(a.count(10))
+
+---------------------------------
+
+# AttributeError
+
+a = (10, 20, 30, 10, 10, 10)
+
+print(a)
+print(a.COUNT(10))
+
+
+---------------------------------
+
+from Mahesh Varma to everyone:    6:20 PM
+sir can we create a method in predefined class
+
+Good question
+
+	Yes we can do that bcoz python is open source
+	but
+	not recommended
+
+Open source
+
+	1. We can download sw, free(0 cost)
+	2. downloading the python, source code also free
+
+		python creator	->	he will give code
+
+
+Free	->	All companies started using....
+	->	Google
+			60% running with python
+		Donated
+
+
+
+---------------------------------
+
+# Creating list within the tuple
+
+a = (10, 20, [30, 40], 50, 60)
+
+print(a)
+print(a[0])
+print(a[1])
+print(a[2])
+print(a[2][0])
+
+---------------------------------
+
+# Chaning the list value
+
+a = (10, 20, [30, 40], 50, 60)
+
+print(a)
+print(a[0])
+print(a[1])
+print(a[2])
+print(a[2][0])
+a[2][0] = 99
+print(a)
+
+---------------------------------
+
+# Adding value to list
+
+a = (10, 20, [30, 40], 50, 60)
+
+print(a)
+print(a[0])
+print(a[1])
+print(a[2])
+a[2].append(99)
+print(a)
+
+---------------------------------
+
+# Adding value to list
+
+a = (10, 20, [30, 40], 50, 60)
+
+print(a)
+a[2].append(99)
+print(a)
+
+---------------------------------
+
+gmail creation is done
+----------------------
+
+data = ["Kasagani", "Daniel", ("daniel@gmail.com", ), 16]
+
+---------------------------------
+
+Kind update
+-----------
+
+Lab	->	Offline
+
+	->	tomorrow onwards
+	->	3 to 4 pm
+	->	I am available in lab
+
+	->	1. Study hour
+		2. more on practice
+
+---------------------------------
+
+17. PYTHON - SET DATA STRUCUTRE	
+
+Set
+----
+
+1. CREATE	-	{} with values, set()
+
+---------------------------------
+
+We done for today session 
+We will connect tomorrow
+
+Tomorrow topics
+
+	1. Set Data structure
+	2. Dictionary data structure
+
+Daniel
+Naresh It
+KPHB
+
+---------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

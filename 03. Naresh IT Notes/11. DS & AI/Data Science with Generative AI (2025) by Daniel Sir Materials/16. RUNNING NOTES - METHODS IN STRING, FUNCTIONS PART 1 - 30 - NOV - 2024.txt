@@ -1,0 +1,461 @@
+RUNNING NOTES: 30 - NOV - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	FLOW CONTROL
+2. CURRENT TOPIC			-	STRING
+3. UPCOMING TOPIC			-	FUNCTIONS PART 1
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+
+10. PYTHON - STRING			-	Done
+
+11. PYTHON - FUNCTIONS - PART - 1	-	Running topic
+
+12. PYTHON - FUNCTIONS - PART - 2	-	Upcoming topic
+
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. IndexError
+5. IndentationError
+
+6. AttributeError
+
+
+--------------------------------
+
+10. PYTHON - STRING	
+-------------------
+
+str	->	Predefined class
+class	->	methods
+
+class
+
+	methods
+
+str
+	upper()
+	lower()
+	strip()
+
+--------------------------------
+
+IMP
+---
+
+-> We can access method(Instance) by using object name
+-> No alternative
+
+--------------------------------
+
+s1 = "Kasaaaaaaagani Daniel"
+s2 = s1.replace("Kasaaaaaaagani", "Kasagani")
+
+print(s1)
+print(s2)
+
+-> From above code we need to understand, we can update string
+-> String having immutable nature, How it is possible to update?
+
+-> When we can replace() method it is create new string instead updating old string
+
+
+--------------------------------
+
+split() method
+--------------
+
+s1 = "Daniel Rajesh Raju Rani Kusuma"
+
+s2 = s1.split()
+
+print(s1)
+print(s2)
+
+-> By default spearator is SPACE
+-> Can I customise the separator?
+	Yes we can do that
+
+--------------------------------
+
+s1 = "Daniel Rajesh,Raju Rani Kusuma"
+
+s2 = s1.split(",")
+
+print(s1)
+print(s2)
+
+--------------------------------
+
+class
+	method1
+	method2
+		method1
+
+
+Can we conver this point during oops
+
+--------------------------------
+
+print()		->	This is function
+		->	This is not a method
+
+upper()		->	This is method in str class
+		->	This is not a function
+
+Can you prove, print() is function and upper() is method?
+
+Ans:	We can prove
+
+--------------------------------
+
+print()		->	Function
+upper()		->	Method in str class
+
+
+--------------------------------
+
+s = "daniel"
+
+print(print)
+print(s.upper)
+
+--------------------------------
+
+print()		->	function
+len()		->	function
+upper()		->	method 
+lower()		->	method
+range()		->	function
+
+print()		->	function
+		->	but not method
+
+upper()		->	method
+
+--------------------------------
+
+11. PYTHON - FUNCTIONS - PART - 1
+---------------------------------
+
+All names are valid
+-------------------
+1. Functions
+2. Functional programming language
+3. Functional programming approach
+
+
+Python		->	Functions(group of sub topics)
+
+Functions	->	Part 1	+	Part 2
+
+
+FUNCTIONS - PART - 1
+--------------------
+
+Programming languages
+
+1. Procedure oriented approach	->	companies...
+				->	Creating softwares
+				->	limitations???
+
+
+2. Function oriented approach	->	Why functions
+
+Small story :-
+------------
+
+One day, My father was not well
+Called, we will go to hospital
+body pains
+
+Went to hospitals
+all checkups done
+Waiting for report
+
+Doctor he is my fathers frnd
+
+All reports are good
+but
+
+for you walking is required
+
+back to home
+
+Shopping mall, stop the car
+
+went to shop, Nike, Adidas
+
+9PM	->	
+
+Get ready for morning walk
+
+Monday	5 am
+------
+
+1. Wake up from the bed
+2. Fresh up
+3. pick smooth towel
+4. Tie the shoe
+5. Start morning walk
+
+Tuesday
+-------
+
+1. Wake up from the bed
+2. Fresh up
+3. pick smooth towel
+4. Tie the shoe
+5. Start morning walk
+
+Procedure oriented
+-------------------
+print("1. Wake up from the bed")
+print("2. Fresh up")
+print("3. pick smooth towel")
+print("4. Tie the shoe")
+print("5. Start morning walk")
+
+print("1. Wake up from the bed")
+print("2. Fresh up")
+print("3. pick smooth towel")
+print("4. Tie the shoe")
+print("5. Start morning walk")
+
+print("1. Wake up from the bed")
+print("2. Fresh up")
+print("3. pick smooth towel")
+print("4. Tie the shoe")
+print("5. Start morning walk")
+
+
+print("1. Wake up from the bed")
+print("2. Fresh up")
+print("3. pick smooth towel")
+print("4. Tie the shoe")
+print("5. Start morning walk")
+
+
+print("1. Wake up from the bed")
+print("2. Fresh up")
+print("3. pick smooth towel")
+print("4. Tie the shoe")
+print("5. Start morning walk")
+
+Limitation:	Its duplicate code
+		Its boiler plate code
+		Certain point we can lose the control on code
+		bcoz code will be very lenghty
+
+
+--------------------------------
+
+Function oriented approach
+
+def morning_walk():
+	print("1. Wake up from the bed")
+	print("2. Fresh up")
+	print("3. pick smooth towel")
+	print("4. Tie the shoe")
+	print("5. Start morning walk")
+
+
+morning_walk()
+morning_walk()
+morning_walk()
+
+--------------------------------
+
+Function
+
+-> A function contains group of statements
+-> A function can perform the task/action/operation
+
+Types of functions
+------------------
+	1. Builtin function
+	2. Userdefined function
+
+--------------------------------
+
+Python	->	Installed
+
+	->	By default we do have functions
+	->	print()
+	->	type()
+	->	range()
+	->	len()
+
+--------------------------------
+
+Function terminology
+
+	-> def keyword
+	-> Name of the function
+	-> Parenthesis
+	-> Parameters(Optional)
+	-> colon symbol
+	-> Indentation
+	-> Body of the function
+	-> return(Optional)
+
+--------------------------------
+
+-> Function and method both are not same
+-> What is the difference between function and method?
+
+--------------------------------
+
+Function
+---------
+def naresh():
+	print("Hello")
+
+naresh()
+
+-> We can create a function by using def keyword
+-> We can call function directly
+-> function is independent
+
+--------------------------------
+
+
+Method
+------
+
+class Daniel:
+	def teaching(self):
+		print("I like teaching only in free time")
+
+d = Daniel()
+d.teaching()
+
+
+-> We can create method inside a class
+-> We can create a method by using def keyword
+-> We cannot call method direclty
+-> We can call method by using object
+-> Method is dependent on object
+
+--------------------------------
+
+Function
+
+	1. How to create a function
+	2. How to call a function
+
+--------------------------------
+
+1. How to create a function
+
+-> We can create a function by using def keyword
+
+--------------------------------
+
+def daniel():
+	print("Hello Good Evening")
+	print("How are you")
+
+--------------------------------
+
+4. Function definition
+
+Next session :)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+--------------------------------
+--------------------------------
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

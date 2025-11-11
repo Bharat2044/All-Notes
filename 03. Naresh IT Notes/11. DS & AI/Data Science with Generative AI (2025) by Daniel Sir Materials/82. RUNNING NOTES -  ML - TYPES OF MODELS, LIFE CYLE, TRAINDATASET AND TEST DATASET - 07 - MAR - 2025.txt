@@ -1,0 +1,542 @@
+RUNNING NOTES: 07 - MAR - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	LEARNING FUNCTION
+2. CURRENT TOPIC			-	TYPES OF MODELS
+3. UPCOMING TOPIC			-	LIFE CYCLE
+									         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Done
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Done
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Done 
+	MULTIPLE CSV FILES
+
+--------------------------------------------------
+
+DATA ANALYSIS PROJECT
+---------------------
+
+1. EDA PROJECT				-	Done
+
+--------------------------------------------------
+
+DATA VISUALIZATION
+------------------
+
+1. DATA VISUALIZATION PART 1		-	Done
+2. DATA VISUALIZATION PART 2		-	Done
+3. DATA VISUALIZATION FUNDAMENTALS	-	Done
+
+4. DATA VISUALIZATION POWER BI		-	Upcoming topic	
+		
+--------------------------------------------------
+
+NUMPY
+-----
+
+1. NUMPY INTRODUCTION			-	Done
+2. NUMPY FUNDAMENTALS			-	Done
+3. NUMPY ATTRIBUTES			-	Done
+4. NUMPY METHODS			-	Done
+
+--------------------------------------------------
+
+MATHS						STATUS
+-----						------
+
+1. MATHS - PART - 1 - POPULATION, 	-	Done
+	SAMPLE, TYPES OF VARIABLES
+
+
+2. MATHS - PART - 2 - MODE, MEDIAN, 	-	Done
+	MEAN, RANGE, 
+	STANDARD DEVIATION, VARIANCE	
+
+
+3. MATHS - PART - 3 - OUTLIERS		-	Done
+
+
+4. MATHS - PART - 4 - THE FIVE NUMBERS	-	Done
+	SUMMARY, BOX PLOT, OUTLIER
+
+
+5. MATHS - PART - 5 - SYMMETRY AND 	-	Done
+	SKEWNESS
+
+
+6. MATHS - PART - 6 - EXPLANATORY AND 	-	Done
+	RESPONSIVE VARIABLES
+
+
+7. MATHS - PART - 7 - REGRESSION 	-	Done
+	AND R SQUARED
+
+
+8. MATHS - PART - 8 - RESIDUALS		-	Done
+
+
+9. MATHS - PART - 9 - THE NORMAL 	-	Hold
+	DISTRIBUTION AND 
+	68-95-99.7 RULE
+
+10. MATHS - PART - 10 - MATRIX		-	Done
+
+--------------------------------------------------
+
+FEATURE ENGINEERING
+-------------------
+
+1. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 1	-	Done
+
+
+2. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 2	-	Done
+
+--------------------------------------------------
+
+MACHINE LEARNING
+----------------
+
+1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	INTRODUCTION
+
+2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TERMINOLOGY
+
+3. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DATA AND ML ALGORITHMS
+
+4. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LEARNING FUNCTION
+
+5. DATA SCIENCE - MACHINE LEARNING 	- 	Running topic
+	TYPES OF MODELS
+
+6. DATA SCIENCE - MACHINE LEARNING 	- 	Upcoming topic
+	LIFE CYCLE
+
+
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+6. float(p)		->	To convert to float
+7. int(p)		->	To convert to int
+8. list(p)		->	Convert from seq to list
+9. tuple(p)		->	Convert from seq to tuple
+10. set(p)		->	Convert from seq to set
+
+11. dict(p)		->	Convert from list of tups to dict
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+11. InvalidParameterError
+
+--------------------------------
+
+5. DATA SCIENCE - MACHINE LEARNING
+	TYPES OF MODELS
+
+--------------------------------
+
+ML flow
+-------
+
+Data
+	DataFrame
+		Feature Engg
+				Array
+					Machine Learning Algorithm
+					Cost/Error function
+					Gradient Descent Algorithm
+						Increase accuracy
+						Reduce Error
+
+
+ML steps
+--------
+
+	1. Importing the libraries
+	2. Loading the dataset
+	3. Data preparation
+	4. Splitting the dataset
+	5. Model creation
+	6. Model training
+	7. Prediction
+
+--------------------------------
+
+Types of models
+
+	1. Supervised learning model
+		Model = Features + Label
+
+	
+	2. Unsupervised learning model
+		Model = Features
+
+
+
+	3. Reinforcement learning
+		Topics: Agent, Environment, Points System
+
+
+--------------------------------
+
+1. Supervised learning model
+	1. Regression		->	Target: Continous value
+	2. Classification	->	Target: set of classes
+
+
+--------------------------------
+
+2. Unsupervised learning model
+
+	1. Clustering			:	Group of cluster
+	2. Dimentionality Reduction	:	
+
+
+--------------------------------
+
+2. Dimentionality Reduction
+
+Dimention == Its a simple column
+
+Data1
+
+	Name		Area		Rice packs
+	------------------------------------------
+	Daniel		1		10
+	Prasad		2		20
+	Raju		3		30
+
+
+--------------------------------
+
+Life Cycle
+
+	1. Data Collection
+	2. Data Preparation
+	3. Data Wrangling
+	4. Train 	the model
+	5. Test 	the model
+	6. Deploy 	the model
+
+--------------------------------
+
+7. Data Science – Machine Learning – 
+	Train & Test Datasets
+
+--------------------------------
+
+ML steps
+--------
+
+	1. Importing the libraries
+	2. Loading the dataset
+	3. Data preparation
+	4. Splitting the dataset
+	5. Model creation
+	6. Model training
+	7. Prediction
+
+--------------------------------
+
+# train_test_split() function
+
+
+import numpy as np
+from sklearn.model_selection import train_test_split
+
+dataset = np.arange(10)
+result = train_test_split(dataset)
+
+print(dataset)
+print()
+print(result)
+
+--------------------------------
+
+Case 1
+------
+	train_test_split() is returning singe variable
+
+	a = train_test_split(dataset) 
+
+--------------------------------
+
+Case 2
+------
+	train_test_split() can return two values
+
+	a, b = train_test_split(dataset)
+
+		realtime stand
+
+	 X_train, X_test = train_test_split(dataset)
+
+
+--------------------------------
+
+# train_test_split() is returning two variables
+
+import numpy as np
+from sklearn.model_selection import train_test_split
+
+dataset = np.arange(10)
+
+X_train, X_test = train_test_split(dataset)
+
+print(dataset)
+print()
+print(X_train)
+print()
+print(X_test)
+
+--------------------------------
+
+# Comparing: A function can return multiple variable
+# then function calling we need to assign into two variables
+
+def hrishi():
+	a = 10
+	b = 20
+	return a, b
+
+x, y 			= 	hrishi()
+
+# X_train, X_test 	= 	train_test_split(dataset)
+
+--------------------------------
+
+train_test_split()
+
+	1. Shuffled
+	2. Splitting the data(train, test)
+	3. Default Ratio: 70:30
+
+		70	->	Train dataset
+		30	->	Test dataset
+
+--------------------------------
+
+Question 1:
+-----------
+		60%	->	Train dataset
+		40%	->	Test dataset
+
+--------------------------------
+
+# test_size keyword arg
+
+import numpy as np
+from sklearn.model_selection import train_test_split
+
+
+dataset = np.arange(10)
+
+X_train, X_test = train_test_split(dataset, test_size = 4)
+
+print(X_train)
+print()
+print(X_test)
+
+--------------------------------
+
+# train_size keyword arg
+
+import numpy as np
+from sklearn.model_selection import train_test_split
+
+
+dataset = np.arange(10)
+
+X_train, X_test = train_test_split(dataset, train_size = 6)
+
+print(X_train)
+print()
+print(X_test)
+
+
+--------------------------------
+
+1. X_train, X_test = train_test_split(dataset, test_size = 4)	
+2. X_train, X_test = train_test_split(dataset, train_size = 6)
+
+-> In realtime to split the data we are using test_size but not train_size, why?
+
+0123456789
+
+0123	10 seconds
+012345	20 seconds
+
+from Masud Siddiqi (privately):    6:44 PM
+whta is meant by "collecting test data is easy"?
+
+Good question
+
+--------------------------------
+
+# Two keyword args
+
+import numpy as np
+from sklearn.model_selection import train_test_split
+
+
+dataset = np.arange(10)
+
+X_train, X_test = train_test_split(
+	dataset, 
+	train_size = 4, 
+	test_size = 4
+)
+
+print(X_train)
+print()
+print(X_test)
+
+--------------------------------
+
+# ValueError
+
+import numpy as np
+from sklearn.model_selection import train_test_split
+
+
+dataset = np.arange(10)
+
+X_train, X_test = train_test_split(
+	dataset, 
+	train_size = 4, 
+	test_size = 10
+)
+
+print(X_train)
+print()
+print(X_test)
+
+--------------------------------
+
+demo10.py
+
+-> Continue...
+-> Daniel
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

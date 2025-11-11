@@ -1,0 +1,478 @@
+RUNNING NOTES: 26 - NOV - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	INPUT AND OUTPUT
+2. CURRENT TOPIC			-	FLOW CONTROL
+3. UPCOMING TOPIC			-	STRING
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+
+9. PYTHON - FLOW CONTROL		-	Running topic
+
+10. PYTHON - STRING			-	Upcoming topic
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. IndexError
+5. IndentationError
+
+
+--------------------------------
+
+9. PYTHON - FLOW CONTROL	
+------------------------
+
+-> Program
+	-> A group of Statements
+		-> having an order
+
+-> Order of statements execution == Flow control
+
+Any programming lang
+
+	1. Sequential
+	2. Conditional
+	3. Looping
+
+
+--------------------------------
+
+Keywords
+---------
+
+Conditional
+
+	if
+	else
+	elif
+
+Looping
+
+	for
+	while
+
+Others
+	break
+	continue
+	pass
+
+
+--------------------------------
+
+if 		->	Done
+if, else	->	Done
+
+--------------------------------
+
+if, elif, elif, elif, .... else
+
+elif
+
+Java	->	else if
+
+Python	->	elif
+
+--------------------------------
+
+When should we go for if+else combination?
+
+-> I have two options, I wanted choose only one option, if+else combination
+
+
+When should we go for if+elif+elif+elif+else combination?
+
+-> I have more options, I wanted to select only one option, then we should go for above combo
+
+--------------------------------
+
+
+print("Please enter value in bw 0 to 4")
+a = int(input("Enter value: "))
+
+if a == 0:
+	print("Value is:", a)
+
+elif a == 1:
+	print("Value is:", a)
+
+elif a == 2:
+	print("Value is:", a)
+
+elif a == 3:
+	print("Value is:", a)
+
+elif a == 4:
+	print("Value is:", a)
+
+else:
+	print("No number, life is happy")
+
+--------------------------------
+
+a = 1
+b = 1
+
+IF a == b:
+	print("Both are same")
+
+--------------------------------
+
+https://chatgpt.com/		->	Gen AI model
+Created by 			->	Open AI company
+
+--------------------------------
+
+6. Looping
+----------
+
+-> Wanted to work with looping kind of execution, First we need sequence object/variable
+
+
+-> Sequence	->	Variable
+		->	This can store group of values
+		->	I wanted to print ONE BY ONE value from 
+			group of values
+		->	Then we need to looping of kind execution
+
+
+--------------------------------
+
+a = [10, 20, 30, 40]
+
+print(a)
+print(type(a))
+
+--------------------------------
+
+Looping
+
+	1. for loop
+	2. while loop
+
+
+--------------------------------
+
+for loop
+--------
+
+-> Keyword in python
+-> By using this loop we can access one by one value from sequence
+
+--------------------------------
+
+Syntax
+-------
+a = [10, 20, 30, 40]
+
+for	LHS	in	RHS	:
+	print(LHS)
+
+--------------------------------
+
+values = [10, 20, 30, 40]
+
+for	value	in	values	:
+	print(value)
+
+
+--------------------------------
+
+values = [10, 20, 30, 40]
+
+for value in values:
+	print(value)
+
+--------------------------------
+
+from Jalal Taqui (privately):    6:11 PM
+Sir, will it work if the list values are in decending or random order?
+
+Ans: Yes sir, it will work
+
+--------------------------------
+
+values = [10, 20, 30, 40]
+
+for value in values:
+	print(values)
+
+--------------------------------
+
+
+names = ["Daniel", "Raju", "Naresh"]
+
+for name in names:
+	print(name)
+
+
+--------------------------------
+
+if
+elif
+else
+
+for
+
+--------------------------------
+
+prices = [100, 200, 300, 400]
+gst = 2
+
+for price in prices:
+	print(price+gst)
+
+
+--------------------------------
+
+prices = [100, 200, 300, 400]
+gst = 2
+
+for price in prices
+	print(price+gst)
+
+
+--------------------------------
+
+prices = [100, 200, 300, 400]
+gst = 2
+
+for price in prices
+print(price+gst)
+
+
+--------------------------------
+
+6.2 while loop
+--------------
+
+1. Intialization
+2. Condition
+3. Increment/Decrement
+
+Small example
+-------------
+
+Print the values:
+
+	start				end
+	-----				---
+	1................................10
+
+
+Basic blocks
+------------
+
+1. Intialization	->	a = 1
+2. Condition		->	a <= 10
+3. Increment/Decrement	->	a = a + 1
+
+
+--------------------------------
+
+a = 1
+
+while a <= 10:
+	print(a)
+	a = a + 1
+
+--------------------------------
+
+a = 1
+
+while a <= 1000:
+	print(a)
+	a = a + 1
+
+--------------------------------
+
+a = 1
+
+while a <= 10:
+	print(a)
+	a = a + 1
+
+1
+2
+...
+10
+
+Same output we can still get by using range data type
+
+--------------------------------
+
+a = 1
+
+while a <= 10:
+	print("Value is:", a)
+	a = a + 1
+
+--------------------------------
+
+2010	->	Java	->	
+	->	while......
+
+GM	->	White paper book, pen
+
+	->	lakh times, GF name
+	->	
+
+--------------------------------
+
+a = 1
+
+while a <= 100000:
+	print("Subbayya:", a)
+	a = a + 1
+
+--------------------------------
+
+Keywords
+--------
+
+	if, else, elif
+
+	for, while
+
+--------------------------------
+
+7. break statement
+------------------
+
+-> break is keyword in python
+-> Based on condition, I wanted to stop the loop, then we need to use break keyword
+-> break keyword we should apply only on loops
+-> break
+	for
+	while
+
+
+--------------------------------
+
+break statement
+---------------
+
+----------------------1.30 hour......................
+
+Kaikaluru					Vijayawada
+Home						Office
+		Gudiwada
+
+9pm
+7am..................Father calling
+
+		stop the journey
+
+
+--------------------------------
+
+
+
+values = [10, 20, 30, 40, 50, 60, 70, 80, 90, 100]
+
+for value in values:
+
+	if value == 50:
+		break	
+
+	print(value)
+
+--------------------------------
+
+
+This is good website to understand the flow of the program
+
+https://pythontutor.com/render.html#mode=display
+
+--------------------------------
+
+break + loop		->	Valid combination
+break + if		->	Invalid combination
+
+--------------------------------
+
+Suggestion
+----------
+
+				Every example
+
+1. Technical background	->	min 2 times
+2. Non Technical back	->	min 5 times
+
+
+Conclustion		->	Do more practice & Revision :)
+			->	Then it will be very easy
+
+
+--------------------------------
+
+Meet again in next session :)
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

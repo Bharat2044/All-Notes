@@ -1,0 +1,228 @@
+RUNNING NOTES: 15 - NOV - 2024
+--------------------------------
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+
+4. PYTHON - NAMING CONVENTIONS		-	Running topic
+
+5. PYTHON - VARIABLES			-	Running topic
+
+
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+
+--------------------------------
+
+Errors
+-----
+
+1. SyntaxError
+2. NameError
+
+--------------------------------
+
+
+3. PYTHON - HELLO WORLD PROGRAM	
+--------------------------------
+
+Python	->	We can write in different ways
+
+		1. Notepad	->	This is the best
+		2. notepad++
+		3. jupyter
+		4. pycharm
+		etc
+
+
+--------------------------------
+
+Process/Steps
+
+1. Write	->	notepad
+2. Save		->	demo1.py
+3. Run		->	py demo1.py
+4. Output	->	Hello World
+
+
+--------------------------------
+
+Write & Run program
+
+- We are using 	notepad		to write a program
+- We are using	commnad prompt	to run a program
+
+
+--------------------------------
+
+print("Hello World")
+
+-> print()		->	Predefined function
+				To display the output
+
+-> "Hello World"	->	String in python
+
+
+--------------------------------
+
+4. PYTHON - NAMING CONVENTIONS
+
+Identifier
+----------
+
+Family members			A name in a family
+
+1. Father		->	Jeswanth
+2. Mother		->	Kumari
+3. Brother		->	Prasad
+4. Myself		->	Daniel
+5. Wife			->	Kusuma
+
+
+Python family members	
+
+Idenfier		->	A name in a program
+
+1. package		->	Package 	name
+2. module		->	Module 		name
+3. variable		->	Variable 	name
+4. function		->	Function 	name
+5. class		->	class 		name
+6. method		->	Method 		name
+
+--------------------------------
+
+To give a name to identifer, please follow Rules :)
+
+We are planning to create one variable?
+
+Rules
+
+Why we need to follow :|
+
+Jan	->	1st	Son
+Feb	->		no name
+Mar	->		no name
+
+		3 months
+
+N1	->	Chinni
+N2	->	Bunny
+N3	->	Dunna	invalid
+
+Given	->	Jr.Daniel
+
+--------------------------------
+
+We are applying all these rules over variable topic
+
+How to create a variable?
+
+LHS = RHS
+
+a = 10		#	creating a variable
+print(a)
+
+a	->	Name of the variable
+10	->	Value of the variable
+
+--------------------------------
+
+from shivek (privately):    6:10 PM
+semi colon is not used in python ?
+
+from sai (privately):    6:14 PM
+sir...     ;  not required to end sentence 
+
+from Santhi (privately):    6:14 PM
+Don't we need any semi colons ae the end of in python program?
+
+
+C, c++, Java	->	; 	required
+
+python		->	;	Optional
+
+--------------------------------
+
+demo1.py
+
+student_id = 101
+print(student_id)
+
+--------------------------------
+
+demo2.py
+
+$tudent_id = 102
+print($tudent_id)
+
+
+SyntaxError: invalid syntax
+
+--------------------------------
+
+Identifiers are case sensitive :)
+
+English Teacher
+
+	a	is equal to		A
+
+Python Teacher
+
+	a	is not equal to		A
+
+--------------------------------
+
+a = 10
+print(a)	#	valid
+print(A)	#	valid
+
+
+--------------------------------
+
+student id = 111
+print(student id)
+
+--------------------------------
+
+Program
+
+Can we write a comments?
+
+1. Single line comment
+2. Multi line comments
+
+--------------------------------
+
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	

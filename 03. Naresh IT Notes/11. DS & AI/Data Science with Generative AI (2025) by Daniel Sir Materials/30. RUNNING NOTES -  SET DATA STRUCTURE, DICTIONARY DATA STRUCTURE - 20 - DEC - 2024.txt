@@ -1,0 +1,524 @@
+RUNNING NOTES: 20 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	SET DATA STRUCTURE
+2. CURRENT TOPIC			-	DICT DATA STRUCTURE
+3. UPCOMING TOPIC			-	OBJECT ORIENTED PROGRAMMING
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+
+14. PYTHON - PACKAGE			-	HOLD
+
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Running topic
+
+
+19. PYTHON - OBJECT ORIENTED 		-	Upcoming topic
+	PROGRAMMING	
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+
+--------------------------------
+
+17. PYTHON - SET DATA STRUCUTRE	
+
+-------------------------------
+
+Methods in set class
+
+-> set is predefined class
+-> class contains methods
+
+-> these methods we can see by using dir() function
+
+-> IMP set methods
+
+	add() 
+	clear()
+	remove()
+
+-------------------------------
+
+# add() method
+
+a = [10, 20, 30, 40]
+b = {10, 20, 30, 40}
+
+print(a)
+print(b)
+
+a.append(99)
+b.add(99)
+
+print(a)
+print(b)
+
+-------------------------------
+
+# AttributeError
+
+a = [10, 20, 30, 40]
+b = {10, 20, 30, 40}
+
+print(a)
+print(b)
+
+a.add(99)
+b.append(99)
+
+print(a)
+print(b)
+
+-------------------------------
+
+# AttributeError
+
+a = [10, 10, 10, 10]
+b = {10, 10, 10, 10}
+
+print(a.count(10))	#	4
+print(b.count(10))	#	1
+
+-------------------------------
+
+a = {10, 20, 1, True, 1}
+
+print(a)
+
+-------------------------------
+
+# remove() method
+
+a = {10, 20, 30, 40}
+
+print(a)
+a.remove(20)
+print(a)
+
+-------------------------------
+
+# KeyError
+
+a = {10, 20, 30, 40}
+
+print(a)
+a.remove(22)
+print(a)
+
+-------------------------------
+
+# clear() method
+
+a = {10, 20, 30, 40}
+
+print(a)
+a.clear()
+print(a)
+
+-------------------------------
+
+# membership operators
+
+a = {10, 20, 30, 40}
+value = 10
+
+if value in a:
+	print("Existing", value)
+
+else:
+	print("Not Existing", value)
+
+-------------------------------
+
+11. set comprehensions
+
+
+list	com	result		list	***
+set	com	result		set	*
+dict	com	result		dict	**
+
+tuple	com	result		not a tuple
+				generator(Upcoming)
+
+
+-------------------------------
+
+11. set comprehensions
+
+Syntax
+
+LHS = RHS
+
+var = {Part1		Part2		Part3}
+
+Part1 = Variable/Expression
+
+Part2 = for loop
+
+Part3 = condition(Optional)
+
+
+result = {Variable/Expression	for loop   condition}
+
+			or
+
+result = {
+		Variable/Expression	
+		for loop   
+		condition
+}
+
+-------------------------------
+
+# set comprehension
+
+values = [10, 20, 30, 40]
+
+result = {value + 2	for value in values}
+
+print(values)
+print(result)
+
+-------------------------------
+
+# Removing duplicates from list
+
+a = [10, 10, 10, 10, 20]
+b = set(a)
+
+print(a)
+print(b)
+
+-------------------------------
+
+18. PYTHON - DICTIONARY DATA STRUCUTRE
+
+Python
+
+	1. List
+	2. Tuple
+	3. Set
+
+	4. Dictionary/dict
+
+
+-------------------------------
+
+10,	20,	30	list/tuple/set
+
+
+-------------------------------
+
+	College
+
+
+Key		Value		Dictionary
+
+Student ID	Student Name
+
+101		Daniel
+102		Uday
+103		Neelima
+
+
+-------------------------------
+
+# Creating dictionary
+
+
+d = {101: "Daniel", 102: "Uday", 103: "Neelima"}
+
+print(d)
+print(type(d))
+
+-------------------------------
+
+# Creating dictionary
+
+d = {
+	101: "Daniel", 
+	102: "Uday", 
+	103: "Neelima"
+}
+
+print(d)
+print(type(d))
+
+-------------------------------
+
+# SyntaxError
+
+d = {
+	101; "Daniel", 
+	102: "Uday", 
+	103: "Neelima"
+}
+
+print(d)
+print(type(d))
+
+-------------------------------
+
+# SyntaxError
+
+d = {
+	101: "Daniel", 
+	102: "Uday"
+	103: "Neelima"
+}
+
+print(d)
+print(type(d))
+
+-------------------------------
+
+# In dictionary duplicate keys are not allowed.
+
+
+Key		Value		
+
+Student ID	Student Name
+
+101		Daniel
+102		Uday
+103		Neelima
+101		Rajesh		:(
+
+
+-------------------------------
+
+# In dictionary duplicate values can be allowed.
+
+LHS		RHS
+
+Key		Value		
+
+Student ID	Student Name
+
+101		Daniel
+102		Uday
+103		Neelima
+104		Daniel
+
+-------------------------------
+
+			list	tuple	set		dict
+
+Insertion order		fixed	fixed	not fixed	not fixed
+
+
+-------------------------------
+
+		list	set		dict		tuple	
+
+size		increase increase 	increase 	not incre
+
+
+-------------------------------
+
+# Adding key:value to dictionary
+
+a = [10, 20, 30, 40]
+b = {10, 20, 30, 40}
+d = {how to add key:value...}
+
+print(a)
+print(b)
+
+a.append(99)
+b.add(99)
+
+print(a)
+print(b)
+
+-------------------------------
+
+# key & value is adding to dictionary
+
+a = {
+	101: "Ramesh", 
+	102: "Arjun",
+	103: "Daniel"
+}
+
+print(a)
+
+# a[key] = value
+
+a[104] = "Prasad"
+
+print(a)
+
+-------------------------------
+
+# IMP interview question
+
+a = [10, 20, 30, 40]
+b = {101: "Ramesh"}
+
+print(a)
+print(b)
+
+a[0] = 99
+b[0] = 99
+
+print(a)
+print(b)
+
+-------------------------------
+
+6. Access values by using keys from dictionary
+
+# We can access value by using key
+
+d = {
+	101: "Ramesh",
+	102: "Arjun",
+	103: "Daniel"
+}
+
+print(d[101])
+
+-------------------------------
+
+# KeyError
+
+d = {
+	101: "Ramesh",
+	102: "Arjun",
+	103: "Daniel"
+}
+
+print(d[111])
+
+-------------------------------
+
+# list + for loop
+
+a = [10, 20, 30, 40]
+
+for value in a:
+	print(value)
+
+
+-------------------------------
+
+# for loop will get only keys from dictionary
+
+d = {
+	101: "Ramesh",
+	102: "Arjun",
+	103: "Daniel"
+}
+
+for i in d:
+	print(i)
+
+
+-------------------------------
+
+# for loop will get only keys from dictionary
+# by using that we can get values too
+
+d = {
+	101: "Ramesh",
+	102: "Arjun",
+	103: "Daniel"
+}
+
+for i in d:
+	print(i, d[i])
+
+-------------------------------
+
+We done for today session
+
+We will connect again on Monday :)
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

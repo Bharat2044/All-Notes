@@ -1,0 +1,111 @@
+Session: Generative AI
+----------------------
+
+1. Diff b/w
+	Data Science
+	AI
+	Gen AI
+
+----------------------
+
+Data Science	->	Group of Topics
+			Python, Data Analysis, Maths
+			Data Visualization, Feature Engg					Purpose: Prepairing the data to input
+			to AI
+
+
+AI		->	Group of Algorithms(Models)
+			Topics: ML, DL, NLP, CV etc
+			Purpose: Prediction, many others
+
+
+Gen AI		->	Group of Pre-trained Algorithms(Models)
+			Name: Gen AI Models
+			Purpose: Generate the data(content)
+			Data: Text, image, audio, video
+			Example: chatGPT, DeepSeek, AI4Bharath
+
+--------------------------------------------
+
+Gen AI		
+	->	Generative AI
+	->	By using this we can generate the data
+	->	To generate the Data, these models are using AI
+
+
+--------------------------------------------
+
+Gen AI model	->	
+
+chatGPT model	->	Imagine model trained with only for loop exs
+		->	1000 for loop examples
+		->	1000 + X examples
+
+User		->	Can you give some for loop examples
+		->	It will give
+
+User		->	Can you give if keyword examples
+		->	I am sorry
+
+--------------------------------------------
+
+AI Agent	->	
+
+chatGPT		->	Text based model
+		->	Asking can you give me image for
+			boy running over the road
+
+chatGPT		->	will not created
+
+Dall-e model	->	will create
+
+ChatGPT		AI Agent		Dall-e
+
+--------------------------------------------
+
+Python is very easy, creating an application and deploy
+
+--------------------------------------------
+
+Hello World
+
+-> DeskTop application
+-> Install:
+	pip install pyinstaller
+
+-> print("Hello World")
+
+-> pyinstaller --onefile demo1.py
+
+--------------------------------------------
+
+from Masud Siddiqi (privately):    4:50 PM
+What is prompt sir?
+
+-> Good question
+-> 
+	User
+		give hello world python program
+
+->	chatGPT
+		print("Hello World")
+
+--------------------------------------------
+
+Small explanation
+
+Open AI		->	Company
+		->	iDea: Gen AI model(chatGPT)
+		->	Model->Data
+		->	HUGGGGGGE data
+		->	OpenAI company having no budget
+		->	Investor: Microsoft
+
+--------------------------------------------
+
+9. OpenAI’s Introduction
+
+-> We will continue in next session
+			- Daniel
+
+--------------------------------------------

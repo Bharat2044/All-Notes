@@ -1,0 +1,806 @@
+RUNNING NOTES: 13 - MAY - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	NLP: SPACY LIBRARY
+2. CURRENT TOPIC			-	ML: LASSO & RIDGE
+3. UPCOMING TOPIC			-	PROJECTS
+						MODEL DEPLOYMENT
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Done
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Done
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Done 
+	MULTIPLE CSV FILES
+
+--------------------------------------------------
+
+DATA ANALYSIS PROJECT
+---------------------
+
+1. EDA PROJECT				-	Done
+
+--------------------------------------------------
+
+DATA VISUALIZATION
+------------------
+
+1. DATA VISUALIZATION PART 1		-	Done
+2. DATA VISUALIZATION PART 2		-	Done
+3. DATA VISUALIZATION FUNDAMENTALS	-	Done
+
+4. DATA VISUALIZATION POWER BI		-	Upcoming topic	
+		
+--------------------------------------------------
+
+NUMPY
+-----
+
+1. NUMPY INTRODUCTION			-	Done
+2. NUMPY FUNDAMENTALS			-	Done
+3. NUMPY ATTRIBUTES			-	Done
+4. NUMPY METHODS			-	Done
+
+--------------------------------------------------
+
+MATHS						STATUS
+-----						------
+
+1. MATHS - PART - 1 - POPULATION, 	-	Done
+	SAMPLE, TYPES OF VARIABLES
+
+
+2. MATHS - PART - 2 - MODE, MEDIAN, 	-	Done
+	MEAN, RANGE, 
+	STANDARD DEVIATION, VARIANCE	
+
+
+3. MATHS - PART - 3 - OUTLIERS		-	Done
+
+
+4. MATHS - PART - 4 - THE FIVE NUMBERS	-	Done
+	SUMMARY, BOX PLOT, OUTLIER
+
+
+5. MATHS - PART - 5 - SYMMETRY AND 	-	Done
+	SKEWNESS
+
+
+6. MATHS - PART - 6 - EXPLANATORY AND 	-	Done
+	RESPONSIVE VARIABLES
+
+
+7. MATHS - PART - 7 - REGRESSION 	-	Done
+	AND R SQUARED
+
+
+8. MATHS - PART - 8 - RESIDUALS		-	Done
+
+
+9. MATHS - PART - 9 - THE NORMAL 	-	Hold
+	DISTRIBUTION AND 
+	68-95-99.7 RULE
+
+10. MATHS - PART - 10 - MATRIX		-	Done
+
+--------------------------------------------------
+
+FEATURE ENGINEERING
+-------------------
+
+1. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 1	-	Done
+
+
+2. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 2	-	Done
+
+--------------------------------------------------
+
+MACHINE LEARNING
+----------------
+
+1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	INTRODUCTION
+
+2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TERMINOLOGY
+
+3. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DATA AND ML ALGORITHMS
+
+4. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LEARNING FUNCTION
+
+5. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TYPES OF MODELS
+
+6. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LIFE CYCLE
+
+7. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TRAIN & TEST DATASETS
+
+
+8. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	R VALUE
+
+
+9. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION
+
+9.1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION 
+	EXAMPLE
+
+9.2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION 
+	EXAMPLE
+
+10. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	MULTIPLE LINEAR REGRESSION
+
+
+11. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	PICKLING AND UNPICKLING
+
+
+12. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SAVE MODEL USING JOBLIB AND 
+	PICKLING
+
+
+13. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	POLYNOMIAL FEATURES
+
+14. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DUMMY VARIABLE, ONEHOTENCODING
+
+
+15. DATA SCIENCE - MACHINE LEARNING 	-	Done
+	- R VALUE
+
+
+16. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	COST FUNCTION
+
+
+17. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	REGRESSION COST FUNCTION
+
+
+18. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	LOGISTIC REGRESSION
+	BINARY CLASSIFICATION
+
+19. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LOGISTIC REGRESSION
+	MULTI CLASS CLASSIFICATION
+
+
+20. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DECISION TREE
+
+
+21. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	RANDOM FOREST ALGORITHM
+
+
+
+22. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	K-FOLD CROSS VALIDATION
+
+
+23. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SVM
+
+24. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	GRADIENT DESCENT ALGORITHM
+
+
+25. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	UNDERFITTING & OVERFITTING
+
+
+26. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	BIAS - VARIANCE TRADE OFF
+
+
+27. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	K - MEANS CLUSTERING
+
+
+28. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	HYPER PARAMETER TUNING 
+	GRIDSEARCH CV
+
+
+29. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	K NEAREST NEIGHBOR
+
+
+30. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	XGBOOST
+
+31. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	NAIVE BAYES CLASSIFIER
+
+
+32. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	CONFUSION MATRIX
+
+
+33. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LASSO & RIDGE REGRESSION	
+
+
+34. MODEL DEPLOYMENT			-	Upcoming topic
+
+--------------------------------------------------
+
+PROJECTS
+--------
+
+1. ECOMVISION				-	Running topic
+
+2. PURCHAGE INTENTION MODELS		-	Upcoming topic
+
+
+
+--------------------------------------------------
+
+DEEP LEARNING
+-------------
+
+1. DEEP LEARNING - INTRODUCTION		-	Done
+2. DEEP LEARNING - LIBRARIES		-	Done
+
+3. DEEP LEARNING - IMPORTANT 		-	Done
+	TERMINOLOGY
+
+4. DEEP LEARNING - MULTILAYER 		-	Done
+	PERCEPTRONS
+
+5. DEEP LEARNING - MULTILAYER 		-	Done
+	PERCEPTRONS EXAMPLE	
+
+6. DEEP LEARNING - EVALUATE MODEL 	-	Done
+	PERFORMANCE	
+
+7. DEEP LEARNING - EVALUATE MODEL 	-	Done
+	SAVE MODEL
+
+-  DATA SCIENCE - ENV - PYCHARM		-	Done
+
+
+8. DEEP LEARNING - BEST MODEL CHECK 	-	Done
+	POINT
+
+9. DEEP LEARNING - VISUALIZE MODEL 	-	Done
+	ACCURACY & SCORE
+
+10. DEEP LEARNING - COMPUTER VISION	-	Upcoming topic
+
+
+--------------------------------------------------
+
+NATURAL LANGUAGE PROCESSING(NLP)
+---------------------------
+
+1. NLP - INTRODUCTION			-	Done
+2. NLP - TEXT WRANGLING AND CLEANING	-	Done
+3. NLP - REPLACING AND CORRECTING WORDS	-	Done
+4. NLP - COMPONENTS IN NLP - USE CASE	-	Done
+
+5. NLP - BAG OF WORDS, TF AND IDF	-	Done
+
+6. NLP - TWITTER SENTIMENT ANALYSIS 	-	Done
+	USING TEXTBLOB	
+
+7. NLP - SPACY LIBRARRY			-	Done
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+6. float(p)		->	To convert to float
+7. int(p)		->	To convert to int
+8. list(p)		->	Convert from seq to list
+9. tuple(p)		->	Convert from seq to tuple
+10. set(p)		->	Convert from seq to set
+
+11. dict(p)		->	Convert from list of tups to dict
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+11. InvalidParameterError
+
+------------------------------------
+
+33. DATA SCIENCE - MACHINE LEARNING 	
+	LASSO & RIDGE REGRESSION
+-----------------------------------
+
+Back ground details
+
+	-> Overfitting
+	-> Why overfitting: more dimentions, missing vals etc
+	-> Solution for overfitting: Lasso & Ridge
+	-> How Lasso & Ridge fixing?
+		There is small change in loss function
+		Lasso: Sum of absolute coe...vals
+		Ridge: Sum of squared coe...vals
+
+
+-> Lasso & Ridge Regression
+	-> Regression models
+	-> Classification models
+
+-----------------------------------
+
+# Overfitting: Example
+
+import numpy as np
+import pandas as pd
+
+from sklearn.linear_model import LinearRegression
+from sklearn.model_selection import train_test_split
+
+import warnings
+warnings.filterwarnings('ignore')
+
+
+dataset = pd.read_csv('Melbourne_housing_FULL.csv')
+
+
+cols_to_use = ['Suburb', 'Rooms', 'Type', 'Method', 'SellerG', 'Regionname', 'Propertycount', 'Distance', 'CouncilArea', 'Bedroom2', 'Bathroom', 'Car', 'Landsize', 'BuildingArea', 'Price']
+
+
+dataset = dataset[cols_to_use]
+
+cols_to_fill_zero = ['Propertycount', 'Distance', 'Bedroom2', 'Bathroom', 'Car']
+
+
+dataset[cols_to_fill_zero] = dataset[cols_to_fill_zero].fillna(0)
+
+
+
+dataset['Landsize'] = dataset['Landsize'].fillna(dataset.Landsize.mean())
+
+
+
+dataset['BuildingArea'] = dataset['BuildingArea'].fillna(dataset.BuildingArea.mean())
+
+
+dataset.dropna(inplace = True)
+
+dataset = pd.get_dummies(dataset, drop_first = True)
+
+
+
+X = dataset.drop('Price', axis = 1)
+y = dataset['Price']
+
+
+train_X, test_X, train_y, test_y = train_test_split(
+    X, 
+    y, 
+    test_size = 0.3, 
+    random_state = 2
+)
+
+
+model = LinearRegression()
+
+
+model.fit(train_X, train_y)
+
+
+print("Training dataset score is:", model.score(train_X, train_y))
+print("Testing dataset score is:", model.score(test_X, test_y))
+
+------------------------------------
+
+# Fixing overfitting by using: Lasso Regression
+
+import numpy as np
+import pandas as pd
+
+from sklearn.linear_model import Lasso
+from sklearn.model_selection import train_test_split
+
+import warnings
+warnings.filterwarnings('ignore')
+
+
+dataset = pd.read_csv('Melbourne_housing_FULL.csv')
+
+
+cols_to_use = ['Suburb', 'Rooms', 'Type', 'Method', 'SellerG', 'Regionname', 'Propertycount', 'Distance', 'CouncilArea', 'Bedroom2', 'Bathroom', 'Car', 'Landsize', 'BuildingArea', 'Price']
+
+
+dataset = dataset[cols_to_use]
+
+cols_to_fill_zero = ['Propertycount', 'Distance', 'Bedroom2', 'Bathroom', 'Car']
+
+
+dataset[cols_to_fill_zero] = dataset[cols_to_fill_zero].fillna(0)
+
+
+
+dataset['Landsize'] = dataset['Landsize'].fillna(dataset.Landsize.mean())
+
+
+
+dataset['BuildingArea'] = dataset['BuildingArea'].fillna(dataset.BuildingArea.mean())
+
+
+dataset.dropna(inplace = True)
+
+dataset = pd.get_dummies(dataset, drop_first = True)
+
+
+
+X = dataset.drop('Price', axis = 1)
+y = dataset['Price']
+
+
+train_X, test_X, train_y, test_y = train_test_split(
+    X, 
+    y, 
+    test_size = 0.3, 
+    random_state = 2
+)
+
+
+# model = LinearRegression()
+
+model = Lasso(alpha = 50, max_iter = 100, tol = 0.1)
+
+
+
+
+model.fit(train_X, train_y)
+
+
+print("Training dataset score is:", model.score(train_X, train_y))
+print("Testing dataset score is:", model.score(test_X, test_y))
+
+------------------------------------
+
+# Fixing the overfitting: by using Ridge Regression
+
+import numpy as np
+import pandas as pd
+
+from sklearn.linear_model import Ridge
+from sklearn.model_selection import train_test_split
+
+import warnings
+warnings.filterwarnings('ignore')
+
+
+dataset = pd.read_csv('Melbourne_housing_FULL.csv')
+
+
+cols_to_use = ['Suburb', 'Rooms', 'Type', 'Method', 'SellerG', 'Regionname', 'Propertycount', 'Distance', 'CouncilArea', 'Bedroom2', 'Bathroom', 'Car', 'Landsize', 'BuildingArea', 'Price']
+
+
+dataset = dataset[cols_to_use]
+
+cols_to_fill_zero = ['Propertycount', 'Distance', 'Bedroom2', 'Bathroom', 'Car']
+
+
+dataset[cols_to_fill_zero] = dataset[cols_to_fill_zero].fillna(0)
+
+
+
+dataset['Landsize'] = dataset['Landsize'].fillna(dataset.Landsize.mean())
+
+
+
+dataset['BuildingArea'] = dataset['BuildingArea'].fillna(dataset.BuildingArea.mean())
+
+
+dataset.dropna(inplace = True)
+
+dataset = pd.get_dummies(dataset, drop_first = True)
+
+
+
+X = dataset.drop('Price', axis = 1)
+y = dataset['Price']
+
+
+train_X, test_X, train_y, test_y = train_test_split(
+    X, 
+    y, 
+    test_size = 0.3, 
+    random_state = 2
+)
+
+
+# model = LinearRegression()
+
+model = Ridge(alpha = 50, max_iter = 100, tol = 0.1)
+
+
+
+
+model.fit(train_X, train_y)
+
+
+print("Training dataset score is:", model.score(train_X, train_y))
+print("Testing dataset score is:", model.score(test_X, test_y))
+
+------------------------------------
+
+One student asked one question?
+
+Daniel, I need unique profile/resume
+
+What is unique?
+
+	my story:	2010.....2011
+			I need resume
+			I got resume from my frnd
+			Name, mail id, phno
+			aca details
+
+			Duplicate
+
+
+Unique profile or not, will be decided by Project discussion
+
+How to unique project?
+	1. Kaggle		->	Unique project
+	2. Research papers	->	P.hd: ML research papers
+
+
+------------------------------------
+
+ML Research papers website:
+---------------------------
+
+https://arxiv.org/
+https://arxiv.org/list/cs.LG/recent
+
+https://paperswithcode.com/methods
+
+------------------------------------
+
+1. ECOMVISION
+--------------
+
+-> ecomvision	->	Ecommerce company Vision
+		->	Increase sales
+
+		->	From this project, learn structure
+
+------------------------------------
+
+ecomvision1
+	src
+	read.md
+	requirements.txt
+
+------------------------------------
+
+requirements.txt
+----------------
+
+-> This is text file
+-> Purpose: By using this we can install all DS&AI libs in one shot
+
+-> Till now:
+		pip install pandas
+		pip install matplotlib
+
+			or
+
+		pip install matplotlib
+
+-> We are using requirements.txt to install all libs
+
+------------------------------------
+
+Python3.13	->	tensorflow is not working
+
+Lead		->	Python 3.11 version
+		->	tensorflow==1.2
+		->	pandas==2.1
+		->	
+
+------------------------------------
+
+Steps
+------
+
+ecomvision1
+	src
+			ecom
+					utilities
+							tools.py
+
+							__init__.py
+					__init__.py
+			run_ecom.py
+			
+	read.md
+	requirements.txt
+
+
+------------------------------------
+
+Kind note: main file is: run_ecom.py
+
+ecomvision2
+	src
+			ecom
+					utilities
+							tools.py
+
+							__init__.py
+					__init__.py
+			run_ecom.py
+	read.md
+	requirements.txt
+
+
+------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+------------------------------------
+------------------------------------
+------------------------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

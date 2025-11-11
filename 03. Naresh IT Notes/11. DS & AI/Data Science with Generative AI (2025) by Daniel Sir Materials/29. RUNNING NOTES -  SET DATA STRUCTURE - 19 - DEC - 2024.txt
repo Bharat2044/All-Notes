@@ -1,0 +1,411 @@
+RUNNING NOTES: 19 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	TUPLE DATA STRUCTURE
+2. CURRENT TOPIC			-	SET DATA STRUCTURE
+3. UPCOMING TOPIC			-	DICT DATA STRUCTURE
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+
+13. PYTHON - MODULE			-	Done
+
+14. PYTHON - PACKAGE			-	HOLD
+
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+
+
+
+17. PYTHON - SET DATA STRUCUTRE		-	Running topic
+
+
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Upcoming topic
+19. PYTHON - OBJECT ORIENTED 		-	Upcoming topic
+	PROGRAMMING	
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. TypeError
+5. IndexError
+
+6. IndentationError
+7. AttributeError
+8. ModuleNotFoundError
+
+--------------------------------
+
+17. PYTHON - SET DATA STRUCUTRE	
+-------------------------------
+
+
+	[]	->	list
+	()	->	tuple
+
+	{}	->	set
+		->	dict(upcoming)
+
+-------------------------------
+
+Set
+---
+
+1. CREATE		-	{} with values, set()
+2. STORE		-	same, diff type of values
+3. SIZE			-	increase dynamically
+4. INSERTION ORDER	-	not fixed
+5. DUPLICATE		-	set cannot store
+6. MUTABLE		-	set having mutable nature
+7. INDEX		-	set cannot follow indexing
+
+---------------------------------
+
+# Creating set data structure
+
+a = {10, 20, 30, 40}
+
+print(a)
+print(type(a))
+
+
+---------------------------------
+
+# set can store diff type of values
+
+a = {10, 1.23, "Daniel"}
+
+print(a)
+print(type(a))
+
+---------------------------------
+
+# Insertion order not fixed
+
+a = [10, 20, 30, 40]
+b = (10, 20, 30, 40)
+c = {10, 20, 30, 40}
+
+print(a)
+print(b)
+print(c)
+
+---------------------------------
+
+# set cannot store duplicate values
+
+a = [10, 10, 10, 10, 20]
+b = {10, 10, 10, 10, 20}
+
+print(a)
+print(b)
+print()
+print(len(a))
+print(len(b))
+
+---------------------------------
+
+# set having mutable nature
+
+a = {10, 20, 30, 40}
+
+print(a)
+a.add(99)
+print(a)
+
+---------------------------------
+
+# indexing is not possible
+
+
+a = {10, 20, 30, 40}
+
+print(a)
+print(a[0])	#	Error
+
+---------------------------------
+
+# Converting from list to set
+
+a = [10, 20, 30, 40]
+b = set(a)
+
+print(a)
+print(b)
+
+---------------------------------
+
+# Insertion order
+
+a = range(10, 15)
+b = set(a)
+c = {10, 20, 30, 40}
+
+print(a)
+print(b)
+print(c)
+
+---------------------------------
+
+Data
+	1. Order matters
+	2. dups
+	3. index
+
+	-----------------
+	list
+
+Data
+
+	1. Order: not a matter
+	2. dups x
+
+	---------
+
+	set
+
+---------------------------------
+
+# We can create empyt set by using set() function
+
+a = []
+b = ()
+c = set()
+d = {}
+
+print(a)
+print(b)
+print(c)
+print(d)
+print(type(a))
+print(type(b))
+print(type(c))
+print(type(d))
+
+---------------------------------
+
+Technical Game
+--------------
+
+
+	These topics belongs to Functions 
+		Part 1 & Part 2
+	---------------------------------
+
+daniel()		->	1. Function call
+				2. No parameter
+				3. No return
+				4. No keyword arg
+
+daniel(10)		->	1. Function call
+				2. One parameter
+				3. No return
+				4. No keyword arg
+
+
+a = daniel()		->	1. Function call
+				2. No parameter
+				3. having return
+				4. No keyword arg
+
+
+a = daniel(b = 10)	->	1. Function call
+				2. One parameter
+				3. having return
+				4. one keyword arg
+
+---------------------------------
+
+Small suggestion:
+-----------------
+
+-> Daily practice and revision :)
+
+-> If you are not strong in python, sorry to hear,
+   Be strong in python
+	
+---------------------------------
+
+# len() function
+
+a = {10, 20, 30, 40}
+b = len(a)
+
+print(a)
+print(b)
+
+---------------------------------
+
+Methods in str class
+
+Methods in list class
+Methods in tuple class
+Methods in set class
+Methods in dict class
+
+Methods in Series class
+Methods in DataFrame class
+
+Methods in LinearRegression class
+Methods in LogisticRegression class
+
+---------------------------------
+
+Methods in set class
+
+-> set is predefined class
+-> class contains methods
+
+-> To see the methods, dir() function
+
+dir()
+	1. with underscore symbol methods	:(
+	2. withtout underscore symbol methods	:)
+
+
+---------------------------------
+
+Object Oriented approach
+
+	1. How to create a class
+	2. How to create a method inside of the class
+	3. How to create an object to a class
+	4. How to call a method
+
+---------------------------------
+
+IMP interview question
+
+str 	class	methods?	dir()
+list	class	methods?	dir()
+tuple	class	methods?	dir()
+
+print()	python 	function?	where print?
+
+Python
+
+	print()
+	type()
+	range()
+	len()
+	etc
+
+	All these predefined functions are exiting in 
+	module: builtins 
+
+---------------------------------
+
+# To display all predefined functions, errors etc
+
+import builtins as b
+
+print(dir(b))
+
+---------------------------------
+
+add() method
+------------
+
+-> add() is predefined METHOD in set class
+-> We should ACCESS this method by using set object
+-> By using this method WE CAN add value to set
+
+---------------------------------
+
+from Peeyush Sahu (privately):    6:42 PM
+ADD is predefined method in set class. then set() is class. do we have set() predefined function as well?
+
+Good question
+
+	Data types
+
+
+		function		class
+
+list		list()			class list
+set		set()			class set
+tuple		tuple()			class tuple
+
+
+---------------------------------
+
+We done for today session :)
+
+Tomorrow topic
+
+	1. Set
+	2. Dictionary
+
+---------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

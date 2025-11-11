@@ -1,0 +1,1055 @@
+RUNNING NOTES: 29 - MAR - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	ML: RANDOM FOREST
+2. CURRENT TOPIC			-	ML: K-FOLD CROSS VALIDATION
+3. UPCOMING TOPIC			-	ML: SVM
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Done
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Done
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Done 
+	MULTIPLE CSV FILES
+
+--------------------------------------------------
+
+DATA ANALYSIS PROJECT
+---------------------
+
+1. EDA PROJECT				-	Done
+
+--------------------------------------------------
+
+DATA VISUALIZATION
+------------------
+
+1. DATA VISUALIZATION PART 1		-	Done
+2. DATA VISUALIZATION PART 2		-	Done
+3. DATA VISUALIZATION FUNDAMENTALS	-	Done
+
+4. DATA VISUALIZATION POWER BI		-	Upcoming topic	
+		
+--------------------------------------------------
+
+NUMPY
+-----
+
+1. NUMPY INTRODUCTION			-	Done
+2. NUMPY FUNDAMENTALS			-	Done
+3. NUMPY ATTRIBUTES			-	Done
+4. NUMPY METHODS			-	Done
+
+--------------------------------------------------
+
+MATHS						STATUS
+-----						------
+
+1. MATHS - PART - 1 - POPULATION, 	-	Done
+	SAMPLE, TYPES OF VARIABLES
+
+
+2. MATHS - PART - 2 - MODE, MEDIAN, 	-	Done
+	MEAN, RANGE, 
+	STANDARD DEVIATION, VARIANCE	
+
+
+3. MATHS - PART - 3 - OUTLIERS		-	Done
+
+
+4. MATHS - PART - 4 - THE FIVE NUMBERS	-	Done
+	SUMMARY, BOX PLOT, OUTLIER
+
+
+5. MATHS - PART - 5 - SYMMETRY AND 	-	Done
+	SKEWNESS
+
+
+6. MATHS - PART - 6 - EXPLANATORY AND 	-	Done
+	RESPONSIVE VARIABLES
+
+
+7. MATHS - PART - 7 - REGRESSION 	-	Done
+	AND R SQUARED
+
+
+8. MATHS - PART - 8 - RESIDUALS		-	Done
+
+
+9. MATHS - PART - 9 - THE NORMAL 	-	Hold
+	DISTRIBUTION AND 
+	68-95-99.7 RULE
+
+10. MATHS - PART - 10 - MATRIX		-	Done
+
+--------------------------------------------------
+
+FEATURE ENGINEERING
+-------------------
+
+1. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 1	-	Done
+
+
+2. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 2	-	Done
+
+--------------------------------------------------
+
+MACHINE LEARNING
+----------------
+
+1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	INTRODUCTION
+
+2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TERMINOLOGY
+
+3. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DATA AND ML ALGORITHMS
+
+4. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LEARNING FUNCTION
+
+5. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TYPES OF MODELS
+
+6. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LIFE CYCLE
+
+7. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TRAIN & TEST DATASETS
+
+
+8. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	R VALUE
+
+
+9. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION
+
+9.1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION 
+	EXAMPLE
+
+9.2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION 
+	EXAMPLE
+
+10. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	MULTIPLE LINEAR REGRESSION
+
+
+12. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	PICKLING AND UNPICKLING
+
+
+13. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SAVE MODEL USING JOBLIB AND 
+	PICKLING
+
+
+10. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	POLYNOMIAL FEATURES
+
+11. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DUMMY VARIABLE, ONEHOTENCODING
+
+
+12. DATA SCIENCE - MACHINE LEARNING 	-	Done
+	- R VALUE
+
+
+13. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	COST FUNCTION
+
+
+14. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	REGRESSION COST FUNCTION
+
+
+15. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	LOGISTIC REGRESSION
+	BINARY CLASSIFICATION
+
+16. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LOGISTIC REGRESSION
+	MULTI CLASS CLASSIFICATION
+
+
+17. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DECISION TREE
+
+
+18. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	RANDOM FOREST ALGORITHM
+
+
+
+24. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	K-FOLD CROSS VALIDATION
+
+
+25. DATA SCIENCE - MACHINE LEARNING 	- 	Running topic
+	SVM
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+6. float(p)		->	To convert to float
+7. int(p)		->	To convert to int
+8. list(p)		->	Convert from seq to list
+9. tuple(p)		->	Convert from seq to tuple
+10. set(p)		->	Convert from seq to set
+
+11. dict(p)		->	Convert from list of tups to dict
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+11. InvalidParameterError
+
+------------------------------------
+
+24. DATA SCIENCE - MACHINE LEARNING 
+	K-FOLD CROSS VALIDATION
+
+------------------------------------
+
+Imp ponits!!!
+-------------
+
+	1. ML Flow
+	2. ML Steps
+
+------------------------------------
+
+ML flow
+-------
+
+Data
+	DataFrame
+		Feature Engg
+				Array
+					Machine Learning Algorithm
+					Cost function
+					Gradient Descent Algorithm
+						Increase accuracy
+						Reduce Error
+							Bias
+							Variance
+
+
+ML steps
+--------
+
+	1. Importing the libraries
+	2. Loading the dataset
+	3. Data preparation
+	4. Splitting the dataset
+	5. Model creation
+	6. Model training
+	7. Prediction
+
+--------------------------------
+
+K-FOLD CROSS VALIDATION
+
+-> This is not an algorithm
+-> This is a technique to improve model performance
+-> With k letter we have below topics,
+	1. K fold cross validataion
+	2. K means clsutering Alg
+	3. K nearest neighbor Alg
+
+--------------------------------
+
+ML steps
+--------
+
+	1. Importing the libraries
+	2. Loading the dataset
+	3. Data preparation
+	4. Splitting the dataset
+				1. train_test_split
+				2. K fold cross validation
+	5. Model creation
+	6. Model training
+	7. Prediction
+
+--------------------------------
+
+1. train_test_split	70:30
+--------------------
+
+-> Only one time training
+-> We will get one score
+
+
+
+2. K fold cross validation
+--------------------------
+
+-> K(5) times training
+-> We will K(5) scores, we will get average score
+
+
+--------------------------------
+
+Case 1:	train_test_split
+
+Father		:	Example
+Problem		:	To recognize cat/dog
+split		:	70:30
+.....
+traing		:	one time only
+score		:	one score
+
+
+--------------------------------
+
+Case 2:	K fold cross validataion
+
+Father		:	Example
+Problem		:	To recognize cat/dog
+Images		:	100
+			divide 5 * 20 = 100
+
+
+	1-20	21-40	41-60	61-80	81-100
+
+1st	test	train	train	train	train	score1=17/20
+2nd	train	test	train	train	train	score2=18/20
+3rd	train	train	test	train	train	score3=16/20
+4th	train	train	train	test	train	score4=19/20
+5th	train	train	train	train	test	score5=18/20
+
+		score1 + score2 + score3 + score4 + score5
+Final score = ---------------------------------------------
+				5
+
+Avg score	=	Best score
+
+--------------------------------
+
+K fold cross validataion: topic
+
+hand written digits
+
+	train_test_split [One time training, one score]
+		1. Logistic Regression
+		2. SVC
+		3. RandomForest
+
+	K fold cross validataion[K times train, k scores]
+		1. Logistic Regression
+		2. SVC
+		3. RandomForest
+
+--------------------------------
+
+train_test_split		one score
+
+1. LogisticRegression		96
+2. SVC				?
+3. RandomForest			?
+
+Where is big score		best alg
+
+
+--------------------------------
+
+# Topic: train_test_split: LogisticRegression
+
+print("Topic: train_test_split: LogisticRegression")
+print()
+
+
+print("Step 1: Importing the libraries")
+
+from sklearn.datasets import load_digits
+from sklearn.linear_model import LogisticRegression
+from sklearn.model_selection import train_test_split
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+digits = load_digits()
+
+
+
+
+print("Step 3: Data preparation")
+
+X = digits.data
+y = digits.target
+
+
+
+
+
+print("Step 4: Splitting the dataset")
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, 
+    y, 
+    test_size = 0.3
+)
+
+
+
+
+print("Step 5: Model creation")
+
+model1 = LogisticRegression(
+    solver = 'lbfgs', 
+    max_iter = 3000
+)
+
+
+
+print("Step 6: Model training")
+
+model1.fit(X_train, y_train)
+
+
+print("Step Spl: Checking the score")
+
+print()
+print(model1.score(X_test, y_test))
+
+
+---------------------------------------
+
+
+train_test_split		one score
+
+1. LogisticRegression		96
+2. SVC				97
+3. RandomForest			?
+
+Where is big score		best alg
+
+
+--------------------------------
+
+# Topic: train_test_split: SVC
+
+print("Topic: train_test_split: SVC")
+print()
+
+
+print("Step 1: Importing the libraries")
+
+from sklearn.svm import SVC
+from sklearn.datasets import load_digits
+from sklearn.model_selection import train_test_split
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+digits = load_digits()
+
+
+
+
+print("Step 3: Data preparation")
+
+X = digits.data
+y = digits.target
+
+
+
+
+print("Step 4: Splitting the dataset")
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, 
+    y, 
+    test_size = 0.3
+)
+
+
+
+print("Step 5: Model creation")
+
+model2 = SVC()
+
+
+
+
+print("Step 6: Model training")
+
+model2.fit(X_train, y_train)
+
+
+
+print("Step Spl: Checking the score")
+
+print()
+print(model2.score(X_test, y_test))
+
+---------------------------------------
+
+
+train_test_split		one score
+
+1. LogisticRegression		96
+2. SVC				97
+3. RandomForest			96
+
+Where is big score		SVC
+thats called best alg
+
+--------------------------------
+
+print("Topic: train_test_split: RandomForest")
+print()
+
+
+
+
+print("Step 1: Importing the libraries")
+
+from sklearn.datasets import load_digits
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+
+
+
+
+print("Step 2: Loading the dataset")
+
+digits = load_digits()
+
+
+
+
+print("Step 3: Data preparation")
+
+X = digits.data
+y = digits.target
+
+
+
+
+print("Step 4: Splitting the dataset")
+
+X_train, X_test, y_train, y_test = train_test_split(
+    X, 
+    y, 
+    test_size = 0.3
+)
+
+
+
+print("Step 5: Model creation")
+
+model3 = RandomForestClassifier( n_estimators = 40)
+
+
+
+
+
+print("Step 6: Model training")
+
+model3.fit(X_train, y_train)
+
+
+
+
+print("Step Spl: Checking the score")
+
+print()
+print(model3.score(X_test, y_test))
+
+--------------------------------
+
+train_test_split
+	3 Algorithms		SVC got the best score
+
+--------------------------------
+
+K fold cross validataion	K times training
+
+				K(3) scores
+
+1. LogisticRegression		91, 94, 91
+2. SVC				?, ?, ?
+3. RandomForest			?, ?, ?
+
+Where is big score		?
+thats called best alg
+
+--------------------------------
+
+# Topic: K fold cross validation: LogisticRegression
+
+print("Topic: K fold cross validation: LogisticRegression")
+print()
+
+
+
+print("Step 1: Importing the libraries")
+
+from sklearn.datasets import load_digits
+from sklearn.model_selection import cross_val_score
+from sklearn.linear_model import LogisticRegression
+
+
+
+print("Step 2: Loading the dataset")
+
+digits = load_digits()
+
+
+
+
+print("Step 3: Data preparation")
+
+X = digits.data
+y = digits.target
+
+
+
+
+print("Step 4: Splitting the dataset: K fold cross val")
+
+
+
+
+print("Step 5: Model creation")
+
+model1 = LogisticRegression(
+    solver = 'lbfgs', 
+    max_iter = 3000
+)
+
+scores1 = cross_val_score(
+    model1, 
+    X, 
+    y, 
+    cv = 3
+)
+
+
+
+print("Step Spl: Checking the score")
+
+print()
+print(scores1)
+
+--------------------------------
+
+K fold cross validataion	K times training
+				K(3) scores
+
+1. LogisticRegression		91, 94, 91
+2. SVC				96, 97, 96
+3. RandomForest			?, ?, ?
+
+Where is big score		?
+thats called best alg
+
+--------------------------------
+
+# Steps from 1 to 7
+
+print("Topic: K fold cross validation: SVC")
+print()
+
+
+
+
+
+print("Step 1: Importing the libraries")
+
+from sklearn.svm import SVC
+from sklearn.datasets import load_digits
+from sklearn.model_selection import cross_val_score
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+digits = load_digits()
+
+
+
+
+
+
+print("Step 3: Data preparation")
+
+X = digits.data
+y = digits.target
+
+
+
+
+
+
+
+print("Step 4: Splitting the dataset: K fold cross val")
+
+
+
+
+print("Step 5: Model creation")
+
+
+model2 = SVC()
+
+scores2 = cross_val_score(model2, X, y, cv = 3)
+
+
+
+
+
+print("Step Spl: Getting the score")
+print()
+print(scores2)
+
+--------------------------------
+
+K fold cross validataion	K times training
+				K(3) scores
+
+1. LogisticRegression		91, 94, 91
+2. SVC				96, 97, 96
+3. RandomForest			93, 94, 92
+
+Where is big score		SVC
+thats called best alg
+
+--------------------------------
+
+print("Topic: K fold cross validation: Random Forest")
+print()
+
+
+
+
+print("Step 1: Importing the libraries")
+
+from sklearn.datasets import load_digits
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import cross_val_score
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+digits = load_digits()
+
+
+
+
+
+
+
+print("Step 3: Data preparation")
+
+X = digits.data
+y = digits.target
+
+
+
+
+
+
+print("Step 4: Splitting the dataset: K fold cross val")
+
+
+
+
+
+print("Step 5: Model creation")
+
+model3 = RandomForestClassifier()
+
+
+
+
+scores3 = cross_val_score(model3, X, y, cv = 3)
+
+
+
+
+print("Step Spl: Getting the score")
+
+print()
+print(scores3)
+
+--------------------------------
+
+# Using K fold cross validataion
+# Getting the best model based on the score
+
+
+print("Topic: K fold cross validation: All models")
+print()
+
+
+
+
+
+print("Step 1: Importing the libraries")
+
+import numpy as np
+from sklearn.svm import SVC
+from sklearn.datasets import load_digits
+from sklearn.model_selection import cross_val_score
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.linear_model import LogisticRegression
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+digits = load_digits()
+
+
+
+
+
+
+
+print("Step 3: Data preparation")
+
+X = digits.data
+y = digits.target
+
+
+
+
+
+
+print("Step 4: Splitting the dataset: K fold cross val")
+
+
+print("Step 5: Creating models")
+
+model1 = LogisticRegression(
+    solver = 'lbfgs', 
+    max_iter = 5000
+)
+
+model2 = SVC()
+
+model3 = RandomForestClassifier()
+
+
+scores1 = cross_val_score(model1, X, y, cv = 3)
+scores2 = cross_val_score(model2, X, y, cv = 3)
+scores3 = cross_val_score(model3, X, y, cv = 3)
+
+
+print()
+print("LogisticRegression:", np.average(scores1)*100)
+print("SVC:", np.average(scores2)*100)
+print("RandomForestClassifier:", np.average(scores3)*100)
+
+
+--------------------------------
+
+Assignment 1 :)
+-------------
+
+LogisticRegression: 92.59877573734
+SVC: 96.99499165275459
+RandomForestClassifier: 93.98998330550917
+
+The best mode is: SVC
+
+-> Create a DataFrame and sort based on scores then get the best
+
+--------------------------------
+
+Assignment 2 :)
+---------------
+
+-> Apply K fold cross validataion technique over iris dataset and take below models
+	1. Logistic Regression
+	2. SVC
+	3. Decision Tree
+	4. Random Forest
+
+--------------------------------
+
+25. DATA SCIENCE - MACHINE LEARNING 
+	SVM
+
+--------------------------------
+
+from gugulothsidharthasidhu25213 to everyone:    6:33 PM
+Sir, how long did it take you to learn Python?
+
+Good question
+-------------
+
+-> Java Devlopper	->	3 yrs of Realtime exp
+			->	full stack java guy
+			->	UI, DB, Middle, Server
+
+-> life is moving	->	.....
+
+-> Manager		->	One to One meeting 
+
+-> Getting BigData	->	Hadoop(Java is prerequisite)
+			->	Ignored, not interested
+			->	Joined in Hadoop project
+			->	6 months
+			->	Done
+			->	getting ready to join java pro
+			
+-> Mirgration		->	convert hadoop to pySpark
+
+-> PySpark		->	Python  + Spark
+
+-> Zero knowledge	->	client KT
+			->	20 sessions
+			->	Lot of R & D
+	
+-> 3 months		->	Became expert in python
+
+-> Pyspark		->	ML lib
+			->	Machine learning
+
+
+--------------------------------
+
+-> We done today session
+-> Monday is holiday
+-> We will connect again on Tueday
+-> Daniel
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

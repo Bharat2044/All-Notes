@@ -1,0 +1,1044 @@
+RUNNING NOTES: 27 - MAR - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	ML: DECISION TREE
+2. CURRENT TOPIC			-	ML: RANDOM FOREST
+3. UPCOMING TOPIC			-	ML: K-FOLD CROSS VALIDATION
+									         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Done
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Done
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Done 
+	MULTIPLE CSV FILES
+
+--------------------------------------------------
+
+DATA ANALYSIS PROJECT
+---------------------
+
+1. EDA PROJECT				-	Done
+
+--------------------------------------------------
+
+DATA VISUALIZATION
+------------------
+
+1. DATA VISUALIZATION PART 1		-	Done
+2. DATA VISUALIZATION PART 2		-	Done
+3. DATA VISUALIZATION FUNDAMENTALS	-	Done
+
+4. DATA VISUALIZATION POWER BI		-	Upcoming topic	
+		
+--------------------------------------------------
+
+NUMPY
+-----
+
+1. NUMPY INTRODUCTION			-	Done
+2. NUMPY FUNDAMENTALS			-	Done
+3. NUMPY ATTRIBUTES			-	Done
+4. NUMPY METHODS			-	Done
+
+--------------------------------------------------
+
+MATHS						STATUS
+-----						------
+
+1. MATHS - PART - 1 - POPULATION, 	-	Done
+	SAMPLE, TYPES OF VARIABLES
+
+
+2. MATHS - PART - 2 - MODE, MEDIAN, 	-	Done
+	MEAN, RANGE, 
+	STANDARD DEVIATION, VARIANCE	
+
+
+3. MATHS - PART - 3 - OUTLIERS		-	Done
+
+
+4. MATHS - PART - 4 - THE FIVE NUMBERS	-	Done
+	SUMMARY, BOX PLOT, OUTLIER
+
+
+5. MATHS - PART - 5 - SYMMETRY AND 	-	Done
+	SKEWNESS
+
+
+6. MATHS - PART - 6 - EXPLANATORY AND 	-	Done
+	RESPONSIVE VARIABLES
+
+
+7. MATHS - PART - 7 - REGRESSION 	-	Done
+	AND R SQUARED
+
+
+8. MATHS - PART - 8 - RESIDUALS		-	Done
+
+
+9. MATHS - PART - 9 - THE NORMAL 	-	Hold
+	DISTRIBUTION AND 
+	68-95-99.7 RULE
+
+10. MATHS - PART - 10 - MATRIX		-	Done
+
+--------------------------------------------------
+
+FEATURE ENGINEERING
+-------------------
+
+1. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 1	-	Done
+
+
+2. FEATURE ENGINEERING - 
+	DATA PRE PROCESSING - PART - 2	-	Done
+
+--------------------------------------------------
+
+MACHINE LEARNING
+----------------
+
+1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	INTRODUCTION
+
+2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TERMINOLOGY
+
+3. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DATA AND ML ALGORITHMS
+
+4. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LEARNING FUNCTION
+
+5. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TYPES OF MODELS
+
+6. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LIFE CYCLE
+
+7. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	TRAIN & TEST DATASETS
+
+
+8. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	R VALUE
+
+
+9. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION
+
+9.1. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION 
+	EXAMPLE
+
+9.2. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SIMPLE LINEAR REGRESSION 
+	EXAMPLE
+
+10. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	MULTIPLE LINEAR REGRESSION
+
+
+12. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	PICKLING AND UNPICKLING
+
+
+13. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	SAVE MODEL USING JOBLIB AND 
+	PICKLING
+
+
+10. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	POLYNOMIAL FEATURES
+
+11. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DUMMY VARIABLE, ONEHOTENCODING
+
+
+12. DATA SCIENCE - MACHINE LEARNING 	-	Done
+	- R VALUE
+
+
+13. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	COST FUNCTION
+
+
+14. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	REGRESSION COST FUNCTION
+
+
+15. DATA SCIENCE - MACHINE LEARNING 	- 	Done	
+	LOGISTIC REGRESSION
+	BINARY CLASSIFICATION
+
+16. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	LOGISTIC REGRESSION
+	MULTI CLASS CLASSIFICATION
+
+
+17. DATA SCIENCE - MACHINE LEARNING 	- 	Done
+	DECISION TREE
+
+
+18. DATA SCIENCE - MACHINE LEARNING 	- 	Running topic
+	RANDOM FOREST ALGORITHM
+
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+6. float(p)		->	To convert to float
+7. int(p)		->	To convert to int
+8. list(p)		->	Convert from seq to list
+9. tuple(p)		->	Convert from seq to tuple
+10. set(p)		->	Convert from seq to set
+
+11. dict(p)		->	Convert from list of tups to dict
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+11. InvalidParameterError
+
+------------------------------------
+
+18. DATA SCIENCE - MACHINE LEARNING 	
+	RANDOM FOREST ALGORITHM
+
+------------------------------------
+
+Imp ponits!!!
+-------------
+
+	1. ML Flow
+	2. ML Steps
+
+------------------------------------
+
+ML flow
+-------
+
+Data
+	DataFrame
+		Feature Engg
+				Array
+					Machine Learning Algorithm
+					Cost function
+					Gradient Descent Algorithm
+						Increase accuracy
+						Reduce Error
+							Bias
+							Variance
+
+
+ML steps
+--------
+
+	1. Importing the libraries
+	2. Loading the dataset
+	3. Data preparation
+	4. Splitting the dataset
+	5. Model creation
+	6. Model training
+	7. Prediction
+
+--------------------------------
+
+23. DATA SCIENCE - MACHINE LEARNING 
+	RANDOM FOREST ALGORITHM
+
+-------------------------------------
+
+-> This order is imp
+
+	1. List
+	2. Tuple
+
+	1. Series
+	2. DataFrame
+
+
+	1. Decision Tree
+	2. Random Forest
+
+-------------------------------------
+
+Ensemble Learning
+-----------------
+
+Case 1		10th SSC	Decision Tree
+------
+
+1. Suri Narayana:	MPC		
+
+
+Case 2:		10th SSC	Ensemble Learning
+-------
+
+1. Suri		MPC
+2. Nani		CEC
+3. Prasad	MPC
+4. Revathi	CEC
+5. Rani		MPC
+6. Sudhakar	MPC
+
+		CEC	2
+		MPC	4
+
+
+-------------------------------------
+
+-> First learn algorithms, how these are working over public datasets
+
+-------------------------------------
+
+public dataset:	iris flowers
+
+Forest:		only 3 types of flowers
+
+1st	flower	->	own features	->	1st
+2nd	flower	->	own features	->	2nd
+3rd	flower	->	own features	->	3rd
+
+Features
+--------
+
+Sepal length	Sepal width	Petal length	Petal width	target
+
+-------------------------------------
+
+# Getting feature names
+
+print("Topic: Random Forest")
+print()
+
+
+print("Step 1: Importing the libraries")
+
+from sklearn.datasets import load_iris
+
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+iris = load_iris()
+
+print()
+print(iris.feature_names)
+
+-------------------------------------
+
+# Filter the data
+
+values = ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
+
+
+for value in values:
+    if "sepal" in value:
+        print(value)
+
+-------------------------------------
+
+
+# Filter the data
+
+values = ['sepal length (cm)', 'sepal width (cm)', 'petal length (cm)', 'petal width (cm)']
+
+
+for value in values:
+    if "petal" in value:
+        print(value)
+
+-------------------------------------
+
+from Masud Siddiqi (privately):    6:10 PM
+is there any 'contain' keyword?
+
+-------------------------------------
+
+# Getting target names
+
+print("Topic: Random Forest")
+print()
+
+
+print("Step 1: Importing the libraries")
+
+from sklearn.datasets import load_iris
+
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+iris = load_iris()
+
+print()
+print(iris.target_names)
+
+
+-------------------------------------
+
+# Getting the data
+
+print("Topic: Random Forest")
+print()
+
+
+print("Step 1: Importing the libraries")
+
+from sklearn.datasets import load_iris
+
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+iris = load_iris()
+
+print()
+print(iris.data)
+
+-------------------------------------
+
+# Total data length
+
+print("Topic: Random Forest")
+print()
+
+
+print("Step 1: Importing the libraries")
+
+from sklearn.datasets import load_iris
+
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+iris = load_iris()
+
+print()
+print(len(iris.data))
+
+-------------------------------------
+
+# Getting DataFrame
+
+print("Topic: Random Forest")
+print()
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.datasets import load_iris
+
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+iris = load_iris()
+
+
+df = pd.DataFrame(
+    iris.data, 
+    columns = iris.feature_names
+)
+df['target'] = iris.target
+
+print()
+print(df)
+
+--------------------------------
+
+# Filtering 1st type of flowers
+
+print("Topic: Random Forest")
+print()
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.datasets import load_iris
+
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+iris = load_iris()
+
+
+df = pd.DataFrame(
+    iris.data, 
+    columns = iris.feature_names
+)
+df['target'] = iris.target
+
+con = df["target"] == 0
+
+print()
+print(df[con])
+print()
+print(len(df[con]))
+
+--------------------------------
+
+# Filtering 2nd type of flowers
+
+print("Topic: Random Forest")
+print()
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.datasets import load_iris
+
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+iris = load_iris()
+
+
+df = pd.DataFrame(
+    iris.data, 
+    columns = iris.feature_names
+)
+df['target'] = iris.target
+
+con = df["target"] == 1
+
+print()
+print(df[con])
+print()
+print(len(df[con]))
+
+--------------------------------
+
+# Filtering 3rd type of flowers
+
+print("Topic: Random Forest")
+print()
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.datasets import load_iris
+
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+iris = load_iris()
+
+
+df = pd.DataFrame(
+    iris.data, 
+    columns = iris.feature_names
+)
+df['target'] = iris.target
+
+con = df["target"] == 2
+
+print()
+print(df[con])
+print()
+print(len(df[con]))
+
+--------------------------------
+
+# Filtering based on target
+
+print("Topic: Random Forest")
+print()
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.datasets import load_iris
+
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+iris = load_iris()
+
+
+df = pd.DataFrame(
+    iris.data, 
+    columns = iris.feature_names
+)
+df['target'] = iris.target
+
+un = df["target"].unique()  # [0, 1, 2]
+
+print()
+print(un)
+
+for value in un:
+    con = df["target"] == value
+    print(df[con])
+    print()
+
+--------------------------------
+
+# Adding target name (flower name) to the DataFrame
+
+print("Topic: Random Forest")
+print()
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.datasets import load_iris
+
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+iris = load_iris()
+
+
+df = pd.DataFrame(
+    iris.data, 
+    columns = iris.feature_names
+)
+df['target'] = iris.target
+
+a = lambda x: iris.target_names[x]
+df['flower_name'] = df.target.apply(a)
+
+print()
+print(df)
+
+--------------------------------
+
+# Creating individual DataFrames
+
+print("Topic: Random Forest")
+print()
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.datasets import load_iris
+
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+iris = load_iris()
+
+
+df = pd.DataFrame(
+    iris.data, 
+    columns = iris.feature_names
+)
+df['target'] = iris.target
+
+a = lambda x: iris.target_names[x]
+df['flower_name'] = df.target.apply(a)
+
+
+setosa_50 = df[:50]
+versicolor_50 = df[50:100]
+verginica_50 = df[100:]
+
+--------------------------------
+
+# Steps from 1 to 6
+
+print("Topic: Random Forest")
+print()
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.datasets import load_iris
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+
+
+
+
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+iris = load_iris()
+
+
+df = pd.DataFrame(
+    iris.data, 
+    columns = iris.feature_names
+)
+df['target'] = iris.target
+
+a = lambda x: iris.target_names[x]
+df['flower_name'] = df.target.apply(a)
+
+
+
+
+print("Step 3: Data preparation")
+
+
+X = df.drop(['target', 'flower_name'], axis = 'columns')
+y = df.target
+
+
+
+
+print("Step 4: Splitting the dataset")
+
+X_train, X_test, y_train, y_test = train_test_split(    X, 
+    y, 
+    test_size = 0.2
+)
+
+
+
+
+print("Step 5: Model creation")
+
+model = RandomForestClassifier(n_estimators = 40)
+
+
+
+
+print("Step 6: Model training")
+
+model.fit(X_train, y_train)
+
+--------------------------------
+
+# Checking model score
+
+print("Topic: Random Forest")
+print()
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.datasets import load_iris
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+
+
+
+
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+iris = load_iris()
+
+
+df = pd.DataFrame(
+    iris.data, 
+    columns = iris.feature_names
+)
+df['target'] = iris.target
+
+a = lambda x: iris.target_names[x]
+df['flower_name'] = df.target.apply(a)
+
+
+
+
+print("Step 3: Data preparation")
+
+
+X = df.drop(['target', 'flower_name'], axis = 'columns')
+y = df.target
+
+
+
+
+print("Step 4: Splitting the dataset")
+
+X_train, X_test, y_train, y_test = train_test_split(    X, 
+    y, 
+    test_size = 0.2
+)
+
+
+
+
+print("Step 5: Model creation")
+
+model = RandomForestClassifier(n_estimators = 40)
+
+
+
+
+print("Step 6: Model training")
+
+model.fit(X_train, y_train)
+
+
+print("Step Spl: Model score")
+
+print()
+print(model.score(X_test, y_test))
+
+--------------------------------
+
+# Steps from 1 to 7
+
+print("Topic: Random Forest")
+print()
+
+
+print("Step 1: Importing the libraries")
+
+import pandas as pd
+from sklearn.datasets import load_iris
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.model_selection import train_test_split
+
+
+
+
+
+
+
+
+
+
+print("Step 2: Loading the dataset")
+
+iris = load_iris()
+
+
+df = pd.DataFrame(
+    iris.data, 
+    columns = iris.feature_names
+)
+df['target'] = iris.target
+
+a = lambda x: iris.target_names[x]
+df['flower_name'] = df.target.apply(a)
+
+
+
+
+print("Step 3: Data preparation")
+
+
+X = df.drop(['target', 'flower_name'], axis = 'columns').values
+y = df.target.values
+
+
+
+
+print("Step 4: Splitting the dataset")
+
+X_train, X_test, y_train, y_test = train_test_split(    X, 
+    y, 
+    test_size = 0.2
+)
+
+
+
+
+print("Step 5: Model creation")
+
+model = RandomForestClassifier(n_estimators = 40)
+
+
+
+
+print("Step 6: Model training")
+
+model.fit(X_train, y_train)
+
+
+
+
+
+print("Step 7: Prediction")
+
+print()
+print(model.predict([[4.8,3.0,1.5,0.3]]))
+
+--------------------------------
+
+-> We done today Session
+-> We will continue tomorrow
+-> Daniel :)
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

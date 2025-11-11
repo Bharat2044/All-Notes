@@ -1,0 +1,472 @@
+RUNNING NOTES: 04 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	STRING
+2. CURRENT TOPIC			-	FUNCTIONS PART 1
+3. UPCOMING TOPIC			-	FUNCTIONS PART 2
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+
+12. PYTHON - FUNCTIONS - PART - 2	-	Running topic
+
+13. PYTHON - MODULE			-	Upcoming topic
+
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. IndexError
+5. IndentationError
+
+6. AttributeError
+
+
+--------------------------------
+
+11. PYTHON - FUNCTIONS - PART - 1	
+----------------------------------
+
+Recap
+-----
+
+return
+
+-> return is a keyword in python
+-> We can apply only on two functions
+	1. Function
+	2. Method
+
+Combinations
+------------
+
+	if	+	else		->	Valid
+	for	+	in		->	Valid
+	return	+	function	->	Valid
+	return	+	method		->	Valid
+
+	return				->	Invalid	
+
+
+----------------------------------
+
+return	+	function
+------------------------
+
+# function, no return
+
+def balance():
+	print("Hello")
+
+balance()
+
+------------------------
+
+# function + return
+
+def balance():
+	print("My balance is:")
+	return 100000
+
+b = balance()
+print(b)
+
+------------------------
+
+# function, return checkig balance
+
+def balance():
+	return 0
+
+b = balance()
+
+if b == 0:
+	print("Balance is:", b)
+
+------------------------
+
+# function, return checkig balance
+
+def balance():
+	return -10
+
+b = balance()
+
+if b == 0:
+	print("Balance is:", b)
+
+elif b < 0:
+	print("Its negative,Deposite money, otherwise some charges", b)
+
+------------------------
+
+# function, return checkig balance
+
+def balance():
+	return 100000
+
+b = balance()
+
+if b == 0:
+	print("Balance is:", b)
+
+elif b < 0:
+	print("Its negative,Deposite money, otherwise some charges", b)
+
+else:
+	print("Balance is:", b)
+
+------------------------
+
+# Below example valid but not recommended
+
+def balance():
+	print("Balance is:")
+	return 100000
+
+print(balance())
+
+
+------------------------
+
+def m1():
+	print("Hi")
+
+def m2():
+	print("Hai")
+	return 10
+
+def m3():
+	print("Hello")
+
+m1()
+
+a = m2()
+print(a)
+
+m3()
+
+------------------------
+
+Technical Game
+--------------
+
+m1()		->	Function call
+		->	No parameter
+		->	No return
+
+m2(10)		->	Function call
+		->	One parameter
+		->	No return
+
+a = m3()	->	Function call
+		->	No parameter
+		->	Having return
+
+Realtime example
+----------------
+
+a = "Hello"
+
+
+b = len(a)	->	Function call
+		->	One parameter
+		->	Having return
+
+
+------------------------
+
+IMP question
+
+def m1():
+	print("Hello")
+	return 100
+
+b = m1()
+print(b)
+
+------------------------
+
+# function is returning None value
+
+def m1():
+	print("Hello")
+
+a = m1()
+print(a)
+
+
+------------------------
+
+# Valid example
+
+def m1():
+	print("Hello")	
+	a = 100
+	return a
+
+b = m1()
+print(b)
+
+
+------------------------
+
+# Function is returning one value
+
+def m1():
+	print("Hello")
+	a = 10
+	return a
+
+x = m1()
+print(x)
+
+
+------------------------
+
+# Function is returning two values
+
+def m1():
+	print("Hello")
+	a = 10
+	b = 20
+	return a, b
+
+x, y = m1()
+print(x)
+print(y)
+
+------------------------
+
+# Function is returning three values
+
+def m1():
+	print("Hello")
+	a = 10
+	b = 20
+	c = 30
+	return a, b, c
+
+x, y, z = m1()
+
+print(x)
+print(y)
+print(z)
+
+------------------------
+
+# Function is returning 3 values
+# Then we need to assign function call with 3 variables
+# If we assign with only one variable then that variable behaves like tuple
+
+def m1():
+	print("Hello")
+	a = 10
+	b = 20
+	c = 30
+	return a, b, c
+
+x = m1()
+
+print(x)
+
+------------------------
+
+Counter Question?
+
+Arey Daniel, why tule here
+
+Ans: Kindly wait until topic :)
+
+------------------------
+
+Recap
+
+	list	->	[]
+	tuple	->	()
+	set	->	{} with values
+	dict	->	{} key, value pairs
+
+------------------------
+
+IMP example
+
+# Function + Parameters + return keyword
+
+def add(a, b):
+	c = a + b
+	return c
+
+result = add(10, 20)
+print(result)
+
+
+------------------------
+a = "Hello"
+
+b = len(a)
+
+print(b)
+
+------------------------
+
+b = len(a)	->	Function
+		->	Parameterized function
+		->	Having return
+
+------------------------
+
+Regarding the return, you cannot find anywhere else this kind of explanation
+
+------------------------
+
+12. PYTHON - FUNCTIONS - PART - 2
+
+
+# Formal and Actual arguments
+
+def add(a, b):
+	print(a+b)
+
+add(10, 20)
+
+Kind note
+----------
+
+a, b	->	Parameters/Formal arguments
+10, 20	->	Values/Actual arguments
+
+------------------------
+
+2.1. Positional arguments
+
+
+# Function, no parameter, no return
+
+def m1():
+	print("Hello")
+
+m1()
+
+------------------------
+
+# TypeError: m1() missing 1 required positional argument: 'a'
+
+def m1(a):
+	print("Value is:", a)
+
+m1()
+	
+------------------------
+
+def m1(a):
+	print("Value is:", a)
+
+m1(10)
+	
+------------------------
+
+# TypeError: m1() missing 2 required positional arguments: 'a' and 'b'
+
+def m1(a, b):
+	print("First value is:", a)
+	print("Second value is:", b)
+
+m1()
+
+------------------------
+
+def m1(a, b):
+	print("First value is:", a)
+	print("Second value is:", b)
+
+m1(10, 20)
+
+------------------------
+
+2.2. Keyword arguments	->	IMP topic
+
+Python
+	1. Keywords
+	2. Keyword arguments
+
+-> There is no relation in between above two topics
+
+------------------------
+
+We done for today session
+We will meet again tomorrow
+
+Thank you :)
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

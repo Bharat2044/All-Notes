@@ -1,0 +1,426 @@
+RUNNING NOTES: 30 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - DATAFRAME CONCATE
+2. CURRENT TOPIC			-	PANDAS - DATAFRAME ADD, DROP COLS, ROWS
+3. UPCOMING TOPIC			-	PANDAS - DATAFRAME DATE & TIME OPES
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Done
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Running topic
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Upcoming topic 
+	MULTIPLE CSV FILES
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+19. PANDAS - DATAFRAME - ADDING,
+	DROPPING ROWS AND COLUMNS
+
+---------------------------------
+
+# adding column to DataFrame
+# here Syntax is very very imp
+
+import pandas as pd
+
+df = pd.read_csv("sales8.csv")
+
+df["Daniel"] = 10
+
+print(df)
+
+---------------------------------
+
+# Adding a column
+
+import pandas as pd
+
+df = pd.read_csv("sales8.csv")
+
+df["status"] = "Delivered"
+
+print(df)
+
+---------------------------------
+
+IMP interview question
+
+# While adding if column name already existing then what happend?
+
+# old column values will be replaced with new value
+
+import pandas as pd
+
+df = pd.read_csv("sales8.csv")
+
+df["Customer Id"] = "Delivered"
+
+print(df)
+
+---------------------------------
+
+DataFrame
+---------
+
+Product cost	Quantity	Total price
+-------------------------------------------
+65999		1		65999*1 = result
+63000		2		63000*2 = result
+75999		1
+60000		2
+69999		3
+65999		2
+55999		3
+
+---------------------------------
+
+Let me open my amazon account :)
+
+my account is using almost 5 members in my family
+
+
+---------------------------------
+
+import pandas as pd
+
+df = pd.read_csv("sales8.csv")
+
+print(df.head())
+
+df["Total"] = df["Product cost"] * df["Quantity"]
+
+print()
+print(df.head())
+
+---------------------------------
+
+Please focus on below line very well
+
+df["Total"] = df["Product cost"] * df["Quantity"]
+
+Key points
+----------
+
+1. If column name is new then new column will be added to the DataFrame at last
+
+2. If column name is already existing then old column values will be replaced with new value
+
+---------------------------------
+
+Adding column to DataFrame
+
+1. df["Total"] = ....
+2. by using apply() method and user defined function
+
+---------------------------------
+
+# adding column by using apply() method
+
+import pandas as pd
+
+df = pd.read_csv('sales8.csv')
+
+print(df.head())
+
+def total(df):
+	t = df['Product cost'] * df['Quantity']
+	return t
+
+df['Total cost'] = df.apply(total, axis = 1)
+
+print()
+print(df.head())
+
+---------------------------------
+
+# Inserting name of the column in between the columns
+
+import pandas as pd
+
+df = pd.read_csv("sales8.csv")
+
+print(df.head())
+
+new = df['Product cost'] * df['Quantity']
+
+df.insert(5,"Total Cost", new)
+
+print()
+print(df.head())
+
+---------------------------------
+
+# ValueError: cannot insert Customer Id, already exists
+
+import pandas as pd
+
+df = pd.read_csv("sales8.csv")
+
+print(df.head())
+
+new = df['Product cost'] * df['Quantity']
+
+df.insert(5,"Customer Id", new)
+
+print()
+print(df.head())
+
+---------------------------------
+
+2. Dropping columns from DataFrame
+
+# Dropping single column
+
+import pandas as pd
+
+df1 = pd.read_csv("sales8.csv")
+
+df2 = df1.drop(columns = 'Customer name')
+
+print(df1.head())
+print()
+print(df2.head())
+
+---------------------------------
+
+# While dropping column, column name should be match otherwise we will get KeyError
+
+import pandas as pd
+
+df1 = pd.read_csv("sales8.csv")
+
+df2 = df1.drop(columns = 'Customer namelsadjkgl')
+
+print(df1.head())
+print()
+print(df2.head())
+
+---------------------------------
+
+# Dropping two columns
+
+import pandas as pd
+
+df1 = pd.read_csv("sales8.csv")
+
+df2 = df1.drop(['Customer name', 'Product name'], axis = 1)
+
+print(df1.head())
+print()
+print(df2.head())
+
+---------------------------------
+
+from Masud Siddiqi to everyone:    6:23 PM
+dropna() means dropping rows. right sir?
+
+Sorry, let me correct you Boss
+
+dropna() means dropping missing values/NaN values
+
+---------------------------------
+
+# Dropping single row
+
+import pandas as pd
+
+df1 = pd.read_csv("sales8.csv")
+
+df2 = df1.drop(3, axis = 0)
+
+print(df1.head())
+print()
+print(df2.head())
+
+---------------------------------
+
+from Jayesh Thakare (privately):    6:34 PM
+sir what if we dont know which index to drop but we know the customer name whose data we have to drop then how can we drop?
+
+Very Good question
+
+df.index	->	all index
+
+4		->	4 in index
+
+a = df.index
+
+if 4 in a:
+	dropping(....)
+else:
+	print("This index is not existing")
+
+---------------------------------
+
+Column
+
+	1. adding column
+	2. dropping column
+
+Row
+	1. dropping row
+	2. We can do, adding row also(but very rare ops)	
+		check in chatGPT
+
+---------------------------------
+
+20. PANDAS - DATAFRAME - DATE AND 
+	TIME OPERATIONS
+
+---------------------------------
+
+Data
+----
+
+a = 10		int
+b = 1.2		float
+c = "Daniel"	string
+
+d = 30-01-2025	dont think like the data type is int-int-int
+		the data type here is DateTime data type
+
+
+---------------------------------
+
+numeric			->	Arthmetic ops
+string			->	strings operation
+date value		->	what operations we can apply?
+
+I bought one product	->	25-01-2025
+
+
+25-01-2025		->	get the date: 25th
+			->	get the month: 01
+			->	get the year: 2025
+			->	get the day: Saturday
+			->	25 is either weekend or week day
+
+
+
+We will continue tomorrow :)
+
+- Daniel
+
+---------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

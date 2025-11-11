@@ -1,0 +1,332 @@
+RUNNING NOTES: 05 - DEC - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	FUNCTIONS PART 1
+2. CURRENT TOPIC			-	FUNCTIONS PART 2
+3. UPCOMING TOPIC			-	MODULE
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+
+12. PYTHON - FUNCTIONS - PART - 2	-	Running topic
+
+13. PYTHON - MODULE			-	Upcoming topic
+
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. TypeError
+5. IndexError
+
+6. IndentationError
+7. AttributeError
+
+
+--------------------------------
+
+12. PYTHON - FUNCTIONS - PART - 2	
+---------------------------------
+
+Recap
+-----
+
+Types of Actual arguments
+
+	1. Positional args
+	2. Keyword args
+	3. Default args
+	4. Variables args
+
+
+1. Positional args
+------------------
+
+def m1(a, b):
+	print("First value is:", a)
+	print("Second value is:", b)
+
+m1(10, 20)
+
+--------------------------------
+
+2. Keyword args
+---------------
+
+In Python, Keyword
+
+	1. Keywords		->	Separate topic
+	2. Keyword args		->	Separate topic
+
+	There is no relation in between above topics
+
+--------------------------------
+
+Keyword args	->	In whole Data Science
+		->	min 1000 times it will be used
+
+--------------------------------
+
+def m1(a, b):
+	print("First value is:", a)
+	print("Second value is:", b)
+
+m1(a = 10, b = 20)
+
+def			->	Keyword in python
+m1()			->	Name of the function
+a, b			->	Parameters
+m1(a = 10, b = 20)	->	Keyword args to pass values
+
+--------------------------------
+
+# Error: nexpected Keyword arg
+
+def m1(a, b):
+	print("First value is:", a)
+	print("Second value is:", b)
+
+m1(a = 10, c = 20)
+
+--------------------------------
+
+def m1(c, d):
+	print(c)
+	print(d)
+
+m1(d = 22, c = 11)
+
+--------------------------------
+
+def cart(product, price):
+	print("Product is:" , product)
+	print("cost is:" , price)
+
+cart(price = 1200, product = "shirt")
+
+--------------------------------
+
+def cart(product, price):
+	print("Product is:" , product)
+	print("cost is:" , price)
+
+cart(priceldjfls = 1200, product = "shirt")
+
+--------------------------------
+
+Function	
+
+	-> Parameters
+	-> We need pass values
+		1. Positional arg
+		2. Keyword arg
+		3. Default arg
+		4. Variable length arg
+
+--------------------------------
+
+3. Default arg
+
+# Default arg
+
+def m1(a = 11):
+	print("Value is:", a)
+
+m1()
+
+--------------------------------
+
+# Default arg
+# Old value will be replaced with new value
+
+def m1(a = 11):
+	print("Value is:", a)
+
+m1(22)
+
+
+--------------------------------
+
+# Default arg
+
+def cart(product, price = 444):
+	print("The product is:", product)
+	print("The price is:", price)
+
+cart(product = "Pen", price = 555)
+
+Topics:
+-------
+	-> Function
+	-> Parameterized function
+	-> Default arg
+	-> Function calling
+	-> Keyword args
+
+
+--------------------------------
+
+Function	
+
+	-> Parameters
+	-> We need pass values
+		1. Positional arg
+		2. Keyword arg			IMP
+		3. Default arg
+		4. Variable length arg		IMP
+
+--------------------------------
+
+4. Variable length arg
+
+	-> *arguments / *args
+	-> Variable length args
+
+
+--------------------------------
+
+def m1(a):
+	print("Value is:", a)
+
+m1(10)
+
+--------------------------------
+
+# Daniel shopping
+
+def shopping(p1, p2):
+	print("First prod price", p1)
+	print("Second prod price", p2)
+
+shopping(888, 999)
+
+--------------------------------
+
+# Kusuma shopping
+
+def shopping(p1, p2):
+	print("First prod price", p1)
+	print("Second prod price", p2)
+
+shopping(888, 999, 777, 999, 444, 555)
+
+This problem we can fix by using VARIABL LENGHT ARG
+
+--------------------------------
+
+def shopping(*p):
+	print("All prices:", p)
+
+shopping(777, 888)
+
+--------------------------------
+
+def shopping(*p):
+	print("All prices:", p)
+
+shopping(777, 888, 999, 222, 345)
+
+--------------------------------
+
+def shopping(*p):
+	print("All prices:", p)
+	print("Total bill:", sum(p))
+
+shopping(777, 888, 555)
+
+--------------------------------
+
+# Variable length arg
+
+def shopping(*p):
+	print("All prices:", p)
+	print("Total bill:", sum(p))
+
+shopping(777, 888, 555)
+
+--------------------------------
+
+def m1(*a):
+	print(a)
+	for i in a:
+		print(i)
+
+m1(10, 20, 30, 40, "Daniel")
+
+--------------------------------
+
+3. Anonymous functions or Lambdas
+
+We will meet in next session :)
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

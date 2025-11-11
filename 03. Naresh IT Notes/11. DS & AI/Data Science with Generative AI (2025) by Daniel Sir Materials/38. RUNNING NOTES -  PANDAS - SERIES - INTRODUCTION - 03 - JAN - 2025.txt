@@ -1,0 +1,554 @@
+RUNNING NOTES: 03 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - INTRODUCTION
+2. CURRENT TOPIC			-	PANDAS - SERIES INTRO
+3. UPCOMING TOPIC			-	PANDAS - NaN VALUES
+
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				-	21 topics
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+
+2. PANDAS - SERIES - INTRODUCTION	-	Running topic
+
+3. PANDAS - NAN VALUE			-	Upcoming topic
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+
+--------------------------------
+
+2. PANDAS - SERIES - INTRODUCTION
+---------------------------------
+
+-> Series Can store single column data
+-> Series is predefined class
+
+-> Creation
+	1. empty Series
+	2. By using list
+	3. By using array
+	4. Access single column from DataFrame
+
+--------------------------------
+
+# Creating empty Series
+
+import pandas as pd
+
+s = pd.Series()
+
+print(s)
+
+--------------------------------
+
+import pandas as pd
+
+s = pd.Series()
+
+print(s)
+print(type(s))
+
+-> Series is predefined class
+-> So lets create an object to the class
+
+--------------------------------
+
+# Creating Series by using list
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+
+s = pd.Series(a)
+
+print(a)
+print()
+print(s)
+
+IMP info
+--------
+
+Series object can display 3 outputs
+
+	1. index
+	2. data
+	3. datatype
+
+--------------------------------
+
+
+# Backend they created constructor with VARIABLE LENGTH
+
+Series()
+
+Series(10)
+
+Series(10, 20)
+
+Series(10, 20, 30)
+
+--------------------------------
+
+# class + constructor + variable lenght arg
+
+class Student:
+	def __init__(self, *a):
+		print(a)
+
+s = Student()
+s = Student(10)
+s = Student(10, 20)
+
+--------------------------------
+
+		value		data type
+
+Python		10		int
+
+pandas		10		int64
+
+
+--------------------------------
+
+# Creating Series
+
+import pandas as pd
+
+a = 10
+b = 1.23
+c = [10, 20, 30, 40]
+
+s = pd.Series(c)
+
+print(a)
+print(b)
+print()
+print(s)
+
+--------------------------------
+
+# Creating Series and giving name to the column
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+
+s = pd.Series(a, name = "Daniel")
+
+print(s)
+
+--------------------------------
+
+# TypeError: ...unexpected keyword argument 'nameaskdjhf'
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+
+s = pd.Series(a, nameaskdjhf = "Daniel")
+
+print(s)
+
+--------------------------------
+
+
+row	->	10	20	30	40
+
+column	->	10
+		20
+		30	
+		40
+
+--------------------------------
+
+# 10	->	data type is int
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+
+s = pd.Series(a)
+
+print(s)
+
+--------------------------------
+
+# 1.23	->	data type is float
+
+import pandas as pd
+
+a = [1.23, 4.56, 7.89]
+
+s = pd.Series(a)
+
+print(s)
+
+--------------------------------
+
+# "Daniel" ->	data type is object
+
+
+import pandas as pd
+
+a = ["Daniel", "Pravallika", "Pavani", "Prasad"]
+
+s = pd.Series(a)
+
+print(s)
+
+--------------------------------
+
+10	python		int
+1.23	python		float
+Daniel	python		string
+
+--------------------------------
+
+10	pandas		int64
+1.23	pandas		float64
+Daniel	pandas		object/str
+
+--------------------------------
+
+import pandas as pd
+
+a = [10, 1.23, "Daniel"]
+
+s = pd.Series(a)
+
+print(s)
+
+--------------------------------
+
+		Python		Pandas
+		----------------------
+
+Daniel		String		object/string
+
+		20 opes		50+
+
+
+--------------------------------
+
+# Creating group of values by using range() function
+
+r = range(100, 201)
+
+for value in r:
+	print(value)
+
+--------------------------------
+
+# Creating Series by using range data type
+
+import pandas as pd
+
+r = range(100, 201)
+
+s = pd.Series(r)
+
+print(s)
+
+-> If Series having more values then by defualt it can display top 5 and bottom 5 values :)
+
+--------------------------------
+
+2.3. Create a Series from array
+
+-> This we will learn during numpy topic
+
+--------------------------------
+
+3. Index in Series
+
+list
+
+	10	20	30	40
+
+	0	1	2	3
+
+
+Series
+
+	0	10
+	1	20
+	2	30
+	3	40
+
+
+--------------------------------
+
+
+Can I change the index in Series
+
+Ans: Based on requirement we can do that :)
+
+--------------------------------
+
+	Valid
+
+Series
+
+	77	10
+	99	20
+	34	30
+	98	40
+
+--------------------------------
+
+	Valid
+
+Series
+
+	a	10
+	b	20
+	c	30
+	d	40
+
+--------------------------------
+
+	Valid
+
+Series
+
+	a	10
+	b	20
+	10	30
+	20	40
+
+--------------------------------
+
+	Valid
+
+Series
+
+	a1	10
+	b2	20
+	c3	30
+	d4	40
+
+--------------------------------
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+
+i = [77, 98, 34, 55]
+
+s = pd.Series(a, index = i)
+
+print(s)
+
+--------------------------------
+
+-> While changing the index, data length and index length should be match, otherwise we will get an error
+
+--------------------------------
+
+# length and index size should be match
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+
+i = [77, 98, 34]
+
+s = pd.Series(a, index = i)
+
+print(s)
+
+
+ValueError: Length of values (4) does not match length of index (3)
+
+--------------------------------
+
+# Customising the index
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+
+i = ["A", "B", "C", "D"]
+
+s = pd.Series(a, index = i)
+
+print(s)
+
+--------------------------------
+
+# Index can be duplicate
+
+import pandas as pd
+
+a = [10, 20, 30, 40]
+
+i = ["A", "A", "C", "A"]
+
+s = pd.Series(a, index = i)
+
+print(s)
+
+
+--------------------------------
+
+# Creating Series, name, changing the index
+
+import pandas as pd
+
+v = [145, 142, 38, 13]
+i = [10, 20, 30, 40]
+
+s = pd.Series(v, name = 'counts', index = i )
+
+print(s)
+
+			OR
+
+import pandas as pd
+
+v = [145, 142, 38, 13]
+i = [10, 20, 30, 40]
+
+s = pd.Series(
+	v, 
+	name = 'counts', 
+	index = i 
+)
+
+print(s)
+
+--------------------------------
+
+# Creating Series with index
+
+import pandas as pd
+
+prices = [1000, 2000, 3000, 4000]
+products = ["Nokia", "Samsung", "Oppo", "iPhone 6"]
+
+s = pd.Series(
+	prices, 
+	name = 'mobiles', 
+	index = products 
+)
+
+print(s)
+
+--------------------------------
+
+4. Accessing values in Series
+
+
+We done today session 
+
+We will connect again tomorrow :)
+
+Daniel
+
+--------------------------------
+
+
+Kind update regarding upcoming session
+
+1. Tomorrow we have a session
+2. Day after tomorrow also we do have a session 
+
+
+--------------------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

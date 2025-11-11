@@ -1,0 +1,386 @@
+RUNNING NOTES: 25 - NOV - 2024
+--------------------------------
+
+1. PREVIOUS TOPIC			-	INPUT AND OUTPUT
+2. CURRENT TOPIC			-	FLOW CONTROL
+3. UPCOMING TOPIC			-	STRING
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+----------------------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+
+9. PYTHON - FLOW CONTROL		-	Running topic
+
+10. PYTHON - STRING			-	Upcoming topic
+
+----------------------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. ValueError
+4. IndexError
+5. IndentationError
+
+
+--------------------------------
+
+9. PYTHON - FLOW CONTROL	
+------------------------
+
+FLOW CONTROL
+------------
+
+Keywords:
+		if
+		else
+		elif
+
+		for
+		while
+
+		break
+		continue
+		pass
+
+
+What is a flow control?
+
+Python
+	Program
+		Statements
+			The order of statements execution 
+
+
+
+Types of execution 
+------------------
+
+	1. Sequential execution
+	2. Conditional execution
+	3. Looping execution
+
+------------------
+
+1. Sequential execution
+
+-> Statements will be execute one by one
+
+------------------
+
+2. Conditional execution
+
+-> Statements will be execute based on condition
+-> Condition
+	Result
+		True	->	True block will be exeucte
+					or
+
+		False	->	False block will be exeucte
+
+------------------
+
+Keywords
+--------
+
+Conditional/Decision making
+
+	if
+	else
+	elif
+
+Looping
+
+	for
+	while
+
+other
+	break
+	continue
+	pass
+
+--------------------------------
+
+if
+---
+
+1. Syntax
+2. Program
+3. Theory
+
+--------------------------------
+
+1. Syntax
+---------
+
+variable
+
+if RHS:
+	statements
+
+	or
+
+
+variable
+
+if condition:
+	statements
+
+
+condition
+---------
+
+a = 1
+b = 1
+
+print(a == b)	#	True
+
+--------------------------------
+
+bir_cost = 200
+wall_money = 200
+
+if bir_cost == wall_money:
+	print("Enjoy Chicken Biryani")
+
+
+--------------------------------
+
+Points to be noted
+------------------
+
+-> If condition result is True then if block statements will be executes
+
+-> If condition result is False then if block statements wont executes
+
+--------------------------------
+
+bir_cost = 200
+wall_money = 200
+
+if bir_cost == wall_money:
+	print("I can eat biryani")
+
+
+--------------------------------
+
+bir_cost = 200
+wall_money = 99
+
+if bir_cost == wall_money:
+	print("I can eat biryani")
+
+
+--------------------------------
+
+bir_cost = 200
+wall_money = 1000
+
+if bir_cost < wall_money:
+	print("I can eat biryani")
+
+--------------------------------
+
+Indentation
+-----------
+
+Java
+
+if (bir_cost == wall_money)
+{
+	System.out.println("I can eat biryani");
+}
+
+Python
+
+if bir_cost == wall_money:
+	print("I can eat biryani")
+
+--------------------------------
+
+x = 1
+y = 1
+
+if x == y:
+	print("x and y are same")
+
+print("Hello Good evening")
+
+--------------------------------
+
+x = 1
+y = 2
+
+if x == y:
+	print("x and y are same")
+
+print("Hello Good evening")
+
+--------------------------------
+
+from Masud Siddiqi (privately):    6:26 PM
+what is the difference between valueError  and SyntaxError, more particularly when (for what kind of errors)  are these exceptions thrown?
+
+Sir, can we discuss more during Exception Handling chapter :)
+
+--------------------------------
+
+Combination
+----------
+
+Program		->	if		->	Valid
+Program		->	if, else	->	Valid
+
+--------------------------------
+
+if, else
+--------
+
+if
+	Condition
+		True
+			if block executes
+
+		False
+			if block wont exeucte
+
+
+--------------------------------
+
+bir_cost = 200
+wall_money = 200
+
+if bir_cost == wall_money:
+	print("Enjoy Birynai at Krithunga")
+
+--------------------------------
+
+bir_cost = 200
+wall_money = 99
+
+if bir_cost == wall_money:
+	print("Enjoy Birynai at Krithunga")
+
+else:
+	print("Enjoy hostel food")
+
+
+--------------------------------
+
+bir_cost = 200
+wall_money = 200
+
+if bir_cost == wall_money:
+	print("Enjoy Birynai at Krithunga")
+
+else:
+	print("Enjoy hostel food")
+
+
+if, else
+--------
+
+-> If condition result is True then if block will be executes
+-> If condition result is False then else block will be exeuctes
+
+		or
+
+-> If condition result is True then if block will be executes otherwise else block will be exeucte
+
+IMP
+----
+
+At a time only one block will be executes but not BOTH
+
+--------------------------------
+
+from Masud Siddiqi (privately):    6:33 PM
+int, float, complex, bool, None are these primitve type in Python?
+
+Java:	primitive, Wrapper class...
+
+Python: Builtin data types, predefined data types
+
+
+
+
+from Shafeena Dudekula (privately):    6:38 PM
+Sir,  we are using ' if ' then should always  use ' else ' also
+
+Based on requirement 
+
+--------------------------------
+
+user_name = input("Enter user name:")
+
+if user_name == "Daniel":
+	print("Welcome Gmail")
+
+else:
+	print("User name or password is wrong")
+	print("Try later")
+
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+
+----------------------------------------------------------------	
+
+
+Trainer mail id:
+----------------
+
+danielgenai77@gmail.com
+
+Please install:	AnyDesk
+
+Lab mentors:	offline/online
+
+Sub:	5.30 PM
+
+Explain : Ask a question
+
+
+----------------------------------------------------------------	

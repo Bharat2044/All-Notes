@@ -1,0 +1,526 @@
+RUNNING NOTES: 31 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - DATAFRAME ADD, DROP COLS, ROWS
+2. CURRENT TOPIC			-	PANDAS - DATAFRAME DATE & TIME OPES
+3. UPCOMING TOPIC			-	PANDAS - CONCATENATE MUL CSV FILES
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Done
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Done
+
+15. PANDAS - DATAFRAME - SORTING	-	Done
+
+16. PANDAS - DATAFRAME - GROUPBY	-	Done
+
+17. PANDAS - DATAFRAME - MERGING 	-	Done
+	OR JOINING
+
+18. PANDAS - DATAFRAME - CONCAT		-	Done
+
+19. PANDAS - DATAFRAME - ADDING, 	-	Done
+	DROPPING ROWS AND COLUMNS
+
+20. PANDAS - DATAFRAME - DATE AND 	-	Running topic
+	TIME OPERATIONS
+
+21. PANDAS - DATAFRAME - CONCATENATING	-	Upcoming topic 
+	MULTIPLE CSV FILES
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+20. PANDAS - DATAFRAME - DATE AND
+	TIME OPERATIONS
+
+---------------------------------
+
+Data
+----
+
+a = 10		int
+b = 1.2		float
+c = "Daniel"	string
+
+d = 30-01-2025	dont think like the data type is int-int-int
+		the data type here is DateTime data type
+
+---------------------------------
+
+numeric			->	Arthmetic ops
+string			->	strings operation
+date value		->	what operations we can apply?
+
+I bought one product	->	25-01-2025: 09:12:00
+
+
+25-01-2025		->	get the date: 25th
+			->	get the month: 01
+			->	get the year: 2025
+			->	get the day: Saturday
+			->	25 is either weekend or week day
+
+---------------------------------
+
+Key point
+----------
+
+-> pandas by-default can recognize the below data types
+	int
+	float
+	object
+
+-> pandas cannot recognize datatime data type
+-> pandas by default it will assign date values to object data type
+
+-> Then Data Scientist we need to convert from object datetime data type
+
+
+pandas
+	10		int64
+	1.23		float64
+	daniel		object
+	31-01-2025	object	we need to convert to datetime
+
+---------------------------------
+
+# pandas is giving dataype as object to Pur_Date column
+
+import pandas as pd
+
+df = pd.read_csv("sales7_dates.csv")
+
+print(df.dtypes)
+
+
+---------------------------------
+
+# Key arg: parse_dates 
+
+import pandas as pd
+
+df = pd.read_csv(
+	"sales7_dates.csv", 
+	parse_dates = ["Pur_Date"]
+)
+
+print(df.dtypes)
+
+---------------------------------
+
+from Iddipilli Karthik (privately):    5:52 PM
+Sir can we convert columns to date data type after loading the csv file instead of doing it while loading
+
+Good question sir:
+
+We can do that, thats the next topic in another 5 mins
+
+---------------------------------
+
+
+sales7_dates.csv
+
+	...
+	Pur_Date		->	date values
+	pd			->	object
+
+We can convert in two ways from object to datetime data type
+
+1. WHILE LOADING file		->	Key arg: parse_dates
+
+2. AFTER LOADED file
+          or
+   After DataFrame created 	->	
+
+
+---------------------------------
+
+2. AFTER LOADED file
+          or
+   After DataFrame created 	
+
+	1. to_datetime() function
+	2. astype() method
+
+
+---------------------------------
+
+In python we do have separate module:	date module
+
+---------------------------------
+
+1. to_datetime() function
+
+Realtime scenario steps
+
+import pandas as pd
+
+df = pd.read_csv("sales7_dates.csv")
+
+print(df)
+print()
+print(df.head())
+print()
+print(df.tail())
+print()
+print(df.shape)
+
+# 4th operation is related to DateTime operation
+
+Then now we can convert from object to datetime
+
+
+---------------------------------
+
+# to_datetime() function
+
+import pandas as pd
+
+df = pd.read_csv("sales7_dates.csv")
+
+print(df.dtypes)
+
+df['Pur_Date'] = pd.to_datetime(df['Pur_Date'])
+
+print()
+print(df.dtypes)
+
+---------------------------------
+
+# astype() method
+
+import pandas as pd
+
+df = pd.read_csv("sales7_dates.csv")
+
+print(df.dtypes)
+
+df['Pur_Date'] = df['Pur_Date'].astype('datetime64[ns]')
+
+print()
+print(df.dtypes)
+
+---------------------------------
+
+Friendly Suggestion
+-------------------
+
+-> You guys are very dull in previous topics
+-> During weekend do more practice
+-> Prepared schedule yourself bcoz you know well about your free timings
+-> This practice helps to get a job
+
+---------------------------------
+
+# to_datetime() function
+
+import pandas as pd
+
+data = {
+	'Product': ['Samsung', 'iPhone', 'Motorola'],
+	'Status': ['Success', 'Success', 'Failed'],
+	'Cost': [10000, 50000, 15000],
+	'PurDate': ['20190902','20190913','20190921'],
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+df['PurDate'] = pd.to_datetime(df['PurDate'])
+
+print()
+print(df)
+
+---------------------------------
+
+# to_datetime() function with format key arg
+
+import pandas as pd
+
+data = {
+	'Product': ['Samsung', 'iPhone', 'Motorola'],
+	'Status': ['Success', 'Success', 'Failed'],
+	'Cost': [10000, 50000, 15000],
+	"PurDate": ['02092019','13092019','21092019']
+}
+
+df = pd.DataFrame(data)
+print(df)
+
+df['PurDate'] = pd.to_datetime(
+	df['PurDate'], 
+	format = '%d%m%Y'
+)
+
+
+print()
+print(df)
+
+
+---------------------------------
+
+# month name can be string format 
+
+import pandas as pd
+
+data = {
+	"Product": ["Samsung", "iPhone", "Motorola"],
+	"Status": ["Success", "Success", "Failed"],
+	"Cost": [10000, 50000, 15000],
+	"PurDate": ['02Sep2019','13Aug2019','21Sep2019'],
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+
+df['PurDate'] = pd.to_datetime(df['PurDate'])
+
+print()
+print(df)
+
+
+---------------------------------
+
+# month name should be proper name, while converting we will get error
+
+import pandas as pd
+
+data = {
+	"Product": ["Samsung", "iPhone", "Motorola"],
+	"Status": ["Success", "Success", "Failed"],
+	"Cost": [10000, 50000, 15000],
+	"PurDate": ['02Sep2019','13Naresh2019','21Sep2019'],
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+
+df['PurDate'] = pd.to_datetime(df['PurDate'])
+
+print()
+print(df)
+
+Error
+
+---------------------------------
+
+# to_datetime() function 
+
+import pandas as pd
+
+data = {
+	"Product": ["Samsung", "iPhone", "Motorola"],
+	"Status": ["Success", "Success", "Failed"],
+	"Cost": [10000, 50000, 15000],
+	"PurDate": ['02-Sep-2019','13-Sep-2019','21-Sep-2019']
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+
+df['PurDate'] = pd.to_datetime(df['PurDate'])
+
+print()
+print(df)
+
+---------------------------------
+
+# date with timestamp operation
+
+import pandas as pd
+
+data = {
+	"Product": ["Samsung", "iPhone", "Motorola"],
+	"Status": ["Success", "Success", "Failed"],
+	"Cost": [10000, 50000, 15000],
+	"PurDate": ['20190902093000','20190913093000','20190921200000']
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+
+df['PurDate'] = pd.to_datetime(df['PurDate'])
+
+print()
+print(df)
+
+---------------------------------
+
+	None
+	NaN	->	Not a Number
+	NaT	->	Not a Time
+
+---------------------------------
+
+data.csv
+--------
+
+# If the data is values are in proper then only to_datetime function works well otherwise error: ValueError
+
+import pandas as pd
+
+data = {
+	"Product": ["Samsung", "iPhone", "Motorola"],
+	"Status": ["Success", "Success", "Failed"],
+	"Cost": [10000, 50000, 15000],
+	"PurDate": ['02-Sep-2019','Here date is missing','21-Sep-2019']
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+
+df['PurDate'] = pd.to_datetime(df['PurDate'])
+
+print()
+print(df)
+
+
+---------------------------------
+
+# NaT
+
+import pandas as pd
+
+data = {
+	"Product": ["Samsung", "iPhone", "Motorola"],
+	"Status": ["Success", "Success", "Failed"],
+	"Cost": [10000, 50000, 15000],
+	"PurDate": ['02-Sep-2019','Here date is missing','21-Sep-2019']
+}
+
+df = pd.DataFrame(data)
+
+print(df)
+
+df['PurDate'] = pd.to_datetime(df['PurDate'], errors="coerce")
+
+print()
+print(df)
+
+
+---------------------------------
+
+from Masud Siddiqi to everyone:    6:42 PM
+How do we know if  a date column has a complete date value as a string value, or only month of the date value as a string value when there are millions of records?
+
+---------------------------------
+
+5. Selecting from start to end date values
+
+-> I will cover in next session :)
+
+-> Please prepare old topics well 
+
+- Daniel
+
+---------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

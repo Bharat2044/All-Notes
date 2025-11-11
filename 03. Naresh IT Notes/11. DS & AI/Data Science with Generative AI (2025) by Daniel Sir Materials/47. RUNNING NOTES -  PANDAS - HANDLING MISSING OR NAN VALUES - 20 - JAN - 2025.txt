@@ -1,0 +1,443 @@
+RUNNING NOTES: 20 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - DATAFRAME INPLACE PARAMETER
+2. CURRENT TOPIC			-	PANDAS - DATAFRAME HANDLING NAN VALS
+3. UPCOMING TOPIC			-	PANDAS - DATAFRAME SELECTION loc & iloc
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Running topic
+	LOC, ILOC
+
+
+14. PANDAS - DATAFRAME - FILTERING	-	Upcoming session
+
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+12. PANDAS -DATAFRAME - HANDLING
+	MISSING NAN VALUES
+--------------------------------
+
+Recap
+
+1. Data(.csv file)
+2. DataFrame
+3. Apply some basic operations(shape, columns, head(), tail() etc)
+
+4. Checking missing values in DataFrame
+	During check
+	If DataFrame having no missing values
+		No need to do anything
+
+	If DataFrame having missing values
+		Then we need to handle
+
+--------------------------------
+
+df
+df.isna()
+df.isna().sum()
+
+--------------------------------
+
+# Loading fruits1.csv file
+
+import pandas as pd
+
+df = pd.read_csv("fruits1.csv")
+
+print(df)
+
+--------------------------------
+
+# isna() method
+
+import pandas as pd
+
+df1 = pd.read_csv("fruits1.csv")
+df2 = df1.isna()
+
+print(df1.head())
+print()
+print(df2.head())
+
+--------------------------------
+
+# Checking column wise missing values count
+
+import pandas as pd
+
+df1 = pd.read_csv("fruits1.csv")
+result = df1.isna().sum()
+
+print(result)
+
+--------------------------------
+
+# Checking column wise missing values count: in percentage
+
+import pandas as pd
+
+df1 = pd.read_csv('fruits1.csv')
+s = df1.isna().sum()
+
+per = (s * 100) / len(df1)
+
+print(per)
+
+--------------------------------
+
+1. Data
+2. DataFrame
+3. Check missing values
+	No
+		:)
+	Yes
+		We need to handle missing values
+
+--------------------------------
+
+1. Dropping missing values
+
+# dropna() method
+
+import pandas as pd
+
+df1 = pd.read_csv("fruits1.csv")
+df2 = df1.dropna()
+
+print(df1)
+print()
+print(df2)
+
+--------------------------------
+
+# After dropping missing values we are checking the missing values
+
+import pandas as pd
+
+df1 = pd.read_csv("fruits1.csv")
+df2 = df1.dropna()
+
+print(df1.isna().sum())
+print()
+print(df2.isna().sum())
+
+--------------------------------
+
+# dropping missing values
+# converting into float to int
+
+import pandas as pd
+
+df1 = pd.read_csv("fruits1.csv")
+df2 = df1.dropna()
+df3 = df2.astype(int)
+
+print(df3)
+
+--------------------------------
+
+
+from Hrishi (privately):    6:08 PM
+
+sir i have a question about dataframes ,so in the real world practically is it used by data scientists to create databases or for more uses,such as converting to dataframe in python  and performing methods on it
+
+In realtime which is using more either DataFrame/DataBase?
+
+
+DataBase	->	Software
+		->	We can store the data
+		->	In form table
+
+
+Being a Data Science, how much DataBase I need to learn?
+
+
+Client
+
+sales1.csv	->	DataFrame
+sales1.json	->	DataFrame
+sales1.xlsx	->	DataFrame
+database(table)	->	DataFrame
+
+--------------------------------
+
+# dropna() method  + inplace parameter
+
+import pandas as pd
+
+df1 = pd.read_csv("fruits1.csv")
+df1.dropna(inplace = True)
+
+print(df1)
+
+--------------------------------
+
+from Jalal Taqui (privately):    6:15 PM
+can u repea again sir
+
+Sure Boss!!!
+
+--------------------------------
+
+# AttributeError
+
+import pandas as pd
+
+df1 = pd.read_csv("fruits1.csv")
+df2 = df1.dropnan()
+
+print(df1)
+print()
+print(df2)
+
+--------------------------------
+
+# fillna(number) method
+
+import pandas as pd
+
+df1 = pd.read_csv("fruits1.csv")
+df2 = df1.fillna(0)
+
+print(df1)
+print()
+print(df2)
+
+--------------------------------
+
+# age never be zero
+# here we shouldnt use zero
+
+	Age
+
+S1	21
+S2	19
+S3	0
+s4	30
+
+--------------------------------
+
+from Jyothi biradar (privately):    6:26 PM
+sir cant we provide word like in place of  9 cant we give nine?
+
+Boss we can :) but Machine Learning Its kind of numerical analysis
+
+--------------------------------
+
+# fillna() method
+
+import pandas as pd
+import numpy as np
+
+data = [
+	["Rajan", 26, 40000],
+	["Daniel", 16, 20000],
+	["Veeru", 45, 90000],
+	["Venkat", np.nan, 45000],
+	["Sumanth", 20, 95000],
+	["Shafi", np.nan, 97000]
+]
+
+df1 = pd.DataFrame(data, columns = ['Name', 'Age', 'Salary'])
+df2 = df1.fillna(22)
+
+print(df1)
+print()
+print(df2)
+
+--------------------------------
+
+# fillna() method
+
+import pandas as pd
+import numpy as np
+
+data = [
+	["Shahid", 26, 40000],
+	["Daniel", 16, 20000],
+	["Karteek", np.nan, 90000],
+	["Venkat", np.nan, 45000],
+	["Veeru", 24, 95000],
+	["Shafi", np.nan, 97000]
+]
+
+df1 = pd.DataFrame(
+	data, 
+	columns = ['Name', 'Age', 'Salary']
+)
+
+print(df1)
+m = df1['Age'].mean()
+df1['Age'] = df1['Age'].fillna(m)
+print()
+print(df1)
+
+--------------------------------
+
+# replace() method
+
+import pandas as pd
+import numpy as np
+
+data = [
+	['Shahid', np.nan, 40000],
+	['Daniel', 16, 20000],
+	['Veeru', 45, 90000],
+	['Sumanth', 20, 95000]
+]
+
+df1 = pd.DataFrame(data, columns = ['Name', 'Age', 'Salary'])
+
+print(df1)
+
+df2 = df1.replace(np.nan, 22)
+print()
+print(df2)
+
+--------------------------------
+
+Recap
+-----
+
+1. Data
+2. df
+3. df.isna()
+4. df.isna().sum()
+5. df.dropna()
+6. df.dropna(inplace  = True)
+7. df.astype(int)
+8. df.fillna(p)
+9. df.fillna(df["Age"].mean())
+10. df.replace(p1, p2)
+
+--------------------------------
+
+let me hold the sesson for two mins :)
+
+I will explain about chatGPT
+
+We can ask more question + answers
+
+--------------------------------
+
+13. PANDAS - DATAFRAME - SELECTION - LOC, ILOC
+
+
+Lets start this tomorrow :)
+
+Dont miss tomorrow session
+
+- Daniel
+
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

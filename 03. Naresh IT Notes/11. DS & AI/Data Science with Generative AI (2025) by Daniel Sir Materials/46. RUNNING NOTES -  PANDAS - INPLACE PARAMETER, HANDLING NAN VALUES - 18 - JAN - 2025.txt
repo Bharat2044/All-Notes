@@ -1,0 +1,439 @@
+RUNNING NOTES: 18 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - DATAFRAME RENAME COL/INDEX
+2. CURRENT TOPIC			-	PANDAS - DATAFRAME INPLACE PARAMETER
+3. UPCOMING TOPIC			-	PANDAS - DATAFRAME HANDLING NAN VALS
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Running topic
+	MISSING NAN VALUES
+
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Upcoming topic
+	LOC, ILOC
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+11. PANDAS - DATAFRAME - INPLACE 
+	PARAMETER
+--------------------------------
+
+-> This topic is very imp: In all Data Sci projects using this...
+
+-> Recap about yesterday session, with one example
+
+--------------------------------
+
+# rename() method
+
+import pandas as pd
+
+df1 = pd.read_csv("sales3.csv")
+
+d = {
+	"ord id": "order_id",
+	"cust name": "customer_name",
+	"cust id": "customer_id",
+	"prod name": "product_name",
+	"prod cost": "product_cost"
+}
+
+df2 = df1.rename(columns = d)
+
+print(df1.head())
+print()
+print(df2.head())
+
+-> We can rename columns name in DataFrame
+-> We can rename columna nmes by using rename() method
+-> rename() method will create new object with updates
+-> Separate memory allocation is done for new object
+
+# I dont want new object, I wanted to perform changes on existing object then we need to use inplace parameter
+
+Snap
+----
+
+rename()		->	old object df1		
+			->	new object df2	
+
+rename() + inplace	->	apply changes on df1 only
+			->	no new object
+
+--------------------------------
+
+# only rename() method
+
+import pandas as pd
+
+df1 = pd.read_csv("sales3.csv")
+
+d = {
+	"ord id": "order_id",
+	"cust name": "customer_name",
+	"cust id": "customer_id",
+	"prod name": "product_name",
+	"prod cost": "product_cost"
+}
+
+df2 = df1.rename(columns = d)
+
+print(df1.head())
+print()
+print(df2.head())
+
+--------------------------------
+
+# rename() + inplace parameter(Keyword arg)
+
+import pandas as pd
+
+df1 = pd.read_csv("sales3.csv")
+
+d = {
+	"ord id": "order_id", 
+	"cust name": "customer_name", 
+	"cust id": "customer_id", 
+	"prod name": "product_name", 
+	"prod cost": "product_cost"
+}
+
+df1.rename(columns = d, inplace = True)
+
+print()
+print(df1.head())
+
+--------------------------------
+
+-> I request you guys need to do small revision on python
+
+--------------------------------
+
+12. PANDAS -DATAFRAME - HANDLING 
+	MISSING NAN VALUES
+
+--------------------------------
+
+Data Sci Demo
+-------------
+
+Data
+----
+	mobile no		mail id
+	-------------------------------
+	28374823748		student1
+	23482637486		student2
+				student3
+	
+	12312312312		student4
+
+--------------------------------
+
+Find the missing data: General terms
+
+	mobile no		mail id
+	-------------------------------
+	28374823748		student1
+	23482637486		student2
+	missing	data		student3
+	missing data		missing data
+	12312312312		student4
+
+--------------------------------
+
+pandas terms:
+
+	mobile no		mail id
+	-------------------------------
+	28374823748		student1
+	23482637486		student2
+	NaN			student3
+	NaN			NaN
+	12312312312		student4
+
+--------------------------------
+
+Machine Learning Flow
+---------------------
+
+Data
+
+	DataFrame
+
+		Feature Engg
+			
+				Array
+		
+					Machine Learing Alg
+
+--------------------------------
+
+
+from Masud Siddiqi (privately):    6:08 PM
+NaN vs NA
+
+NaN	->	Not a Number
+NA	->	Not Applicable(This is out of Data Sci topic)
+
+--------------------------------
+
+Handling Missing
+
+What is the meaning of Handling Missing values?
+
+Small scenario :)
+
+	6th std(ZPH school)
+
+Karuna Teacher	->	Math subject, Sci
+		->	Every month end, inspection
+		->	Superior, will look at the marks
+
+Unit1		->	Monday(Dont miss the exam)
+		->	100
+
+Original data
+-------------
+
+
+	maths		Sci
+
+S1	96		99
+S2			52
+S3	78		88
+
+mask data
+
+
+	maths		Sci
+
+S1	96		99
+S2	36		52
+S3	78		88
+
+--------------------------------
+
+Machine Learning Flow
+---------------------
+
+Data
+
+	DataFrame
+
+	having NaN
+	then we should
+	handle
+
+		Feature Engg
+			
+				Array
+		
+					Machine Learing Alg
+
+--------------------------------
+
+# loading fruits1.csv file, having missing values
+
+import pandas as pd
+
+df = pd.read_csv("fruits1.csv")
+
+print(df)
+
+--------------------------------
+
+Steps to follow
+---------------
+
+1. Data(file)
+2. Create a DataFrame
+3. Apply basic operations(shape, columns, head(), tail())
+
+4. Checking missing values
+
+	1. DataFrame having no missing values
+		-> No need to handle
+
+	2. DataFrame having missing values
+		-> We need to handle missing values
+
+--------------------------------
+
+Question: Govinda Gavidi
+
+Arey Daniel, How  to check missing values
+Ans: Sir, by using methods
+	
+	1. isna() method	(using more and more)
+	2. isnull() method	(Optional)
+	3. notnull() method	(Optional)
+
+
+--------------------------------
+
+# Checking missing values in DataFrame
+# By using isna() method
+
+import pandas as pd
+
+df1 = pd.read_csv("fruits1.csv")
+df2 = df1.isna()
+
+print(df1.head())
+print()
+print(df2.head())
+
+--------------------------------
+
+# Columns wise count of missing values
+
+import pandas as pd
+
+df1 = pd.read_csv("fruits1.csv")
+result = df1.isna().sum()
+
+print(result)
+
+	OR
+
+import pandas as pd
+
+df1 = pd.read_csv("fruits1.csv")
+df2 = df1.isna()
+result = df2.sum()
+
+print(result)
+
+
+--------------------------------
+
+# Check missing values based on percentage wise :)
+
+import pandas as pd
+
+df1 = pd.read_csv('fruits1.csv')
+
+s = df1.isna().sum()
+
+per = (s * 100) / len(df1)
+
+print(per)
+
+--------------------------------
+
+6. dropna() method – Handling missing values
+
+Next session
+
+We done today session
+
+We will connect again on Monday(Offline/online)
+
+- Daniel
+
+--------------------------------
+
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

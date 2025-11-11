@@ -1,0 +1,444 @@
+RUNNING NOTES: 17 - JAN - 2025
+--------------------------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - DATAFRAME METHODS
+2. CURRENT TOPIC			-	PANDAS - DATAFRAME RENAME COL/INDEX
+3. UPCOMING TOPIC			-	PANDAS - DATAFRAME INPLACE PARAMETER
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION			-	Done
+
+1. PYTHON - INTRODUCTION			-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT			-	Done
+9. PYTHON - FLOW CONTROL			-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1		-	Done
+12. PYTHON - FUNCTIONS - PART - 2		-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE		-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE		-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION			-	Done
+2. PANDAS - SERIES - INTRODUCTION		-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 		-	Done
+	DIFFERENT FILES
+
+8. PANDAS - DATAFRAME - ATTRIBUTES		-	Done
+
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 		-	Running topic
+	COLUMN, INDEX
+
+
+11. PANDAS - DATAFRAME - INPLACE 
+	PARAMETER			-	Upcoming topic
+
+
+--------------------------------------------------
+
+Predefined functions
+-------------------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)	->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+----------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+10. PANDAS - DATAFRAME - RENAMING
+	COLUMN, INDEX
+----------------------------------------------------------
+
+sales3.csv	->	DataFrame
+		->	5 columns
+		
+----------------------------------------------------------
+
+Renaming name of the columns
+
+	1. Single column
+	2. Multiple columns
+
+----------------------------------------------------------
+
+# Creating DataFrame by loading the csv file
+
+
+import pandas as pd
+
+df = pd.read_csv("sales3.csv")
+
+print(df.columns)
+
+----------------------------------------------------------
+
+# Chaning single column name
+
+import pandas as pd
+
+df1 = pd.read_csv("sales3.csv")
+
+d = {
+	"ord id" : "Order Id"
+}
+
+df2 = df1.rename(columns = d)
+
+print(df1.head())
+print()
+print(df2.head())
+
+----------------------------------------------------------
+
+# While chaning column name, old column name should be match with key otherwise changes wont reflect
+
+import pandas as pd
+
+df1 = pd.read_csv("sales3.csv")
+
+d = {
+	"ordddddd id" : "Order Id"
+}
+
+df2 = df1.rename(columns = d)
+
+print(df1.head())
+print()
+print(df2.head())
+
+----------------------------------------------------------
+
+from Hrishi (privately):    5:57 PM
+sir i have a doubt
+
+Please proceed to ask :)
+
+----------------------------------------------------------
+
+from Hrishi (privately):    5:58 PM
+when i tried to rename the column, as ord id it didnt happen is there something else i need to do
+
+Ans: Please follow the document :)
+
+from Hrishi (privately):    5:58 PM
+
+df = pd.read_csv('sales1.csv')
+d = {
+    'ord id' : 'Order id'
+}
+df2 = df.rename(columns=d)
+print(df2.head())
+print(df.head()) this is my program
+
+Ans: Please work with sales3.csv file
+
+
+----------------------------------------------------------
+
+# Changing multiple column names
+
+import pandas as pd
+
+df1 = pd.read_csv("sales3.csv")
+
+d = {
+	'ord id': 'Order Id',
+	'cust name': 'Customer Name',
+	'cust id': 'Customer Id',
+	'prod name': 'Product Name',
+	'prod cost': 'Product Cost'
+}
+
+df2 = df1.rename(columns = d)
+
+print(df1.head())
+print()
+print(df2.head())
+
+----------------------------------------------------------
+
+Pick the questions from online team
+
+from sanjay kumar (privately):    6:03 PM
+sir if we have plenty of columns we need to type every column can't we simply
+
+Excellent question: Sir, we have to use the same process :)
+
+
+from Peeyush Sahu (privately):    6:04 PM
+By using dictonary we can provide list as well in place of string. Whats the usage of column rename?
+
+
+
+from Charan GMS (privately):    6:05 PM
+sir, previously we renamed column using list (number to name) why cant we use the same
+
+----------------------------------------------------------
+
+# renaming columns in DataFrame 
+
+import pandas as pd
+
+df1 = pd.read_csv("sales3.csv")
+
+d = {
+	"ord id": "order_id",
+	"cust name": "customer_name",
+	"cust id": "customer_id",
+	"prod name": "product_name",
+	"prod cost": "product_cost"
+}
+
+df2 = df1.rename(columns = d)
+
+print(df1.head())
+print()
+print(df2.head())
+
+
+----------------------------------------------------------
+
+We can rename columns in DataFrame, in two ways
+
+	1. by using rename() method		we are using in realtime
+	2. by using columns attribute		very rare, but let me cover
+
+
+----------------------------------------------------------
+
+
+-> We can rename column name by using columns attribute
+
+import pandas as pd
+
+df = pd.read_csv("sales3.csv")
+
+print(df.head())
+
+df.columns = [
+	"order_id",
+	"customer_name",
+	"customer_id",
+	"product_name",
+	"product_cost"
+]
+
+print()
+print(df.head())
+
+----------------------------------------------------------
+
+# column names should be match, otherwise we will get an error
+
+import pandas as pd
+
+df = pd.read_csv("sales3.csv")
+
+print(df.head())
+
+df.columns = [
+	"order_id",
+	"customer_name",
+	"customer_id",
+	"product_name",
+	"product_cost",
+	"total"
+]
+
+print()
+print(df.head())
+
+
+----------------------------------------------------------
+
+from Jyothi biradar (privately):    6:20 PM
+sir can we know lenght of this sales file?
+
+Ans: we can answer this :)
+
+1. len() function
+2. df.shape	->	(number of rows, number of columns)
+
+----------------------------------------------------------
+
+Till now, I have covered, two points
+
+How to rename columns in DataFrame
+
+	1. by using rename() method
+	2. by using columns attribute
+
+----------------------------------------------------------
+
+Next topic
+
+How to change index or rename index in a DataFrame
+
+
+	1. by using rename() method
+	2. by using index attribute
+
+----------------------------------------------------------
+
+# Changing the index
+
+import pandas as pd
+
+d = {
+	"order_id": [11, 21, 31],
+	"customer_name": ["Prasad", "Daniel", "Jeswanth"],
+	"product": ["iPhone", "hTC", "macbook"]
+}
+
+df1 = pd.DataFrame(d)
+
+i = {0: 77, 1: 88, 2: 99}
+
+df2 = df1.rename(index = i)
+
+print(df1)
+print()
+print(df2)
+
+
+----------------------------------------------------------
+
+# Customising index of DataFrame by using index attribute
+
+import pandas as pd
+
+d = {
+	"order_id": [11, 21, 31],
+	"customer_name": ["Prasad", "Daniel", "Jeswanth"],
+	"product": ["iPhone", "hTC", "macbook"]
+}
+
+df1 = pd.DataFrame(d)
+
+print(df1)
+
+df1.index = [77, 88, 99]
+print()
+print(df1)
+
+----------------------------------------------------------
+
+# changing index by using index attribute
+
+import pandas as pd
+
+df1 = pd.read_csv("sales31.csv")
+
+print(df1)
+
+df1.index = range(10, 20)
+print()
+print(df1)
+
+----------------------------------------------------------
+
+# Chaning columns and index
+
+import pandas as pd
+
+d = {
+	"Ord Id": [11, 21, 31],
+	"Customer Name": ["Prasad", "Daniel", "Jeswanth"],
+	"Product": ["iPhone", "hTC", "macbook"]
+}
+
+df1 = pd.DataFrame(d)
+print(df1)
+
+df1.index = [333, 444, 555]
+df1.columns = ["order_id", "customer_name", "product"]
+print()
+print(df1)
+
+
+----------------------------------------------------------
+
+# Convert column names to upper case
+
+import pandas as pd
+
+df = pd.read_csv("sales3.csv")
+
+print(df.head())
+
+df.columns = df.columns.str.upper()
+
+print()
+print(df.head())
+
+----------------------------------------------------------
+
+Kind update: Tomorrow we do have a session(offline & online)
+
+----------------------------------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

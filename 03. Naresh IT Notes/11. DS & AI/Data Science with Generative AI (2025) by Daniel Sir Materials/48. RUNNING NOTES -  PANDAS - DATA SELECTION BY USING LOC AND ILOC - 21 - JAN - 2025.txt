@@ -1,0 +1,534 @@
+RUNNING NOTES: 21 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - DATAFRAME HANDLING NAN VALS
+2. CURRENT TOPIC			-	PANDAS - DATAFRAME SELECTION LOC & ILOC
+3. UPCOMING TOPIC			-	PANDAS - DATAFRAME FILTERING
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Running topic
+	LOC, ILOC
+
+
+14. PANDAS - DATAFRAME - FILTERING	-	Upcoming session
+
+
+15. PANDAS - DATAFRAME - SORTING	-	Upcoming session
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+13. PANDAS - DATAFRAME - SELECTION
+	LOC, ILOC
+
+--------------------------------
+
+-> Once the DataFrame created then we can select the data
+
+
+# Selecting single column from DataFrame
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.Product)
+
+--------------------------------
+
+# Selecting single column from DataFrame
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df["Product"])
+
+--------------------------------
+
+# Selecting multiple columns from DataFrame
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+c = ["Customer Name", "Product"]
+
+print(df[c])
+
+
+--------------------------------
+
+# Selecting multiple columns from DataFrame
+
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+c = ["Product", "Customer Name"]
+
+print(df[c])
+
+--------------------------------
+
+# While selecting the column, column name should be match otherwise we will get error: KeyError
+
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+c = ["Productlashdf", "Customer Name"]
+
+print(df[c])
+
+--------------------------------
+
+1. Created DataFrame
+2. Accessing single column
+3. Accessing multiple columns
+
+--------------------------------
+
+# Accessing single column and applying sum() method
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+print(df.Quantity.sum())
+
+--------------------------------
+
+3. Selecting specific column values
+
+-> Example: Access all Veeru records
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+con = df["Customer Name"] == "Veeru"
+
+print(df[con])
+
+--------------------------------
+
+# Veeru 29 times he done shopping
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+con = df["Customer Name"] == "Veeru"
+
+print(df[con].shape)
+
+--------------------------------
+
+# If condition result is True then we will get result
+# If condition result is False then we will get empty df
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+con = df["Customer Name"] == "Veeruasdfsdf"
+
+print(df[con])
+
+--------------------------------
+
+# Accessing specific DataFrame: Lavanya records
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+con = df["Customer Name"] == "Lavanya"
+
+print(df[con])
+
+--------------------------------
+
+# Accessing "iPhone 11" records
+
+# Accessing == Filtering == Selecting
+
+import pandas as pd
+
+df = pd.read_csv("sales1.csv")
+
+con = df["Product"] == "iPhone 11"
+
+print(df[con])
+
+--------------------------------
+
+1. Created a DataFrame
+
+Select the Data
+----------------
+
+	Top 5 rows	->	df.head()
+			->	by using loc & iloc
+
+
+--------------------------------
+
+4. iloc and loc indexers
+
+a = [10, 20, 30, 40]
+
+a[0]	->	Accessing value by using index
+	->	Indexer
+
+--------------------------------
+
+from Masud Siddiqi to everyone:    6:10 PM
+When should we use loc and iloc instead opf other approaches?
+
+Good question: In Machine learning we are using
+
+--------------------------------
+
+
+4. iloc and loc indexers
+
+	1. Examples
+	2. Theory 
+
+
+--------------------------------
+
+5. iloc[] indexer
+
+5.3. Selecting single column
+
+Syntax 1
+--------
+
+	df.iloc[single value]
+
+	df.iloc[0]
+
+--------------------------------
+
+# Accessing 0th row
+
+import pandas as pd
+
+df = pd.read_csv("sales2.csv")
+s = df.iloc[0]
+
+print(df)
+print()
+print(s)
+
+--------------------------------
+
+# df.iloc[1]
+
+import pandas as pd
+
+df = pd.read_csv("sales2.csv")
+s = df.iloc[1]
+
+print(df)
+print()
+print(s)
+
+--------------------------------
+
+# df.iloc[-1]
+
+import pandas as pd
+
+df = pd.read_csv("sales2.csv")
+s = df.iloc[1]
+
+print(df)
+print()
+print(s)
+
+--------------------------------
+
+# Error: df.iloc["Order id"]
+# iloc Can take only integer values
+
+import pandas as pd
+
+df = pd.read_csv("sales2.csv")
+s = df.iloc["Order id"]
+
+print(df)
+print()
+print(s)
+
+--------------------------------
+
+Syntax 2
+--------
+
+	df.iloc[	LHS	,	RHS	]
+
+	df.iloc[	rows	,	columns	]
+	
+	df.iloc[	:	,	0	]
+
+
+
+--------------------------------
+
+# df.iloc[	:	,	0	]
+
+import pandas as pd
+
+df = pd.read_csv("sales2.csv")
+
+print(df)
+print()
+print(df["Order id"])
+print()
+print(df.iloc[	:	,	0	])
+
+--------------------------------
+
+# df.iloc[	:	,	1	]
+
+import pandas as pd
+
+df = pd.read_csv("sales2.csv")
+
+print(df)
+print()
+print(df.iloc[	:	,	1	])
+
+--------------------------------
+
+# df.iloc[	:	,	-1	]
+
+import pandas as pd
+
+df = pd.read_csv("sales2.csv")
+
+print(df)
+print()
+print(df.iloc[	:	,	-1	])
+
+
+		OR
+
+import pandas as pd
+
+df = pd.read_csv("sales2.csv")
+
+print(df)
+print()
+print(df.iloc[: , -1])
+
+--------------------------------
+
+5.4. Selecting multiple rows and columns
+
+
+Syntax 1
+		df.iloc[0]
+
+Syntax 2
+		df.iloc[	:	,	0	]
+
+Syntax 3	df.iloc[0:5]
+		if no comma separator then all columns
+
+--------------------------------
+
+# df.iloc[0:5]
+
+import pandas as pd
+
+df = pd.read_csv("sales2.csv")
+
+print(df)
+print()
+print(df.head())
+print()
+print(df.iloc[0:5])
+
+--------------------------------
+
+# df.iloc[10:50]
+
+import pandas as pd
+
+df = pd.read_csv("sales2.csv")
+
+print(df)
+print()
+print(df.iloc[10:50])
+
+--------------------------------
+
+Recap
+-----
+
+Syntax 1
+		df.iloc[0]
+
+Syntax 2	
+		df.iloc[	:	,	0	]
+
+Syntax 3
+		df.iloc[:]
+
+Syntax 4
+		df.iloc[	:	,	:	]
+
+--------------------------------
+
+Syntax 4
+
+	df.iloc[	LHS	,	RHS	]
+	df.iloc[	Rows	,	Columns	]
+	
+	df.iloc[	:	,	:	]
+
+		    all rows	,  all columns
+
+--------------------------------
+
+# df.iloc[	:	,	:	]
+# all rows and columns
+
+
+import pandas as pd
+
+df = pd.read_csv("sales2.csv")
+
+print(df)
+print()
+print(df.iloc[	:	,	:	])
+
+--------------------------------
+
+from Masud Siddiqi to everyone:    6:46 PM
+please upload this video today
+
+Sir, sorry I dont have videos access
+Admin take care :)
+
+--------------------------------
+
+We done today session :)
+
+- Daniel
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------

@@ -1,0 +1,368 @@
+RUNNING NOTES: 22 - JAN - 2025
+--------------------------------
+
+1. PREVIOUS TOPIC			-	PANDAS - DATAFRAME HANDLING NAN VALS
+2. CURRENT TOPIC			-	PANDAS - DATAFRAME SELECTION LOC & ILOC
+3. UPCOMING TOPIC			-	PANDAS - DATAFRAME FILTERING
+						         
+
+----------------------------------------------------------------
+
+
+INDEX
+---------
+
+0. DATA SCIENCE DEMO			-	Done
+
+1. DATA SCIENCE FUNDAMENTALS		-	Done
+
+--------------------------------------------------
+
+PYTHON PROGRAMMING LANG
+-----------------------
+
+0. PYTHON - INSTALLATION		-	Done
+
+1. PYTHON - INTRODUCTION		-	Done
+2. PYTHON - KEYWORDS			-	Done
+3. PYTHON - HELLO WORLD PROGRAM		-	Done
+4. PYTHON - NAMING CONVENTIONS		-	Done
+5. PYTHON - VARIABLES			-	Done
+6. PYTHON - DATA TYPES			-	Done
+7. PYTHON - OPERATORS			-	Done
+8. PYTHON - INPUT & OUTPUT		-	Done
+9. PYTHON - FLOW CONTROL		-	Done
+10. PYTHON - STRING			-	Done
+11. PYTHON - FUNCTIONS - PART - 1	-	Done
+12. PYTHON - FUNCTIONS - PART - 2	-	Done
+13. PYTHON - MODULE			-	Done
+14. PYTHON - PACKAGE			-	Done
+15. PYTHON - LIST DATA STRUCUTRE	-	Done
+16. PYTHON - TUPLE DATA STRUCUTRE	-	Done
+17. PYTHON - SET DATA STRUCUTRE		-	Done
+18. PYTHON - DICTIONARY DATA STRUCUTRE	-	Done
+19. PYTHON - OBJECT ORIENTED 		-	Done
+	PROGRAMMING	
+
+--------------------------------------------------
+
+
+DATA ANALYSIS				
+-------------
+
+1. PANDAS - INTRODUCTION		-	Done
+2. PANDAS - SERIES - INTRODUCTION	-	Done
+3. PANDAS - NAN VALUE			-	Done
+4. PANDAS - SERIES - ATTRIBUTES		-	Done
+5. PANDAS - SERIES - METHODS		-	Done
+6. PANDAS - DATAFRAME INTRODUCTION	-	Done
+7. PANDAS - DATAFRAME - LOADING 	-	Done
+	DIFFERENT FILES
+
+
+8. PANDAS - DATAFRAME - ATTRIBUTES	-	Done
+
+9. PANDAS - DATAFRAME - METHODS		-	Done
+
+10. PANDAS - DATAFRAME - RENAMING 	-	Done
+	COLUMN, INDEX
+
+11. PANDAS - DATAFRAME - INPLACE 	-	Done
+	PARAMETER
+
+
+12. PANDAS -DATAFRAME - HANDLING 	-	Done
+	MISSING NAN VALUES
+
+
+13. PANDAS - DATAFRAME - SELECTION 	- 	Running topic
+	LOC, ILOC
+
+14. PANDAS - DATAFRAME - FILTERING	-	Upcoming session
+
+
+15. PANDAS - DATAFRAME - SORTING	-	Upcoming session
+
+
+--------------------------------------------------
+
+Predefined functions
+---------------------
+
+1. print(p)		->	To display the output
+2. type(p)		->	To check the data type
+3. range(p)		->	To get range of values
+4. input(p)		->	To take valut at runtime/dynamically
+5. len(p)		->	To find number of values in sequence
+
+--------------------------------
+
+Errors
+------
+
+1. SyntaxError
+2. NameError
+3. KeyError
+4. ValueError
+5. TypeError
+
+6. IndexError
+7. IndentationError
+8. AttributeError
+9. ModuleNotFoundError
+10. FileNotFoundError
+
+--------------------------------
+
+13. PANDAS - DATAFRAME - SELECTION
+	LOC, ILOC
+
+--------------------------------
+
+ILOC
+
+	1. Examples	Done
+	2. Theory	Running topic
+
+--------------------------------
+
+Recap
+-----
+
+Syntax 1
+		df.iloc[0]
+
+Syntax 2	
+		df.iloc[	:	,	0	]
+
+Syntax 3
+		df.iloc[:]
+
+Syntax 4
+		df.iloc[	:	,	:	]
+
+
+
+--------------------------------
+
+loc
+----
+	1. Examples	
+	2. Theory	
+
+--------------------------------
+
+IMP interview question
+----------------------
+
+# Creating a DataFrame
+
+import pandas as pd
+
+df1 = pd.read_csv("sales2.csv")
+
+print(df1)
+
+--------------------------------
+
+# Number of rows and columns
+
+import pandas as pd
+
+df1 = pd.read_csv("sales2.csv")
+
+print(df1.shape)
+
+Note:
+-----
+
+While counting the columns, index is not countable
+
+--------------------------------
+
+# We can set column name as index to DataFrame
+# By using method we can do this
+# set_index()
+
+import pandas as pd
+
+df1 = pd.read_csv("sales2.csv")
+df1.set_index("Product name", inplace = True)
+
+print(df1)
+
+--------------------------------
+
+# Checking number of columns
+
+import pandas as pd
+
+df1 = pd.read_csv("sales2.csv")
+df1.set_index("Product name", inplace = True)
+
+print(df1.shape)
+
+--------------------------------
+
+# Accessing iPhone 9 total records
+
+import pandas as pd
+
+df1 = pd.read_csv("sales2.csv")
+df1.set_index("Product name", inplace = True)
+
+a = "iPhone 9"
+df2 = df1.loc[a]
+
+print(df2)
+
+--------------------------------
+
+# iPhone 9 device count
+
+import pandas as pd
+
+df1 = pd.read_csv("sales2.csv")
+df1.set_index("Product name", inplace = True)
+
+a = "iPhone 9"
+df2 = df1.loc[a]
+
+print(df2.shape)
+
+--------------------------------
+
+# ThinkPad Laptop device count
+
+import pandas as pd
+
+df1 = pd.read_csv("sales2.csv")
+df1.set_index("Product name", inplace = True)
+
+a = 'ThinkPad Laptop'
+df2 = df1.loc[a]
+
+print(df2)
+print()
+print(df2.shape)
+
+--------------------------------
+
+# Two products combo: ['iPhone 9', 'iPhone 11']
+
+import pandas as pd
+
+df1 = pd.read_csv("sales2.csv")
+df1.set_index("Product name", inplace = True)
+
+a = ['iPhone 9', 'iPhone 11']
+df2 = df1.loc[a]
+
+print(df2)
+print()
+print(df2.shape)
+
+--------------------------------
+
+# Two products combo: ['ThinkPad Laptop', '27in FHD Monitor']
+
+import pandas as pd
+
+df1 = pd.read_csv("sales2.csv")
+df1.set_index("Product name", inplace = True)
+
+a = ['ThinkPad Laptop', '27in FHD Monitor']
+df2 = df1.loc[a]
+
+print(df2)
+print()
+print(df2.shape)
+
+--------------------------------
+
+# df.loc[	rows	,	columns	]
+
+import pandas as pd
+
+df1 = pd.read_csv("sales2.csv")
+df1.set_index("Product name", inplace = True)
+
+r = ['iPhone 9', 'ThinkPad Laptop']
+c = ['Product cost', 'Customer id']
+
+
+df2 = df1.loc[	r	,	c	]
+
+print(df2)
+print()
+print(df2.shape)
+
+--------------------------------
+
+# While accessing, column name should be match
+
+import pandas as pd
+
+df1 = pd.read_csv("sales2.csv")
+df1.set_index("Product name", inplace = True)
+
+r = ['iPhone 9', 'ThinkPad Laptop']
+c = ['Product costksjhdf', 'Customer id']
+
+
+df2 = df1.loc[	r	,	c	]
+
+print(df2)
+print()
+print(df2.shape)
+
+--------------------------------
+
+# df.loc[	rows	,	columns	]
+
+
+import pandas as pd
+
+df1 = pd.read_csv("sales2.csv")
+df1.set_index("Product name", inplace = True)
+
+r = ['iPhone 9', 'ThinkPad Laptop']
+c = ['Product cost', 'Customer name']
+
+df2 = df1.loc[	r	,	c	]
+
+print(df2)
+print()
+print(df2.shape)
+
+--------------------------------
+
+# Filtering the data
+
+import pandas as pd
+
+df1 = pd.read_csv("sales2.csv")
+
+con = df1["Product name"] == "LG Washing Machine"
+
+print(df1[con])
+print()
+print(df1.loc[con])
+
+--------------------------------
+
+We done today session 
+
+- Daniel
+
+--------------------------------
+
+Daily
+-----
+
+1. Running notes				->	Sharing
+2. Materials (PDF format)			->	Sharing
+
+We are sharing by using 			->	Google classroom
+
+--------------------------------
