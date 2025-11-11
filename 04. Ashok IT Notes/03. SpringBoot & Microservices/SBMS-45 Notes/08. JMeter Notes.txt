@@ -1,0 +1,138 @@
+
+
+=================
+Software Testing
+=================
+
+=> The Process of verifying and validation application functionalities is called as Software Testing.
+
+=> Software Testing will happen in multiple stages
+
+	1) Unit Testing
+	2) System Integration Testing (SIT)
+	3) User Acceptance Testing
+
+Unit Testing : Testing individual components of the application.
+
+Note: Developers will perform unit testing by using Junit.
+
+SIT : Testing team will perform system integration testing.
+
+Note: Identified bugs will be reported using JIRA.
+
+UAT : User acceptance testing. client or client side team will test our application before delivery (acceptance testing).
+
+Note: Based on UAT client will decide GO or No-GO.
+
+=> Go means it is green signal from client to deploy in production.
+
+=> No-GO means client identified some issues in UAT hence production deployment got cancelled.
+
+===============================
+What is Performance Testing ?
+===============================
+
+=> It is used to test stability and responsiveness of the application.
+
+		1) how many users can access our application at a time
+
+		2) For 100 users what is avg response time ?
+
+		3) For 1000 users what is avg response time ?
+		...
+
+		4) For 1 lakh users what is avg response time ?
+
+		5) What is bottleneck / failure point of our application
+
+Note: To implement performance testing we will use tools.
+
+		a) JMETER (open source)
+
+		b) HP Load Runner (licensed)
+
+
+==========
+JMETER
+==========
+
+-> JMETER is a free & open source software given by Apache Organization.
+
+-> JMETER is used for performance testing.
+
+-> Performance testing means the process of verifying stability & responsiveness of the application.
+
+-> How our application is responding for different work loads we can verify using JMETER.
+
+-> Using JMETER we can create virtual users to test our application performance.
+
+-> JMETER is a java based desktop application.
+
+-> Using JMETER we can test performance of any web application.
+
+Note: Before giving project delivery to client we need to submit performance testing report.
+
+===============
+JMETER Setup
+===============
+
+1) Download JMETER software 
+
+URL : https://dlcdn.apache.org//jmeter/binaries/apache-jmeter-5.6.3.zip
+
+2) Extract JMETER zip file
+
+3) Go to JMETER bin folder and run "jmeter.bat" file  (it will open JMETER tool)
+
+====================
+Creating Test Plan
+====================
+
+1) Right Click on Test plan
+
+			- Add Threads 
+			- Add Thread Group
+			- Enter Thread/users count
+
+2) Right Click on Thread Group   (For sampler)
+
+			- Add Sampler
+				- Http Request
+				- Add Server IP, Port Number, URL Pattern			
+
+3) Right Click on Thread Group (For Listerns)
+
+			- Add Listener
+				- Add View Results Tree
+				- Add Summary Report
+
+4) Save the test and run the test (filename.jmx)
+
+5) Verify the results (we can change thread group count and we can test it).
+
+
+======================
+JMETER Best Practise
+======================
+
+-> Create the TEST in GUI mode and run the test in CLI mode.
+
+   Ex:  jmeter -n -t test-plan.jmx -l test-results.jtl
+
+-> After test execution complete we can import JTL file into JMETER summary report to see the test results.   
+
+===================================
+Root causes for performance issue
+===================================
+
+1) System Resources Very Low
+
+2) Network issue
+
+3) Database Query Execution taking more time
+
+4) Unwanted loops and conditions in code
+
+
+---------------------------------------------------------------------
+Note: Industry Standard Avg response time for a request is 3 secs.
