@@ -1,0 +1,67 @@
+
+=========================
+Spring Batch Tutorial
+=========================
+
+Spring Batch is a powerful framework for processing large volumes of data in a batch-oriented way. 
+
+Itâ€™s part of the Spring Framework and provides reusable functions essential for processing data, such as logging, transaction management, job processing statistics, and more. 
+
+Here are some key components and concepts of Spring Batch:
+
+
+		- ItemReader
+		- ItemProcessor
+		- ItemWriter
+		- Step
+		- Job
+		- JobRepository
+		- JobLauncher
+
+ItemReader : It is used to read data from the source 
+
+ItemProcessor : It is used to process the data
+
+ItemWriter : It is used to write the data to destination
+
+Step : It represents sequence of our batch execution (reader + processor + writer)
+
+Job : It is used to represents set of steps for batch processing
+
+JobRepository : To maintains job execution history and steps info
+
+JobLauncher: It is used to start the job exeuction.
+
+
+===========================
+Batch Processing Usecases
+==========================
+
+	- bulk msg
+	- bulk email
+	- sending salaries emps
+	- sending bank stmt to acc holders
+	- sending post paid bill reports
+	- Sending payment reminder notifications
+
+============
+Requirement
+============
+
+1) Read the data from csv file and write into database table using spring batch framework.
+
+Note: Skip the records which are having price as 0.
+
+Ex:
+
+ISBN001, Java, 1000.00
+ISBN002, Python, 2000.00
+ISBN003, DevOps, 3000.00
+ISBN004, AWS, 4000.00
+ISBN005, Docker, 0.00
+ISBN006, AI, 5000.00
+
+
+Spring Batch Tutorial : https://youtu.be/2sdY-fKaR2o 
+
+Spring Doc: https://spring.io/guides/gs/batch-processing
