@@ -1,0 +1,85 @@
+
+========================
+Summary Of our Classes
+========================
+
+=> Spring Framework
+		
+		- What is Framework
+		- Spring Architecture
+		- Spring Modules
+		- Spring Core Module
+		- IOC Container
+		- Dependency Injection
+			- SI & CI & FI
+		- Spring Bean
+		- Auto Wiring
+		- Bean Life Cycle
+		- Bean Scopes
+		- Spring Annotation
+
+=> Spring Boot
+	
+		- Boot Introduction
+		- Spring Vs SpringBoot
+		- Advantages of boot
+		- Spring Intializr
+		- POM starters
+		- Auto Configuration
+		- Component Scanning
+		- Start Class of SpringBoot
+		- @SpringBootApplication
+		- run () method internals
+		- Banner
+		- Runners
+
+
+=> Spring Data JPA
+
+		- What is Data JPA
+		- Entity class
+		- Repository interface
+		- CrudRepository methods
+		- findByXXX methods
+		- Customer Queries
+		- SQL Vs HQL
+		- JpaRepository
+		- Pagination + Sorting
+		- Query By Example
+		- Timestamping
+		- Generators
+
+=> Spring Web MVC
+
+		 - Spring Web MVC Introduction
+		 - Web MVC Architecture
+			 - DispatcherServlet
+			 - HandlerMapper
+			 - Controller
+			 - ModelAndView
+			 - View Resolver
+			 - View
+		 - Thymeleaf as UI layer
+		 - Form Binding
+		 - Form Validations
+		 - Web app with CRUD Ops
+		 - JSP as UI Layer
+		 - Exception Handling
+		 - Email Sending
+		 - Login & Registration App
+		 - Request Parameter 
+		 - Response Body
+		 - Embedded Containers
+		 - Embedded Database
+		 - HTTP Session
+		 - PhoneBook App development (assignment)
+		 - SpringBoot Actuators
+		 - SpringBoot Profiles
+
+
+=>  Real-Time Tools
+
+		- Maven	
+		- GitHub
+		- Log4J
+		- JMETER
