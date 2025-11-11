@@ -1,0 +1,121 @@
+
+================
+Circuit Breaker
+================
+
+=> It is one of the most famous design pattern in microservices.
+
+=> It is used to implement fault tolerent systems.
+
+=> Fault Tolerant systems also called as Resillence systems.
+
+Note: If main logic is failed to execute then we have to execute fallback logic.
+
+
+Usecase : 
+
+main logic : retrieve data from redis cache
+
+fallback logic : retrieve data from database
+
+
+=> In springboot, we can implement circuit breaker in 2 ways
+
+			1) hystrix (outdated)
+
+			2) Spring Cloud Resillence4J (trending)
+
+=> Circuit Breaker works based on 3 states
+
+			1) CLOSED
+
+			2) OPEN
+
+			3) HALF_OPEN
+
+
+CLOSED : System is having normal flow. System working as expected.
+
+OPEN : The circuit interrupted, some fault occured hence normal flow will be stopped and fallback logic will be executed for given amount time.	
+
+HALF_OPEN : System will try for normal flow, if normal flow working as expected then Circuit will go to CLOSED state else it will go to OPEN state.	
+
+
+================================
+Circuit Breaker Implementation
+================================	
+
+#### 1) Create Spring Boot project with below dependencies
+
+		a) web-starter
+		b) actuator
+		c) aop
+		d) resillence4J
+
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-aop</artifactId>
+</dependency>
+
+### 2) Create Rest Controller with required methods		
+
+@RestController
+public class DataRestController {
+
+	@GetMapping("/data")
+	@CircuitBreaker(fallbackMethod = "getDataFromDB", name = "ashokit")
+	public String getDataFromRedis() {
+		System.out.println("*** redis() method called.. ***");
+		int i = 10/0;
+		return "Retrieved Data From Redis";
+	}
+
+	public String getDataFromDB() {
+		System.out.println("*** db() method called.. ***");
+		return "Retrieved Data From Database";
+	}
+
+}
+
+#### 3) Configure Circuit Breaker Properties in application.yml file
+
+spring:
+  application:
+    name: 03_SB_CircuitBreaker_App
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+  health:
+    circuitbreakers:
+      enabled: true
+
+resilience4j:
+  circuitbreaker:
+    configs:
+      default: 
+        registerHealthIndicator: true
+        slidingWindowSize: 10
+        minimumNumberOfCalls: 5
+        permittedNumberOfCallsInHalfOpenState: 3
+        automaticTransitionFromOpenToHalfOpenEnabled: true
+        waitDurationInOpenState: 100s
+        failureRateThreshold: 50
+
+#### 4) Test The application and monitor actuator health endpoint to observe Circuit Breaker status.  
+
+
+		URL-1 : http://localhost:8080/data
+
+		URL-2 : http://localhost:8080/actuator/health
+
+
+====================================================================================
+
+Spring Batch : https://youtu.be/2sdY-fKaR2o
+
+====================================================================================
