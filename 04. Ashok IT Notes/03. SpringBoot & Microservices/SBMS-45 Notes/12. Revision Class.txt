@@ -1,0 +1,181 @@
+
+
+========================
+Summary Of our Classes
+========================
+
+1) Spring Core
+
+		- What is Framework
+		- Spring Introduction
+		- Spring Architecture
+		- Spring Core Module
+		- IOC Container
+		- Dependency Injection
+				- SI & CI & FI
+		- Spring Bean
+		- Auto wiring (byName, byType, construtor)
+		- Primary & Qualifier
+		- Bean Life cycle
+		- Bean Scopes
+		- Spring annotations				
+
+2) Spring Boot
+
+		- Spring vs SpringBoot
+		- SpringBoot Introduction
+		- Advantages of SpringBoot
+		- Spring Intializr (start.spring.io)
+		- POM starters
+		- Auto Configuration
+		- Component Scanning
+		- Start Class of SpringBoot
+		- @SpringBootApplication
+		- run () method internals
+		- Banner
+		- Runner
+
+3) Spring data Jpa
+
+		- What is Data JPA
+		- Entity class
+		- Repository interface
+		- CrudRepository methods
+				 - predefined methods
+				 - findBy methods
+				 - custom Queries
+				 - SQL Vs HQL
+
+		- JpaRepository
+				- Pagination
+				- Sorting
+				- QBE
+
+		- Timestamping
+		- Generators
+
+4) Spring Web MVC
+
+         - Spring Web MVC Introduction
+		 - Web MVC Architecture
+			 - DispatcherServlet
+			 - HandlerMapper
+			 - Controller
+			 - ModelAndView
+			 - View Resolver
+			 - View
+
+		 - Thymeleaf as UI layer
+		 - Form Binding
+		 - Form Validations
+		 - Web app with CRUD Ops
+		 - JSP as UI Layer
+		 - Exception Handling
+		 - Email Sending
+		 - Login & Registration App
+		 - Request Parameter 
+		 - Response Body
+		 - Embedded Containers
+		 - Embedded Database
+		 - HTTP Session
+		 - PhoneBook App development (assignment)
+		 - SpringBoot Actuators
+		 - SpringBoot Profiles
+
+5) Spring REST
+		
+		 - What is Distributed application & Why
+		 - What is REST API 
+		 - REST API Architecture
+		 - JSON & Jackson + GSON
+		 - Xml & jax-b
+		 - Http Protocol
+		 		- Methods
+		 		- Status Codes
+		 		- Request format
+		 		- Response Format
+
+		 - POSTMAN
+
+		 - REST API development (Provider)
+
+		 	 - @RestController
+		 	 - REST API methods (GET, POST, PUT, DELETE)
+		 	 - Query Parameters
+		 	 - Path variables
+		 	 - Request Body
+		 	 - Response Entity
+		 	 - Media Types (consumes & produces)
+		 	 - Accept & Content-Type headers
+
+		 - Swagger
+
+		 - Consumer Development
+
+		 - Rest Template
+
+		 - Web Client
+		 	- Synchronus Client (block)
+		 	- Asynchronus Client (subscribe)	 
+
+ 		 - MakeMyTrip Consumer App
+ 		 			- C2B
+ 		 			- B2B		 	
+
+		 - REST API Exception Handling
+
+		 		- @ExceptionHandler
+		 		- @RestControllerAdvice
+
+		 - Spring Data REST
+
+		 		- @RepositoryRestResource
+
+
+6) Microservices
+
+		- What is Monolithic Architecture
+		- Drawbacks of Monolithic
+		- Microservices Introduction
+		- Advantages & Challenges of Microservices
+		- Microservices Architecture
+
+				- Service Registry (Eureka)
+				- Admin Server
+				- Zipkin Server
+				- Config Server
+				- REST APIS
+				- FeignClient
+				- Load Balancer (Ribbon)
+				- API Gateway (Cloud)
+					- Routings
+					- Filter
+
+7) Realtime Tools
+
+		- Maven
+		- Log4J
+		- GitHub
+		- JMETER
+
+=============== Pending Topics =================
+
+1) Association Mapping (Relationships)
+
+2) Circuit Breaker (Resillence4J)
+
+3) Spring Batch
+
+4) Spring Security
+
+=========== Tools ===========
+
+5) Kafka 
+6) Redis
+7) Junit + Mocking
+8) Docker
+9) Lombok
+10) Jenkins Deployment
+
+
+
