@@ -1,0 +1,2289 @@
+
+=================
+Spring Web MVC
+=================
+
+=> One of the most used & important module in spring framework
+
+=> Using Spring Web MVC we can develop 2 types of applications.
+
+		1) Web Applications (C 2 B)
+
+		2) Distributed Applications (B 2 B)
+
+
+=================
+Web Application
+=================
+
+=> Web Applications are used for Customer to Business Communication.
+
+		Ex: www.ashokitech.com
+
+Note: In Web application we will have 3 components
+
+		1) Presentation components (UI)
+
+		2) Business components (Controllers + Services)
+
+		3) Data Access Componenents (Repositories)
+
+Note: To develop presentation (UI) components in Spring Web MVC application we can use JSP and Thymeleaf.
+
+=================================
+What is Distributed application
+=================================
+
+=> Distributed applications are called as Webservices.
+
+=> Webservices are used to communicate from one application to another application.
+
+Note: In distributed appliations UI will not be available (pure backend apis)
+
+
+
+===============================
+Spring Web MVC Architecture
+===============================
+
+1) DispatcherServlet
+
+2) HandlerMapper
+
+3) Controller / Request Handler
+
+4) ModelAndView
+
+5) View Resolver
+
+6) View
+
+===================
+DispatcherServlet
+===================
+
+=> It is predefined class in spring web mvc
+
+=> It acts as front controller
+
+=> It is responsible to recieve request and send the response to client.
+
+Note: It is also called as framework servlet class.
+
+================
+Handler Mapper
+================
+
+=> It is predefined class in spring web mvc
+
+=> It is responsible to identify controller class to handle the request based on url-pattern and give controller class details to dispatcher servlet.
+
+===========
+Controller
+===========
+
+=> Controllers are java classes which are used to handle the request (request processing).
+
+=> DispatcherServlet will call controller class methods.
+
+=> After processing request, controller method will return ModelAndView object to dispatcher servlet.
+
+	Model => It is a map to represent data in key-value pair
+
+	View => It represents view page name
+
+===============
+View Resolver
+===============
+
+=> It is used to identify view files location.
+
+=> Dispatcher Servlet will give view name to View Resolver then it will identify the view file location and give it to Dispatcher Servlet.
+
+========
+View
+========
+
+=> It is responsible to render model data on the view page and give it to dispatcher servlet.
+
+Note: DispatcherServlet will send final response to client.
+
+
+==================
+Assignment
+=================
+
+1) Develop Spring Web MVC Application to capture student data using HTML form and insert into database table using Data JPA.
+
+
+1) Spring Boot
+2) Spring Data JPA
+3) Spring Web MVC
+
+======================================
+What is Layered Architecture
+======================================
+
+=> Develop application using multiple layers
+
+	a) Presentation Layer (UI)
+
+	b) Web Layer (Controllers)
+
+	c) Business Layer (services)
+
+	d) Data Access Layer (Repositories)
+
+
+===============================
+Students management application
+===============================	
+
+1) Add Student data
+
+2) Retrieve students and display
+
+------------------------------------------------------------------
+Step-1) Create springboot application with below dependencies
+
+	a) web-starter
+	b) thymeleaf
+	c) data-jpa-starter
+	d) mysql driver
+	e) devtools
+
+Step-2) Configure data source properties in application.properties file
+
+Step-3) Create Entity class and Repostiory interface
+
+Step-4) Create Service interface & implementation with required methods
+
+Step-5) Create controller class to handle request & response
+
+Step-6) Create view pages (html with thmeleaf)
+
+Step-7) Run the application and test it.
+
+==========================================================
+
+@Entity
+public class Student {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer sid;
+	private String name;
+	private String email;
+	private Long phno;
+
+	// getters & setters
+
+==========================================================
+
+public interface StudentService {
+	
+	public boolean saveStudent(Student s);
+	
+	public List<Student> getAllStudents();
+
+	public void delete(Integer sid);
+
+
+}
+
+=========================================================
+
+@Service
+public class StudentServiceImpl implements StudentService {
+
+	private StudentRepository repo;
+
+	public StudentServiceImpl(StudentRepository repo) {
+		this.repo = repo;
+	}
+
+	@Override
+	public boolean saveStudent(Student s) {
+		Student savedStudent = repo.save(s);
+		return savedStudent.getSid() != null;
+	}
+
+	@Override
+	public List<Student> getAllStudents() {
+		return repo.findAll();
+	}
+
+	@Override
+	public void delete(Integer sid) {
+		repo.deleteById(sid);
+	}
+
+}
+
+=============================================================
+
+@Controller
+public class StudentController {
+
+	private StudentService service;
+
+	public StudentController(StudentService service) {
+		this.service = service;
+	}
+
+	// method to display empty form
+	@GetMapping("/")
+	public ModelAndView index() {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("index");
+		return mav;
+	}
+
+	// method to save student form data
+	@GetMapping("/saveStudent")
+	public ModelAndView handleSubmitBtn(Student s) {
+		ModelAndView mav = new ModelAndView();
+		boolean isSaved = service.saveStudent(s);
+		if (isSaved) {
+			mav.addObject("smsg", "Student Saved");
+		} else {
+			mav.addObject("emsg", "Failed To Save");
+		}
+		mav.setViewName("index");
+		return mav;
+	}
+
+	// method to get all students data
+
+	@GetMapping("/getData")
+	public ModelAndView getAllStudents() {
+		List<Student> stuList = service.getAllStudents();
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("students", stuList);
+		mav.setViewName("data");
+		return mav;
+	}
+
+	@GetMapping("/delete")
+	public ModelAndView deleteRecord(@RequestParam("sid") Integer sid) {
+		service.delete(sid);
+		List<Student> stuList = service.getAllStudents();
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("students", stuList);
+		mav.addObject("msg", "Deleted Successfully");
+		mav.setViewName("data");
+		return mav;
+	}
+
+}
+=============================================================
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+   	<div class="container">
+   	 <h1>Student Form</h1>
+    
+    	<form action="saveStudent">
+    	
+    		<p th:text="${smsg}"></p>
+    		<p th:text="${emsg}"></p>
+    		    	
+    		<table>
+    			<tr>
+    				<td>Name : </td>
+    				<td><input type="text" name="name" required/></td>
+    			</tr>
+    			<tr>
+    				<td>Email : </td>
+    				<td><input type="email" name="email" required/></td>
+    			</tr>
+    			<tr>
+    				<td>Phno : </td>
+    				<td><input type="number" name="phno" required/></td>
+    			</tr>
+    			<tr>
+    				<td></td>
+    				<td><input type="submit" value="Save" class="btn btn-primary"/></td>
+    			</tr>
+    		</table>
+    	
+    	</form>
+    
+    <a href="getData">View All Students</a>
+   	</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+====================================================================
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+	<script>
+
+		function deleteConfirmation() {
+			return confirm("Are you sure you want to delete ?");
+		}
+
+	</script>
+
+</head>
+
+<body>
+	<div class="container">
+		<h1>View Students</h1>
+
+		<a href="/">Add New Student</a>
+
+		<font style="color: green;">
+			<p th:text="${msg}"></p>
+		</font>
+
+
+
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Phno</th>
+					<th>Action</th>
+				<tr>
+			</thead>
+			<tbody>
+				<tr th:each="s: ${students}">
+					<td th:text="${s.name}"></td>
+					<td th:text="${s.email}"></td>
+					<td th:text="${s.phno}"></td>
+					<td>
+						<a th:href="@{'/delete?sid=' + ${s.sid}}" 
+						   class="btn btn-danger"
+						   onclick="return deleteConfirmation()">Delete</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
+==============================================================	
+
+
+===================================
+How to send email using springboot
+===================================
+
+=> Springboot provided "mail-starter" to work with email sending. Add this starter in pom.xml file.
+
+=> We need to configure "smtp" properties in application.properties file
+
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=
+spring.mail.password=
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+Note: generate your gmail account app password.
+
+=> JavaMailSender is used to send email
+
+		javaMailSender.send(message);
+
+=> We have 2 types of messages
+
+		1) SimpleMailMessage
+		2) MimeMessage		
+
+=> SimpleMailMessage is used to plain text in email body
+
+=> MimeMessage is used to send formatted email body and attachment.
+
+====================================================================
+
+@Service
+public class EmailService {
+
+	@Autowired
+	private JavaMailSender mailSender;
+
+	public void sendEmail(String subject, String body, String to) {
+		try {
+			SimpleMailMessage msg = new SimpleMailMessage();
+			msg.setSubject(subject);
+			msg.setText(body);
+			msg.setTo(to);
+			mailSender.send(msg);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void sendEmail1(String subject, String body, String to) {
+		try {
+
+			MimeMessage mimeMessage = mailSender.createMimeMessage();
+			MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true);
+
+			helper.setSubject(subject);
+			helper.setText(body, true);
+			helper.setTo(to);
+
+			helper.addAttachment("Notes", new File("C:\\Users\\ashok\\classes\\45-SBMS\\WebMVC-Notes.txt"));
+
+			mailSender.send(mimeMessage);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}
+=======================================================================
+
+1) Student.java (entity)
+
+2) StudentRepo.java (jpa repository)
+
+3) StudentService.java (I)
+
+4) StudentServiceImpl.java (C)
+
+5) EmailService.java 
+
+6) StudentController.java
+
+7) index.html
+8) data.html
+
+=======================================
+Exception Handling in Spring Web MVC
+=======================================
+
+=> Unexpected and unwanted situation in program execution is called as Exception.
+
+=> When exception occurs our program will be teriminated abnormally.
+
+=> As a programmer we need to handle that exception and we need to achieve graceful termination.
+
+=> The process of handling exception is called as Exception Handling.
+
+=> In java we have below keyword to handle exceptions
+
+		1) try
+		2) catch
+		3) throw
+		4) throws
+		5) finally
+
+=> In Spring Web MVC we can handle exceptions in 2 ways
+
+		1) Class Based Handling
+
+		2) Global Handling
+
+=> Class Based Handling is applicable for exceptions occured only in that paricular class.
+
+========================================================================
+	@ExceptionHandler(value = Exception.class)
+	public String handleException(Exception e) {
+		logger.error(e.getMessage());
+		return "errorPage";
+	}
+========================================================================
+
+=> Global Exception handling is applicable for all the classes available in the applicaiton.
+
+=> To represent our class as Global Exception Handler we will use @ControllerAdvice annotation.
+
+========================================================================
+
+@ControllerAdvice
+public class AppExceptionHandler {
+
+	private Logger logger = LoggerFactory.getLogger(AppExceptionHandler.class);
+
+	@ExceptionHandler(value = ProductNotFoundException.class)
+	public String handleProductEx(ProductNotFoundException e) {
+		logger.error(e.getMessage());
+		return "errorPage";
+	}
+
+	@ExceptionHandler(value = NullPointerException.class)
+	public String handleNpe(NullPointerException e) {
+		logger.error(e.getMessage());
+		return "errorPage";
+	}
+
+	@ExceptionHandler(value = Exception.class)
+	public String handleException(Exception e) {
+		logger.error(e.getMessage());
+		return "errorPage";
+	}
+}
+========================================================================
+
+========================================
+How to handle User Defined Exceptions ?
+========================================
+
+=> Create User defined exception class like below
+
+public class ProductNotFoundException extends RuntimeException {
+
+	public ProductNotFoundException(String msg) {
+		super(msg);
+	}
+}
+
+=> Create Exception Handler Method in Controller Advice class
+
+@ExceptionHandler(value = ProductNotFoundException.class)
+public String handleProductEx(ProductNotFoundException e, Model model) {
+	logger.error(e.getMessage());
+	model.addAttribute("msg", "No Product Found");
+	return "errorPage";
+}
+
+
+=> Create Controller method to throw user defined exception based on some scenario
+
+@Controller
+public class ProductController {
+
+	@GetMapping("/product")
+	public String getProduct(@RequestParam("pid") Integer pid, Model model) {
+
+		if (pid == 1) {
+			model.addAttribute("msg", "Product Name: Apple");
+		} else {
+			throw new ProductNotFoundException("No Record Found");
+		}
+		return "index";
+	}
+}
+
+=============================================
+Q) What is springboot embedded container ?
+=============================================
+
+=> When we add "web-starter" boot will provide server to run our application that server is called as embedded container.
+
+=> springboot supports 3 containers
+
+			1) tomact (default)
+			2) jetty
+			3) netty
+
+==================================================
+Q) How to configure jetty as embedded container ?
+==================================================
+
+Step-1) Exclude starter-tomact dependency from starter-web
+
+step-2) Configure jetty starter in pom.xml
+
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-web</artifactId>
+	<exclusions>
+		<exclusion>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+		</exclusion>
+	</exclusions>
+</dependency>
+
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-jetty</artifactId>
+</dependency>
+
+
+===============================
+Q) What is embedded database ?
+===============================
+
+=> Embedded databases are also called as in-memory databases.
+
+=> Embedded databases are temporary databases.
+
+=> When application starts then Embedded DB will start and when application stopped then Embedded DB will be stopped.
+
+=> Embeeded Databases are used for POC development.
+
+			POC : Proof of concept
+
+
+Note: We should n't use embedded DB for real-time projects.
+
+=> In sprinboot we can use "H2 Database" as embeeded database.
+
+===============================================
+Develop SpringBoot web application using H2 DB
+===============================================
+
+1) Create boot application with below dependencies
+
+		a) starter-web
+		b) starter-data-jpa
+		c) h2
+		d) thymeleaf
+		e) devtools
+
+2) Configure below datasource properties in application.properties file
+
+		spring.datasource.username=ashokit
+		spring.datasource.password=abc@123
+		spring.datasource.url=jdbc:h2:mem:devdb
+
+
+Note: After adding datasource properties run the application and test H2 DB working or not.
+
+	URL : http://localhost:server-port/h2-console
+
+3) Create Entity class and Repository interface	
+
+4) Create Service interface and Service Impl class
+
+5) Create Controller class with required methods
+
+6) Create View pages with Presentation logic
+
+
+==============
+Assignment-1
+==============
+
+Requirement : Develop one mini project using springboot + data jpa + web mvc + Thymeleaf + MySQL DB or H2 DB.
+
+=> Application should contain below functionalities
+
+a) User Registration (duplicate email should not accept)
+
+b) User Login
+
+c) User Dasboard
+
+d) Logout
+
+Note: For login and registration pages we have to implement form validations.
+
+
+==============
+Assignment-2
+==============
+
+Requirement : Develop Springboot application connect with multiple databases.
+
+=> Application should contain below 2 forms
+
+1) Book Form
+
+2) Product Form
+
+Note: Book form data should be stored into mysql db and product form data should be stored into H2 DB.
+
+
+=================
+Form Validations
+=================
+
+Form validations are used to make sure users are giving right information in the application.
+
+Form validations we can implement in 2 ways
+
+	1) Client side form validations
+
+	2) Server side form validations
+
+=> Client side form validations will execute at browser side and will stop sending invalid request to server.
+
+Advantage : With client side validations we can reduce burden on the server.
+
+Dis-Advantage : End users can disable client validations in browser.
+
+
+=> Server side validations will execute at our application code.
+
+===========================================
+Server Side Validations in SpringBoot ?
+===========================================
+
+=> SpringBoot provided validation starter to implement Server Side Validations
+
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
+
+=> To specify validation for a field we have several annotations
+
+
+		a) @NotEmpty -----> String variables
+
+		b) @NotNull ------> Wrapper class variables
+
+		c) @Email
+
+		d) @Size  ----> Min and Max validation
+
+
+Note: The above annotations we will use at Form Binding class.
+
+=> Validate Form Binding object once form got submitted using @Valid annotation and check Form Validations are failed or passed using BindingResult.
+
+		if(result.hasErrors()){
+			// validation failed
+		}else{
+			// validation passed
+		}
+
+=> Display validation error message in the form using binding class object variables.
+
+Ex:
+
+<td>
+	<font style="color: red;">
+		<p th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p>
+	</font>
+</td>
+
+
+======================================================
+What is  HttpSession in Web Application Development 
+======================================================
+
+=> Session is used to maintain user identity after user login success to till user logout from the application.
+
+Ex : 
+
+If i login into amazon application with my credentials then it will display only my orders history.
+
+If you login into amazon application with your credentials then  it will display only your orders history.
+
+That means amazon application is able to remember or recognize who is logged into application.
+
+Note : session is specific to browser.
+
+	@PostMapping("/login")
+	public String login(HttpServletRequest req, Model model) {
+
+		// if login success then store userId in session
+		HttpSession session = req.getSession(true);
+		session.setAttribute("userId", userId);
+
+		return "index";
+	}
+
+	@GetMapping("/orders")
+	public String orders(HttpServletRequest req, Model model) {
+
+		HttpSession session = req.getSession(false);
+		Integer userId = (Integer) session.getAttribute("userId");
+		// based on userid get orders
+
+		return "index";
+	}
+
+	@GetMapping("/logout")
+	public String logout(HttpServletRequest req, Model model) {
+
+		// get existing session object
+		HttpSession session = req.getSession(false);
+		session.invalidate();
+
+		return "index";
+	}
+
+
+
+===============================================
+Spring Web MVC with JSP as Presentation Layer
+===============================================
+
+1) Create springboot app with below dependencies (select war as packaging format)
+
+		a) web-starer
+		b) devtools
+		c) tomcat-embed-jasper
+
+
+Note: Tomcat embed jasper dependency we need to get it from www.mvnrepository.com
+
+<dependency>
+    <groupId>org.apache.tomcat.embed</groupId>
+    <artifactId>tomcat-embed-jasper</artifactId>
+</dependency>
+
+
+2) Create controller class with required methods
+
+@Controller
+public class MsgController {
+
+	@GetMapping("/welcome")
+	public String getWelcomeMsg(Model model) {
+		model.addAttribute("msg", "Good Morning");
+		return "index";
+	}
+}
+
+
+3) inside webapp create "views" folder and create JSP pages inside "views" folder.
+
+		Location : webapp/views/index.jsp
+
+
+<div class="container">		
+		${msg}		
+</div>		
+
+
+4) Configure View Resolver in applicaion.properties file
+
+
+spring.mvc.view.prefix=/views/
+spring.mvc.view.suffix=.jsp
+
+
+5) Run the application and test it.
+
+=========================
+Actuator in spring Boot
+=========================
+
+=> Used to monitor and manage our spring boot applications
+
+=> Production ready features...
+
+=> With the help of actuators we can get below details
+
+- Health of App
+- Beans loaded
+- Metrics
+- Loggers
+- URL Mappings
+- Config Props
+- Thread Dump
+- Heap Dump
+
+=> To work with actuators we need to add below dependency
+
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-actuator</artifactId>
+	</dependency>
+
+Note: With above dependency, By default /health will be exposed.
+
+=> We need to write below property to expose other endpoints
+
+	management.endpoints.web.exposure.include=*
+
+=> We can exclude actuator endpoint like below
+
+	management.endpoints.web.exposure.exclude=beans
+
+==============
+Endpoint URLS
+==============
+
+/health : health of the app  (UP or DOWN)	
+
+/beans : Spring Beans loaded
+
+/configprops : Properties loaded
+
+/mappings : URL patterns of our application
+
+/threaddump : Threads info
+
+/heapdump  : Heap info
+
+/loggers : Logs of our applications
+
+/shutdown : Stop server  (HTTP POST Request)
+
+=============================
+What is shutdown endpoint ?
+=============================
+
+=> It is used to stop the application.
+
+Note: We need to enable shutdown endpiont in our properties file like below
+
+		management.endpoint.shutdown.enabled=true
+
+Note: Shutdown endpoint is mapped to POST request. We can send post request using POSTMAN software.
+
+
+
+=================
+Spring Profiles
+=================
+
+=> It is used to manage multiple environment specific properties in our application.
+
+=> We can easily deploy our application in multiple environments using profiles.
+
+==============================
+Q) What is environment 
+==============================
+
+=> A platform which is used to run our application
+
+=> In Real-Time we will have multiple environments like below
+
+	a) Local Env
+
+	b) Dev Env
+
+	c) SIT Env
+
+	d) UAT Env
+
+	e) Prod Env	 
+
+=> Local Env means where developers will write the code and test it (our local machine).
+
+=> Dev Env is used by developers to perform code integration testing.
+
+=> SIT Env is used by Software Testing team to perform System Integration Testing
+   (functional testing).
+
+=> UAT Env is used by Client to peform User Acceptance Testing.   
+
+Note: After UAT, client will decide GO or NO GO.
+
+	GO means => Confirmation for PROD Deployment.
+
+	NO GO means => Issues found in UAT (Don't go for PROD deployment).
+
+=> PROD Env is used for live application deployment.
+
+Note: End users will access application deployed in the production.
+
+=> As we are dealing with multiple envionments for our application every envionment will have its own configuration properies.
+
+	Ex: DB Props, SMTP Props, Kafka Props, Redis Props.....
+
+
+DEV Env DB :
+		DB Schema : ashokit_dev_db
+		DB Username : ashokit_devdb
+		DB Pwd : ashokit_devdb_321
+
+SIT Env DB :
+		DB Schema : ashokit_sit_db
+		DB Username : ashokit_sitdb
+		DB Pwd : ashokit_sitdb_123
+
+UAT Env DB :
+		DB Schema : ashokit_uat_db
+		DB Username : ashokit_uatdb
+		DB Pwd : ashokit_uatdb_123
+
+PROD Env DB :
+		DB Schema : ashokit_prod_db
+		DB Username : ashokit_prod
+		DB Pwd : ashokit_prod_1234			
+
+
+=> If we are using single "application.properties" file  then everytime we have to change properties according to environment deployment.
+
+
+Note: If we are changing properties like this then there is a chance of doing mistakes in properties file then our application deployment will fail.
+
+
+=> To overcome this problem we will use Profiles concept. Using profiles we can maintain environment specific properties file like below
+
+			application-dev.properties
+
+			application-sit.properties
+
+			application-uat.properties
+
+			application-prod.properties
+
+
+=> We can activate required profile in base properties file i.e application.properties
+
+		spring.profiles.active=prod
+
+
+
+
+
+
+
+
+========================
+Spring Web MVC Summary
+========================
+
+1) What is Spring Web MVC
+
+2) Spring Web MVC Architecture
+
+		 - DispatcherServlet
+		 - HandlerMapper
+		 - Controller
+		 - ModelAndView
+		 - ViewResolver
+		 - View
+
+3) First Web Application Development
+
+4) Form Binding	Concept
+
+5) Layered Architecture Development
+
+6) Students Mangement App Development (CRUD ops)
+
+			- Web MVC + Data JPA + Thymeleaf
+
+7) Email Sending in SpringBoot
+		
+			- SimpleMailMessage
+			- MimeMessage
+
+8) Exception handling in Spring Web MVC
+
+		 - Class Based Handling
+		 - Global Handling
+		 - User Defined Exceptions Handling
+
+9) Embedded Containers in SpringBoot
+
+10) Embedded Database (h2) in springboot
+
+11) Form Validations using SpringBoot with BindingResult
+
+12) Spring Web MVC + JSP application development
+
+13) Actuators in SpringBoot
+
+14) Profiles in SpringBoot
+
+========================================================
+
+@Controller
+
+@GetMapping
+
+@PostMapping
+
+@RequestParam
+
+@ExceptionHandler
+
+@ControllerAdvice
+
+@ModelAttribute
+
+===========================
+
+@Entity
+
+@Table
+
+@Id
+
+@GeneratedValue
+
+@Column
+
+@CreationTimestamp
+
+@UpdateTimestamp
+
+@Query
+
+===========================
+
+@NotEmpty
+
+@NotNull
+
+@Email
+
+@Size
+
+============================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+=================
+Spring Web MVC
+=================
+
+=> One of the most used & important module in spring framework
+
+=> Using Spring Web MVC we can develop 2 types of applications.
+
+		1) Web Applications (C 2 B)
+
+		2) Distributed Applications (B 2 B)
+
+
+=================
+Web Application
+=================
+
+=> Web Applications are used for Customer to Business Communication.
+
+		Ex: www.ashokitech.com
+
+Note: In Web application we will have 3 components
+
+		1) Presentation components (UI)
+
+		2) Business components (Controllers + Services)
+
+		3) Data Access Componenents (Repositories)
+
+Note: To develop presentation (UI) components in Spring Web MVC application we can use JSP and Thymeleaf.
+
+=================================
+What is Distributed application
+=================================
+
+=> Distributed applications are called as Webservices.
+
+=> Webservices are used to communicate from one application to another application.
+
+Note: In distributed appliations UI will not be available (pure backend apis)
+
+
+
+===============================
+Spring Web MVC Architecture
+===============================
+
+1) DispatcherServlet
+
+2) HandlerMapper
+
+3) Controller / Request Handler
+
+4) ModelAndView
+
+5) View Resolver
+
+6) View
+
+===================
+DispatcherServlet
+===================
+
+=> It is predefined class in spring web mvc
+
+=> It acts as front controller
+
+=> It is responsible to recieve request and send the response to client.
+
+Note: It is also called as framework servlet class.
+
+================
+Handler Mapper
+================
+
+=> It is predefined class in spring web mvc
+
+=> It is responsible to identify controller class to handle the request based on url-pattern and give controller class details to dispatcher servlet.
+
+===========
+Controller
+===========
+
+=> Controllers are java classes which are used to handle the request (request processing).
+
+=> DispatcherServlet will call controller class methods.
+
+=> After processing request, controller method will return ModelAndView object to dispatcher servlet.
+
+	Model => It is a map to represent data in key-value pair
+
+	View => It represents view page name
+
+===============
+View Resolver
+===============
+
+=> It is used to identify view files location.
+
+=> Dispatcher Servlet will give view name to View Resolver then it will identify the view file location and give it to Dispatcher Servlet.
+
+========
+View
+========
+
+=> It is responsible to render model data on the view page and give it to dispatcher servlet.
+
+Note: DispatcherServlet will send final response to client.
+
+
+==================
+Assignment
+=================
+
+1) Develop Spring Web MVC Application to capture student data using HTML form and insert into database table using Data JPA.
+
+
+1) Spring Boot
+2) Spring Data JPA
+3) Spring Web MVC
+
+======================================
+What is Layered Architecture
+======================================
+
+=> Develop application using multiple layers
+
+	a) Presentation Layer (UI)
+
+	b) Web Layer (Controllers)
+
+	c) Business Layer (services)
+
+	d) Data Access Layer (Repositories)
+
+
+===============================
+Students management application
+===============================	
+
+1) Add Student data
+
+2) Retrieve students and display
+
+------------------------------------------------------------------
+Step-1) Create springboot application with below dependencies
+
+	a) web-starter
+	b) thymeleaf
+	c) data-jpa-starter
+	d) mysql driver
+	e) devtools
+
+Step-2) Configure data source properties in application.properties file
+
+Step-3) Create Entity class and Repostiory interface
+
+Step-4) Create Service interface & implementation with required methods
+
+Step-5) Create controller class to handle request & response
+
+Step-6) Create view pages (html with thmeleaf)
+
+Step-7) Run the application and test it.
+
+==========================================================
+
+@Entity
+public class Student {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer sid;
+	private String name;
+	private String email;
+	private Long phno;
+
+	// getters & setters
+
+==========================================================
+
+public interface StudentService {
+	
+	public boolean saveStudent(Student s);
+	
+	public List<Student> getAllStudents();
+
+	public void delete(Integer sid);
+
+
+}
+
+=========================================================
+
+@Service
+public class StudentServiceImpl implements StudentService {
+
+	private StudentRepository repo;
+
+	public StudentServiceImpl(StudentRepository repo) {
+		this.repo = repo;
+	}
+
+	@Override
+	public boolean saveStudent(Student s) {
+		Student savedStudent = repo.save(s);
+		return savedStudent.getSid() != null;
+	}
+
+	@Override
+	public List<Student> getAllStudents() {
+		return repo.findAll();
+	}
+
+	@Override
+	public void delete(Integer sid) {
+		repo.deleteById(sid);
+	}
+
+}
+
+=============================================================
+
+@Controller
+public class StudentController {
+
+	private StudentService service;
+
+	public StudentController(StudentService service) {
+		this.service = service;
+	}
+
+	// method to display empty form
+	@GetMapping("/")
+	public ModelAndView index() {
+		ModelAndView mav = new ModelAndView();
+		mav.setViewName("index");
+		return mav;
+	}
+
+	// method to save student form data
+	@GetMapping("/saveStudent")
+	public ModelAndView handleSubmitBtn(Student s) {
+		ModelAndView mav = new ModelAndView();
+		boolean isSaved = service.saveStudent(s);
+		if (isSaved) {
+			mav.addObject("smsg", "Student Saved");
+		} else {
+			mav.addObject("emsg", "Failed To Save");
+		}
+		mav.setViewName("index");
+		return mav;
+	}
+
+	// method to get all students data
+
+	@GetMapping("/getData")
+	public ModelAndView getAllStudents() {
+		List<Student> stuList = service.getAllStudents();
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("students", stuList);
+		mav.setViewName("data");
+		return mav;
+	}
+
+	@GetMapping("/delete")
+	public ModelAndView deleteRecord(@RequestParam("sid") Integer sid) {
+		service.delete(sid);
+		List<Student> stuList = service.getAllStudents();
+		ModelAndView mav = new ModelAndView();
+		mav.addObject("students", stuList);
+		mav.addObject("msg", "Deleted Successfully");
+		mav.setViewName("data");
+		return mav;
+	}
+
+}
+=============================================================
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+   	<div class="container">
+   	 <h1>Student Form</h1>
+    
+    	<form action="saveStudent">
+    	
+    		<p th:text="${smsg}"></p>
+    		<p th:text="${emsg}"></p>
+    		    	
+    		<table>
+    			<tr>
+    				<td>Name : </td>
+    				<td><input type="text" name="name" required/></td>
+    			</tr>
+    			<tr>
+    				<td>Email : </td>
+    				<td><input type="email" name="email" required/></td>
+    			</tr>
+    			<tr>
+    				<td>Phno : </td>
+    				<td><input type="number" name="phno" required/></td>
+    			</tr>
+    			<tr>
+    				<td></td>
+    				<td><input type="submit" value="Save" class="btn btn-primary"/></td>
+    			</tr>
+    		</table>
+    	
+    	</form>
+    
+    <a href="getData">View All Students</a>
+   	</div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  </body>
+</html>
+
+====================================================================
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap demo</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+	<script>
+
+		function deleteConfirmation() {
+			return confirm("Are you sure you want to delete ?");
+		}
+
+	</script>
+
+</head>
+
+<body>
+	<div class="container">
+		<h1>View Students</h1>
+
+		<a href="/">Add New Student</a>
+
+		<font style="color: green;">
+			<p th:text="${msg}"></p>
+		</font>
+
+
+
+		<table class="table table-bordered table-striped">
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Phno</th>
+					<th>Action</th>
+				<tr>
+			</thead>
+			<tbody>
+				<tr th:each="s: ${students}">
+					<td th:text="${s.name}"></td>
+					<td th:text="${s.email}"></td>
+					<td th:text="${s.phno}"></td>
+					<td>
+						<a th:href="@{'/delete?sid=' + ${s.sid}}" 
+						   class="btn btn-danger"
+						   onclick="return deleteConfirmation()">Delete</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+
+
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+</body>
+
+</html>
+==============================================================	
+
+
+===================================
+How to send email using springboot
+===================================
+
+=> Springboot provided "mail-starter" to work with email sending. Add this starter in pom.xml file.
+
+=> We need to configure "smtp" properties in application.properties file
+
+spring.mail.host=smtp.gmail.com
+spring.mail.port=587
+spring.mail.username=
+spring.mail.password=
+spring.mail.properties.mail.smtp.auth=true
+spring.mail.properties.mail.smtp.starttls.enable=true
+
+Note: generate your gmail account app password.
+
+=> JavaMailSender is used to send email
+
+		javaMailSender.send(message);
+
+=> We have 2 types of messages
+
+		1) SimpleMailMessage
+		2) MimeMessage		
+
+=> SimpleMailMessage is used to plain text in email body
+
+=> MimeMessage is used to send formatted email body and attachment.
+
+====================================================================
+
+@Service
+public class EmailService {
+
+	@Autowired
+	private JavaMailSender mailSender;
+
+	public void sendEmail(String subject, String body, String to) {
+		try {
+			SimpleMailMessage msg = new SimpleMailMessage();
+			msg.setSubject(subject);
+			msg.setText(body);
+			msg.setTo(to);
+			mailSender.send(msg);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+	public void sendEmail1(String subject, String body, String to) {
+		try {
+
+			MimeMessage mimeMessage = mailSender.createMimeMessage();
+			MimeMessageHelper helper = new MimeMessageHelper(mimeMessage, true);
+
+			helper.setSubject(subject);
+			helper.setText(body, true);
+			helper.setTo(to);
+
+			helper.addAttachment("Notes", new File("C:\\Users\\ashok\\classes\\45-SBMS\\WebMVC-Notes.txt"));
+
+			mailSender.send(mimeMessage);
+
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+}
+=======================================================================
+
+1) Student.java (entity)
+
+2) StudentRepo.java (jpa repository)
+
+3) StudentService.java (I)
+
+4) StudentServiceImpl.java (C)
+
+5) EmailService.java 
+
+6) StudentController.java
+
+7) index.html
+8) data.html
+
+=======================================
+Exception Handling in Spring Web MVC
+=======================================
+
+=> Unexpected and unwanted situation in program execution is called as Exception.
+
+=> When exception occurs our program will be teriminated abnormally.
+
+=> As a programmer we need to handle that exception and we need to achieve graceful termination.
+
+=> The process of handling exception is called as Exception Handling.
+
+=> In java we have below keyword to handle exceptions
+
+		1) try
+		2) catch
+		3) throw
+		4) throws
+		5) finally
+
+=> In Spring Web MVC we can handle exceptions in 2 ways
+
+		1) Class Based Handling
+
+		2) Global Handling
+
+=> Class Based Handling is applicable for exceptions occured only in that paricular class.
+
+========================================================================
+	@ExceptionHandler(value = Exception.class)
+	public String handleException(Exception e) {
+		logger.error(e.getMessage());
+		return "errorPage";
+	}
+========================================================================
+
+=> Global Exception handling is applicable for all the classes available in the applicaiton.
+
+=> To represent our class as Global Exception Handler we will use @ControllerAdvice annotation.
+
+========================================================================
+
+@ControllerAdvice
+public class AppExceptionHandler {
+
+	private Logger logger = LoggerFactory.getLogger(AppExceptionHandler.class);
+
+	@ExceptionHandler(value = ProductNotFoundException.class)
+	public String handleProductEx(ProductNotFoundException e) {
+		logger.error(e.getMessage());
+		return "errorPage";
+	}
+
+	@ExceptionHandler(value = NullPointerException.class)
+	public String handleNpe(NullPointerException e) {
+		logger.error(e.getMessage());
+		return "errorPage";
+	}
+
+	@ExceptionHandler(value = Exception.class)
+	public String handleException(Exception e) {
+		logger.error(e.getMessage());
+		return "errorPage";
+	}
+}
+========================================================================
+
+========================================
+How to handle User Defined Exceptions ?
+========================================
+
+=> Create User defined exception class like below
+
+public class ProductNotFoundException extends RuntimeException {
+
+	public ProductNotFoundException(String msg) {
+		super(msg);
+	}
+}
+
+=> Create Exception Handler Method in Controller Advice class
+
+@ExceptionHandler(value = ProductNotFoundException.class)
+public String handleProductEx(ProductNotFoundException e, Model model) {
+	logger.error(e.getMessage());
+	model.addAttribute("msg", "No Product Found");
+	return "errorPage";
+}
+
+
+=> Create Controller method to throw user defined exception based on some scenario
+
+@Controller
+public class ProductController {
+
+	@GetMapping("/product")
+	public String getProduct(@RequestParam("pid") Integer pid, Model model) {
+
+		if (pid == 1) {
+			model.addAttribute("msg", "Product Name: Apple");
+		} else {
+			throw new ProductNotFoundException("No Record Found");
+		}
+		return "index";
+	}
+}
+
+=============================================
+Q) What is springboot embedded container ?
+=============================================
+
+=> When we add "web-starter" boot will provide server to run our application that server is called as embedded container.
+
+=> springboot supports 3 containers
+
+			1) tomact (default)
+			2) jetty
+			3) netty
+
+==================================================
+Q) How to configure jetty as embedded container ?
+==================================================
+
+Step-1) Exclude starter-tomact dependency from starter-web
+
+step-2) Configure jetty starter in pom.xml
+
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-web</artifactId>
+	<exclusions>
+		<exclusion>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+		</exclusion>
+	</exclusions>
+</dependency>
+
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-jetty</artifactId>
+</dependency>
+
+
+===============================
+Q) What is embedded database ?
+===============================
+
+=> Embedded databases are also called as in-memory databases.
+
+=> Embedded databases are temporary databases.
+
+=> When application starts then Embedded DB will start and when application stopped then Embedded DB will be stopped.
+
+=> Embeeded Databases are used for POC development.
+
+			POC : Proof of concept
+
+
+Note: We should n't use embedded DB for real-time projects.
+
+=> In sprinboot we can use "H2 Database" as embeeded database.
+
+===============================================
+Develop SpringBoot web application using H2 DB
+===============================================
+
+1) Create boot application with below dependencies
+
+		a) starter-web
+		b) starter-data-jpa
+		c) h2
+		d) thymeleaf
+		e) devtools
+
+2) Configure below datasource properties in application.properties file
+
+		spring.datasource.username=ashokit
+		spring.datasource.password=abc@123
+		spring.datasource.url=jdbc:h2:mem:devdb
+
+
+Note: After adding datasource properties run the application and test H2 DB working or not.
+
+	URL : http://localhost:server-port/h2-console
+
+3) Create Entity class and Repository interface	
+
+4) Create Service interface and Service Impl class
+
+5) Create Controller class with required methods
+
+6) Create View pages with Presentation logic
+
+
+==============
+Assignment-1
+==============
+
+Requirement : Develop one mini project using springboot + data jpa + web mvc + Thymeleaf + MySQL DB or H2 DB.
+
+=> Application should contain below functionalities
+
+a) User Registration (duplicate email should not accept)
+
+b) User Login
+
+c) User Dasboard
+
+d) Logout
+
+Note: For login and registration pages we have to implement form validations.
+
+
+==============
+Assignment-2
+==============
+
+Requirement : Develop Springboot application connect with multiple databases.
+
+=> Application should contain below 2 forms
+
+1) Book Form
+
+2) Product Form
+
+Note: Book form data should be stored into mysql db and product form data should be stored into H2 DB.
+
+
+=================
+Form Validations
+=================
+
+Form validations are used to make sure users are giving right information in the application.
+
+Form validations we can implement in 2 ways
+
+	1) Client side form validations
+
+	2) Server side form validations
+
+=> Client side form validations will execute at browser side and will stop sending invalid request to server.
+
+Advantage : With client side validations we can reduce burden on the server.
+
+Dis-Advantage : End users can disable client validations in browser.
+
+
+=> Server side validations will execute at our application code.
+
+===========================================
+Server Side Validations in SpringBoot ?
+===========================================
+
+=> SpringBoot provided validation starter to implement Server Side Validations
+
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-validation</artifactId>
+</dependency>
+
+=> To specify validation for a field we have several annotations
+
+
+		a) @NotEmpty -----> String variables
+
+		b) @NotNull ------> Wrapper class variables
+
+		c) @Email
+
+		d) @Size  ----> Min and Max validation
+
+
+Note: The above annotations we will use at Form Binding class.
+
+=> Validate Form Binding object once form got submitted using @Valid annotation and check Form Validations are failed or passed using BindingResult.
+
+		if(result.hasErrors()){
+			// validation failed
+		}else{
+			// validation passed
+		}
+
+=> Display validation error message in the form using binding class object variables.
+
+Ex:
+
+<td>
+	<font style="color: red;">
+		<p th:if="${#fields.hasErrors('name')}" th:errors="*{name}"></p>
+	</font>
+</td>
+
+
+======================================================
+What is  HttpSession in Web Application Development 
+======================================================
+
+=> Session is used to maintain user identity after user login success to till user logout from the application.
+
+Ex : 
+
+If i login into amazon application with my credentials then it will display only my orders history.
+
+If you login into amazon application with your credentials then  it will display only your orders history.
+
+That means amazon application is able to remember or recognize who is logged into application.
+
+Note : session is specific to browser.
+
+	@PostMapping("/login")
+	public String login(HttpServletRequest req, Model model) {
+
+		// if login success then store userId in session
+		HttpSession session = req.getSession(true);
+		session.setAttribute("userId", userId);
+
+		return "index";
+	}
+
+	@GetMapping("/orders")
+	public String orders(HttpServletRequest req, Model model) {
+
+		HttpSession session = req.getSession(false);
+		Integer userId = (Integer) session.getAttribute("userId");
+		// based on userid get orders
+
+		return "index";
+	}
+
+	@GetMapping("/logout")
+	public String logout(HttpServletRequest req, Model model) {
+
+		// get existing session object
+		HttpSession session = req.getSession(false);
+		session.invalidate();
+
+		return "index";
+	}
+
+
+
+===============================================
+Spring Web MVC with JSP as Presentation Layer
+===============================================
+
+1) Create springboot app with below dependencies (select war as packaging format)
+
+		a) web-starer
+		b) devtools
+		c) tomcat-embed-jasper
+
+
+Note: Tomcat embed jasper dependency we need to get it from www.mvnrepository.com
+
+<dependency>
+    <groupId>org.apache.tomcat.embed</groupId>
+    <artifactId>tomcat-embed-jasper</artifactId>
+</dependency>
+
+
+2) Create controller class with required methods
+
+@Controller
+public class MsgController {
+
+	@GetMapping("/welcome")
+	public String getWelcomeMsg(Model model) {
+		model.addAttribute("msg", "Good Morning");
+		return "index";
+	}
+}
+
+
+3) inside webapp create "views" folder and create JSP pages inside "views" folder.
+
+		Location : webapp/views/index.jsp
+
+
+<div class="container">		
+		${msg}		
+</div>		
+
+
+4) Configure View Resolver in applicaion.properties file
+
+
+spring.mvc.view.prefix=/views/
+spring.mvc.view.suffix=.jsp
+
+
+5) Run the application and test it.
+
+=========================
+Actuator in spring Boot
+=========================
+
+=> Used to monitor and manage our spring boot applications
+
+=> Production ready features...
+
+=> With the help of actuators we can get below details
+
+- Health of App
+- Beans loaded
+- Metrics
+- Loggers
+- URL Mappings
+- Config Props
+- Thread Dump
+- Heap Dump
+
+=> To work with actuators we need to add below dependency
+
+	<dependency>
+		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-actuator</artifactId>
+	</dependency>
+
+Note: With above dependency, By default /health will be exposed.
+
+=> We need to write below property to expose other endpoints
+
+	management.endpoints.web.exposure.include=*
+
+=> We can exclude actuator endpoint like below
+
+	management.endpoints.web.exposure.exclude=beans
+
+==============
+Endpoint URLS
+==============
+
+/health : health of the app  (UP or DOWN)	
+
+/beans : Spring Beans loaded
+
+/configprops : Properties loaded
+
+/mappings : URL patterns of our application
+
+/threaddump : Threads info
+
+/heapdump  : Heap info
+
+/loggers : Logs of our applications
+
+/shutdown : Stop server  (HTTP POST Request)
+
+=============================
+What is shutdown endpoint ?
+=============================
+
+=> It is used to stop the application.
+
+Note: We need to enable shutdown endpiont in our properties file like below
+
+		management.endpoint.shutdown.enabled=true
+
+Note: Shutdown endpoint is mapped to POST request. We can send post request using POSTMAN software.
+
+
+
+=================
+Spring Profiles
+=================
+
+=> It is used to manage multiple environment specific properties in our application.
+
+=> We can easily deploy our application in multiple environments using profiles.
+
+==============================
+Q) What is environment 
+==============================
+
+=> A platform which is used to run our application
+
+=> In Real-Time we will have multiple environments like below
+
+	a) Local Env
+
+	b) Dev Env
+
+	c) SIT Env
+
+	d) UAT Env
+
+	e) Prod Env	 
+
+=> Local Env means where developers will write the code and test it (our local machine).
+
+=> Dev Env is used by developers to perform code integration testing.
+
+=> SIT Env is used by Software Testing team to perform System Integration Testing
+   (functional testing).
+
+=> UAT Env is used by Client to peform User Acceptance Testing.   
+
+Note: After UAT, client will decide GO or NO GO.
+
+	GO means => Confirmation for PROD Deployment.
+
+	NO GO means => Issues found in UAT (Don't go for PROD deployment).
+
+=> PROD Env is used for live application deployment.
+
+Note: End users will access application deployed in the production.
+
+=> As we are dealing with multiple envionments for our application every envionment will have its own configuration properies.
+
+	Ex: DB Props, SMTP Props, Kafka Props, Redis Props.....
+
+
+DEV Env DB :
+		DB Schema : ashokit_dev_db
+		DB Username : ashokit_devdb
+		DB Pwd : ashokit_devdb_321
+
+SIT Env DB :
+		DB Schema : ashokit_sit_db
+		DB Username : ashokit_sitdb
+		DB Pwd : ashokit_sitdb_123
+
+UAT Env DB :
+		DB Schema : ashokit_uat_db
+		DB Username : ashokit_uatdb
+		DB Pwd : ashokit_uatdb_123
+
+PROD Env DB :
+		DB Schema : ashokit_prod_db
+		DB Username : ashokit_prod
+		DB Pwd : ashokit_prod_1234			
+
+
+=> If we are using single "application.properties" file  then everytime we have to change properties according to environment deployment.
+
+
+Note: If we are changing properties like this then there is a chance of doing mistakes in properties file then our application deployment will fail.
+
+
+=> To overcome this problem we will use Profiles concept. Using profiles we can maintain environment specific properties file like below
+
+			application-dev.properties
+
+			application-sit.properties
+
+			application-uat.properties
+
+			application-prod.properties
+
+
+=> We can activate required profile in base properties file i.e application.properties
+
+		spring.profiles.active=prod
+
+
+
+
+
+
+
+
+========================
+Spring Web MVC Summary
+========================
+
+1) What is Spring Web MVC
+
+2) Spring Web MVC Architecture
+
+		 - DispatcherServlet
+		 - HandlerMapper
+		 - Controller
+		 - ModelAndView
+		 - ViewResolver
+		 - View
+
+3) First Web Application Development
+
+4) Form Binding	Concept
+
+5) Layered Architecture Development
+
+6) Students Mangement App Development (CRUD ops)
+
+			- Web MVC + Data JPA + Thymeleaf
+
+7) Email Sending in SpringBoot
+		
+			- SimpleMailMessage
+			- MimeMessage
+
+8) Exception handling in Spring Web MVC
+
+		 - Class Based Handling
+		 - Global Handling
+		 - User Defined Exceptions Handling
+
+9) Embedded Containers in SpringBoot
+
+10) Embedded Database (h2) in springboot
+
+11) Form Validations using SpringBoot with BindingResult
+
+12) Spring Web MVC + JSP application development
+
+13) Actuators in SpringBoot
+
+14) Profiles in SpringBoot
+
+========================================================
+
+@Controller
+
+@GetMapping
+
+@PostMapping
+
+@RequestParam
+
+@ExceptionHandler
+
+@ControllerAdvice
+
+@ModelAttribute
+
+===========================
+
+@Entity
+
+@Table
+
+@Id
+
+@GeneratedValue
+
+@Column
+
+@CreationTimestamp
+
+@UpdateTimestamp
+
+@Query
+
+===========================
+
+@NotEmpty
+
+@NotNull
+
+@Email
+
+@Size
+
+============================
