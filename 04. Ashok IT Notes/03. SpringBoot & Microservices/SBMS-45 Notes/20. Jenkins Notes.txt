@@ -1,0 +1,99 @@
+
+===============
+Jenkins CI CD
+===============
+
+1) Build & Deployment process
+
+2) Challenges with Manual build & deployment
+
+3) Jenkins Introduction
+
+4) Jenkins Setup
+
+5) Jenkins CI CD Pipeline
+
+6) Git + Maven + Docker + Jenkins
+
+
+=============================
+What is Build & Deployment
+=============================
+
+1) Take latest source code from git hub repo
+
+2) Compile Source Code
+
+3) Execute Unit Test cases
+
+4) Package our application (jar/war)
+
+5) Build Docker image
+
+6) Create Docker container
+
+========================================
+Challenges in Manual build & deployment
+========================================
+
+1) Every day we need to deploy latest code 
+
+2) Deploy code in multiple environments
+
+		Ex: DEV, SIT, UAT and PROD
+
+3) Takes lot of time
+
+4) Repeated Work
+
+5) Error Prone
+
+==================
+What is Jenkins ?
+==================
+
+1) Jenkins is free & open source software
+
+2) Jenkins developed using Java language
+
+3) Jenkins is used to automate Build & Deployment process
+
+4) Using Jenkins we can implement CI CD
+
+
+=> CI CD means continuous integration and continous deployment.
+
+===============
+Jenkins Setup
+===============
+
+https://github.com/ashokitschool/DevOps-Documents/blob/main/04-Jenkins-Docker-Project.md
+
+======================
+Jenkins Pipeline
+======================
+
+=> Jenkins pipeline contains set of steps to automate project build and deployment process.
+
+=> We can create jenkins pipeline in 2 ways
+
+		1) Declarative pipeline
+
+		2) Scripted Pipeline (groovy)
+
+=====================================
+Jenkins Declarative Pipeline Syntax
+=====================================		
+
+pipeline {
+	
+	agent any 
+
+	stages {
+		stage('Hello'){
+			steps{
+				// logic
+			}
+		}
+	}
+}
