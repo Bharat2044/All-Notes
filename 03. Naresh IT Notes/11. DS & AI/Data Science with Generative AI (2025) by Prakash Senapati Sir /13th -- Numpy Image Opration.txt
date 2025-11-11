@@ -1,0 +1,84 @@
+
+Please work on todays class explanation code.  
+
+Numpy + Image project from below workshop link 
+
+Please complete it from below youtube link -->
+
+https://www.youtube.com/watch?v=u-ym7BWHO-g&list=PLVlQHNRLflP9vV2_FO8h1yiVD90XhJy8M&index=14
+
+So far below Task & Project are given 
+
+
+
+
+==============================
+Task:1-
+python variable class explanation, & assignment
+
+
+
+Task:2-
+DataType, Basic code, String, Variable
+
+
+
+Task:3
+- Class Explanation, Complex, variables, Operator, print()
+
+Task-4 : GitHub Creation
+
+
+
+T5-
+Python Basic & Python Operator
+T6-
+Complete List class explanation & Documents
+
+
+
+T7: Tuple class explanation,
+tuple image 
+
+
+
+T8: Set
+class explanation
+T9:
+dict, set&dict pdf
+
+T10: String Question
+
+
+
+Vs Code Installation
+
+
+
+T11-
+NumPy-Class Explanation
+
+T12- Numpy_Complete_Buildin_Function
+T13- NUMPY Complete
+Documentatin
+
+
+
+=======================
+
+Project:1
+- Image to Array coversion
+
+
+
+https://www.youtube.com/watch?v=u-ym7BWHO-g&list=PLVlQHNRLflP9vV2_FO8h1yiVD90XhJy8M&index=14
+
+======================
+Iq1- Python Datatype
+Interview questions
+
+
+
+Iq2- Python operator,
+expresession Question & Answer
+

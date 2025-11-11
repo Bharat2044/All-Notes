@@ -1,0 +1,282 @@
+work an attached project. 
+
+Task:1-
+python variable class explanation, & assignment
+
+
+
+Task:2-
+Datatype, Basic code, String, Variable
+
+
+
+Task:3
+- Class Explanation, Complex, variables, Operator, print()
+
+Task-4 : GitHub Creation
+
+
+
+T5-
+Python Basic & Python Operator
+T6-
+Complete List class explanation & Documents
+
+
+
+T7: Tuple class explanation,
+tuple image 
+
+
+
+T8: Set
+class explanation
+T9:
+dict, set&dict pdf
+
+T10: String QuestionVs Code Installation
+
+
+
+T11-
+NumPy-Class Explanation
+
+T12- Numpy_Complete_Buildin_Function
+T13- NUMPY Complete
+Documentatin
+
+
+
+T14 : Basic Python Code
+
+
+
+https://matplotlib.org/stable/plot_types/index.html
+
+
+
+T:15- Python simple store
+dataset
+
+
+
+T:16 - conditional statement
+classroom practiise
+
+
+
+T:17 -
+convert addr, dt, time ( create more variable)
+
+T:18 - read the excel, html, xml
+
+
+
+T:19 -
+Streamlit testing using cmd & vs code
+
+worked few smal small practicle using streamlit github
+
+T:20 - Test LLM models using locally
+
+T:21 - python patterns pdf
+
+
+
+Task:22 - mysql server
+installation 
+
+
+
+Task:23
+- sql workshop-1
+
+Task:24 - from sql pdf ( 44-70) make nice documentation
+
+
+
+Task:24
+- from sql pdf ( 44-70) | page# 130- 149
+
+page# 93-99
+
+TASK:25 - class explanation
+
+
+
+Task:26
+: web gui intro to tkinter
+
+https://docs.python.org/3/library/tkinter.html#tkinter.Tk
+
+
+
+Task:27 - Function
+Introduction
+
+
+
+
+
+
+
+
+
+
+==========
+Assginment:28 - Data
+preprocessing pipeline 
+
+
+
+========
+GENAI Projects-->
+
+1- STABLE DIFFUSION GENERATIVE MODEL
+
+2- OLLAMA ( MISTRAL, DEEPSEEK, LLAMA3, GEMMA)
+
+3- TEXT BASED MODEL USING GEMINI API ( LLM MODE)
+
+4- MULTIMODEL IMAGE -CONTEENT GENERATION) LLM MODEL 
+
+
+
+=======
+
+
+
+
+
+Project:1 - Image to Array
+coversion
+
+
+
+Project:2
+-  IPL data analysis using Np +
+plt 
+
+
+
+Project:3 - Country GDP
+Analysis
+
+
+
+Project:4
+- IMDB Data Anlaysis ( Kaggle Introduction)
+
+
+
+Project:5 - EDA Projects
+
+
+
+Project:6
+- Movie rating analysis using seaborn
+
+Project:7 - Iris dataset analysis 
+
+
+
+Resume
+Project:1 - Healthcare Domain( Heart disease analysis)
+Resume Project:2 - Fifa data analysis
+
+
+
+Resume
+project:3 - EDA Automation using MISTRAL using Gradio 
+
+
+
+Project:8
+--> sql vs python comparision for data analyst, datascientst
+
+
+
+Project:9
+- descriptive statics for income expenses statstical analysis 
+
+
+
+Project:10
+- password generaoor using tkinter, pyperclip using python
+
+
+
+Resume
+project:4 - sales data analysis using statistical aproach
+
+
+
+Resume
+project:5 - stable diffusion text to image prompt generation 
+
+
+
+Project:11
+-- Titanic dataset preprocssing with insight 
+
+
+
+project:12
+- Emp salary prediction (part-1)
+
+
+
+project:12
+- Emp salary prediction (part-2)
+project:13 - House price prediction using simple linear regression 
+
+
+
+Resume
+project:6 - Text model generation
+
+
+
+Resume
+project:7 - Multimodal ( Image-text or content generation)
+
+
+
+Project:14
+- Multiple linear regression model using stats.api & RFE
+Project:15 - House price prediction using MLR 
+
+
+
+=====
+Iq1- Python Datatype
+Interview questions
+Iq2- Python operator,
+expression Question & Answer
+
+
+
+Iq3 - VARIABE & DATA
+TYPE IQB_1 _ 97 Q & A
+
+
+
+Iq4 - Python input_ 50
+question, Answer
+
+
+
+Iq:5 -
+condition statement 50 question ( easy, medium, hard)
+
+
+
+Iq:6 -
+Loops interview question
+
+Iq:7 - Mix interview python question & answer
+
+
+
+Iq:8 - stats interview
+question
