@@ -1,0 +1,275 @@
+
+===============
+Apache Kafka
+===============
+
+=> Kafka is a Message broker
+
+=> Kafka is used as Streaming platform
+
+=> Kafka is used for realtime data processing
+
+=> Kafka works based on pub & sub model
+
+	Publisher : App which is producing msgs
+
+	Subscriber : App which is consuming msgs
+
+----------
+Usecases:
+----------
+zomoto orders processing
+swiggy orders processing
+ola rides booking proces
+rapido rides booking process
+
+===================
+Kafka Architecture
+===================
+
+1) Zookeeper (Provides runtime to run kafka server)
+
+2) Kafka Server (Message Broker)
+
+3) Kafka Topic (A place to store msgs)
+
+4) Publisher App (who stores msgs in kafka topic)
+
+5) Subscriber App (who reads msgs from kafka topic)
+
+================================
+Apache Kafka Setup In Windows
+================================
+
+## Step-1 : Download Zookeeper from below URL
+
+   URL : https://dlcdn.apache.org/zookeeper/zookeeper-3.9.2/apache-zookeeper-3.9.2-bin.tar.gz
+
+
+## Step-2 : Download Apache Kafka from below URL
+
+	URL : https://downloads.apache.org/kafka/3.8.0/kafka_2.12-3.8.0.tgz   
+
+
+## Step-3 : Set Path to ZOOKEEPER in Environment variables upto bin folder.
+
+
+### Note: Copy "zookeeper.properties" and "server.properties" files from "kafka/config" folder to "kafka/bin/windows" folder. ###
+
+## Step-4 : Start Zookeeper server using below command from "kafka/bin/windows" folder
+
+    Command : zookeeper-server-start.bat zookeeper.properties
+
+## Step-5: Start Kafka Server using below command from "kafka/bin/windows" folder
+
+    Command : kafka-server-start.bat server.properties
+
+Note: If kafka server is getting stopped, delete kafka logs from temp folder
+
+
+## Step-6 : Create Kakfa Topic using below command from "kafka/bin/windows" folder
+
+Command : kafka-topics.bat --create --bootstrap-server localhost:9092 --replication-factor 1 --partitions 1 --topic ashokit_topic
+
+## Step-7 : View created Topics using below command
+
+   Command : kafka-topics.bat --list --bootstrap-server localhost:9092
+
+========================================================================
+
+Kafka Bootstrap Server URL : http://localhost:9092/
+
+================================================================================
+
+Publisher App : https://github.com/ashokitschool/spring_boot_kafka_producer.git
+
+Subscriber App: https://github.com/ashokitschool/spring_boot_kafka_consumer.git
+
+==================================================================================
+
+================================
+Kafka Producer App Development
+================================
+
+
+## Step-1) Create Spring Boot application with below dependencies
+
+   a) web-starter
+   b) kafka-streams
+   c) spring-kafka
+   d) devtools
+
+=====================================================
+## Step-2) Create Kafka Constants class    
+=====================================================
+
+public class AppConstants {
+
+   public static final String TOPIC = "ashokit_order_topic";
+   public static final String HOST = "localhost:9092";
+
+}
+
+=====================================================
+## Step-3) Create Model class to represent data
+=====================================================
+
+@Data
+public class Order {
+
+   private String id;
+   private Double price;
+   private String email;
+   
+}
+==================================================
+## Step-4) Create Kafka Producer Config class 
+==================================================
+
+@Configuration
+public class KafkaProducerConfig {
+
+   @Bean
+   public ProducerFactory<String, Order> producerFactory() {
+
+      Map<String, Object> configProps = new HashMap<>();
+
+      configProps.put(ProducerConfig.BOOTSTRAP_SERVERS_CONFIG, AppConstants.HOST);
+
+      configProps.put(ProducerConfig.KEY_SERIALIZER_CLASS_CONFIG, StringSerializer.class);
+      configProps.put(ProducerConfig.VALUE_SERIALIZER_CLASS_CONFIG, JsonSerializable.class);
+
+      return new DefaultKafkaProducerFactory<>(configProps);
+   }
+
+   @Bean
+   public KafkaTemplate<String, Order> kafkaTemplate(){
+      return new KafkaTemplate<>(producerFactory());
+   }
+
+}
+=================================================================
+## Step-5) Create Service class to publish msgs to kafka topic 
+=================================================================
+
+@Service
+public class OrderService {
+
+   @Autowired
+   private KafkaTemplate<String, Order> kafkaTemplate;
+
+   public String addMsg(Order order) {
+
+      // publish msg to kafka topic
+      kafkaTemplate.send(AppConstants.TOPIC, order);
+
+      return "Msg Published To Kafka Topic";
+   }
+}
+
+==========================================
+## Step- 6) Create RestController classs
+==========================================
+
+@RestController
+public class OrderRestController {
+
+   @Autowired
+   private OrderService service;
+
+   @PostMapping("/order")
+   public String createOrder(@RequestBody Order order) {
+      String msg = service.addMsg(order);
+      return msg;
+   }
+
+}
+
+#################################
+Kafka Subscriber App Development
+#################################
+
+## Step-1) Create Spring Boot application with below dependencies
+
+   a) web-starter
+   b) kafka-streams
+   c) spring-kafka
+   d) devtools
+
+=====================================================
+## Step-2) Create Kafka Constants class    
+=====================================================
+
+public class AppConstants {
+
+   public static final String TOPIC = "ashokit_order_topic";
+   public static final String HOST = "localhost:9092";
+
+}
+
+=====================================================
+## Step-3) Create Model class to represent data
+=====================================================
+
+@Data
+public class Order {
+
+   private String id;
+   private Double price;
+   private String email;
+   
+}   
+
+=====================================================
+## Step-4) Create Kafka Consumer Config class
+=====================================================
+
+@Configuration
+public class KafkaConsumerConfig {
+
+   @Bean
+   public ConsumerFactory<String, Order> consumerFactory() {
+      Map<String, Object> configProps = new HashMap<String, Object>();
+      configProps.put(ConsumerConfig.BOOTSTRAP_SERVERS_CONFIG, AppConstants.HOST);
+      configProps.put(ConsumerConfig.KEY_DESERIALIZER_CLASS_CONFIG, StringDeserializer.class);
+      configProps.put(ConsumerConfig.VALUE_DESERIALIZER_CLASS_CONFIG, JsonDeserializer.class);
+      return new DefaultKafkaConsumerFactory<>(configProps);
+   }
+   
+   @Bean
+   public ConcurrentKafkaListenerContainerFactory<String, Order> kafkaListenerFactory(){
+      
+      ConcurrentKafkaListenerContainerFactory<String, Order> factory = new 
+             ConcurrentKafkaListenerContainerFactory<>();
+      
+      factory.setConsumerFactory(consumerFactory());
+      
+      return factory;
+   }
+}
+
+==============================================================
+## Step-5) Create Listener method to recieve msg from topic
+==============================================================
+
+@KafkaListener(topics = AppConstants.TOPIC, groupId = "group_ashokit_order")
+public void subscribeKafkaTopic(String order) {
+
+   System.out.println("************ Msg recieved from Topic *************");
+   System.out.println(order);
+
+   // logic to process to msg
+}
+
+
+==========================================================
+6) Run the producer application & Consumer application
+==========================================================
+
+####### Send Request to Producer app and observe Subscriber app console  ############
+
+{
+    "id" : "OD101",
+    "price" : 200.00,
+    "email" : "smith@gmail.com"
+}
