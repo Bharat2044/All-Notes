@@ -1,0 +1,269 @@
+
+=============================
+Spring Boot & Microservices
+=============================
+
+1) Your trainer
+
+2) Pre-requisites
+
+3) Who should join
+
+4) Course Content (Road map)
+
+5) Course Details
+
+6) Q & A
+
+========
+Trainer
+========
+
+Name: Mr. Ashok
+
+11+ Yrs exp in IT
+
+Product Based in Hyd (manager)
+
+8+ Yrs exp Training
+
+skills : Java frameworks
+		 Linux
+		 DevOps
+		 AWS cloud
+
+started Ashok IT - 2020
+
+================
+Pre-requisites
+================
+
+1) Core Java (1.8v)
+		- oops
+		- collections
+		- exception handling
+		- io streams
+		- multi threading
+		- java 8 features
+
+2) Adv Java
+		
+		- JDBC
+		- Servlets
+		- JSP (not required)
+		- MVC		
+		- Web Server (Tomcat)
+
+3) Database
+
+		- SQL
+
+4) Web Technologies
+
+		- HTML & CSS				
+
+==================================
+Who should join for this course ?
+==================================
+
+-> Every java developer should know sbms	
+		
+			- freshers
+			- career gap students
+			- java working professionals	
+
+=================
+Course Content 			
+=================
+
+Module-1 : Spring Core
+
+Module-2 : Spring Boot
+
+Module-3 : Data JPA (extension for hibernate)
+
+Module-4 : Spring Web MVC (C2B)
+
+Module-5 : Spring REST (webservices)
+
+Module-6 : Microservices
+
+Module-7 : Spring Cloud
+
+Module-8 : Spring Security
+
+Module-9 : Realtime Tools (weekends)
+
+			- junit
+			- logging
+			- kafka
+			- redis
+			- docker
+			- jenkins
+			- swagger
+			- postman
+
+===========================================================
+
+Course : Spring Boot with Microservices			
+
+Course Code : 45-SBMS
+
+Class Timings : 9:30 AM - 11:00 AM (IST)
+
+				(Mon-Mon)
+
+Course Duration : 3 Months 
+
+=> Soft copy notes	on daily basis			
+
+=> Course Fee : 8000 INR (live classes + notes)
+
+Notes: For backup videos : 2000 INR (1 year validity)
+
+1) Resume Building
+2) Topic wise FAQ's
+3) Mock Interviews
+
+
+
+========================================
+Core Java vs Adv Java vs Java Framework
+========================================
+
+==========
+Core Java
+==========
+
+=> Core java means J2SE
+=> Core Java is base to become java developer
+=> In core java java fundamentals will be available
+
+			- data types
+			- arrays
+			- strings
+			- oops
+			- collections
+			- exception handling
+			- io streams
+			- lambdas
+			- stream api
+			- threads
+
+-> using core java we can develop standalone apps 
+  (one user can access a time)
+
+	Ex : notepad, calc, eclipse, intellij idea....
+
+================
+Adv Java (JEE)	
+================
+
+=> JEE developed based on JSE only
+=> JEE is called as Java Technology
+
+			- Servlets
+			- JSP
+
+=> Using this JEE we can develop web applications 
+   (multiple users can access at a time thru internet)
+
+	Ex: gmail, facebook, naukri, youtube
+
+=> To run web application  server is required
+	
+	Ex: Tomcat, glassfish, jboss, jetty, netty	
+
+	1) Web Servers (Ex : Tomcat)
+
+	2) App Servers	(ex: JBOSS, Web Logic, Web Sphere)
+
+
+Note: App Server provides more functionalities than web server
+	
+		Ex : EJB container, security, conn pooling....	
+
+
+=> Application can be developed in 2 ways
+
+		1) Monolithic (outdated)
+		2) Microservices (trending)
+
+============
+Monolithic	
+============
+
+=> Developing all the functionalities in single app
+
+=> We have below challenges in monolithic
+
+		1) Maintenance Difficult
+
+		2) Single point of failure
+
+		3) Re-Deploy entire app
+
+		4) Technology dependent
+
+=> To overcome problems of monolith, we are using microservices architecture.
+
+=================
+Microservices	
+================
+
+=> It is an approach to develop application functionalities with loosely coupling.
+
+=> Application functionalities will be developed in multiple services/apis.
+
+=> Every microservice will run in seperate server 
+
+=> Every microservice is independently deployable and executable.
+
+=> We have below advantages with microservices
+
+	1) Functionality distributed
+
+	2) Loosely coupled
+
+	3) No single point of failure
+
+	4) Technology independent
+
+
+=================
+Java Frameworks	
+=================	
+
+=> Framework is a semi developed software
+
+=> Frameworks providing common logics for application development
+
+=> If we use frameworks then we need to focus only on business logic
+
+=> Using frameworks we can do more work in less time (productivity)
+
+=> We have several frameworks in java community
+
+			1) JSF -----------> outdated
+			2) Hibernate -----> data jpa
+			3) Struts -------> out dated
+			4) Spring ---> SpringBoot ----> trending
+
+Note: The above frameworks developed by using JSE and JEE.			
+
+
+=> Hibernate is an ORM framework.
+=> ORM means Object Relational Mapping
+=> Using Hibernate we can develop persistence layer
+=> Hibernate developed on top of JDBC.
+
+
+=> Struts framework developed by Apache
+=> Struts is used to develop only web layer
+
+=> Spring is called as application development framework
+=> Using spring we can develop entire application.
+=> Spring is free of cost & open source
+=> Spring framework provides common logics required for application development.
+
+Note: SpringBoot is an extension for Spring Framework.
